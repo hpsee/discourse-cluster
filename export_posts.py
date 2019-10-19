@@ -94,7 +94,8 @@ for topic in topics:
         post = response.json()
         content = [x['cooked'] for x in post['post_stream']['posts']]
         posts[post['id']] = content
-        write_json(post, export_path % post['id'])
+        post_id = "post-%s" % post['id']
+        write_json(post, export_path % post_id)
         sleep(sleep_time)
     else:
         print("Issue with %s" % url)

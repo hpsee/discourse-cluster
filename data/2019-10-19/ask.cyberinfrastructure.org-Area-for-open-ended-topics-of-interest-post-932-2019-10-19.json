@@ -1,0 +1,894 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 1796,
+                "name": "Julie Ma",
+                "username": "jma",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png",
+                "created_at": "2019-06-07T15:46:23.025Z",
+                "cooked": "<p>I\u2019m running a calculation that parallelizes well using both MPI and OpenMP.  While reading online, it occurred to me that I might gain speedup with a GPU node.  How can I estimate the potential benefit?  And is it possible to monitor GPU usage once it\u2019s been allocated?</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-06-10T19:32:42.200Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 58,
+                "reads": 21,
+                "readers_count": 20,
+                "score": 249.2,
+                "yours": false,
+                "topic_id": 932,
+                "topic_slug": "monitoring-gpu-usage",
+                "display_username": "Julie Ma",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 3,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "Early Adopter",
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 3,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2017-11-24T22:13:09.977Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1809,
+                "name": "Phillip Benoit",
+                "username": "Phillip_Benoit",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/phillip_benoit/{size}/234_2.png",
+                "created_at": "2019-06-10T20:54:54.392Z",
+                "cooked": "<p>You\u2019ll have to optimize your code to take advantage of the GPU cores.  (exactly how will vary by language)  Monitoring will depend on what brand of GPU you have.  Take a look at this:<br>\n<a href=\"https://askubuntu.com/questions/387594/how-to-measure-gpu-usage\" rel=\"nofollow noopener\">https://askubuntu.com/questions/387594/how-to-measure-gpu-usage</a><br>\nHow much benefit will depend on how well the code is optimized to run on the core.  Best test would be to re-write it and try to run the same size sample and see how long it takes.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-06-10T20:57:08.594Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 14,
+                "readers_count": 13,
+                "score": 7.8,
+                "yours": false,
+                "topic_id": 932,
+                "topic_slug": "monitoring-gpu-usage",
+                "display_username": "Phillip Benoit",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://askubuntu.com/questions/387594/how-to-measure-gpu-usage",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "software recommendation - How to measure GPU usage? - Ask Ubuntu",
+                        "clicks": 7
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 276,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "new_user",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-06-10T20:50:10.730Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1810,
+                "name": "Harry",
+                "username": "hjmangalam",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png",
+                "created_at": "2019-06-11T15:05:57.696Z",
+                "cooked": "<p>GPUs are really good at SPMD algos - single process, multiple data, wherein you do the same operation on zillions of input data. Matrix math, image processing (kind of the same thing), some Machine learning, approaches, shift-add hash operations on multiple strings/reads as per some bioinfo approaches.  If you interrupt these operations with logic (if, while, comparisons, subroutine calls), the magnitude of improvement drops tremendously.  So you have to decide whether your input data and analytical flow maps well to GPUs.  In many cases, small amounts of an analytical flow can be tremendously improved, but optimization of 5% of your entire flow to zero only saves you 5%.  Beware premature optimization. <img src=\"https://ask.cyberinfrastructure.org/images/emoji/twitter/slight_smile.png?v=9\" title=\":slight_smile:\" class=\"emoji\" alt=\":slight_smile:\"></p>\n<p>You can see what your Nvidia GPUs are doing with the nvidia-smi utility which will tell you various stats  about the state and activity of the GPU. I\u2019ve no idea how to do this with ATI cards.</p>\n<pre><code># nvidia-smi\nTue Jun 11 07:53:46 2019       \n+-----------------------------------------------------------------------------+\n| NVIDIA-SMI 384.66                 Driver Version: 384.66                    |\n|-------------------------------+----------------------+----------------------+\n| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |\n|===============================+======================+======================|\n|   0  GeForce GTX 1080    Off  | 00000000:02:00.0 Off |                  N/A |\n| 27%   40C    P0    39W / 180W |      0MiB /  8114MiB |      0%      Default |\n+-------------------------------+----------------------+----------------------+\n|   1  GeForce GTX 1080    Off  | 00000000:03:00.0 Off |                  N/A |\n| 27%   41C    P0    39W / 180W |      0MiB /  8114MiB |      0%      Default |\n+-------------------------------+----------------------+----------------------+\n|   2  GeForce GTX 1080    Off  | 00000000:83:00.0 Off |                  N/A |\n| 27%   41C    P0    39W / 180W |      0MiB /  8114MiB |      0%      Default |\n+-------------------------------+----------------------+----------------------+\n                                                                               \n+-----------------------------------------------------------------------------+\n| Processes:                                                       GPU Memory |\n|  GPU       PID  Type  Process name                               Usage      |\n|=============================================================================|\n|  No running processes found                                                 |\n+-----------------------------------------------------------------------------+\n</code></pre>\n<p>Note also that many schedulers (SGE and derivatives at least) have trouble scheduling jobs for individual GPUs and sophisticated operations with them - suspending, moving, checkpointing jobs involving GPUs.  If you\u2019re not using a cluster, then this will have no impact, but if your jobs are large enough that they might migrate to a cluster, then this is a consideration.<br>\nI\u2019ve seen some reports that overall, the total cost for GPUs  vs the speed-up is about the same as for CPUs, obviously with some exceptions that are exactly matched for GPUs.  The upside for buying CPUs is that they can be used for general purpose computing without any re-coding.</p>\n<p>The easy test is to profile your code, see where the highest utilization is, and see if that code is amenable to re-coding for a GPU.  If it is, get theyself a cheap gaming GPU and see how easy re-coding in CUDA is, and see what the overall speedup is.</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-06-11T15:05:57.696Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 14,
+                "readers_count": 13,
+                "score": 57.8,
+                "yours": false,
+                "topic_id": 932,
+                "topic_slug": "monitoring-gpu-usage",
+                "display_username": "Harry",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 144,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "returning_user",
+                "notice_args": "2019-01-08T18:15:14Z",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-09-10T22:06:15.372Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1961,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-07-27T23:50:05.080Z",
+                "cooked": "<p>I\u2019ve only tested this on our Cluster (nvidia I think) but I added a gpu task to watchme:</p>\n<aside class=\"onebox whitelistedgeneric\">\n  <header class=\"source\">\n      <img src=\"https://vsoch.github.io/watchme/assets/img/favicon.ico\" class=\"site-icon\" width=\"16\" height=\"16\">\n      <a href=\"https://vsoch.github.io/watchme/watchers/gpu/\" target=\"_blank\" rel=\"nofollow noopener\">watchme</a>\n  </header>\n  <article class=\"onebox-body\">\n    \n\n<h3><a href=\"https://vsoch.github.io/watchme/watchers/gpu/\" target=\"_blank\" rel=\"nofollow noopener\">gpu</a></h3>\n\n<p>The gpu watcher will help to monitor gpu devices (memory, power, versions, limits). This watcher must obviously be run on a machine with one or more GPU devices.</p>\n\n\n  </article>\n  <div class=\"onebox-metadata\">\n    \n    \n  </div>\n  <div style=\"clear: both\"></div>\n</aside>\n\n<p>Scroll down the page to the \u201cRun on the Fly, Command Line\u201d section. If you are using Python, you can also try out the decorator. Open an issue if you run into any trouble!</p>",
+                "post_number": 4,
+                "post_type": 1,
+                "updated_at": "2019-07-27T23:50:05.080Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 11.4,
+                "yours": true,
+                "topic_id": 932,
+                "topic_slug": "monitoring-gpu-usage",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://vsoch.github.io/watchme/watchers/gpu/",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "gpu | watchme",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            1796,
+            1809,
+            1810,
+            1961
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            133
+        ],
+        [
+            2,
+            130
+        ],
+        [
+            4,
+            83
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1064,
+            "title": "Future Direction of Question of the Week",
+            "fancy_title": "Future Direction of Question of the Week",
+            "slug": "future-direction-of-question-of-the-week",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-09-17T14:51:28.517Z",
+            "last_posted_at": "2019-09-19T14:36:28.717Z",
+            "bumped": true,
+            "bumped_at": "2019-09-19T14:36:28.717Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 48,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 996,
+            "title": "Rclone vs sftp for Box.com",
+            "fancy_title": "Rclone vs sftp for Box.com",
+            "slug": "rclone-vs-sftp-for-box-com",
+            "posts_count": 4,
+            "reply_count": 1,
+            "highest_post_number": 4,
+            "image_url": null,
+            "created_at": "2019-07-23T13:39:57.218Z",
+            "last_posted_at": "2019-07-23T16:52:57.195Z",
+            "bumped": true,
+            "bumped_at": "2019-07-23T16:52:57.195Z",
+            "unseen": false,
+            "last_read_post_number": 4,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "cloud",
+                "storage"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 144,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 33,
+                        "username": "jgriffin",
+                        "name": "John Griffin",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/e79b87/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 155,
+                        "username": "iki",
+                        "name": "",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/iki/{size}/100_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 912,
+            "title": "How to attach to a running job to run top on compute node",
+            "fancy_title": "How to attach to a running job to run top on compute node",
+            "slug": "how-to-attach-to-a-running-job-to-run-top-on-compute-node",
+            "posts_count": 3,
+            "reply_count": 1,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2019-05-22T13:16:02.352Z",
+            "last_posted_at": "2019-05-23T12:33:52.339Z",
+            "bumped": true,
+            "bumped_at": "2019-05-23T12:33:52.339Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "slurm",
+                "scheduler"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 193,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 258,
+                        "username": "schnabelr",
+                        "name": "Robert Schnabel",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/59ef9b/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 89,
+                        "username": "tmiddelk",
+                        "name": "Timothy Middelkoop",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/t/8baadc/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 213,
+                        "username": "Mike_Renfro",
+                        "name": "Mike Renfro",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mike_renfro/{size}/169_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "tensorflow",
+        "gpu",
+        "pytorch",
+        "qow"
+    ],
+    "id": 932,
+    "title": "Monitoring GPU usage",
+    "fancy_title": "Monitoring GPU usage",
+    "posts_count": 4,
+    "created_at": "2019-06-07T15:46:22.950Z",
+    "views": 358,
+    "reply_count": 0,
+    "like_count": 1,
+    "last_posted_at": "2019-07-27T23:50:05.080Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "monitoring-gpu-usage",
+    "category_id": 23,
+    "word_count": 635,
+    "deleted_at": null,
+    "user_id": 3,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_932",
+    "draft_sequence": 1,
+    "posted": true,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 4,
+    "last_read_post_number": 4,
+    "last_read_post_id": 1961,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 4,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": false,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answerer": {
+        "id": 161,
+        "username": "vsoch",
+        "name": "Vanessasaurus",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+    },
+    "can_vote": false,
+    "vote_count": null,
+    "user_voted": false,
+    "details": {
+        "notification_level": 2,
+        "notifications_reason_id": 4,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 3,
+                "username": "jma",
+                "name": "Julie Ma",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 144,
+                "username": "hjmangalam",
+                "name": "Harry",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 161,
+                "username": "vsoch",
+                "name": "Vanessasaurus",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 276,
+                "username": "Phillip_Benoit",
+                "name": "Phillip Benoit",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/phillip_benoit/{size}/234_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 3,
+            "username": "jma",
+            "name": "Julie Ma",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png"
+        },
+        "last_poster": {
+            "id": 161,
+            "username": "vsoch",
+            "name": "Vanessasaurus",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+        },
+        "links": [
+            {
+                "url": "https://askubuntu.com/questions/387594/how-to-measure-gpu-usage",
+                "title": "software recommendation - How to measure GPU usage? - Ask Ubuntu",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 7,
+                "user_id": 276,
+                "domain": "askubuntu.com",
+                "root_domain": "askubuntu.com"
+            }
+        ]
+    }
+}

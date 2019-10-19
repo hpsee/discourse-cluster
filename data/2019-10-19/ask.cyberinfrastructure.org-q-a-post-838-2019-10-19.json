@@ -1,0 +1,1137 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 1583,
+                "name": "Torey Battelle",
+                "username": "toreliza",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png",
+                "created_at": "2019-04-08T16:38:01.379Z",
+                "cooked": "<p>I\u2019m applying for an NSF grant, which I haven\u2019t done in some time.  I\u2019m aware that data management plans are now required by most funding agencies, and have found the relevant section of the PAPPG (PAPPG Chapter II.C.2.j) that outlines DMP policy and expected content.  The program under which my work falls has additional requirements, stating in summary:</p>\n<p>\u2018[The data] must be deposited in a national, public data repository that publishes its contents to a higher-level data aggregator that facilitates data discovery, which should be registered with an international body that promotes best practices in data archiving and curation.\u2019  The description suggests <a href=\"http://www.re3data.org\" rel=\"nofollow noopener\">www.re3data.org</a> as the international body, and also offers some specific repositories.  It also gives <a href=\"http://www.dataone.org\" rel=\"nofollow noopener\">www.dataone.org</a> as an aggregator.</p>\n<p>While all of these inclusions are helpful, it\u2019s not clear if any of them provide all mandated services and meet all mandated requirements.  Does anyone have experience in a similar context?  Does anyone know of a repository that meets all of the described demands?</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:37.685Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 29,
+                "reads": 15,
+                "readers_count": 14,
+                "score": 148.0,
+                "yours": false,
+                "topic_id": 838,
+                "topic_slug": "navigating-the-nsf-doe-data-management-grant-requirements",
+                "display_username": "Torey Battelle",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://www.re3data.org",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 6
+                    },
+                    {
+                        "url": "http://www.dataone.org",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 2
+                    }
+                ],
+                "read": false,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 28,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-30T14:31:41.098Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 28,
+                    "username": "toreliza",
+                    "created_at": "2018-03-30T14:31:41.098Z",
+                    "updated_at": "2019-09-17T14:51:28.625Z",
+                    "name": "Torey Battelle",
+                    "seen_notification_id": 4105,
+                    "last_posted_at": "2019-09-17T14:51:28.578Z",
+                    "password_hash": "aa4aac0b502b622aae5f0a4b4f0038f59bb491e6b40ca4e2262b4f16e5cb01cf",
+                    "salt": "b3d9604268e81cab9856d131b9c29c49",
+                    "active": true,
+                    "username_lower": "toreliza",
+                    "last_seen_at": "2019-10-18T16:59:33.218Z",
+                    "admin": true,
+                    "last_emailed_at": "2019-10-05T20:52:18.527Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-14T16:56:42.409Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": true,
+                    "title": "",
+                    "uploaded_avatar_id": 157,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-30T14:31:57.749Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-04-08T17:42:23.377Z",
+                "answer_count": 3,
+                "last_answer_post_number": 4,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 1587,
+                "name": "Sherry H Lake",
+                "username": "shlake",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/s/87869e/{size}.png",
+                "created_at": "2019-04-08T17:36:05.695Z",
+                "cooked": "<p>I\u2019ve found the requirements you mentioned in this solicitation: <a href=\"https://www.nsf.gov/pubs/2019/nsf19528/nsf19528.htm\" rel=\"nofollow noopener\">https://www.nsf.gov/pubs/2019/nsf19528/nsf19528.htm</a></p>\n<p>The repositories specifically mentioned in this solicitation may or may not take your specific data, as each one (i.e., ICPSR &amp; Arctic Data Center) only collects certain types of research data.</p>\n<p>One repository that fits the requirements is Dataverse (hosted at Harvard - free to use by anyone - general public, all purpose repository). Dataverse gives all public datasets a DOI. The metadata for each dataset is sent to DataCite - \u201ca high-level aggregator that facilitates discovery\u201d.</p>\n<p>It is registered with <a href=\"http://re3data.org\" rel=\"nofollow noopener\">re3data.org</a>: <a href=\"https://www.re3data.org/repository/r3d100010051\" rel=\"nofollow noopener\">https://www.re3data.org/repository/r3d100010051</a></p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:37.715Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 14,
+                "readers_count": 13,
+                "score": 7.8,
+                "yours": false,
+                "topic_id": 838,
+                "topic_slug": "navigating-the-nsf-doe-data-management-grant-requirements",
+                "display_username": "Sherry H Lake",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://www.nsf.gov/pubs/2019/nsf19528/nsf19528.htm",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "CNH2: Dynamics of Integrated Socio-Environmental Systems \r (CNH2)\r \r (nsf19528) | NSF \u00e2\u0080\u0093 National Science Foundation",
+                        "clicks": 4
+                    },
+                    {
+                        "url": "https://www.re3data.org/repository/r3d100010051",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Harvard Dataverse | re3data.org",
+                        "clicks": 1
+                    },
+                    {
+                        "url": "http://re3data.org",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 0
+                    }
+                ],
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 1,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 225,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "new_user",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-04-08T17:26:15.103Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 1,
+                "qa_voted": [
+                    43
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 28,
+                    "username": "toreliza",
+                    "created_at": "2018-03-30T14:31:41.098Z",
+                    "updated_at": "2019-09-17T14:51:28.625Z",
+                    "name": "Torey Battelle",
+                    "seen_notification_id": 4105,
+                    "last_posted_at": "2019-09-17T14:51:28.578Z",
+                    "password_hash": "aa4aac0b502b622aae5f0a4b4f0038f59bb491e6b40ca4e2262b4f16e5cb01cf",
+                    "salt": "b3d9604268e81cab9856d131b9c29c49",
+                    "active": true,
+                    "username_lower": "toreliza",
+                    "last_seen_at": "2019-10-18T16:59:33.218Z",
+                    "admin": true,
+                    "last_emailed_at": "2019-10-05T20:52:18.527Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-14T16:56:42.409Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": true,
+                    "title": "",
+                    "uploaded_avatar_id": 157,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-30T14:31:57.749Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-04-08T17:42:23.377Z",
+                "answer_count": 3,
+                "last_answer_post_number": 4,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1585,
+                "name": "Tom Morrell",
+                "username": "tmorrell",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/tmorrell/{size}/176_2.png",
+                "created_at": "2019-04-08T17:10:24.622Z",
+                "cooked": "<p>This is really interesting and the first time I\u2019ve seen this specific requirement.  Could you share the program?  An appropriate repository will be dependent on the specific field and type of data you\u2019re collecting.</p>\n<p>I\u2019d argue that any repository that is listed in <a href=\"http://re3data.org\" rel=\"nofollow noopener\">re3data.org</a> and mints DataCite DOIs (this sub-search <a href=\"https://www.re3data.org/search?query=&amp;pidSystems%5B%5D=DOI\" rel=\"nofollow noopener\">https://www.re3data.org/search?query=&amp;pidSystems[]=DOI</a> ) or is a member of DataOne would qualify.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:37.745Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 13,
+                "readers_count": 12,
+                "score": 7.6,
+                "yours": false,
+                "topic_id": 838,
+                "topic_slug": "navigating-the-nsf-doe-data-management-grant-requirements",
+                "display_username": "Tom Morrell",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://re3data.org",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 0
+                    },
+                    {
+                        "url": "https://www.re3data.org/search?query=&pidSystems%5B%5D=DOI",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Search | re3data.org",
+                        "clicks": 0
+                    }
+                ],
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 224,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "new_user",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-04-08T16:58:01.063Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 28,
+                    "username": "toreliza",
+                    "created_at": "2018-03-30T14:31:41.098Z",
+                    "updated_at": "2019-09-17T14:51:28.625Z",
+                    "name": "Torey Battelle",
+                    "seen_notification_id": 4105,
+                    "last_posted_at": "2019-09-17T14:51:28.578Z",
+                    "password_hash": "aa4aac0b502b622aae5f0a4b4f0038f59bb491e6b40ca4e2262b4f16e5cb01cf",
+                    "salt": "b3d9604268e81cab9856d131b9c29c49",
+                    "active": true,
+                    "username_lower": "toreliza",
+                    "last_seen_at": "2019-10-18T16:59:33.218Z",
+                    "admin": true,
+                    "last_emailed_at": "2019-10-05T20:52:18.527Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-14T16:56:42.409Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": true,
+                    "title": "",
+                    "uploaded_avatar_id": 157,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-30T14:31:57.749Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-04-08T17:42:23.377Z",
+                "answer_count": 3,
+                "last_answer_post_number": 4,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1588,
+                "name": "Torey Battelle",
+                "username": "toreliza",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png",
+                "created_at": "2019-04-08T17:42:23.377Z",
+                "cooked": "<p>It\u2019s a CNH2 grant: FOA 19528.<br>\nThank you for your replies!</p>",
+                "post_number": 4,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:37.777Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 12,
+                "readers_count": 11,
+                "score": 7.4,
+                "yours": false,
+                "topic_id": 838,
+                "topic_slug": "navigating-the-nsf-doe-data-management-grant-requirements",
+                "display_username": "Torey Battelle",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 28,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-30T14:31:41.098Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 28,
+                    "username": "toreliza",
+                    "created_at": "2018-03-30T14:31:41.098Z",
+                    "updated_at": "2019-09-17T14:51:28.625Z",
+                    "name": "Torey Battelle",
+                    "seen_notification_id": 4105,
+                    "last_posted_at": "2019-09-17T14:51:28.578Z",
+                    "password_hash": "aa4aac0b502b622aae5f0a4b4f0038f59bb491e6b40ca4e2262b4f16e5cb01cf",
+                    "salt": "b3d9604268e81cab9856d131b9c29c49",
+                    "active": true,
+                    "username_lower": "toreliza",
+                    "last_seen_at": "2019-10-18T16:59:33.218Z",
+                    "admin": true,
+                    "last_emailed_at": "2019-10-05T20:52:18.527Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-14T16:56:42.409Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": true,
+                    "title": "",
+                    "uploaded_avatar_id": 157,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-30T14:31:57.749Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-04-08T17:42:23.377Z",
+                "answer_count": 3,
+                "last_answer_post_number": 4,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            1583,
+            1587,
+            1585,
+            1588
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            193
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 644,
+            "title": "How do I run paraview or openfoam on an HPC resource?",
+            "fancy_title": "How do I run paraview or openfoam on an HPC resource?",
+            "slug": "how-do-i-run-paraview-or-openfoam-on-an-hpc-resource",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2018-11-23T15:39:08.442Z",
+            "last_posted_at": "2018-11-23T15:43:28.595Z",
+            "bumped": true,
+            "bumped_at": "2018-11-27T16:25:28.237Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-software",
+                "open-source",
+                "paraview"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 789,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest single",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 809,
+            "title": "Pre-empting job termination by the scheduler",
+            "fancy_title": "Pre-empting job termination by the scheduler",
+            "slug": "pre-empting-job-termination-by-the-scheduler",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-03-08T16:47:49.624Z",
+            "last_posted_at": "2019-03-08T18:08:32.961Z",
+            "bumped": true,
+            "bumped_at": "2019-03-08T18:08:32.961Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "slurm",
+                "qow",
+                "scheduler"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 175,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 3,
+                        "username": "jma",
+                        "name": "Julie Ma",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 202,
+                        "username": "griznog",
+                        "name": "John Hanks",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/griznog/{size}/163_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 991,
+            "title": "Running Different GRUB2 Configuration for Multiple Diskless Clients?",
+            "fancy_title": "Running Different GRUB2 Configuration for Multiple Diskless Clients?",
+            "slug": "running-different-grub2-configuration-for-multiple-diskless-clients",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-07-11T13:16:34.502Z",
+            "last_posted_at": "2019-07-11T14:16:10.588Z",
+            "bumped": true,
+            "bumped_at": "2019-07-11T14:16:10.588Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 92,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 299,
+                        "username": "hakasapl",
+                        "name": "",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/h/8c91f0/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 202,
+                        "username": "griznog",
+                        "name": "John Hanks",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/griznog/{size}/163_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "research-grants",
+        "data-management",
+        "qow"
+    ],
+    "id": 838,
+    "title": "Navigating the NSF/DOE data management grant requirements!",
+    "fancy_title": "Navigating the NSF/DOE data management grant requirements!",
+    "posts_count": 4,
+    "created_at": "2019-04-08T16:38:01.294Z",
+    "views": 270,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2019-04-08T17:42:23.377Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "navigating-the-nsf-doe-data-management-grant-requirements",
+    "category_id": 26,
+    "word_count": 367,
+    "deleted_at": null,
+    "user_id": 28,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_838",
+    "draft_sequence": 0,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 4,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": null,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 3,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2019-04-08T17:42:23.377Z",
+    "last_commented_on": null,
+    "answer_count": 3,
+    "comment_count": 0,
+    "last_answer_post_number": 4,
+    "last_answerer": {
+        "id": 28,
+        "username": "toreliza",
+        "name": "Torey Battelle",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+    },
+    "can_vote": true,
+    "vote_count": 0,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 28,
+                "username": "toreliza",
+                "name": "Torey Battelle",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 224,
+                "username": "tmorrell",
+                "name": "Tom Morrell",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/tmorrell/{size}/176_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 225,
+                "username": "shlake",
+                "name": "Sherry H Lake",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/s/87869e/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 28,
+            "username": "toreliza",
+            "name": "Torey Battelle",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+        },
+        "last_poster": {
+            "id": 28,
+            "username": "toreliza",
+            "name": "Torey Battelle",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+        },
+        "links": [
+            {
+                "url": "http://www.re3data.org",
+                "title": null,
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 6,
+                "user_id": 28,
+                "domain": "www.re3data.org",
+                "root_domain": "re3data.org"
+            },
+            {
+                "url": "https://www.nsf.gov/pubs/2019/nsf19528/nsf19528.htm",
+                "title": "CNH2: Dynamics of Integrated Socio-Environmental Systems \r (CNH2)\r \r (nsf19528) | NSF \u00e2\u0080\u0093 National Science Foundation",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 4,
+                "user_id": 225,
+                "domain": "www.nsf.gov",
+                "root_domain": "nsf.gov"
+            },
+            {
+                "url": "http://www.dataone.org",
+                "title": null,
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 2,
+                "user_id": 28,
+                "domain": "www.dataone.org",
+                "root_domain": "dataone.org"
+            },
+            {
+                "url": "https://www.re3data.org/repository/r3d100010051",
+                "title": "Harvard Dataverse | re3data.org",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 225,
+                "domain": "www.re3data.org",
+                "root_domain": "re3data.org"
+            }
+        ]
+    }
+}

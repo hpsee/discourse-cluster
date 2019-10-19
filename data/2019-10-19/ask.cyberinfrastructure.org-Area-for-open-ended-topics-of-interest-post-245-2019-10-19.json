@@ -1,0 +1,683 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 435,
+                "name": "Zoe Braiterman",
+                "username": "zoe.braiterman",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/z/977dab/{size}.png",
+                "created_at": "2018-06-22T01:37:28.219Z",
+                "cooked": "<p>I\u2019m trying to conduct anomaly detection of certain features, based on 4,000 JPEG images of human cells.  What image-processing tools will be most efficient on my large data-sets?</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-05-31T20:51:14.216Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 4,
+                "reads": 15,
+                "readers_count": 14,
+                "score": 23.0,
+                "yours": false,
+                "topic_id": 245,
+                "topic_slug": "what-packages-are-most-efficient-for-image-classification",
+                "display_username": "Zoe Braiterman",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 13,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 62,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-06-19T15:07:31.275Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 782,
+                "name": "Kristina Plazonic",
+                "username": "KrisP",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/k/e95f7d/{size}.png",
+                "created_at": "2018-08-01T14:30:27.984Z",
+                "cooked": "<p>I\u2019m also investigating this for use in our cluster and here is what I found (keep in mind that I\u2019m not sure how it works on XSEDE):</p>\n<ul>\n<li>imageMagick is a general purpose program that can be used for a lot of image manipulation tasks. I wrote an example batch slurm script here for cropping to illustrate submitting an array job: <a href=\"https://github.com/rutgers-oarc/training/tree/master/slurm_examples/image_cropping\">https://github.com/rutgers-oarc/training/tree/master/slurm_examples/image_cropping</a>\n</li>\n<li>scikit-image is a python library that lets you do some image manipulation. Again, you would write a script that takes a single image as an input (or a small list of images) and then farm it out as an array job. There may be some throttling on XSEDE insuring that you don\u2019t flood the system with your jobs, so will only let you submit some number of tasks at once. Here are some options <a href=\"https://slurm.schedmd.com/job_array.html\">https://slurm.schedmd.com/job_array.html</a> and specifically <code>A maximum number of simultaneously running tasks from the job array may be specified using a \"%\" separator. For example \"--array=0-15%4\" will limit the number of simultaneously running tasks from this job array to 4.</code>\n</li>\n<li>openCV is another set of tools, very general and powerful, and installable as a python package</li>\n</ul>\n<p>Note: to install a python package only for the user in a shared cluster you would do <code>pip install --user mypythonpackage</code>.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2018-08-01T14:30:28.031Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 0,
+                "reads": 8,
+                "readers_count": 7,
+                "score": 1.6,
+                "yours": false,
+                "topic_id": 245,
+                "topic_slug": "what-packages-are-most-efficient-for-image-classification",
+                "display_username": "Kristina Plazonic",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://github.com/rutgers-oarc/training/tree/master/slurm_examples/image_cropping",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "training/slurm_examples/image_cropping at master \u00b7 rutgers-oarc/training \u00b7 GitHub",
+                        "clicks": 0
+                    },
+                    {
+                        "url": "https://slurm.schedmd.com/job_array.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Slurm Workload Manager",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 50,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-08T19:58:42.924Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            435,
+            782
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            484
+        ],
+        [
+            2,
+            444
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 676,
+            "title": "HPC access models: many nodes for short periods of time",
+            "fancy_title": "HPC access models: many nodes for short periods of time",
+            "slug": "hpc-access-models-many-nodes-for-short-periods-of-time",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2018-12-04T19:34:17.793Z",
+            "last_posted_at": "2019-01-15T19:03:49.434Z",
+            "bumped": true,
+            "bumped_at": "2019-01-15T19:03:49.434Z",
+            "unseen": false,
+            "last_read_post_number": 1,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "administering-hpc"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 180,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 195,
+                        "username": "jnugent",
+                        "name": "Janna Nugent",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ee59a6/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 40,
+                        "username": "payerle",
+                        "name": "Tom Payerle",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/p/90ced4/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 953,
+            "title": "Getting started with RoCE?",
+            "fancy_title": "Getting started with RoCE?",
+            "slug": "getting-started-with-roce",
+            "posts_count": 1,
+            "reply_count": 0,
+            "highest_post_number": 1,
+            "image_url": null,
+            "created_at": "2019-06-14T18:40:34.390Z",
+            "last_posted_at": "2019-06-14T18:40:34.451Z",
+            "bumped": true,
+            "bumped_at": "2019-09-06T15:35:16.304Z",
+            "unseen": false,
+            "last_read_post_number": 1,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "mpi",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 159,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest single",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 199,
+                        "username": "akkornel",
+                        "name": "Karl Kornel",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/akkornel/{size}/161_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 932,
+            "title": "Monitoring GPU usage",
+            "fancy_title": "Monitoring GPU usage",
+            "slug": "monitoring-gpu-usage",
+            "posts_count": 4,
+            "reply_count": 0,
+            "highest_post_number": 4,
+            "image_url": null,
+            "created_at": "2019-06-07T15:46:22.950Z",
+            "last_posted_at": "2019-07-27T23:50:05.080Z",
+            "bumped": true,
+            "bumped_at": "2019-07-27T23:50:05.080Z",
+            "unseen": false,
+            "last_read_post_number": 4,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "tensorflow",
+                "gpu",
+                "qow",
+                "pytorch"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 358,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 3,
+                        "username": "jma",
+                        "name": "Julie Ma",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 276,
+                        "username": "Phillip_Benoit",
+                        "name": "Phillip Benoit",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/phillip_benoit/{size}/234_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 144,
+                        "username": "hjmangalam",
+                        "name": "Harry",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "deep-learning",
+        "image-processing"
+    ],
+    "id": 245,
+    "title": "What packages are most efficient for image classification?",
+    "fancy_title": "What packages are most efficient for image classification?",
+    "posts_count": 2,
+    "created_at": "2018-06-22T01:37:28.137Z",
+    "views": 63,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2018-08-01T14:30:27.984Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "what-packages-are-most-efficient-for-image-classification",
+    "category_id": 23,
+    "word_count": 262,
+    "deleted_at": null,
+    "user_id": 62,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_245",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 2,
+    "last_read_post_number": 2,
+    "last_read_post_id": 782,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 2,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": false,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answerer": {
+        "id": 50,
+        "username": "KrisP",
+        "name": "Kristina Plazonic",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/k/e95f7d/{size}.png"
+    },
+    "can_vote": false,
+    "vote_count": null,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 50,
+                "username": "KrisP",
+                "name": "Kristina Plazonic",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/k/e95f7d/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 62,
+                "username": "zoe.braiterman",
+                "name": "Zoe Braiterman",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/z/977dab/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 62,
+            "username": "zoe.braiterman",
+            "name": "Zoe Braiterman",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/z/977dab/{size}.png"
+        },
+        "last_poster": {
+            "id": 50,
+            "username": "KrisP",
+            "name": "Kristina Plazonic",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/k/e95f7d/{size}.png"
+        }
+    }
+}

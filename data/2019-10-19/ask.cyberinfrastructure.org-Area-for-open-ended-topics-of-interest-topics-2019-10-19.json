@@ -22,7 +22,7 @@
         "bookmarked": null,
         "liked": null,
         "tags": [],
-        "views": 104,
+        "views": 105,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -73,7 +73,7 @@
             "vm",
             "windows"
         ],
-        "views": 54,
+        "views": 55,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -124,7 +124,7 @@
             "cloud",
             "qow"
         ],
-        "views": 336,
+        "views": 337,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -173,7 +173,7 @@
         "tags": [
             "optimization"
         ],
-        "views": 75,
+        "views": 76,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -235,7 +235,7 @@
             "support",
             "help"
         ],
-        "views": 146,
+        "views": 147,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -307,7 +307,7 @@
             "physiology",
             "bioinformatics"
         ],
-        "views": 70,
+        "views": 71,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -381,7 +381,7 @@
             "qow",
             "hpc-tools"
         ],
-        "views": 281,
+        "views": 282,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -455,7 +455,7 @@
             "research-computing",
             "networking"
         ],
-        "views": 152,
+        "views": 153,
         "like_count": 1,
         "has_summary": false,
         "archetype": "regular",
@@ -522,7 +522,7 @@
         "tags": [
             "cyberinfrastructure"
         ],
-        "views": 48,
+        "views": 49,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -577,7 +577,7 @@
         "tags": [
             "qow"
         ],
-        "views": 47,
+        "views": 48,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -633,7 +633,7 @@
             "mpi",
             "qow"
         ],
-        "views": 158,
+        "views": 159,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -682,7 +682,7 @@
         "tags": [
             "hpc-cluster-architecture"
         ],
-        "views": 405,
+        "views": 406,
         "like_count": 2,
         "has_summary": false,
         "archetype": "regular",
@@ -757,7 +757,7 @@
             "vnc",
             "qow"
         ],
-        "views": 270,
+        "views": 271,
         "like_count": 1,
         "has_summary": false,
         "archetype": "regular",
@@ -834,7 +834,7 @@
             "cluster-management",
             "prometheus"
         ],
-        "views": 319,
+        "views": 320,
         "like_count": 1,
         "has_summary": false,
         "archetype": "regular",
@@ -899,7 +899,7 @@
         "bookmarked": false,
         "liked": false,
         "tags": [],
-        "views": 100,
+        "views": 101,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -952,7 +952,7 @@
         "bookmarked": false,
         "liked": false,
         "tags": [],
-        "views": 157,
+        "views": 158,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -1009,7 +1009,7 @@
             "data-compliance",
             "secure-data-architecture"
         ],
-        "views": 117,
+        "views": 118,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -1067,7 +1067,7 @@
             "qow",
             "pytorch"
         ],
-        "views": 357,
+        "views": 358,
         "like_count": 1,
         "has_summary": false,
         "archetype": "regular",
@@ -1135,7 +1135,7 @@
             "cloud",
             "storage"
         ],
-        "views": 143,
+        "views": 144,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -1194,7 +1194,7 @@
         "bookmarked": false,
         "liked": false,
         "tags": [],
-        "views": 258,
+        "views": 259,
         "like_count": 3,
         "has_summary": false,
         "archetype": "regular",
@@ -1251,7 +1251,7 @@
             "data-transfer",
             "globus"
         ],
-        "views": 176,
+        "views": 177,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -1313,7 +1313,7 @@
             "research-software",
             "administering-hpc"
         ],
-        "views": 530,
+        "views": 531,
         "like_count": 2,
         "has_summary": false,
         "archetype": "regular",
@@ -1388,7 +1388,7 @@
             "allocations",
             "xsede"
         ],
-        "views": 68,
+        "views": 69,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -1439,7 +1439,7 @@
             "scheduler",
             "parallelization"
         ],
-        "views": 122,
+        "views": 123,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -1490,7 +1490,7 @@
             "qow",
             "hadoop"
         ],
-        "views": 222,
+        "views": 223,
         "like_count": 1,
         "has_summary": false,
         "archetype": "regular",
@@ -1548,7 +1548,7 @@
             "security",
             "secure-data-architecture"
         ],
-        "views": 147,
+        "views": 148,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -1603,7 +1603,7 @@
         "tags": [
             "api"
         ],
-        "views": 221,
+        "views": 222,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -1660,7 +1660,7 @@
             "cluster",
             "qow"
         ],
-        "views": 371,
+        "views": 372,
         "like_count": 5,
         "has_summary": false,
         "archetype": "regular",
@@ -1728,7 +1728,7 @@
             "speculation",
             "food-for-thought"
         ],
-        "views": 217,
+        "views": 218,
         "like_count": 4,
         "has_summary": false,
         "archetype": "regular",
@@ -1790,7 +1790,7 @@
             "containers",
             "singularity"
         ],
-        "views": 456,
+        "views": 457,
         "like_count": 4,
         "has_summary": false,
         "archetype": "regular",
@@ -1866,7 +1866,7 @@
             "open-source",
             "comparison"
         ],
-        "views": 850,
+        "views": 851,
         "like_count": 2,
         "has_summary": false,
         "archetype": "regular",
@@ -1927,7 +1927,7 @@
         "tags": [
             "administering-hpc"
         ],
-        "views": 179,
+        "views": 180,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -1982,7 +1982,7 @@
         "tags": [
             "job-array"
         ],
-        "views": 197,
+        "views": 198,
         "like_count": 3,
         "has_summary": false,
         "archetype": "regular",
@@ -2044,7 +2044,7 @@
             "training",
             "getting-started"
         ],
-        "views": 353,
+        "views": 354,
         "like_count": 1,
         "has_summary": false,
         "archetype": "regular",
@@ -2119,7 +2119,7 @@
             "publication",
             "provenance"
         ],
-        "views": 194,
+        "views": 195,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -2175,7 +2175,7 @@
             "hpc-getting-started",
             "parallelization"
         ],
-        "views": 213,
+        "views": 214,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -2240,7 +2240,7 @@
             "cloud",
             "scheduler"
         ],
-        "views": 329,
+        "views": 330,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -2313,7 +2313,7 @@
         "tags": [
             "cost-analysis"
         ],
-        "views": 226,
+        "views": 227,
         "like_count": 1,
         "has_summary": false,
         "archetype": "regular",
@@ -2372,7 +2372,7 @@
             "neural-network",
             "qow"
         ],
-        "views": 708,
+        "views": 709,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -2425,7 +2425,7 @@
         "bookmarked": false,
         "liked": false,
         "tags": [],
-        "views": 222,
+        "views": 223,
         "like_count": 1,
         "has_summary": false,
         "archetype": "regular",
@@ -2486,7 +2486,7 @@
         "tags": [
             "jupyter"
         ],
-        "views": 252,
+        "views": 253,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -2548,7 +2548,7 @@
             "training",
             "getting-started"
         ],
-        "views": 222,
+        "views": 223,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -2604,7 +2604,7 @@
             "image-processing",
             "deep-learning"
         ],
-        "views": 62,
+        "views": 63,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -2661,7 +2661,7 @@
             "data-lifecycle",
             "getting-started"
         ],
-        "views": 137,
+        "views": 138,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -2719,7 +2719,7 @@
             "gce",
             "azure"
         ],
-        "views": 161,
+        "views": 162,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",
@@ -2771,7 +2771,7 @@
             "sge",
             "scheduler"
         ],
-        "views": 97,
+        "views": 98,
         "like_count": 0,
         "has_summary": false,
         "archetype": "regular",

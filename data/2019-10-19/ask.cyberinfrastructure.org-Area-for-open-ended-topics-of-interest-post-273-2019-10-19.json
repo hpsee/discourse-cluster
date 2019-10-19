@@ -1,0 +1,695 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 499,
+                "name": "Jacob Pessin",
+                "username": "jpessin1",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png",
+                "created_at": "2018-07-11T01:48:33.657Z",
+                "cooked": "<p>We occasionally get \u2018emergency\u2019 requests from users, asking for additional resources, or more often bumps in priority. How can we help, without being unfair to other users?</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2018-07-24T16:38:36.751Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 4,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 21.4,
+                "yours": false,
+                "topic_id": 273,
+                "topic_slug": "how-do-you-handle-emergency-resource-requests-with-the-sge-scheduler-while-still-maintaining-fair-access-to-all-users",
+                "display_username": "Jacob Pessin",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 4,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 51,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-09T15:19:23.696Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 500,
+                "name": "Jacob Pessin",
+                "username": "jpessin1",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png",
+                "created_at": "2018-07-11T01:50:08.103Z",
+                "cooked": "<p>There are two parts to this question: 1) how to manipulate the system to allow a user or group to run their jobs sooner and 2) how to do so <em>fairly</em> or <em>equitably</em>.</p>\n<p><strong>Manipulating things to favor a group or user</strong>:<br>\nDepending on your setup you can make (temporary) adjustments to the users\u2019 queuing priorities, accessible queues, possibly within projects if you\u2019re using them:</p>\n<p><a href=\"http://gridscheduler.sourceforge.net/htmlman/htmlman5/sge_priority.html\" class=\"onebox\" target=\"_blank\">http://gridscheduler.sourceforge.net/htmlman/htmlman5/sge_priority.html</a><br>\nwith <a href=\"http://gridscheduler.sourceforge.net/htmlman/htmlman1/qalter.html\">http://gridscheduler.sourceforge.net/htmlman/htmlman1/qalter.html</a> if the target job was already submitted.</p>\n<p>Or if you are using projects:<br>\n<a href=\"http://gridscheduler.sourceforge.net/htmlman/htmlman5/project.html\" class=\"onebox\" target=\"_blank\">http://gridscheduler.sourceforge.net/htmlman/htmlman5/project.html</a></p>\n<p>If you want to increase the concurrent job limits look at maxujobs \u2013 there are also many other options such as under weighting:</p>\n<p><a href=\"http://gridscheduler.sourceforge.net/htmlman/htmlman5/sched_conf.html\" class=\"onebox\" target=\"_blank\">http://gridscheduler.sourceforge.net/htmlman/htmlman5/sched_conf.html</a></p>\n<p>If XForwarding is enabled on your system, qmon wraps most of these in a GUI tool:</p>\n<p><a href=\"http://gridscheduler.sourceforge.net/htmlman/htmlman1/qmon.html\" class=\"onebox\" target=\"_blank\">gridscheduler.sourceforge.net/htmlman/htmlman1/qmon.html</a></p>\n<p><strong>Doing so \u201cequitably\u201d</strong>\u2026<br>\n\u2026is problematic.<br>\n<em>(Just my two cents, here)</em></p>\n<p>In most cases, within a given HPC system, either there is enough spare capacity to handle the jobs, in which case it is a non-issue OR there isn\u2019t, in which case any added/new resources the emergency request receives are essentially removed from other users.</p>\n<p>While this may be appropriate in a given case, if the normal settings are equitable, then I would doubt most would consider it fair to add a bias in someone\u2019s favor.</p>\n<p>The only exceptions are edge cases where there is both enough room for all, AND this job needs administrator level help to run (though this might also be a sign of a configuration/usecase mismatch).</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2018-07-17T08:20:08.538Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 6.4,
+                "yours": false,
+                "topic_id": 273,
+                "topic_slug": "how-do-you-handle-emergency-resource-requests-with-the-sge-scheduler-while-still-maintaining-fair-access-to-all-users",
+                "display_username": "Jacob Pessin",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://gridscheduler.sourceforge.net/htmlman/htmlman5/sched_conf.html",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 0
+                    },
+                    {
+                        "url": "http://gridscheduler.sourceforge.net/htmlman/htmlman1/qalter.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "qalter man page - Sun Grid Engine",
+                        "clicks": 0
+                    },
+                    {
+                        "url": "http://gridscheduler.sourceforge.net/htmlman/htmlman5/project.html",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 0
+                    },
+                    {
+                        "url": "http://gridscheduler.sourceforge.net/htmlman/htmlman5/sge_priority.html",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 0
+                    },
+                    {
+                        "url": "http://gridscheduler.sourceforge.net/htmlman/htmlman1/qmon.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "qmon man page - Sun Grid Engine",
+                        "clicks": 0
+                    }
+                ],
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 51,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-09T15:19:23.696Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            499,
+            500
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            465
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 797,
+            "title": "How is storage performance for high I/O HPC jobs affected by running in the cloud?",
+            "fancy_title": "How is storage performance for high I/O HPC jobs affected by running in the cloud?",
+            "slug": "how-is-storage-performance-for-high-i-o-hpc-jobs-affected-by-running-in-the-cloud",
+            "posts_count": 1,
+            "reply_count": 0,
+            "highest_post_number": 1,
+            "image_url": null,
+            "created_at": "2019-02-18T19:19:52.835Z",
+            "last_posted_at": "2019-02-18T19:19:52.907Z",
+            "bumped": true,
+            "bumped_at": "2019-10-14T16:35:51.731Z",
+            "unseen": false,
+            "last_read_post_number": 1,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "network",
+                "cloud",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 337,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest single",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 961,
+            "title": "Automated HPC testing tools and techniques?",
+            "fancy_title": "Automated HPC testing tools and techniques?",
+            "slug": "automated-hpc-testing-tools-and-techniques",
+            "posts_count": 9,
+            "reply_count": 4,
+            "highest_post_number": 9,
+            "image_url": null,
+            "created_at": "2019-06-20T14:46:32.797Z",
+            "last_posted_at": "2019-08-06T20:44:48.240Z",
+            "bumped": true,
+            "bumped_at": "2019-08-06T20:44:48.240Z",
+            "unseen": false,
+            "last_read_post_number": 9,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": true,
+            "tags": [
+                "monitoring",
+                "administering-hpc",
+                "qow",
+                "cluster-management",
+                "prometheus"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 320,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 196,
+                        "username": "mrich",
+                        "name": "Matthew Rich",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mrich/{size}/242_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 202,
+                        "username": "griznog",
+                        "name": "John Hanks",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/griznog/{size}/163_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 821,
+            "title": "What are the biggest misconceptions about HPC?",
+            "fancy_title": "What are the biggest misconceptions about HPC?",
+            "slug": "what-are-the-biggest-misconceptions-about-hpc",
+            "posts_count": 3,
+            "reply_count": 1,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2019-03-23T23:00:46.157Z",
+            "last_posted_at": "2019-04-15T15:08:30.157Z",
+            "bumped": true,
+            "bumped_at": "2019-04-15T15:08:30.157Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": true,
+            "tags": [
+                "speculation",
+                "food-for-thought"
+            ],
+            "archetype": "regular",
+            "like_count": 4,
+            "views": 218,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 80,
+                        "username": "rberger",
+                        "name": "Richard Berger",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/rberger/{size}/56_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 134,
+                        "username": "benfulton",
+                        "name": "Ben Fulton",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/benfulton/{size}/102_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "sge",
+        "scheduler"
+    ],
+    "id": 273,
+    "title": "How do you handle emergency resource requests with the SGE scheduler, while still maintaining fair access to all users?",
+    "fancy_title": "How do you handle emergency resource requests with the SGE scheduler, while still maintaining fair access to all users?",
+    "posts_count": 2,
+    "created_at": "2018-07-11T01:48:33.575Z",
+    "views": 98,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2018-07-11T01:50:08.103Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "how-do-you-handle-emergency-resource-requests-with-the-sge-scheduler-while-still-maintaining-fair-access-to-all-users",
+    "category_id": 23,
+    "word_count": 309,
+    "deleted_at": null,
+    "user_id": 51,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_273",
+    "draft_sequence": 0,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 2,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": null,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 3,
+    "participant_count": 1,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": false,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answerer": {
+        "id": 51,
+        "username": "jpessin1",
+        "name": "Jacob Pessin",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png"
+    },
+    "can_vote": false,
+    "vote_count": 1,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 51,
+                "username": "jpessin1",
+                "name": "Jacob Pessin",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 51,
+            "username": "jpessin1",
+            "name": "Jacob Pessin",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png"
+        },
+        "last_poster": {
+            "id": 51,
+            "username": "jpessin1",
+            "name": "Jacob Pessin",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png"
+        }
+    }
+}

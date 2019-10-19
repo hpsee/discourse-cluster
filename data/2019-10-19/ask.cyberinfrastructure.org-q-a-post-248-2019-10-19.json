@@ -1,0 +1,933 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 446,
+                "name": "Katia Oleinik",
+                "username": "katia",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png",
+                "created_at": "2018-06-25T13:15:03.661Z",
+                "cooked": "<p>My R code fails within a 3rd party package. I would like to debug it to understand what exactly causes the code to fail (and possibly change my input parameters). Is there a way to do it?</p>\n<p>The package I have a problem with is <a href=\"https://cran.r-project.org/web/packages/mgcv/index.html\" rel=\"nofollow noopener\">mgcv</a> (function <code>gam()</code>).<br>\nIt runs fine for some formulas I have and fails or takes forever with others.<br>\nI wonder if I can debug the code within the package to see where the code fails.</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-09-30T23:19:51.399Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 3,
+                "reads": 14,
+                "readers_count": 13,
+                "score": 12.8,
+                "yours": false,
+                "topic_id": 248,
+                "topic_slug": "how-to-debug-r-code-within-a-package",
+                "display_username": "Katia Oleinik",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 11,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://cran.r-project.org/web/packages/mgcv/index.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "CRAN - Package mgcv",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 21,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-19T13:06:39.673Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 239,
+                    "username": "cbrown",
+                    "created_at": "2019-04-30T14:13:36.276Z",
+                    "updated_at": "2019-09-30T22:18:34.902Z",
+                    "name": "Carrie Brown",
+                    "seen_notification_id": 4081,
+                    "last_posted_at": "2019-09-30T22:18:34.809Z",
+                    "password_hash": "d0f6030ac294c9f084d38dd4a4b10b6ba3cdf30c8130e41bb1890f28bb4961d4",
+                    "salt": "1eb70f2bbc5386fb212f1f971fab65c1",
+                    "active": true,
+                    "username_lower": "cbrown",
+                    "last_seen_at": "2019-10-04T16:11:45.526Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:31.366Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-02T18:43:11.729Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2170402854,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2170356763,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-04-30T14:14:02.010Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-09-30T22:18:34.809Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 2065,
+                "name": "Carrie Brown",
+                "username": "cbrown",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/c/b9bd4f/{size}.png",
+                "created_at": "2019-09-30T22:18:34.809Z",
+                "cooked": "<p>I know this is an old issue, but you can see the source code for R functions by typing the name of the function without the parenthesis. (so for <code>gam()</code>, you would just type <code>gam</code>)</p>\n<p>You can then copy that code into your own script (I usually name it something similar like <code>gam2</code> and debug/alter it as needed. It\u2019s probably not the most elegant solution, but it has worked for me in the past.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-09-30T23:19:51.418Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 6,
+                "readers_count": 5,
+                "score": 56.0,
+                "yours": false,
+                "topic_id": 248,
+                "topic_slug": "how-to-debug-r-code-within-a-package",
+                "display_username": "Carrie Brown",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 239,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-04-30T14:13:36.276Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 239,
+                    "username": "cbrown",
+                    "created_at": "2019-04-30T14:13:36.276Z",
+                    "updated_at": "2019-09-30T22:18:34.902Z",
+                    "name": "Carrie Brown",
+                    "seen_notification_id": 4081,
+                    "last_posted_at": "2019-09-30T22:18:34.809Z",
+                    "password_hash": "d0f6030ac294c9f084d38dd4a4b10b6ba3cdf30c8130e41bb1890f28bb4961d4",
+                    "salt": "1eb70f2bbc5386fb212f1f971fab65c1",
+                    "active": true,
+                    "username_lower": "cbrown",
+                    "last_seen_at": "2019-10-04T16:11:45.526Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:31.366Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-02T18:43:11.729Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2170402854,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2170356763,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-04-30T14:14:02.010Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-09-30T22:18:34.809Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2066,
+                "name": "Katia Oleinik",
+                "username": "katia",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png",
+                "created_at": "2019-09-30T23:19:51.365Z",
+                "cooked": "<p>Yes, This is exactly the solution I found that worked for me!.Thank you.</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-09-30T23:19:51.436Z",
+                "reply_count": 0,
+                "reply_to_post_number": 2,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 6,
+                "readers_count": 5,
+                "score": 6.0,
+                "yours": false,
+                "topic_id": 248,
+                "topic_slug": "how-to-debug-r-code-within-a-package",
+                "display_username": "Katia Oleinik",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "cbrown",
+                    "avatar_template": "/letter_avatar_proxy/v4/letter/c/b9bd4f/{size}.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 21,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "returning_user",
+                "notice_args": "2019-05-24T15:44:43Z",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-19T13:06:39.673Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 239,
+                    "username": "cbrown",
+                    "created_at": "2019-04-30T14:13:36.276Z",
+                    "updated_at": "2019-09-30T22:18:34.902Z",
+                    "name": "Carrie Brown",
+                    "seen_notification_id": 4081,
+                    "last_posted_at": "2019-09-30T22:18:34.809Z",
+                    "password_hash": "d0f6030ac294c9f084d38dd4a4b10b6ba3cdf30c8130e41bb1890f28bb4961d4",
+                    "salt": "1eb70f2bbc5386fb212f1f971fab65c1",
+                    "active": true,
+                    "username_lower": "cbrown",
+                    "last_seen_at": "2019-10-04T16:11:45.526Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:31.366Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-02T18:43:11.729Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2170402854,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2170356763,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-04-30T14:14:02.010Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-09-30T22:18:34.809Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            446,
+            2065,
+            2066
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            481
+        ],
+        [
+            2,
+            18
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 912,
+            "title": "How to attach to a running job to run top on compute node",
+            "fancy_title": "How to attach to a running job to run top on compute node",
+            "slug": "how-to-attach-to-a-running-job-to-run-top-on-compute-node",
+            "posts_count": 3,
+            "reply_count": 1,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2019-05-22T13:16:02.352Z",
+            "last_posted_at": "2019-05-23T12:33:52.339Z",
+            "bumped": true,
+            "bumped_at": "2019-05-23T12:33:52.339Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "slurm",
+                "scheduler"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 193,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 258,
+                        "username": "schnabelr",
+                        "name": "Robert Schnabel",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/59ef9b/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 89,
+                        "username": "tmiddelk",
+                        "name": "Timothy Middelkoop",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/t/8baadc/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 213,
+                        "username": "Mike_Renfro",
+                        "name": "Mike Renfro",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mike_renfro/{size}/169_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 809,
+            "title": "Pre-empting job termination by the scheduler",
+            "fancy_title": "Pre-empting job termination by the scheduler",
+            "slug": "pre-empting-job-termination-by-the-scheduler",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-03-08T16:47:49.624Z",
+            "last_posted_at": "2019-03-08T18:08:32.961Z",
+            "bumped": true,
+            "bumped_at": "2019-03-08T18:08:32.961Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "slurm",
+                "qow",
+                "scheduler"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 175,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 3,
+                        "username": "jma",
+                        "name": "Julie Ma",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 202,
+                        "username": "griznog",
+                        "name": "John Hanks",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/griznog/{size}/163_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 749,
+            "title": "Cannot determine start time for job",
+            "fancy_title": "Cannot determine start time for job",
+            "slug": "cannot-determine-start-time-for-job",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-01-14T20:38:56.843Z",
+            "last_posted_at": "2019-01-25T16:21:12.908Z",
+            "bumped": true,
+            "bumped_at": "2019-01-25T16:21:12.908Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "pbs",
+                "scheduler"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 176,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 134,
+                        "username": "benfulton",
+                        "name": "Ben Fulton",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/benfulton/{size}/102_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "r",
+        "debugging"
+    ],
+    "id": 248,
+    "title": "How to debug R code within a package",
+    "fancy_title": "How to debug R code within a package",
+    "posts_count": 3,
+    "created_at": "2018-06-25T13:15:03.558Z",
+    "views": 117,
+    "reply_count": 1,
+    "like_count": 1,
+    "last_posted_at": "2019-09-30T23:19:51.365Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "how-to-debug-r-code-within-a-package",
+    "category_id": 26,
+    "word_count": 180,
+    "deleted_at": null,
+    "user_id": 21,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_248",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 3,
+    "last_read_post_number": 1,
+    "last_read_post_id": 446,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 2,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2019-09-30T22:18:34.809Z",
+    "last_commented_on": null,
+    "answer_count": 1,
+    "comment_count": 0,
+    "last_answer_post_number": 2,
+    "last_answerer": {
+        "id": 239,
+        "username": "cbrown",
+        "name": "Carrie Brown",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/c/b9bd4f/{size}.png"
+    },
+    "can_vote": true,
+    "vote_count": 0,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 21,
+                "username": "katia",
+                "name": "Katia Oleinik",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 239,
+                "username": "cbrown",
+                "name": "Carrie Brown",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/c/b9bd4f/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 21,
+            "username": "katia",
+            "name": "Katia Oleinik",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png"
+        },
+        "last_poster": {
+            "id": 21,
+            "username": "katia",
+            "name": "Katia Oleinik",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png"
+        }
+    }
+}

@@ -1,0 +1,1206 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 1992,
+                "name": "Eric Walter",
+                "username": "ewalter",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ewalter/{size}/73_2.png",
+                "created_at": "2019-08-08T15:12:48.785Z",
+                "cooked": "<p>Just curious if anyone has any comments regarding a problem we are seeing on our now skylake cluster.  All MPI/compiler combinations including intel-2018, intel-2019, gcc-9.1.0 with openmpi/mvapich2 as well as intel-2018-mpi run fine on all 960 cores, however, intel-2019-mpi on more than ~300 cores fails.   We can switch the FI_PROVIDER from ofi_rxm to verbs, but then all codes slow down significantly (but no crash).</p>\n<p>I have posted a message on Mellanox\u2019s forum and was told I should contact Intel.  I have also tried to post on Intel\u2019s HPC forum and the libfabric forum, but these messages are stuck in moderation.</p>\n<h2>Anyway, if anyone has any pointers for this.  I am really interested in using intel-2019 mpi.</h2>\n<p>Hi, we are currently standing up a new cluster with Mellanox ConnectX-5 adapters. I have found that using openMPI, mvapich2, and intel2018-mpi, we can run MPI jobs on all 960 cores in the cluster, however, using intel2019-mpi we can\u2019t get beyond ~300 mpi ranks. If we do, we get the following error for every rank:</p>\n<h2>Abort(273768207) on node 650 (rank 650 in comm 0): Fatal error in PMPI_Comm_split: Other MPI error, error stack:<br>\nPMPI_Comm_split(507)\u2026: MPI_Comm_split(MPI_COMM_WORLD, color=0, key=650, new_comm=0x7911e8) failed<br>\nPMPI_Comm_split(489)\u2026:<br>\nMPIR_Comm_split_impl(167)\u2026:<br>\nMPIR_Allgather_intra_auto(145)\u2026: Failure during collective<br>\nMPIR_Allgather_intra_auto(141)\u2026:<br>\nMPIR_Allgather_intra_brucks(115)\u2026:<br>\nMPIC_Sendrecv(344)\u2026:<br>\nMPID_Isend(662)\u2026:<br>\nMPID_isend_unsafe(282)\u2026:<br>\nMPIDI_OFI_send_lightweight_request(106):<br>\n(unknown)(): Other MPI error</h2>\n<p>This is using the default FI_PROVIDER of ofi_rxm. If we switch to using \u201cverbs\u201d, we can run all 960 cores, but tests show an order of magnitude increase in latency and much longer run times.</p>\n<p>We have tried installing our own libfabrics (from the git repo ; also we verified with verbose debugging that we are using this libfabrics) and this behavoir does not change</p>\n<p>Is there anything I can change to allow all 960 cores using the default ofi_rxm provider?  Or, is there a way to improve performance using the verbs provider?</p>\n<p>For completeness:<br>\nUsing MLNX_OFED_LINUX-4.6-1.0.1.1-rhel7.6-x86_64 ofed<br>\nCentOS 7.6.1810 (kernel = 3.10.0-957.21.3.el7.x86_64)<br>\nIntel Parallel studio version 19.0.4.243<br>\nInfiniband controller: Mellanox Technologies MT27800 Family [ConnectX-5]</p>\n<p>Thanks!</p>\n<p>Eric</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-08-15T20:41:01.469Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 124,
+                "reads": 9,
+                "readers_count": 8,
+                "score": 556.8,
+                "yours": false,
+                "topic_id": 1035,
+                "topic_slug": "anyone-else-have-failures-with-intel-2019-mpi-with-mellanox-ib-for-of-cores-300",
+                "display_username": "Eric Walter",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 109,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "returning_user",
+                "notice_args": "2018-08-02T18:11:35Z",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-07-27T20:45:42.399Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 109,
+                    "username": "ewalter",
+                    "created_at": "2018-07-27T20:45:42.399Z",
+                    "updated_at": "2019-08-15T20:41:01.697Z",
+                    "name": "Eric Walter",
+                    "seen_notification_id": 1710,
+                    "last_posted_at": "2019-08-15T20:41:01.398Z",
+                    "password_hash": "6a22d6561bb1751a422ef024ad5a068d896ee370335a465abe9c119f04c19592",
+                    "salt": "bf017775f02eba6cfeaf7ceb65f9b1e8",
+                    "active": true,
+                    "username_lower": "ewalter",
+                    "last_seen_at": "2019-08-15T20:41:28.279Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-17T22:41:21.143Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-08-12T20:33:08.008Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2163147577,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 73,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 419357618,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-07-27T20:46:00.274Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-08-15T20:41:01.398Z",
+                "answer_count": 4,
+                "last_answer_post_number": 5,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 1997,
+                "name": "David Chaffin",
+                "username": "dchaffin",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/d/e0b2c6/{size}.png",
+                "created_at": "2019-08-12T19:45:10.044Z",
+                "cooked": "<p>Eric, we have a very similar system, and have Intel 19 in the queue to install, and can move it up.</p>\n<p>It seems counterintuitive that mpi over libfabric over verbs is a lot faster than mpi over verbs, but a lot of counterintuitive things are true.  If you could show some low-level benchmarks like osu_latency with intel 18/19/verbs/libfabric, that would help.</p>\n<p>Thanks,<br>\nDavid Chaffin<br>\nUArk</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-08-15T20:41:01.501Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 6,
+                "readers_count": 5,
+                "score": 6.2,
+                "yours": false,
+                "topic_id": 1035,
+                "topic_slug": "anyone-else-have-failures-with-intel-2019-mpi-with-mellanox-ib-for-of-cores-300",
+                "display_username": "David Chaffin",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 309,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "new_user",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-08-12T19:11:56.674Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 109,
+                    "username": "ewalter",
+                    "created_at": "2018-07-27T20:45:42.399Z",
+                    "updated_at": "2019-08-15T20:41:01.697Z",
+                    "name": "Eric Walter",
+                    "seen_notification_id": 1710,
+                    "last_posted_at": "2019-08-15T20:41:01.398Z",
+                    "password_hash": "6a22d6561bb1751a422ef024ad5a068d896ee370335a465abe9c119f04c19592",
+                    "salt": "bf017775f02eba6cfeaf7ceb65f9b1e8",
+                    "active": true,
+                    "username_lower": "ewalter",
+                    "last_seen_at": "2019-08-15T20:41:28.279Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-17T22:41:21.143Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-08-12T20:33:08.008Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2163147577,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 73,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 419357618,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-07-27T20:46:00.274Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-08-15T20:41:01.398Z",
+                "answer_count": 4,
+                "last_answer_post_number": 5,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1998,
+                "name": "Eric Walter",
+                "username": "ewalter",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ewalter/{size}/73_2.png",
+                "created_at": "2019-08-12T20:33:26.216Z",
+                "cooked": "<p>Hi David,</p>\n<p>Thanks for reaching out.   According to Intel support, this is a bug and the next update will fix this.</p>\n<p>Anyway, I was able to compile my own libfabric v1.8.0 and I believe things are working OK now when I swap the intel 2019-mpi fabric provider out and provide my own.</p>\n<p>As far as the latency results, I think that Intel-2019-mpi just has some problems with the verbs provider.  Here are some results I just generated using Intel-2019 and Intel-2018 with/without my own libfabric:</p>\n<p>Note, the Intel2019 provided libfabric verbs is much worse than my own libfabric.  Also, the Intel2019 provided libfabric verbs crashes when the number of cores &gt; 300 or so.  This doesn\u2019t happen with my own libfabric.   Also note that both libfabric verbs are worse than than intel2018, intel2019 with FI_PROVIDER=ofi_rxm and intel2019 w/ openMPI.</p>\n<p>All of these tests were done on two nodes, one core each:</p>\n<ol>\n<li>intel/2019 + intel/2019+mpi:<br>\n[slurm&gt; [7 ewalter@fm03 ~/osu_intel2019/mpi/pt2pt ]$srun ./osu_latency</li>\n</ol>\n<h1>OSU MPI Latency Test v5.4.1</h1>\n<h1>Size          Latency (us)</h1>\n<p>0                       1.34<br>\n1                       1.34<br>\n2                       1.34<br>\n4                       1.35<br>\n8                       1.34<br>\n16                      1.34<br>\n32                      1.34<br>\n64                      1.37<br>\n128                     1.40<br>\n256                     1.97<br>\n512                     2.06<br>\n1024                    2.29<br>\n2048                    2.75<br>\n4096                    3.67<br>\n8192                    5.18<br>\n16384                   7.86<br>\n32768                  10.52<br>\n65536                  15.27<br>\n131072                 23.25<br>\n262144                 85.20<br>\n524288                126.66<br>\n1048576               208.21<br>\n2097152               367.19<br>\n4194304               691.05</p>\n<ol start=\"2\">\n<li>Same but did export FI_PROVIDER=^ofi_rxm    (Intel docs say this is how to choose \u201cverbs\u201d instead of \u201cofi_rxm\u201d:</li>\n</ol>\n<p>[slurm&gt; [8 ewalter@fm03 ~/osu_intel2019/mpi/pt2pt ]$export FI_PROVIDER=^ofi_rxm<br>\n[slurm&gt; [9 ewalter@fm03 ~/osu_intel2019/mpi/pt2pt ]$srun ./osu_latency</p>\n<h1>OSU MPI Latency Test v5.4.1</h1>\n<h1>Size          Latency (us)</h1>\n<p>0                      48.79<br>\n1                      48.86<br>\n2                      49.05<br>\n4                      49.04<br>\n8                      48.97<br>\n16                     49.02<br>\n32                     49.49<br>\n64                     51.34<br>\n128                    52.55<br>\n256                    58.17<br>\n512                    99.53<br>\n1024                  156.44<br>\n2048                   91.36<br>\n4096                  111.51<br>\n8192                  143.85<br>\n16384                 215.19<br>\n32768                 356.01<br>\n65536                 634.66<br>\n131072               1191.38<br>\n262144               2313.45<br>\n524288               4548.35<br>\n1048576              9012.70</p>\n<ol start=\"3\">\n<li>Same as 2 but using my own libfabric verbs:</li>\n</ol>\n<p>[slurm&gt; [2 ewalter@fm03 ~/osu_intel2019/mpi/pt2pt ]$env|grep FI_<br>\nFI_PROVIDER_PATH=/usr/local/skylake/gcc-4.8.5/libfabric-1.8.0/lib/libfabric:/usr/local/skylake/gcc-4.8.5/libfabric-1.8.0/lib<br>\nFI_PROVIDER=^ofi_rxm<br>\n[slurm&gt; [3 ewalter@fm03 ~/osu_intel2019/mpi/pt2pt ]$srun -n 2 ./osu_latency</p>\n<h1>OSU MPI Latency Test v5.4.1</h1>\n<h1>Size          Latency (us)</h1>\n<p>0                       1.92<br>\n1                       1.91<br>\n2                       1.91<br>\n4                       1.91<br>\n8                       1.91<br>\n16                      1.91<br>\n32                      1.93<br>\n64                      1.94<br>\n128                     2.01<br>\n256                     2.55<br>\n512                     3.20<br>\n1024                    2.76<br>\n2048                    3.18<br>\n4096                    4.52<br>\n8192                    5.74<br>\n16384                   7.87<br>\n32768                  10.44<br>\n65536                  16.10<br>\n131072                 27.73<br>\n262144                 52.73<br>\n524288                104.75<br>\n1048576               219.32<br>\n2097152               444.31<br>\n4194304               895.42</p>\n<ol start=\"4\">\n<li>Now with intel/2018 + intel/2018-mpi:</li>\n</ol>\n<h1>OSU MPI Latency Test v5.4.1</h1>\n<h1>Size          Latency (us)</h1>\n<p>0                       1.30<br>\n1                       1.30<br>\n2                       1.30<br>\n4                       1.30<br>\n8                       1.30<br>\n16                      1.30<br>\n32                      1.79<br>\n64                      1.80<br>\n128                     1.86<br>\n256                     1.96<br>\n512                     2.06<br>\n1024                    2.21<br>\n2048                    2.63<br>\n4096                    3.38<br>\n8192                    4.86<br>\n16384                   6.67<br>\n32768                   9.31<br>\n65536                  13.78<br>\n131072                 21.16<br>\n262144                 86.97<br>\n524288                127.97<br>\n1048576               208.06<br>\n2097152               365.83<br>\n4194304               672.90</p>\n<ol start=\"5\">\n<li>Finally, intel2019 with openmpi-3.1.4:</li>\n</ol>\n<p>[slurm&gt; [1 ewalter@fm03 ~/osu_intel2019_ompi/mpi/pt2pt ]$srun ./osu_latency</p>\n<h1>OSU MPI Latency Test v5.4.1</h1>\n<h1>Size          Latency (us)</h1>\n<p>0                       1.21<br>\n1                       1.24<br>\n2                       1.24<br>\n4                       1.24<br>\n8                       1.27<br>\n16                      1.27<br>\n32                      1.30<br>\n64                      1.39<br>\n128                     1.94<br>\n256                     2.05<br>\n512                     2.18<br>\n1024                    2.42<br>\n2048                    2.78<br>\n4096                    3.84<br>\n8192                    5.18<br>\n16384                   7.00<br>\n32768                   9.12<br>\n65536                  12.20<br>\n131072                 21.61<br>\n262144                 32.46<br>\n524288                 56.39<br>\n1048576                97.14<br>\n2097152               180.75<br>\n4194304               353.95</p>\n<p>Let me know if you have any questions or comments.</p>\n<p>Thanks!</p>\n<p>Eric</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-08-15T20:41:01.569Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 4,
+                "reads": 6,
+                "readers_count": 5,
+                "score": 21.2,
+                "yours": false,
+                "topic_id": 1035,
+                "topic_slug": "anyone-else-have-failures-with-intel-2019-mpi-with-mellanox-ib-for-of-cores-300",
+                "display_username": "Eric Walter",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 109,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-07-27T20:45:42.399Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 109,
+                    "username": "ewalter",
+                    "created_at": "2018-07-27T20:45:42.399Z",
+                    "updated_at": "2019-08-15T20:41:01.697Z",
+                    "name": "Eric Walter",
+                    "seen_notification_id": 1710,
+                    "last_posted_at": "2019-08-15T20:41:01.398Z",
+                    "password_hash": "6a22d6561bb1751a422ef024ad5a068d896ee370335a465abe9c119f04c19592",
+                    "salt": "bf017775f02eba6cfeaf7ceb65f9b1e8",
+                    "active": true,
+                    "username_lower": "ewalter",
+                    "last_seen_at": "2019-08-15T20:41:28.279Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-17T22:41:21.143Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-08-12T20:33:08.008Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2163147577,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 73,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 419357618,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-07-27T20:46:00.274Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-08-15T20:41:01.398Z",
+                "answer_count": 4,
+                "last_answer_post_number": 5,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2000,
+                "name": "David Chaffin",
+                "username": "dchaffin",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/d/e0b2c6/{size}.png",
+                "created_at": "2019-08-15T18:31:29.488Z",
+                "cooked": "<p>Eric,</p>\n<p>ofi_rxm doesn\u2019t look very good, does it?</p>\n<p>I did the OSU latency and bw tests with both single-node shared memory and two-node over IB.<br>\nCentos and OFED are about 1 version older.</p>\n<p>Centos 3.10.0-957.10.1<br>\nMOFED 4.5.1.0.1.1<br>\nIntel MPI 18.0.2 and 19.0.4<br>\nConnect-X5<br>\nunmodified intel libfabric<br>\n19.0.4:<br>\n<span class=\"math\"> export I_MPI_FABRICS=shm:ofi\n</span> export FI_PROVIDER=verbs</p>\n<p>I haven\u2019t tried a large run yet, but these data seem to show IB performance in 19.0.4 is slightly improved and zero-size latency is slightly improved,  but there is a pretty significant regression in shared-memory performance for large transfers.</p>\n<div class=\"md-table\">\n<table>\n<thead>\n<tr>\n<th></th>\n<th></th>\n<th>latency</th>\n<th></th>\n<th></th>\n<th></th>\n<th>bandwidth</th>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Size</td>\n<td>18.0.2 SHM</td>\n<td>18.0.2 IB</td>\n<td>19.0.4 SHM</td>\n<td>19.0.4 IB</td>\n<td>18.0.2 SHM</td>\n<td>18.0.2 IB</td>\n<td>19.0.4 SHM</td>\n<td>19.0.4 IB</td>\n</tr>\n<tr>\n<td>0</td>\n<td>0.66</td>\n<td>1.21</td>\n<td>0.4</td>\n<td>1.16</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1</td>\n<td>0.94</td>\n<td>1.22</td>\n<td>0.4</td>\n<td>1.16</td>\n<td>1.78</td>\n<td>2.73</td>\n<td>3.59</td>\n<td>5.42</td>\n</tr>\n<tr>\n<td>2</td>\n<td>0.94</td>\n<td>1.22</td>\n<td>0.4</td>\n<td>1.17</td>\n<td>3.63</td>\n<td>5.6</td>\n<td>7.09</td>\n<td>10.93</td>\n</tr>\n<tr>\n<td>4</td>\n<td>0.94</td>\n<td>1.22</td>\n<td>0.4</td>\n<td>1.17</td>\n<td>7.38</td>\n<td>11.16</td>\n<td>14.42</td>\n<td>22.11</td>\n</tr>\n<tr>\n<td>8</td>\n<td>0.94</td>\n<td>1.22</td>\n<td>0.4</td>\n<td>1.17</td>\n<td>14.68</td>\n<td>22.43</td>\n<td>29.2</td>\n<td>44.22</td>\n</tr>\n<tr>\n<td>16</td>\n<td>0.94</td>\n<td>1.22</td>\n<td>0.4</td>\n<td>1.18</td>\n<td>29.25</td>\n<td>44.83</td>\n<td>58.73</td>\n<td>88.36</td>\n</tr>\n<tr>\n<td>32</td>\n<td>0.97</td>\n<td>1.28</td>\n<td>0.41</td>\n<td>1.15</td>\n<td>60.93</td>\n<td>87.79</td>\n<td>111.7</td>\n<td>179.1</td>\n</tr>\n<tr>\n<td>64</td>\n<td>0.98</td>\n<td>1.68</td>\n<td>0.41</td>\n<td>1.19</td>\n<td>134.3</td>\n<td>157.79</td>\n<td>226.13</td>\n<td>355.12</td>\n</tr>\n<tr>\n<td>128</td>\n<td>1.03</td>\n<td>1.71</td>\n<td>0.54</td>\n<td>1.24</td>\n<td>266.58</td>\n<td>312.79</td>\n<td>416.61</td>\n<td>665.17</td>\n</tr>\n<tr>\n<td>256</td>\n<td>0.99</td>\n<td>1.74</td>\n<td>0.58</td>\n<td>1.65</td>\n<td>523.78</td>\n<td>617.98</td>\n<td>1122.71</td>\n<td>1251.76</td>\n</tr>\n<tr>\n<td>512</td>\n<td>1.14</td>\n<td>1.82</td>\n<td>0.8</td>\n<td>1.73</td>\n<td>872.19</td>\n<td>1182.07</td>\n<td>872.98</td>\n<td>2495.59</td>\n</tr>\n<tr>\n<td>1024</td>\n<td>1.42</td>\n<td>1.97</td>\n<td>0.86</td>\n<td>1.91</td>\n<td>1465.47</td>\n<td>2209.63</td>\n<td>1209.55</td>\n<td>4316.68</td>\n</tr>\n<tr>\n<td>2048</td>\n<td>1.51</td>\n<td>2.34</td>\n<td>1</td>\n<td>2.29</td>\n<td>2344.37</td>\n<td>3856.31</td>\n<td>2051.44</td>\n<td>6367.19</td>\n</tr>\n<tr>\n<td>4096</td>\n<td>2.1</td>\n<td>2.92</td>\n<td>1.44</td>\n<td>3.07</td>\n<td>3185.61</td>\n<td>6148.02</td>\n<td>3797.18</td>\n<td>8060.09</td>\n</tr>\n<tr>\n<td>8192</td>\n<td>3.86</td>\n<td>4.13</td>\n<td>1.9</td>\n<td>4.32</td>\n<td>4219.96</td>\n<td>8352.73</td>\n<td>5494.97</td>\n<td>9239.97</td>\n</tr>\n<tr>\n<td>16384</td>\n<td>5.79</td>\n<td>5.38</td>\n<td>3.31</td>\n<td>6.74</td>\n<td>4710.59</td>\n<td>8521.69</td>\n<td>6699.2</td>\n<td>10219.29</td>\n</tr>\n<tr>\n<td>32768</td>\n<td>11.59</td>\n<td>7.62</td>\n<td>5.18</td>\n<td>9.3</td>\n<td>5198.02</td>\n<td>10567.78</td>\n<td>7501.25</td>\n<td>10752.05</td>\n</tr>\n<tr>\n<td>65536</td>\n<td>8.16</td>\n<td>11.1</td>\n<td>9.3</td>\n<td>12.67</td>\n<td>12671.75</td>\n<td>10856.02</td>\n<td>8053.1</td>\n<td>11419.71</td>\n</tr>\n<tr>\n<td>131072</td>\n<td>10.76</td>\n<td>18.63</td>\n<td>18.35</td>\n<td>19.47</td>\n<td>14723.34</td>\n<td>11740.45</td>\n<td>8345.94</td>\n<td>10722.96</td>\n</tr>\n<tr>\n<td>262144</td>\n<td>18.37</td>\n<td>32.14</td>\n<td>35.29</td>\n<td>71.74</td>\n<td>16153.7</td>\n<td>11837.02</td>\n<td>8353.96</td>\n<td>10132.35</td>\n</tr>\n<tr>\n<td>524288</td>\n<td>35.13</td>\n<td>126.22</td>\n<td>84.07</td>\n<td>112.44</td>\n<td>16253.88</td>\n<td>11628.41</td>\n<td>8331.19</td>\n<td>11583.93</td>\n</tr>\n<tr>\n<td>1048576</td>\n<td>81.57</td>\n<td>208.41</td>\n<td>169.7</td>\n<td>193.16</td>\n<td>13875.37</td>\n<td>11720.75</td>\n<td>7590.23</td>\n<td>11606.28</td>\n</tr>\n<tr>\n<td>2097152</td>\n<td>204.52</td>\n<td>377.61</td>\n<td>337.33</td>\n<td>349.34</td>\n<td>10451.14</td>\n<td>11771.32</td>\n<td>7348.55</td>\n<td>11600.84</td>\n</tr>\n<tr>\n<td>4194304</td>\n<td>439.36</td>\n<td>740.37</td>\n<td>670.89</td>\n<td>678.62</td>\n<td>9806.69</td>\n<td>11767.09</td>\n<td>7591.09</td>\n<td>11631.22</td>\n</tr>\n</tbody>\n</table>\n</div>",
+                "post_number": 4,
+                "post_type": 1,
+                "updated_at": "2019-08-15T20:41:01.607Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 3,
+                "readers_count": 2,
+                "score": 5.6,
+                "yours": false,
+                "topic_id": 1035,
+                "topic_slug": "anyone-else-have-failures-with-intel-2019-mpi-with-mellanox-ib-for-of-cores-300",
+                "display_username": "David Chaffin",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 309,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-08-12T19:11:56.674Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 109,
+                    "username": "ewalter",
+                    "created_at": "2018-07-27T20:45:42.399Z",
+                    "updated_at": "2019-08-15T20:41:01.697Z",
+                    "name": "Eric Walter",
+                    "seen_notification_id": 1710,
+                    "last_posted_at": "2019-08-15T20:41:01.398Z",
+                    "password_hash": "6a22d6561bb1751a422ef024ad5a068d896ee370335a465abe9c119f04c19592",
+                    "salt": "bf017775f02eba6cfeaf7ceb65f9b1e8",
+                    "active": true,
+                    "username_lower": "ewalter",
+                    "last_seen_at": "2019-08-15T20:41:28.279Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-17T22:41:21.143Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-08-12T20:33:08.008Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2163147577,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 73,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 419357618,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-07-27T20:46:00.274Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-08-15T20:41:01.398Z",
+                "answer_count": 4,
+                "last_answer_post_number": 5,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2001,
+                "name": "Eric Walter",
+                "username": "ewalter",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ewalter/{size}/73_2.png",
+                "created_at": "2019-08-15T20:41:01.398Z",
+                "cooked": "<p>Hi David,</p>\n<p>Thanks for running these tests and the info.</p>\n<p>It looks like we get similar results for the IB tests.  I repeated my tests using SHM (2 cores on 1 node) and also get similar results (with the nosedive at the larger message sizes).</p>\n<p>So it turns out that this seems to be wrong (or, at least I am misunderstanding it):</p>\n<p>From: <a href=\"https://software.intel.com/en-us/mpi-developer-guide-linux-ofi-providers-support\" rel=\"nofollow noopener\">https://software.intel.com/en-us/mpi-developer-guide-linux-ofi-providers-support</a></p>\n<p>\u201cThe verbs provider uses RxM utility provider to emulate FI_EP_RDM endpoint over verbs FI_EP_MSG endpoint by default. The verbs provider with FI_EP_RDM endpoint can be used instead of RxM by setting the FI_PROVIDER=^ofi_rxm runtime parameter,\u201d</p>\n<p>I find that this results the provider becoming <em>sockets</em> for me.   Using FI_PROVIDER=verbs gives similar results as the default ofi_rxm provider using intel-2019, but <em>both</em> results in segfaults at larger numbers of cores (~400).   When I use my own built libfabric, I get the results I posted before (set <span class=\"hashtag\">#3</span>), which are somewhat worse in latency, but much worse in the osu_bw test:</p>\n<h1>OSU MPI Bandwidth Test v5.4.1</h1>\n<p>FI_PROVIDER_PATH=/usr/local/skylake/gcc-4.8.5/libfabric-1.8.0/lib/libfabric:/usr/local/skylake/gcc-4.8.5/libfabric-1.8.0/lib<br>\nFI_PROVIDER=^ofi_rxm</p>\n<h1>Size      Bandwidth (MB/s)</h1>\n<pre><code>1                       1.39\n2                       2.82\n4                       5.66\n8                      11.31\n16                     22.86\n32                     45.56\n64                     89.51\n128                   176.62\n256                   349.46\n512                   564.31\n1024                 1317.93\n2048                 2318.49\n4096                 2800.52\n8192                 4030.74\n16384                4743.87\n32768                5668.91\n65536                6082.44\n131072               6236.04\n262144               6293.15\n524288               6138.85\n1048576              5645.81\n2097152              5597.79\n4194304              5589.22\n</code></pre>\n<p>I would love to see if you also get crashes for intel-2019 with 400 or so cores.  For instance, osu_gather crashes at size=32768 on 400 cores for me.  When I try to use 896 cores, it crashes before any test is run.</p>\n<p>I am going to steer users away from Intel-2019 mpi (and instead use OpenMPI) until the next update comes out (in a few weeks).</p>\n<p>Thanks again,</p>\n<p>Eric</p>",
+                "post_number": 5,
+                "post_type": 1,
+                "updated_at": "2019-08-15T20:41:01.656Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 3,
+                "readers_count": 2,
+                "score": 5.6,
+                "yours": false,
+                "topic_id": 1035,
+                "topic_slug": "anyone-else-have-failures-with-intel-2019-mpi-with-mellanox-ib-for-of-cores-300",
+                "display_username": "Eric Walter",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://software.intel.com/en-us/mpi-developer-guide-linux-ofi-providers-support",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "OFI* Providers Support | Intel\u00ae MPI Library for Linux*",
+                        "clicks": 3
+                    }
+                ],
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 109,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-07-27T20:45:42.399Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 109,
+                    "username": "ewalter",
+                    "created_at": "2018-07-27T20:45:42.399Z",
+                    "updated_at": "2019-08-15T20:41:01.697Z",
+                    "name": "Eric Walter",
+                    "seen_notification_id": 1710,
+                    "last_posted_at": "2019-08-15T20:41:01.398Z",
+                    "password_hash": "6a22d6561bb1751a422ef024ad5a068d896ee370335a465abe9c119f04c19592",
+                    "salt": "bf017775f02eba6cfeaf7ceb65f9b1e8",
+                    "active": true,
+                    "username_lower": "ewalter",
+                    "last_seen_at": "2019-08-15T20:41:28.279Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-17T22:41:21.143Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-08-12T20:33:08.008Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2163147577,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 73,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 419357618,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-07-27T20:46:00.274Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-08-15T20:41:01.398Z",
+                "answer_count": 4,
+                "last_answer_post_number": 5,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            1992,
+            1997,
+            1998,
+            2000,
+            2001
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            72
+        ],
+        [
+            2,
+            67
+        ],
+        [
+            4,
+            64
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 599,
+            "title": "How do I install Python 2.7 on my Comet allocation and where can I store data long term?",
+            "fancy_title": "How do I install Python 2.7 on my Comet allocation and where can I store data long term?",
+            "slug": "how-do-i-install-python-2-7-on-my-comet-allocation-and-where-can-i-store-data-long-term",
+            "posts_count": 3,
+            "reply_count": 1,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2018-11-15T03:18:24.776Z",
+            "last_posted_at": "2018-11-16T21:20:59.013Z",
+            "bumped": true,
+            "bumped_at": "2018-11-16T21:20:59.013Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": true,
+            "tags": [
+                "python",
+                "storage",
+                "xsede"
+            ],
+            "archetype": "regular",
+            "like_count": 2,
+            "views": 213,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 118,
+                        "username": "cydburrows",
+                        "name": "Cyd Burrows-Schilling",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/c/ecccb3/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 809,
+            "title": "Pre-empting job termination by the scheduler",
+            "fancy_title": "Pre-empting job termination by the scheduler",
+            "slug": "pre-empting-job-termination-by-the-scheduler",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-03-08T16:47:49.624Z",
+            "last_posted_at": "2019-03-08T18:08:32.961Z",
+            "bumped": true,
+            "bumped_at": "2019-03-08T18:08:32.961Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "slurm",
+                "qow",
+                "scheduler"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 175,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 3,
+                        "username": "jma",
+                        "name": "Julie Ma",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 202,
+                        "username": "griznog",
+                        "name": "John Hanks",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/griznog/{size}/163_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 749,
+            "title": "Cannot determine start time for job",
+            "fancy_title": "Cannot determine start time for job",
+            "slug": "cannot-determine-start-time-for-job",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-01-14T20:38:56.843Z",
+            "last_posted_at": "2019-01-25T16:21:12.908Z",
+            "bumped": true,
+            "bumped_at": "2019-01-25T16:21:12.908Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "pbs",
+                "scheduler"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 176,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 134,
+                        "username": "benfulton",
+                        "name": "Ben Fulton",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/benfulton/{size}/102_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "mpi",
+        "infiniband",
+        "qow"
+    ],
+    "id": 1035,
+    "title": "Anyone else have failures with Intel 2019-mpi with Mellanox IB for # of cores > 300?",
+    "fancy_title": "Anyone else have failures with Intel 2019-mpi with Mellanox IB for # of cores &gt; 300?",
+    "posts_count": 5,
+    "created_at": "2019-08-08T15:12:48.702Z",
+    "views": 335,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2019-08-15T20:41:01.398Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "anyone-else-have-failures-with-intel-2019-mpi-with-mellanox-ib-for-of-cores-300",
+    "category_id": 26,
+    "word_count": 2072,
+    "deleted_at": null,
+    "user_id": 109,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_1035",
+    "draft_sequence": 0,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 5,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": null,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 2,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2019-08-15T20:41:01.398Z",
+    "last_commented_on": null,
+    "answer_count": 4,
+    "comment_count": 0,
+    "last_answer_post_number": 5,
+    "last_answerer": {
+        "id": 109,
+        "username": "ewalter",
+        "name": "Eric Walter",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ewalter/{size}/73_2.png"
+    },
+    "can_vote": true,
+    "vote_count": 0,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 109,
+                "username": "ewalter",
+                "name": "Eric Walter",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ewalter/{size}/73_2.png",
+                "post_count": 3,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 309,
+                "username": "dchaffin",
+                "name": "David Chaffin",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/d/e0b2c6/{size}.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 109,
+            "username": "ewalter",
+            "name": "Eric Walter",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ewalter/{size}/73_2.png"
+        },
+        "last_poster": {
+            "id": 109,
+            "username": "ewalter",
+            "name": "Eric Walter",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ewalter/{size}/73_2.png"
+        },
+        "links": [
+            {
+                "url": "https://software.intel.com/en-us/mpi-developer-guide-linux-ofi-providers-support",
+                "title": "OFI* Providers Support | Intel\u00ae MPI Library for Linux*",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 3,
+                "user_id": 109,
+                "domain": "software.intel.com",
+                "root_domain": "intel.com"
+            }
+        ]
+    }
+}

@@ -1,0 +1,2239 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 1891,
+                "name": "Wensi Wu",
+                "username": "ww382",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png",
+                "created_at": "2019-07-10T01:44:08.074Z",
+                "cooked": "<p>Hi,</p>\n<p>I would like to create a docker container for OpenFOAM-1.6-ext. I couldn\u2019t find an image of OpenFOAM-1.6-ext on dockerhub so I decided to create a Dockerfile my own. A screenshot of my Dockerfile is attached. I followed the OpenFOAM installation steps listed: <a href=\"https://openfoamwiki.net/index.php/Installation/Linux/OpenFOAM-1.6-ext/Ubuntu#Ubuntu_16.04\" rel=\"nofollow noopener\">here</a>. After I issued the command: sudo docker build -t \u201copenfoam-1.6-ext:docker\u201d, I received an error message stating \u201ccp: cannot stat \u2018etc/prefs.sh-EXAMPLE\u2019: No such file or directory\u201d. Does anyone know what I did wrong? <div class=\"lightbox-wrapper\"><a class=\"lightbox\" href=\"https://ask.cyberinfrastructure.org/uploads/default/original/1X/dee116d7ccabe784760903ab252df08e062ead7c.png\" data-download-href=\"https://ask.cyberinfrastructure.org/uploads/default/dee116d7ccabe784760903ab252df08e062ead7c\" title=\"dockerfile.png\"><img src=\"https://ask.cyberinfrastructure.org/uploads/default/optimized/1X/dee116d7ccabe784760903ab252df08e062ead7c_2_690x398.png\" alt=\"dockerfile\" data-base62-sha1=\"vNGfuA9ORYE6u5Ic9cr4dMEqwJC\" width=\"690\" height=\"398\" srcset=\"https://ask.cyberinfrastructure.org/uploads/default/optimized/1X/dee116d7ccabe784760903ab252df08e062ead7c_2_690x398.png, https://ask.cyberinfrastructure.org/uploads/default/optimized/1X/dee116d7ccabe784760903ab252df08e062ead7c_2_1035x597.png 1.5x, https://ask.cyberinfrastructure.org/uploads/default/optimized/1X/dee116d7ccabe784760903ab252df08e062ead7c_2_1380x796.png 2x\" data-small-upload=\"https://ask.cyberinfrastructure.org/uploads/default/optimized/1X/dee116d7ccabe784760903ab252df08e062ead7c_2_10x10.png\"><div class=\"meta\">\n<svg class=\"fa d-icon d-icon-far-image svg-icon\" aria-hidden=\"true\"><use xlink:href=\"#far-image\"></use></svg><span class=\"filename\">dockerfile.png</span><span class=\"informations\">2052\u00d71184 385 KB</span><svg class=\"fa d-icon d-icon-discourse-expand svg-icon\" aria-hidden=\"true\"><use xlink:href=\"#discourse-expand\"></use></svg>\n</div></a></div></p>\n<p>Thanks,<br>\nWensi</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-10-18T16:49:00.845Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 12,
+                "reads": 8,
+                "readers_count": 7,
+                "score": 61.0,
+                "yours": false,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Wensi Wu",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://openfoamwiki.net/index.php/Installation/Linux/OpenFOAM-1.6-ext/Ubuntu#Ubuntu_16.04",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Installation/Linux/OpenFOAM-1.6-ext/Ubuntu - OpenFOAMWiki",
+                        "clicks": 1
+                    },
+                    {
+                        "url": "https://ask.cyberinfrastructure.org/uploads/default/original/1X/dee116d7ccabe784760903ab252df08e062ead7c.png",
+                        "internal": true,
+                        "reflection": false,
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 298,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "new_user",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-07-10T01:26:00.490Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1892,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-07-10T16:00:42.238Z",
+                "cooked": "<p>Hey Wensi! I saw you post to the Singularity list. Did you see this post:</p>\n<aside class=\"quote\" data-post=\"1\" data-topic=\"644\">\n  <div class=\"title\">\n    <div class=\"quote-controls\"></div>\n    <img alt=\"\" width=\"20\" height=\"20\" src=\"/user_avatar/ask.cyberinfrastructure.org/vsoch/40/112_2.png\" class=\"avatar\">\n    <a href=\"https://ask.cyberinfrastructure.org/t/how-do-i-run-paraview-or-openfoam-on-an-hpc-resource/644\">How do I run paraview or openfoam on an HPC resource?</a> <a class=\"badge-wrapper  bullet\" href=\"/c/q-a\"><span class=\"badge-category-bg\" style=\"background-color: #652D90;\"></span><span style=\"\" data-drop-close=\"true\" class=\"badge-category clear-badge\" title=\"This category is for questions that fit into a traditional Question/Answer format where there is a \u201cbest\u201d answer.  The Answer may evolve/change over time, so voting on answers by the community is highly encouraged to ensure that the  current best answer rises to the top!\">Q&amp;A</span></a>\n  </div>\n  <blockquote>\n    I want to use <a href=\"https://www.paraview.org/\" rel=\"nofollow noopener\">Paraview</a> but the installation seems very complicated. Is there a quick or easy way to do it without asking my admin for a special installation?\n  </blockquote>\n</aside>\n\n<p>And it wasn\u2019t helpful for you? I would like to offer to take a look at your recipe - could you copy paste the actual code into a text code block so I can see?</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-10T16:00:42.238Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 8,
+                "readers_count": 7,
+                "score": 11.0,
+                "yours": true,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-run-paraview-or-openfoam-on-an-hpc-resource/644",
+                        "internal": true,
+                        "reflection": false,
+                        "title": "How do I run paraview or openfoam on an HPC resource?",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1893,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-07-10T16:06:22.995Z",
+                "cooked": "<p>Ah, so to give you a quick example, I can confirm that the file in question does exist in the repository you are cloning:</p>\n<aside class=\"onebox githubblob\">\n  <header class=\"source\">\n      <a href=\"https://github.com/Unofficial-Extend-Project-Mirror/openfoam-extend-OpenFOAM-1.6-ext/blob/master/etc/prefs.sh-EXAMPLE\" target=\"_blank\" rel=\"nofollow noopener\">github.com</a>\n  </header>\n  <article class=\"onebox-body\">\n    <h4><a href=\"https://github.com/Unofficial-Extend-Project-Mirror/openfoam-extend-OpenFOAM-1.6-ext/blob/master/etc/prefs.sh-EXAMPLE\" target=\"_blank\" rel=\"nofollow noopener\">Unofficial-Extend-Project-Mirror/openfoam-extend-OpenFOAM-1.6-ext/blob/master/etc/prefs.sh-EXAMPLE</a></h4>\n<pre><code class=\"lang-sh-example\">#----------------------------------*-sh-*--------------------------------------\n# =========                 |\n# \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox\n#  \\\\    /   O peration     |\n#   \\\\  /    A nd           | Copyright (C) 2010-2010 OpenCFD Ltd.\n#    \\\\/     M anipulation  |\n#------------------------------------------------------------------------------\n# License\n#     This file is part of OpenFOAM.\n#\n#     OpenFOAM is free software: you can redistribute it and/or modify it\n#     under the terms of the GNU General Public License as published by\n#     the Free Software Foundation, either version 3 of the License, or\n#     (at your option) any later version.\n#\n#     OpenFOAM is distributed in the hope that it will be useful, but WITHOUT\n#     ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n#     FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License\n#     for more details.\n#\n</code></pre>\n\n  This file has been truncated. <a href=\"https://github.com/Unofficial-Extend-Project-Mirror/openfoam-extend-OpenFOAM-1.6-ext/blob/master/etc/prefs.sh-EXAMPLE\" target=\"_blank\" rel=\"nofollow noopener\">show original</a>\n\n  </article>\n  <div class=\"onebox-metadata\">\n    \n    \n  </div>\n  <div style=\"clear: both\"></div>\n</aside>\n\n<p>But since you are putting the command into different <code>RUN</code> sections, you are likely in the wrong working directory. Instead, you will want to put all of those RUN statements into one command, here is a start:</p>\n<pre><code class=\"lang-auto\">RUN git clone https://github.com/Unofficial-Extend-Project-Mirror/openfoam-extend-OpenFOAM-1.6-ext.git OpenFOAM-1.6-ext &amp;&amp; \\\n    cd OpenFOAM-1.6-ext &amp;&amp; \\\n    git checkout 1.6.1 -b 16ext &amp;&amp; \\\n    cp etc/prefs.sh-EXAMPLE etc/prefs.sh &amp;&amp; \\\n    # do this for the remainder of your lines.\n</code></pre>\n<p>If you wanted to do something like the above (with multiple RUN statements, each coinciding with a Docker layer which isn\u2019t best practice) You would want to clone the repository with one RUN, and then set the <code>WORKDIR</code> to be the repository.</p>\n<pre><code class=\"lang-auto\">RUN git clone https://github.com/Unofficial-Extend-Project-Mirror/openfoam-extend-OpenFOAM-1.6-ext.git OpenFOAM-1.6-ext\nWORKDIR OpenFOAM-1.6-ext\n</code></pre>\n<p>Does that make sense?</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-07-10T16:06:22.995Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 8,
+                "readers_count": 7,
+                "score": 11.0,
+                "yours": true,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://github.com/Unofficial-Extend-Project-Mirror/openfoam-extend-OpenFOAM-1.6-ext/blob/master/etc/prefs.sh-EXAMPLE",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "openfoam-extend-OpenFOAM-1.6-ext/prefs.sh-EXAMPLE at master \u00b7 Unofficial-Extend-Project-Mirror/openfoam-extend-OpenFOAM-1.6-ext \u00b7 GitHub",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1894,
+                "name": "Wensi Wu",
+                "username": "ww382",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png",
+                "created_at": "2019-07-10T18:16:51.679Z",
+                "cooked": "<p>Hi Vanessa!</p>\n<p>I read the post you sent regarding to running openfoam on an HPC resource; it was really helpful. Right now I\u2019m trying to create a docker image, push it to docker hub, and then convert it to singularity container. I\u2019ve tried your suggestion of putting all RUN statements into one command and played with WORKDIR a bit:</p>\n<pre><code class=\"lang-auto\">FROM ubuntu:18.04\nMAINTAINER Wensi Wu&lt;wensi.wu.w@gmail.com&gt;\n\nENV DEBIAN_FRONTEND=noninteractive\n\nWORKDIR /home/wensi\n\nRUN apt-get -q update &amp;&amp; \\\n    apt-get -q -y upgrade &amp;&amp; \\\n    apt-get -q -y install git flex rpm build-essential zlib1g-dev binutils-dev &amp;&amp; \\\n    apt-get -q -y install openmpi-bin libopenmpi-dev cmake paraview libstdc++5 libiberty-dev &amp;&amp; \\\n    apt-get -q update &amp;&amp; \\\n    mkdir OpenFOAM &amp;&amp; \\\n    cd OpenFOAM &amp;&amp; \\\n    git clone https://github.com/Unofficial-Extend-Project-Mirror/openfoam-extend-OpenFOAM-1.6-ext.git OpenFOAM-1.6-ext &amp;&amp; \\\n    export HOME=/home/wensi &amp;&amp; \\\n    cd OpenFOAM-1.6-ext &amp;&amp; \\\n    git checkout 1.6.1 -b 16ext &amp;&amp; \\\n    cp etc/prefs.sh-EXAMPLE etc/prefs.sh &amp;&amp; \\\n    echo \"export WM_COMPILER=Gcc54\" &gt;&gt; etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"#export WM_MPLIB=SYSTEMOPENMPI\"/\"export WM_MPLIB=SYSTEMOPENMPI\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"#export OPENMPI_DIR=path_to_system_installed_openmpi\"/\"export OPENMPI_DIR=\\/usr\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"^#export OPENMPI_BIN_DIR\"/\"export OPENMPI_BIN_DIR\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"#export PARAVIEW_SYSTEM=1\"/\"export PARAVIEW_SYSTEM=1\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"#export PARAVIEW_DIR=path_to_system_installed_paraview\"/\"export PARAVIEW_DIR=\\/usr\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"^#export PARAVIEW_BIN_DIR\"/\"export PARAVIEW_BIN_DIR\"/g etc/prefs.sh &amp;&amp; \\\n    echo \"export WM_NCOMPPROCS=4\" &gt;&gt; etc/prefs.sh &amp;&amp; \\\n    sed -i -e 's=\\.OpenFOAM=\\.foam=' bin/paraFoam &amp;&amp; \\\n    sed -i -e 's/^unset/export LC_ALL=C; unset/' bin/paraFoam &amp;&amp; \\\n    ln -s /usr/bin/make bin/gmake &amp;&amp; \\\n    sed -i -e 's=\\(U_WIN32\\)$=\\1 -DENGINE=g' applications/utilities/postProcessing/dataConversion/foamToTecplot360/tecio/tecsrc/Make/tecioOptions &amp;&amp; \\\n    sed -i -e 's=software.sandia.gov/~jakraft=downloads.sourceforge.net/project/openfoam-extend/foam-extend-3.0/ThirdParty=g' ThirdParty/AllMake.stage3 ThirdParty/rpmBuild/SPECS/mesquite-2.1.2.spec &amp;&amp; \\\n    find src applications -name \"*.L\" -type f | xargs sed -i -e 's=\\(YY\\_FLEX\\_SUBMINOR\\_VERSION\\)=YY_FLEX_MINOR_VERSION &lt; 6 \\&amp;\\&amp; \\1=' &amp;&amp; \\\n    cp -r wmake/rules/linux64Gcc46 wmake/rules/linux64Gcc54 &amp;&amp; \\\n    sed -i 's/^\\(c++FLAGS.*\\)/\\1 -fpermissive/g' wmake/rules/linux64Gcc54/c++ &amp;&amp; \\\n    . etc/bashrc &amp;&amp; \\\n    cd ThirdParty &amp;&amp; \\\n    sed -i 's=^( rpm_make -p cmake=#( rpm_make -p cmake=' AllMake.stage1 &amp;&amp; \\\n    sed -i -e 's/\\(\\+.*LIBS = \\)/\\1-Xlinker --add-needed -Xlinker --no-as-needed /' ./rpmBuild/SOURCES/ParMGridGen-1.0.patch &amp;&amp; \\\n    sed -i -e 's/\\(\\+.*LIBS = \\)/\\1-Xlinker --add-needed -Xlinker --no-as-needed /' ./rpmBuild/SOURCES/ParMetis-3.1.1.patch &amp;&amp; \\\n    sed -i -e 's=$(LDFLAGS)=$(LDFLAGS) -pthread=' ./rpmBuild/SOURCES/scotch-5.1.10b_patch_0 &amp;&amp; \\\n    ./AllMake &gt; log.AllMake 2&gt;&amp;1 &amp;&amp; \\\n    cd .. &amp;&amp; \\\n    . etc/bashrc &amp;&amp; \\\n    ./Allwmake &gt; log.AllwMake 2&gt;&amp;1\n</code></pre>\n<p>When I tried to build the docker file, it stalled at line \". etc/bashrc &amp;&amp; \"  before \"cd ThirdParty &amp;&amp; \". It seems like it was having trouble accessing to ThirdParty directory.</p>\n<p>Thank you so much for your help!</p>\n<p>Wensi</p>",
+                "post_number": 4,
+                "post_type": 1,
+                "updated_at": "2019-07-10T18:53:36.733Z",
+                "reply_count": 0,
+                "reply_to_post_number": 3,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 8,
+                "readers_count": 7,
+                "score": 6.0,
+                "yours": false,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Wensi Wu",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "vsoch",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 298,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-07-10T01:26:00.490Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1895,
+                "name": "Wensi Wu",
+                "username": "ww382",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png",
+                "created_at": "2019-07-10T18:47:53.474Z",
+                "cooked": "<p>I have OpenFOAM-1.6-ext installed and built on my ubuntu. Can I create a docker image for the already built OpenFOAM? Would that be easier?</p>",
+                "post_number": 5,
+                "post_type": 1,
+                "updated_at": "2019-07-10T18:47:53.474Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 8,
+                "readers_count": 7,
+                "score": 11.0,
+                "yours": false,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Wensi Wu",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 298,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-07-10T01:26:00.490Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1896,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-07-10T19:12:18.323Z",
+                "cooked": "<p>heya <a class=\"mention\" href=\"/u/ww382\">@ww382</a>! I think you are close! To answer your question, it\u2019s not really possible to just move an installation on your host into the container. Give me a few minutes with your recipe and I\u2019ll see if I can make a version for you that works.</p>",
+                "post_number": 6,
+                "post_type": 1,
+                "updated_at": "2019-07-10T19:12:18.323Z",
+                "reply_count": 0,
+                "reply_to_post_number": 5,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 8,
+                "readers_count": 7,
+                "score": 6.0,
+                "yours": true,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "reply_to_user": {
+                    "username": "ww382",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1897,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-07-10T20:00:49.894Z",
+                "cooked": "<p>Okay, this seems to work to install in Docker. It\u2019s a weird package because it expects a very particular path structure (installing to the user\u2019s home) and that gets more weird with Docker having home as /root. This compiles and finishes ok, however if you need to bring it over to HPC and convert to Singularity you\u2019ll have trouble with everything being in root\u2019s home. If that happens, what we can do is give permissions to some openfoam user in the container, and then install in openfoam\u2019s home and make it accessible to others. For now, give this a go:</p>\n<pre><code class=\"lang-auto\">FROM ubuntu:18.04\n\n# docker build -t wensi/openfoam .\n\nLABEL MAINTAINER Wensi Wu&lt;wensi.wu.w@gmail.com&gt;\nENV DEBIAN_FRONTEND=noninteractive\n\nRUN apt-get -q update &amp;&amp; \\\n    apt-get -q -y upgrade &amp;&amp; \\\n    apt-get -q -y install git flex rpm build-essential zlib1g-dev binutils-dev &amp;&amp; \\\n    apt-get -q -y install openmpi-bin libopenmpi-dev cmake paraview libstdc++5 libiberty-dev &amp;&amp; \\\n    apt-get -q update\n\nWORKDIR /root\n\nRUN mkdir -p OpenFOAM &amp;&amp; \\\n    cd OpenFOAM &amp;&amp; \\\n    git clone https://github.com/Unofficial-Extend-Project-Mirror/openfoam-extend-OpenFOAM-1.6-ext.git OpenFOAM-1.6-ext\n\nWORKDIR /root/OpenFOAM/OpenFOAM-1.6-ext\n\nRUN git checkout 1.6.1 -b 16ext &amp;&amp; \\\n    cp etc/prefs.sh-EXAMPLE etc/prefs.sh &amp;&amp; \\\n    echo \"export WM_COMPILER=Gcc54\" &gt;&gt; etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"#export WM_MPLIB=SYSTEMOPENMPI\"/\"export WM_MPLIB=SYSTEMOPENMPI\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"#export OPENMPI_DIR=path_to_system_installed_openmpi\"/\"export OPENMPI_DIR=\\/usr\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"^#export OPENMPI_BIN_DIR\"/\"export OPENMPI_BIN_DIR\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"#export PARAVIEW_SYSTEM=1\"/\"export PARAVIEW_SYSTEM=1\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"#export PARAVIEW_DIR=path_to_system_installed_paraview\"/\"export PARAVIEW_DIR=\\/usr\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"^#export PARAVIEW_BIN_DIR\"/\"export PARAVIEW_BIN_DIR\"/g etc/prefs.sh &amp;&amp; \\\n    echo \"export WM_NCOMPPROCS=4\" &gt;&gt; etc/prefs.sh &amp;&amp; \\\n    sed -i -e 's=\\.OpenFOAM=\\.foam=' bin/paraFoam &amp;&amp; \\\n    sed -i -e 's/^unset/export LC_ALL=C; unset/' bin/paraFoam &amp;&amp; \\\n    ln -s /usr/bin/make bin/gmake &amp;&amp; \\\n    sed -i -e 's=\\(U_WIN32\\)$=\\1 -DENGINE=g' applications/utilities/postProcessing/dataConversion/foamToTecplot360/tecio/tecsrc/Make/tecioOptions &amp;&amp; \\\n    sed -i -e 's=software.sandia.gov/~jakraft=downloads.sourceforge.net/project/openfoam-extend/foam-extend-3.0/ThirdParty=g' ThirdParty/AllMake.stage3 ThirdParty/rpmBuild/SPECS/mesquite-2.1.2.spec &amp;&amp; \\\n    find src applications -name \"*.L\" -type f | xargs sed -i -e 's=\\(YY\\_FLEX\\_SUBMINOR\\_VERSION\\)=YY_FLEX_MINOR_VERSION &lt; 6 \\&amp;\\&amp; \\1=' &amp;&amp; \\\n    cp -r wmake/rules/linux64Gcc46 wmake/rules/linux64Gcc54 &amp;&amp; \\\n    sed -i 's/^\\(c++FLAGS.*\\)/\\1 -fpermissive/g' wmake/rules/linux64Gcc54/c++ &amp;&amp; \\\n    . etc/bashrc &amp;&amp; \\\n    cd ThirdParty &amp;&amp; \\\n    sed -i 's=^( rpm_make -p cmake=#( rpm_make -p cmake=' AllMake.stage1 &amp;&amp; \\\n    sed -i -e 's/\\(\\+.*LIBS = \\)/\\1-Xlinker --add-needed -Xlinker --no-as-needed /' ./rpmBuild/SOURCES/ParMGridGen-1.0.patch &amp;&amp; \\\n    sed -i -e 's/\\(\\+.*LIBS = \\)/\\1-Xlinker --add-needed -Xlinker --no-as-needed /' ./rpmBuild/SOURCES/ParMetis-3.1.1.patch &amp;&amp; \\\n    sed -i -e 's=$(LDFLAGS)=$(LDFLAGS) -pthread=' ./rpmBuild/SOURCES/scotch-5.1.10b_patch_0 &amp;&amp; \\\n    ./AllMake &gt; log.AllMake &amp;&amp; \\\n    cd .. &amp;&amp; \\\n    . etc/bashrc &amp;&amp; \\\n    ./Allwmake &gt; log.AllwMake\n</code></pre>\n<p>I removed the bit that silences the printing of the comple to stdout, and also If you want to make the container flexible to future version changes you can add:</p>\n<pre><code class=\"lang-auto\">ENV OPENFOAM_BRANCH=1.6.1\nENV OPENFOAM_VERSION=1.6-ext\n</code></pre>\n<p>And then replace those throughout the file where they are needed. It\u2019s still compiling for me locally so likely I\u2019ll be updating the recipe with a change to the path (and I want to test that it works too) but this should at least give you something to start with.</p>",
+                "post_number": 7,
+                "post_type": 1,
+                "updated_at": "2019-07-10T20:00:49.894Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 8,
+                "readers_count": 7,
+                "score": 11.0,
+                "yours": true,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 2
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1898,
+                "name": "Wensi Wu",
+                "username": "ww382",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png",
+                "created_at": "2019-07-10T21:14:41.786Z",
+                "cooked": "<p>Thank you so so so much <a class=\"mention\" href=\"/u/vsoch\">@vsoch</a>! <img src=\"https://ask.cyberinfrastructure.org/images/emoji/twitter/slight_smile.png?v=9\" title=\":slight_smile:\" class=\"emoji\" alt=\":slight_smile:\"></p>",
+                "post_number": 8,
+                "post_type": 1,
+                "updated_at": "2019-07-10T21:14:41.786Z",
+                "reply_count": 1,
+                "reply_to_post_number": 7,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 8,
+                "readers_count": 7,
+                "score": 11.0,
+                "yours": false,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Wensi Wu",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "vsoch",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 298,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-07-10T01:26:00.490Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1899,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-07-10T21:58:56.076Z",
+                "cooked": "<p>Sure thing! I had some trouble above with the install to root, so I\u2019m refactoring now to change to an openfoam user. If I have luck I\u2019ll share!</p>",
+                "post_number": 9,
+                "post_type": 1,
+                "updated_at": "2019-07-10T21:58:56.076Z",
+                "reply_count": 1,
+                "reply_to_post_number": 8,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 10.8,
+                "yours": true,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "reply_to_user": {
+                    "username": "ww382",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1900,
+                "name": "Wensi Wu",
+                "username": "ww382",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png",
+                "created_at": "2019-07-10T22:07:29.493Z",
+                "cooked": "<p>I was getting error messages like:</p>\n<pre><code class=\"lang-auto\">/usr/bin/ld: cannot find -lfiniteVolume \n/usr/bin/ld: cannot find -ldynamicMesh \n/usr/bin/ld: cannot find -lmeshTools\n</code></pre>",
+                "post_number": 10,
+                "post_type": 1,
+                "updated_at": "2019-07-10T22:07:29.493Z",
+                "reply_count": 2,
+                "reply_to_post_number": 9,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 15.8,
+                "yours": false,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Wensi Wu",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "vsoch",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 298,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-07-10T01:26:00.490Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1901,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-07-10T22:26:37.625Z",
+                "cooked": "<p>Yes this looks like not having libraries on <code>LD_LIBRARY_PATH</code> or needing to run ldconfig - I also noticed we are using an 18.04 base and the instructions are for 16.04 so I\u2019m trying that too, along with installing as the openfoam user. Man this takes forever to compile!</p>",
+                "post_number": 11,
+                "post_type": 1,
+                "updated_at": "2019-07-10T22:26:37.625Z",
+                "reply_count": 0,
+                "reply_to_post_number": 10,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 5.8,
+                "yours": true,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "reply_to_user": {
+                    "username": "ww382",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1904,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-07-11T13:24:02.522Z",
+                "cooked": "<p>I just hit these too (installing as openfoam user):</p>\n<pre><code class=\"lang-bash\">/usr/bin/ld: cannot find -lincompressibleTransportModels\n/usr/bin/ld: cannot find -lincompressibleRASModels\n/usr/bin/ld: cannot find -lbasicThermophysicalModels\n/usr/bin/ld: cannot find -lcompressibleRASModels\n/usr/bin/ld: cannot find -lfiniteVolume\n/usr/bin/ld: cannot find -lmeshTools\n/usr/bin/ld: cannot find -lsampling\n</code></pre>\n<p>I think I just stumbled on what might be the issue - when I shelled in and looked in the ThirdParty folder, there were no RPMS in the source directory. If I ran the AllMake again, it doesn\u2019t issue an actual error, but it\u2019s riddled with \u201cCannot find xxxx.rpm.\u201d If we scroll up a little more, there is a message of missing wget <img src=\"https://ask.cyberinfrastructure.org/images/emoji/twitter/slight_smile.png?v=9\" title=\":slight_smile:\" class=\"emoji\" alt=\":slight_smile:\"> So - I installed wget (as root) and now the ThirdParty libraries are actually compiling! I\u2019ll post an update if/when I get through this bug.</p>",
+                "post_number": 12,
+                "post_type": 1,
+                "updated_at": "2019-07-11T13:24:02.522Z",
+                "reply_count": 1,
+                "reply_to_post_number": 10,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 10.8,
+                "yours": true,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "reply_to_user": {
+                    "username": "ww382",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1905,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-07-11T13:32:37.746Z",
+                "cooked": "<p>okay I think it\u2019s good! I was able to run <code>icoFoam</code>, and although the help text appears different than in the interface, it seems to work. <a class=\"mention\" href=\"/u/ww382\">@ww382</a> you likely have experience using this and can give the final say - here is the recipe that worked for me (notice wget added to the top):</p>\n<pre><code class=\"lang-auto\">FROM ubuntu:16.04\n\n# docker build -t wensi/openfoam .\n\nLABEL MAINTAINER Wensi Wu&lt;wensi.wu.w@gmail.com&gt;\nENV DEBIAN_FRONTEND=noninteractive\nENV OPENFOAM_BRANCH=1.6.1\n\nRUN apt-get -q update &amp;&amp; \\\n    apt-get -q -y install git flex rpm build-essential zlib1g-dev binutils-dev &amp;&amp; \\\n    apt-get -q -y install openmpi-bin libopenmpi-dev cmake paraview libstdc++5 libiberty-dev wget\n\nRUN useradd -ms /bin/bash openfoam\nWORKDIR /home/openfoam\nUSER openfoam\n\nRUN mkdir -p OpenFOAM &amp;&amp; \\\n    cd OpenFOAM &amp;&amp; \\\n    git clone https://github.com/Unofficial-Extend-Project-Mirror/openfoam-extend-OpenFOAM-1.6-ext.git OpenFOAM-1.6-ext\n\nWORKDIR /home/openfoam/OpenFOAM/OpenFOAM-1.6-ext\n\nRUN git checkout 1.6.1 -b 16ext &amp;&amp; \\\n    cp etc/prefs.sh-EXAMPLE etc/prefs.sh &amp;&amp; \\\n    echo \"export WM_COMPILER=Gcc54\" &gt;&gt; etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"#export WM_MPLIB=SYSTEMOPENMPI\"/\"export WM_MPLIB=SYSTEMOPENMPI\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"#export OPENMPI_DIR=path_to_system_installed_openmpi\"/\"export OPENMPI_DIR=\\/usr\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"^#export OPENMPI_BIN_DIR\"/\"export OPENMPI_BIN_DIR\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"#export PARAVIEW_SYSTEM=1\"/\"export PARAVIEW_SYSTEM=1\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"#export PARAVIEW_DIR=path_to_system_installed_paraview\"/\"export PARAVIEW_DIR=\\/usr\"/g etc/prefs.sh &amp;&amp; \\\n    sed -i s/\"^#export PARAVIEW_BIN_DIR\"/\"export PARAVIEW_BIN_DIR\"/g etc/prefs.sh &amp;&amp; \\\n    echo \"export WM_NCOMPPROCS=4\" &gt;&gt; etc/prefs.sh &amp;&amp; \\\n    sed -i -e 's=\\.OpenFOAM=\\.foam=' bin/paraFoam &amp;&amp; \\\n    sed -i -e 's/^unset/export LC_ALL=C; unset/' bin/paraFoam &amp;&amp; \\\n    ln -s /usr/bin/make bin/gmake &amp;&amp; \\\n    sed -i -e 's=\\(U_WIN32\\)$=\\1 -DENGINE=g' applications/utilities/postProcessing/dataConversion/foamToTecplot360/tecio/tecsrc/Make/tecioOptions &amp;&amp; \\\n    sed -i -e 's=software.sandia.gov/~jakraft=downloads.sourceforge.net/project/openfoam-extend/foam-extend-3.0/ThirdParty=g' ThirdParty/AllMake.stage3 ThirdParty/rpmBuild/SPECS/mesquite-2.1.2.spec &amp;&amp; \\\n    find src applications -name \"*.L\" -type f | xargs sed -i -e 's=\\(YY\\_FLEX\\_SUBMINOR\\_VERSION\\)=YY_FLEX_MINOR_VERSION &lt; 6 \\&amp;\\&amp; \\1=' &amp;&amp; \\\n    cp -r wmake/rules/linux64Gcc46 wmake/rules/linux64Gcc54 &amp;&amp; \\\n    sed -i 's/^\\(c++FLAGS.*\\)/\\1 -fpermissive/g' wmake/rules/linux64Gcc54/c++ &amp;&amp; \\\n    . etc/bashrc &amp;&amp; \\\n    cd ThirdParty &amp;&amp; \\\n    sed -i 's=^( rpm_make -p cmake=#( rpm_make -p cmake=' AllMake.stage1 &amp;&amp; \\\n    sed -i -e 's/\\(\\+.*LIBS = \\)/\\1-Xlinker --add-needed -Xlinker --no-as-needed /' ./rpmBuild/SOURCES/ParMGridGen-1.0.patch &amp;&amp; \\\n    sed -i -e 's/\\(\\+.*LIBS = \\)/\\1-Xlinker --add-needed -Xlinker --no-as-needed /' ./rpmBuild/SOURCES/ParMetis-3.1.1.patch &amp;&amp; \\\n    sed -i -e 's=$(LDFLAGS)=$(LDFLAGS) -pthread=' ./rpmBuild/SOURCES/scotch-5.1.10b_patch_0 &amp;&amp; \\\n    ./AllMake &gt; log.AllMake &amp;&amp; \\\n    cd .. &amp;&amp; \\\n    . etc/bashrc &amp;&amp; \\\n    ./Allwmake &gt; log.AllwMake &amp;&amp; \\\n    ./Allwmake\n</code></pre>\n<p>That was fun <img src=\"https://ask.cyberinfrastructure.org/images/emoji/twitter/slight_smile.png?v=9\" title=\":slight_smile:\" class=\"emoji\" alt=\":slight_smile:\"></p>",
+                "post_number": 13,
+                "post_type": 1,
+                "updated_at": "2019-07-11T13:32:37.746Z",
+                "reply_count": 1,
+                "reply_to_post_number": 12,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 25.8,
+                "yours": true,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "reply_to_user": {
+                    "username": "vsoch",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1906,
+                "name": "Wensi Wu",
+                "username": "ww382",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png",
+                "created_at": "2019-07-11T13:38:11.768Z",
+                "cooked": "<p>Thanks, <a class=\"mention\" href=\"/u/vsoch\">@vsoch</a>! I\u2019ll give you an update! <img src=\"https://ask.cyberinfrastructure.org/images/emoji/twitter/slight_smile.png?v=9\" title=\":slight_smile:\" class=\"emoji\" alt=\":slight_smile:\"></p>",
+                "post_number": 14,
+                "post_type": 1,
+                "updated_at": "2019-07-11T13:38:11.768Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 5.8,
+                "yours": false,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Wensi Wu",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 298,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-07-10T01:26:00.490Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1908,
+                "name": "Wensi Wu",
+                "username": "ww382",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png",
+                "created_at": "2019-07-11T20:28:31.811Z",
+                "cooked": "<p>I pull the openfoam image from Docker Hub</p>\n<pre><code class=\"lang-auto\">singularity pull --name OpenFOAM-1.6-ext.simg docker://ww382/openfoam\n</code></pre>\n<p>Then shell into the image</p>\n<pre><code class=\"lang-auto\">singularity shell OpenFOAM-1.6-ext.simg \n</code></pre>\n<p>I encountered some permission issues, so I created a recipe file for Singularity:</p>\n<pre><code class=\"lang-auto\">Bootstrap: docker\nFrom: docker://ww382/openfoam\n\n%environment\n  export SHELL=/bin/bash\n  export PATH=/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/ThirdParty/packages/scotch-5.1.10b/platforms/linux64Gcc54DPOpt/bin:/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/ThirdParty/packages/mesquite-2.1.2/platforms/linux64Gcc54DPOpt/bin:/usr/bin:/home/openfoam/OpenFOAM/openfoam-1.6-ext/applications/bin/linux64Gcc54DPOpt:/home/openfoam/OpenFOAM/site/1.6-ext/bin/linux64Gcc54DPOpt:/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/applications/bin/linux64Gcc54DPOpt:/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/wmake:/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin\n  export LD_LIBRARY_PATH=/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/ThirdParty/packages/scotch-5.1.10b/platforms/linux64Gcc54DPOpt/lib:/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/ThirdParty/packages/ParMGridGen-1.0/platforms/linux64Gcc54DPOpt/lib:/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/ThirdParty/packages/ParMetis-3.1.1/platforms/linux64Gcc54DPOpt/lib:/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/ThirdParty/packages/metis-5.0pre2/platforms/linux64Gcc54DPOpt/lib:/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/ThirdParty/packages/mesquite-2.1.2/platforms/linux64Gcc54DPOpt/lib:/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/lib/linux64Gcc54DPOpt/openmpi-system:/usr/lib/x86_64-linux-gnu/openmpi/lib:/usr//lib:/home/openfoam/OpenFOAM/openfoam-1.6-ext/lib/linux64Gcc54DPOpt:/home/openfoam/OpenFOAM/site/1.6-ext/lib/linux64Gcc54DPOpt:/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/lib/linux64Gcc54DPOpt:/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/lib/linux64Gcc54DPOpt/dummy\n  export FOAM_APP=/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/applications\n  export FOAM_APPBIN=/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/applications/bin/linux64Gcc54DPOpt\n  export FOAM_INST_DIR=/home/openfoam/OpenFOAM\n  export FOAM_JOB_DIR=/home/openfoam/OpenFOAM/jobControl\n  export FOAM_LIBBIN=/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/lib/linux64Gcc54DPOpt\n  export FOAM_MPI=/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/lib/linux64Gcc54DPOpt/openmpi-system\n  export FOAM_RUN=/home/openfoam/OpenFOAM/user-1.6-ext/run\n  export FOAM_SOLVERS=/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/applications/solvers\n  export FOAM_SRC=/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/src\n  export FOAM_TUTORIALS=/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/tutorials\n  export FOAM_USER_APPBIN=/home/openfoam/OpenFOAM/user-1.6-ext/applications/bin/linux64Gcc54DPOpt\n  export FOAM_USER_LIBBIN=/home/openfoam/OpenFOAM/user-1.6-ext/lib/linux64Gcc54DPOpt\n  export FOAM_UTILITIES=/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/applications/utilities\n  export MPI_ARCH_PATH=/usr\n  export WM_DIR=/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/wmake\n  export WM_PROJECT_DIR=/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext\n  export WM_PROJECT_INST_DIR=/home/openfoam/OpenFOAM\n  export WM_PROJECT_USER_DIR=/home/openfoam/OpenFOAM/user-1.6-ext\n  export WM_THIRD_PARTY_DIR=/home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/ThirdParty\n\n%post\n  chmod -R 777 /home/openfoam/OpenFOAM\n</code></pre>\n<p>I then rebuilt the image</p>\n<pre><code class=\"lang-auto\">sudo singularity build OpenFOAM-1.6-ext.simg Singularity\n</code></pre>\n<p>The permission issues were resolved, but then I encountered error messages related storage space issue</p>\n<pre><code class=\"lang-auto\">cp: error writing 'damBreakWithObstacle/0/polyMesh/faces': No space left on device\ncp: error writing 'damBreakWithObstacle/0/polyMesh/neighbour': No space left on device\ncp: error writing 'damBreakWithObstacle/0/polyMesh/owner': No space left on device\n</code></pre>\n<p>I read that the solution to that is to set the <code>$SINGULARITY_CACHEDIR</code> to a different location. What are some typical locations to set the cache directory?</p>",
+                "post_number": 15,
+                "post_type": 1,
+                "updated_at": "2019-07-11T20:36:12.406Z",
+                "reply_count": 1,
+                "reply_to_post_number": 13,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 10.8,
+                "yours": false,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Wensi Wu",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "vsoch",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 298,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-07-10T01:26:00.490Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1909,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-07-11T21:08:31.545Z",
+                "cooked": "<p>Does the build fail when it\u2019s extracting layers, or when it\u2019s doing your customization? If the first,  then it would be fairly easy to use /tmp for the cache. Try:</p>\n<pre><code class=\"lang-bash\">mkdir -p /tmp/.singularity\nexport SINGULARITY_CACHEDIR=/tmp/.singularity\n</code></pre>\n<p>I\u2019m assuming you aren\u2019t running on an HPC resource given that you have sudo, but if you were doing a build of just the docker container on HPC (sudo not required) you could export to somewhere like $SCRATCH:</p>\n<pre><code class=\"lang-bash\">mkdir -p $SCRATCH/.singularity\nexport SINGULARITY_CACHEDIR=$SCRATCH/.singularity\n</code></pre>\n<p>That\u2019s actually been such a common recommendation that we have it done by default by our admins (and so you might ask your cluster admin to do the same!) I mention it because if you<br>\nare having trouble building locally, an option would be to do those additional customizations in the Docker container, push to something like <code>ww382/openfoam:singularity</code> and then pull directly onto the cluster, either of these would work:</p>\n<pre><code class=\"lang-bash\">$ singularity pull docker://ww382/openfoam:singularity\n$ singularity build docker://ww382/openfoam:singularity\n</code></pre>\n<p>So in summary:</p>\n<ol>\n<li>Try exporting the cache directory to /tmp/.singularity, or a filesystem with lots of space</li>\n<li>If you don\u2019t have enough on your local machine, do the changes in the Dockerfile, push to a different tag, and then pull directly.</li>\n</ol>",
+                "post_number": 16,
+                "post_type": 1,
+                "updated_at": "2019-07-11T21:08:31.545Z",
+                "reply_count": 0,
+                "reply_to_post_number": 15,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 5.8,
+                "yours": true,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "reply_to_user": {
+                    "username": "ww382",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1913,
+                "name": "Wensi Wu",
+                "username": "ww382",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png",
+                "created_at": "2019-07-12T16:13:42.095Z",
+                "cooked": "<p>I was able to build successfully. The error occurred when I tried test run a tutorial case.</p>\n<p>I shell into the image:</p>\n<pre><code class=\"lang-auto\">singularity shell OpenFOAM-1.6-ext.simg \n</code></pre>\n<p>Then I sourced OpenFOAM bashrc:</p>\n<pre><code class=\"lang-auto\">source /home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/etc/bashrc \n</code></pre>\n<p>I \u201ccd-ed\u201d into a tutorial case and executed the <code>Allrun</code> script:</p>\n<pre><code class=\"lang-auto\">cd /home/openfoam/OpenFOAM/OpenFOAM-1.6-ext/tutorials/multiphase/interDyMFoam/ras/damBreakWithObstacle/ &amp;&amp; \\\n./Allrun \n</code></pre>\n<p>Then I received the following errors:</p>\n<pre><code class=\"lang-auto\">cp: error writing '0/0-orig/U': No space left on device\ncp: error writing '0/0-orig/alpha1': No space left on device\ncp: error writing '0/0-orig/alpha1.org': No space left on device\ncp: error writing '0/0-orig/pd': No space left on device\n</code></pre>",
+                "post_number": 17,
+                "post_type": 1,
+                "updated_at": "2019-07-12T16:13:42.095Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 10.8,
+                "yours": false,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Wensi Wu",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 298,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-07-10T01:26:00.490Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1914,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-07-12T16:18:00.192Z",
+                "cooked": "<p>This looks like it\u2019s not about the container, but the cluster / node where you are running it. I\u2019m not familiar with the tutorial, but I\u2019d take a look at the <code>Allrun</code> and determine where it\u2019s trying to write files (is it mounted on the host, or is it trying to write into a read only container?) and then assessing if you have space there.</p>",
+                "post_number": 18,
+                "post_type": 1,
+                "updated_at": "2019-07-12T16:18:00.192Z",
+                "reply_count": 1,
+                "reply_to_post_number": 17,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 10.8,
+                "yours": true,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "reply_to_user": {
+                    "username": "ww382",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1915,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-07-12T16:18:52.763Z",
+                "cooked": "<p>Also, if you are exporting all of those paths in the build recipe via the environment, what is gained from sourcing the bashrc?</p>",
+                "post_number": 19,
+                "post_type": 1,
+                "updated_at": "2019-07-12T16:18:52.763Z",
+                "reply_count": 0,
+                "reply_to_post_number": 18,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 5.8,
+                "yours": true,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "reply_to_user": {
+                    "username": "vsoch",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1918,
+                "name": "Wensi Wu",
+                "username": "ww382",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png",
+                "created_at": "2019-07-12T19:41:45.369Z",
+                "cooked": "<p>I haven\u2019t had a chance to work this out on a HPC yet because the system is down. In the meantime, I\u2019m trying to figure out all these on my local machine. Since I\u2019m running ubuntu on a virtual machine, could it be that the VM is somehow confused about where the execution is really occurring?</p>\n<p>That was a good point. I was exporting all of those paths in the build recipe because sourcing the bashrc within the container didn\u2019t seem to set up the paths for me. I now removed all of those paths in the recipe, build the image again, and sourcing the bashrc within the container. It seems like it\u2019s sourcing the bashrc script on my local directory rather than that within the container.</p>",
+                "post_number": 20,
+                "post_type": 1,
+                "updated_at": "2019-07-12T19:42:47.506Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 5.8,
+                "yours": false,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Wensi Wu",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 298,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-07-10T01:26:00.490Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1919,
+                "name": "Wensi Wu",
+                "username": "ww382",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png",
+                "created_at": "2019-07-13T02:56:57.555Z",
+                "cooked": "<p>Update: I created an overlay image and used it with the OpenFOAM container, the \u2018No space left on device\u2019 errors were gone! <img src=\"https://ask.cyberinfrastructure.org/images/emoji/twitter/slight_smile.png?v=9\" title=\":slight_smile:\" class=\"emoji\" alt=\":slight_smile:\"></p>",
+                "post_number": 21,
+                "post_type": 1,
+                "updated_at": "2019-07-13T02:56:57.555Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 5.8,
+                "yours": false,
+                "topic_id": 989,
+                "topic_slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+                "display_username": "Wensi Wu",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 298,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-07-10T01:26:00.490Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            1891,
+            1892,
+            1893,
+            1894,
+            1895,
+            1896,
+            1897,
+            1898,
+            1899,
+            1900,
+            1901,
+            1904,
+            1905,
+            1906,
+            1908,
+            1909,
+            1913,
+            1914,
+            1915,
+            1918,
+            1919
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            101
+        ],
+        [
+            2,
+            100
+        ],
+        [
+            15,
+            99
+        ],
+        [
+            17,
+            98
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 975,
+            "title": "The lifecycle of a cluster",
+            "fancy_title": "The lifecycle of a cluster",
+            "slug": "the-lifecycle-of-a-cluster",
+            "posts_count": 3,
+            "reply_count": 0,
+            "highest_post_number": 3,
+            "image_url": "https://ask.cyberinfrastructure.org/uploads/default/original/1X/dfbb8cc43257f78f14cff56af316b6a54a40520e.jpeg",
+            "created_at": "2019-07-02T02:30:38.488Z",
+            "last_posted_at": "2019-08-05T16:17:46.711Z",
+            "bumped": true,
+            "bumped_at": "2019-08-05T16:17:46.711Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 158,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 276,
+                        "username": "Phillip_Benoit",
+                        "name": "Phillip Benoit",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/phillip_benoit/{size}/234_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1064,
+            "title": "Future Direction of Question of the Week",
+            "fancy_title": "Future Direction of Question of the Week",
+            "slug": "future-direction-of-question-of-the-week",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-09-17T14:51:28.517Z",
+            "last_posted_at": "2019-09-19T14:36:28.717Z",
+            "bumped": true,
+            "bumped_at": "2019-09-19T14:36:28.717Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 48,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1081,
+            "title": "How could you provide an optimization service?",
+            "fancy_title": "How could you provide an optimization service?",
+            "slug": "how-could-you-provide-an-optimization-service",
+            "posts_count": 5,
+            "reply_count": 1,
+            "highest_post_number": 5,
+            "image_url": null,
+            "created_at": "2019-10-05T22:49:28.685Z",
+            "last_posted_at": "2019-10-10T03:36:48.665Z",
+            "bumped": true,
+            "bumped_at": "2019-10-10T03:36:48.665Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "optimization"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 76,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 144,
+                        "username": "hjmangalam",
+                        "name": "Harry",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [],
+    "id": 989,
+    "title": "How do I create a docker container for OpenFOAM-1.6-ext",
+    "fancy_title": "How do I create a docker container for OpenFOAM-1.6-ext",
+    "posts_count": 21,
+    "created_at": "2019-07-10T01:44:08.015Z",
+    "views": 259,
+    "reply_count": 12,
+    "like_count": 3,
+    "last_posted_at": "2019-07-13T02:56:57.555Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+    "category_id": 23,
+    "word_count": 3408,
+    "deleted_at": null,
+    "user_id": 298,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_989",
+    "draft_sequence": 11,
+    "posted": true,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 21,
+    "last_read_post_number": 21,
+    "last_read_post_id": 1919,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 7,
+    "participant_count": 2,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": false,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answerer": {
+        "id": 298,
+        "username": "ww382",
+        "name": "Wensi Wu",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png"
+    },
+    "can_vote": false,
+    "vote_count": null,
+    "user_voted": false,
+    "details": {
+        "notification_level": 2,
+        "notifications_reason_id": 4,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 161,
+                "username": "vsoch",
+                "name": "Vanessasaurus",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "post_count": 11,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 298,
+                "username": "ww382",
+                "name": "Wensi Wu",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png",
+                "post_count": 10,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 298,
+            "username": "ww382",
+            "name": "Wensi Wu",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png"
+        },
+        "last_poster": {
+            "id": 298,
+            "username": "ww382",
+            "name": "Wensi Wu",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png"
+        },
+        "links": [
+            {
+                "url": "https://openfoamwiki.net/index.php/Installation/Linux/OpenFOAM-1.6-ext/Ubuntu#Ubuntu_16.04",
+                "title": "Installation/Linux/OpenFOAM-1.6-ext/Ubuntu - OpenFOAMWiki",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 298,
+                "domain": "openfoamwiki.net",
+                "root_domain": "openfoamwiki.net"
+            }
+        ]
+    }
+}

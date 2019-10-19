@@ -1,0 +1,768 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 414,
+                "name": "Nicholas Colella",
+                "username": "ncolella",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ncolella/{size}/48_2.png",
+                "created_at": "2018-06-12T21:08:40.163Z",
+                "cooked": "<p>What files do I need to run Gaussian on a compute node?</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:36.557Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 47,
+                "reads": 18,
+                "readers_count": 17,
+                "score": 228.6,
+                "yours": false,
+                "topic_id": 233,
+                "topic_slug": "how-can-i-run-gaussian09-on-a-server",
+                "display_username": "Nicholas Colella",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 4,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 25,
+                "hidden": false,
+                "trust_level": 3,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-27T20:49:37.187Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 25,
+                    "username": "ncolella",
+                    "created_at": "2018-03-27T20:49:37.187Z",
+                    "updated_at": "2019-06-10T18:58:37.033Z",
+                    "name": "Nicholas Colella",
+                    "seen_notification_id": 3094,
+                    "last_posted_at": "2019-06-10T18:58:36.932Z",
+                    "password_hash": "7bc920200729e5123afdceb168fb97e95752368d29a65a14ad16f585e825e56a",
+                    "salt": "130552ca8d76e187c393f2835ead898f",
+                    "active": true,
+                    "username_lower": "ncolella",
+                    "last_seen_at": "2019-06-18T21:00:51.937Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-16T05:42:24.542Z",
+                    "trust_level": 3,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-06-10T19:06:12.331Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 3624890583,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 48,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 1097861197,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-27T20:49:53.142Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-06-12T21:19:00.341Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 415,
+                "name": "Nicholas Colella",
+                "username": "ncolella",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ncolella/{size}/48_2.png",
+                "created_at": "2018-06-12T21:19:00.341Z",
+                "cooked": "<p>If your server uses SLURM to manage jobs, you will need both a Gaussian input file (.gau, .gzmat, etc.) and a .job file to tell the server how to manage and use your files.</p>\n<p>Your Gaussian file should be formatted normally. Make sure to specify the number of processors, amount of memory, and a checkfile filename in your header. For example:</p>\n<pre><code>%nprocshared=16\n%mem=8gb\n%chk=File1.chk\n#n B3LYP/6-31+G(d,p) opt\n</code></pre>\n<p>Your .job file must contain a few specifications. These include the number of processors and amount of memory, the location of the scratch directory on the server, and the location of the Gaussian program itself. This should look similar to:</p>\n<pre><code>#!/bin/bash\n#SBATCH -n 16\n#SBATCH --mem=9000\n#SBATCH -p partitionname\n#SBATCH -t 24:00:00\n\nset -x\nfilename=File1\nfiletype=gzmat\n\n## Telling the server where Gaussian is ##\n\nmodule add path/to/Gaussian\nunset PGI_TERM\nprgname=g09 #Gaussian program name\n\n## Setting up scratch and copying files ##\n\nSTORAGE_DIR=\"/scratch/users/you_username/${SLURM_JOB_ID}.${filename}\"\nGAUSS_SCRDIR=$STORAGE_DIR\nexport GAUSS_SCRDIR STORAGE_DIR\nmkdir -pv $STORAGE_DIR\ncd $STORAGE_DIR\ncp $SLURM_SUBMIT_DIR/${filename}.${filetype} $STORAGE_DIR\nfor a in $extrafiles ; do cp -r $SLURM_SUBMIT_DIR/$a $STORAGE_DIR/ ;  done\ncat ${filename}.${filetype}\n\n##  Running Gaussian 09 and putting the output files back in your home directory ##\n\n$prgname &lt; ${filename}.${filetype} &gt; ${filename}.out\ncp -a $STORAGE_DIR $SLURM_SUBMIT_DIR\n</code></pre>\n<p>You will need to upload both of these files to the server via FTP (e.g. with FileZilla or similar), then submit the .job file on the cluster by logging in with SSH via Terminal or PuTTY, navigating to the folder where the files are stored, and running</p>\n<pre><code>sbatch filename.job</code></pre>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:36.602Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 18,
+                "readers_count": 17,
+                "score": 13.6,
+                "yours": false,
+                "topic_id": 233,
+                "topic_slug": "how-can-i-run-gaussian09-on-a-server",
+                "display_username": "Nicholas Colella",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 25,
+                "hidden": false,
+                "trust_level": 3,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-27T20:49:37.187Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 25,
+                    "username": "ncolella",
+                    "created_at": "2018-03-27T20:49:37.187Z",
+                    "updated_at": "2019-06-10T18:58:37.033Z",
+                    "name": "Nicholas Colella",
+                    "seen_notification_id": 3094,
+                    "last_posted_at": "2019-06-10T18:58:36.932Z",
+                    "password_hash": "7bc920200729e5123afdceb168fb97e95752368d29a65a14ad16f585e825e56a",
+                    "salt": "130552ca8d76e187c393f2835ead898f",
+                    "active": true,
+                    "username_lower": "ncolella",
+                    "last_seen_at": "2019-06-18T21:00:51.937Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-16T05:42:24.542Z",
+                    "trust_level": 3,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-06-10T19:06:12.331Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 3624890583,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 48,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 1097861197,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-27T20:49:53.142Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-06-12T21:19:00.341Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            414,
+            415
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            493
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 744,
+            "title": "How do I do <insert thing here> in bash?",
+            "fancy_title": "How do I do &lt;insert thing here&gt; in bash?",
+            "slug": "how-do-i-do-insert-thing-here-in-bash",
+            "posts_count": 3,
+            "reply_count": 1,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2019-01-11T19:11:49.460Z",
+            "last_posted_at": "2019-01-15T22:22:17.366Z",
+            "bumped": true,
+            "bumped_at": "2019-01-15T22:22:17.366Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": true,
+            "tags": [
+                "bash",
+                "getting-started"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 323,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 75,
+                        "username": "mhanby",
+                        "name": "Mike Hanby",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mhanby/{size}/50_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 943,
+            "title": "How do I run mpi4py?",
+            "fancy_title": "How do I run mpi4py?",
+            "slug": "how-do-i-run-mpi4py",
+            "posts_count": 5,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-06-11T19:03:22.881Z",
+            "last_posted_at": "2019-06-21T15:44:53.319Z",
+            "bumped": true,
+            "bumped_at": "2019-06-21T15:44:53.319Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "python",
+                "mpi"
+            ],
+            "archetype": "regular",
+            "like_count": 2,
+            "views": 419,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 199,
+                        "username": "akkornel",
+                        "name": "Karl Kornel",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/akkornel/{size}/161_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 95,
+                        "username": "nrapstine",
+                        "name": "",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/n/5e9695/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 835,
+            "title": "How to share docker images with multiple private groups",
+            "fancy_title": "How to share docker images with multiple private groups",
+            "slug": "how-to-share-docker-images-with-multiple-private-groups",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-04-05T15:51:21.422Z",
+            "last_posted_at": "2019-04-10T19:03:01.014Z",
+            "bumped": true,
+            "bumped_at": "2019-04-10T19:03:01.014Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "docker",
+                "singularity"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 128,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 223,
+                        "username": "Bennett_Wineholt",
+                        "name": "Bennett Wineholt",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/bennett_wineholt/{size}/174_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 227,
+                        "username": "Gregory_Kurtzer",
+                        "name": "Gregory Kurtzer",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/gregory_kurtzer/{size}/177_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "dft",
+        "gaussian",
+        "gaussian09",
+        "quantum-chemistry",
+        "computational-chemistry"
+    ],
+    "id": 233,
+    "title": "How can I run Gaussian09 on a server?",
+    "fancy_title": "How can I run Gaussian09 on a server?",
+    "posts_count": 2,
+    "created_at": "2018-06-12T21:08:40.082Z",
+    "views": 153,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2018-06-12T21:19:00.341Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "how-can-i-run-gaussian09-on-a-server",
+    "category_id": 26,
+    "word_count": 282,
+    "deleted_at": null,
+    "user_id": 25,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_233",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 2,
+    "last_read_post_number": 2,
+    "last_read_post_id": 415,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 2,
+    "participant_count": 1,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2018-06-12T21:19:00.341Z",
+    "last_commented_on": null,
+    "answer_count": 1,
+    "comment_count": 0,
+    "last_answer_post_number": 2,
+    "last_answerer": {
+        "id": 25,
+        "username": "ncolella",
+        "name": "Nicholas Colella",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ncolella/{size}/48_2.png"
+    },
+    "can_vote": true,
+    "vote_count": 0,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 25,
+                "username": "ncolella",
+                "name": "Nicholas Colella",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ncolella/{size}/48_2.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 25,
+            "username": "ncolella",
+            "name": "Nicholas Colella",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ncolella/{size}/48_2.png"
+        },
+        "last_poster": {
+            "id": 25,
+            "username": "ncolella",
+            "name": "Nicholas Colella",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ncolella/{size}/48_2.png"
+        }
+    }
+}

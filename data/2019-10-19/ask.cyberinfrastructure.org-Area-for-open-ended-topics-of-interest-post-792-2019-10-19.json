@@ -1,0 +1,1811 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 1491,
+                "name": "Wirawan Purwanto",
+                "username": "wirawan0",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/w/65b543/{size}.png",
+                "created_at": "2019-02-11T17:10:32.198Z",
+                "cooked": "<p>Anybody have experience with <strong>package managers</strong> that can provide user-managed software stack environment for HPC or similar kind of environment (multi-user, multi-node)? Another scenario is for users given one or more VM\u2019s where he/she could not have root access for any reason. Here are key requirements:</p>\n<ul>\n<li>This needs to be an environment that can be 100% controlled by the user, not by sysadmin.</li>\n<li>It needs to be a \u201cpackage manager\u201d (like apt, yum, fink, brew, pacman) with (mostly) simple one-command installation.</li>\n<li>It needs to have a gentle learning curve for the user (who is also the \u201cadmin\u201d of the software stack)</li>\n<li>The tool must be able to install to a user-specified location and <em>NOT</em> require superuser privileges (sudo/su) in the setup/build/install/config processes.</li>\n</ul>\n<p>It can have a GUI, but CLI capabilities is much preferred.</p>\n<p>Background: Under certain circumstances, user may choose to create his/her own software stack. Is there a platform that can be recommended for this user? The user has some basic skill on software install, build, etc but not too high skill in terms of software troubleshooting, etc. Ideally it contains many tested recipes for up-to-date software versions so the work on the user part is not too much.</p>\n<p>I notice there are software distribution with similar philosophy. For example, Conda/Anaconda for Python environment. Then there is also MSYS2, which seems to leverage ArchLinux pacman (?). And cygwin. But for Linux environment, anything like this? I came across Linuxbrew recently. Any input on your experience with this software management tool? How will this compare to Spack, etc?</p>\n<p>Wirawan</p>\n<p><em>(Question clarified 2019-03-06 because the original wording lacked \u201cpackage manager\u201d which can then be interpreted in many ways.)</em></p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-03-05T15:55:48.172Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 26,
+                "reads": 30,
+                "readers_count": 29,
+                "score": 136.0,
+                "yours": false,
+                "topic_id": 792,
+                "topic_slug": "custom-software-stack-environment-for-user-no-sudo-root",
+                "display_username": "Wirawan Purwanto",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 5,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 48,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-08T19:28:48.229Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1492,
+                "name": "Lance Parsons",
+                "username": "lparsons",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lparsons/{size}/147_2.png",
+                "created_at": "2019-02-11T18:40:57.565Z",
+                "cooked": "<p><a href=\"https://conda.io/projects/conda/en/latest/user-guide/getting-started.html\" rel=\"nofollow noopener\">Conda</a> provides for much more than just python packages. I\u2019ve used <a href=\"https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html\" rel=\"nofollow noopener\">conda environments</a> (with <a href=\"https://conda.io/en/latest/miniconda.html\" rel=\"nofollow noopener\">miniconda</a> specifically) to create custom software stacks for various projects across different environments, including multiple HPC clusters. Adding channels such as <a href=\"https://conda-forge.org/\" rel=\"nofollow noopener\">conda-forge</a> and <a href=\"https://bioconda.github.io/\" rel=\"nofollow noopener\">bioconda</a> provides access to a wide variety of packages. And building your own isn\u2019t too hard.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-03-01T02:30:09.870Z",
+                "reply_count": 4,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 29,
+                "readers_count": 28,
+                "score": 30.8,
+                "yours": false,
+                "topic_id": 792,
+                "topic_slug": "custom-software-stack-environment-for-user-no-sudo-root",
+                "display_username": "Lance Parsons",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://conda-forge.org/",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "conda-forge | community driven packaging for conda",
+                        "clicks": 2
+                    },
+                    {
+                        "url": "https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Managing environments \u2014 conda 4.6.3.post15+ad7bfd6d documentation",
+                        "clicks": 1
+                    },
+                    {
+                        "url": "https://conda.io/projects/conda/en/latest/user-guide/getting-started.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Getting started with conda \u2014 conda 4.6.3.post15+ad7bfd6d documentation",
+                        "clicks": 1
+                    },
+                    {
+                        "url": "https://bioconda.github.io/",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Using Bioconda \u2014 Bioconda documentation",
+                        "clicks": 0
+                    },
+                    {
+                        "url": "https://conda.io/en/latest/miniconda.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Miniconda \u2014 Conda documentation",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 191,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-27T14:38:17.053Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 2,
+                "qa_voted": [
+                    134,
+                    213
+                ],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1498,
+                "name": "Ben Fulton",
+                "username": "benfulton",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/benfulton/{size}/102_2.png",
+                "created_at": "2019-02-18T20:01:25.899Z",
+                "cooked": "<p>Conda, interestingly, is unable to unload the $PATH variable on deactivate, which makes it a bit inconvenient to switch between environments like modules or lmod does.</p>\n<aside class=\"onebox githubissue\">\n  <header class=\"source\">\n      <a href=\"https://github.com/conda/conda/issues/8070\" target=\"_blank\" rel=\"nofollow noopener\">github.com/conda/conda</a>\n  </header>\n  <article class=\"onebox-body\">\n    <a href=\"https://github.com/beenje\" rel=\"nofollow noopener\">\n<img src=\"https://ask.cyberinfrastructure.org/uploads/default/original/1X/6a0dfd8020bebb702254e321bbeb3aa7fe0293fd.jpeg\" class=\"thumbnail onebox-avatar\" width=\"96\" height=\"96\">\n</a>\n\n<h4><a href=\"https://github.com/conda/conda/issues/8070\" target=\"_blank\" rel=\"nofollow noopener\">Issue: Always restore PATH after deactivate even if modified in activate scripts</a></h4>\n\n<div class=\"date\" style=\"margin-top:10px;\">\n\t<div class=\"user\" style=\"margin-top:10px;\">\n\topened by <a href=\"https://github.com/beenje\" target=\"_blank\" rel=\"nofollow noopener\">beenje</a>\n\ton <a href=\"https://github.com/conda/conda/issues/8070\" target=\"_blank\" rel=\"nofollow noopener\">2019-01-09</a>\n\t</div>\n\t<div class=\"user\">\n\tclosed by <a href=\"https://github.com/beenje\" target=\"_blank\" rel=\"nofollow noopener\">beenje</a>\n\ton <a href=\"https://github.com/conda/conda/issues/8070\" target=\"_blank\" rel=\"nofollow noopener\">2019-01-31</a>\n\t</div>\n</div>\n\n<pre class=\"content\" style=\"white-space: pre-wrap;\">It's currently not possible to modify the PATH in the deactivate scripts. See #3915\nThere is one pending PR to fix that...</pre>\n\n<div class=\"labels\">\n</div>\n\n  </article>\n  <div class=\"onebox-metadata\">\n    \n    \n  </div>\n  <div style=\"clear: both\"></div>\n</aside>\n",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-03-01T02:30:09.895Z",
+                "reply_count": 0,
+                "reply_to_post_number": 2,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 27,
+                "readers_count": 26,
+                "score": 10.4,
+                "yours": false,
+                "topic_id": 792,
+                "topic_slug": "custom-software-stack-environment-for-user-no-sudo-root",
+                "display_username": "Ben Fulton",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://github.com/beenje",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "beenje (Benjamin Bertrand) \u00b7 GitHub",
+                        "clicks": 0
+                    },
+                    {
+                        "url": "https://github.com/conda/conda/issues/8070",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Always restore PATH after deactivate even if modified in activate scripts \u00b7 Issue #8070 \u00b7 conda/conda \u00b7 GitHub",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "lparsons",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lparsons/{size}/147_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 134,
+                "hidden": false,
+                "trust_level": 2,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-08-23T18:55:48.961Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1499,
+                "name": "Wirawan Purwanto",
+                "username": "wirawan0",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/w/65b543/{size}.png",
+                "created_at": "2019-02-18T22:04:21.167Z",
+                "cooked": "<blockquote>\n<p>\u201cBuilding your own [package spec] isn\u2019t too hard\u201d</p>\n</blockquote>\n<p>This was what I was trying to avoid, actually. I added a clarifying stmt in the original question, i.e. what packaging system can be easily deployed by end-users in shared HPC or VM environment? Many HPC/VM users probably don\u2019t have the patience to build a \u201cpackaging spec\u201d file (be it for Conda, for LinuxBrew, for Debian, etc.).</p>",
+                "post_number": 4,
+                "post_type": 1,
+                "updated_at": "2019-03-01T02:30:09.918Z",
+                "reply_count": 0,
+                "reply_to_post_number": 2,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 27,
+                "readers_count": 26,
+                "score": 10.4,
+                "yours": false,
+                "topic_id": 792,
+                "topic_slug": "custom-software-stack-environment-for-user-no-sudo-root",
+                "display_username": "Wirawan Purwanto",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "lparsons",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lparsons/{size}/147_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 48,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-08T19:28:48.229Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1500,
+                "name": "Wirawan Purwanto",
+                "username": "wirawan0",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/w/65b543/{size}.png",
+                "created_at": "2019-02-18T22:07:17.383Z",
+                "cooked": "<p><a class=\"mention\" href=\"/u/lparsons\">@lparsons</a> Can you say more about the packages you used in the past? Does Conda have packages for general (non-python) computing? Say, gcc, gdb, MPI, MKL or OpenBLAS, \u2026?</p>",
+                "post_number": 5,
+                "post_type": 1,
+                "updated_at": "2019-03-01T02:30:09.939Z",
+                "reply_count": 0,
+                "reply_to_post_number": 2,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 26,
+                "readers_count": 25,
+                "score": 15.2,
+                "yours": false,
+                "topic_id": 792,
+                "topic_slug": "custom-software-stack-environment-for-user-no-sudo-root",
+                "display_username": "Wirawan Purwanto",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "lparsons",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lparsons/{size}/147_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 48,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-08T19:28:48.229Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1503,
+                "name": "Lance Parsons",
+                "username": "lparsons",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lparsons/{size}/147_2.png",
+                "created_at": "2019-02-21T16:13:25.921Z",
+                "cooked": "<blockquote>\n<p>Can you say more about the packages you used in the past? Does Conda have packages for general (non-python) computing? Say, gcc, gdb, MPI, MKL or OpenBLAS, \u2026?</p>\n</blockquote>\n<p>I\u2019ve used quite a few bioinformatics packages from <a href=\"https://bioconda.github.io/\" rel=\"nofollow noopener\">bioconda</a>, including samtools, STAR, featureCounts, DESeq2, etc. In addition to the biology related bioconda channel, there is an extremely useful channel called <a href=\"https://conda-forge.org/\" rel=\"nofollow noopener\">conda-forge</a> that is a community driven effort to provide conda recipes for all sorts of general purpose computing tools, including things like <a href=\"https://github.com/conda-forge/openblas-feedstock\" rel=\"nofollow noopener\">OpenBLAS</a>. Finally, there are many other channels, including the <a href=\"https://anaconda.org/anaconda\" rel=\"nofollow noopener\">Anaconda channel</a> that have many other things available.</p>",
+                "post_number": 6,
+                "post_type": 1,
+                "updated_at": "2019-03-01T02:30:09.962Z",
+                "reply_count": 0,
+                "reply_to_post_number": 2,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 26,
+                "readers_count": 25,
+                "score": 10.2,
+                "yours": false,
+                "topic_id": 792,
+                "topic_slug": "custom-software-stack-environment-for-user-no-sudo-root",
+                "display_username": "Lance Parsons",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://anaconda.org/anaconda",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 0
+                    },
+                    {
+                        "url": "https://github.com/conda-forge/openblas-feedstock",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "GitHub - conda-forge/openblas-feedstock: A conda-smithy repository for openblas.",
+                        "clicks": 0
+                    },
+                    {
+                        "url": "https://conda-forge.org/",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "conda-forge | community driven packaging for conda",
+                        "clicks": 0
+                    },
+                    {
+                        "url": "https://bioconda.github.io/",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Using Bioconda \u2014 Bioconda documentation",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "lparsons",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lparsons/{size}/147_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 191,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-27T14:38:17.053Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1507,
+                "name": "Brock Palen",
+                "username": "brockp",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/b/3bc359/{size}.png",
+                "created_at": "2019-02-28T15:05:32.589Z",
+                "cooked": "<p>Users can always install there own packages and use something like <a href=\"http://modules.sf.net\" rel=\"nofollow noopener\">modules.sf.net</a> or lmod ( <a href=\"https://www.tacc.utexas.edu/research-development/tacc-projects/lmod\" rel=\"nofollow noopener\">https://www.tacc.utexas.edu/research-development/tacc-projects/lmod</a> ) to control their environment.  Often this is provided by the site, and users can create private modules so they don\u2019t have to setup everything from scratch.</p>\n<p>To wrap everything in a conda like environment and get modules you can use something like spack ( <a href=\"https://spack.readthedocs.io/en/latest/\" rel=\"nofollow noopener\">https://spack.readthedocs.io/en/latest/</a> )  Look at how I used it to bootstrap an environment quickly to do some cloud bench-marking to get an idea to get started (update to your own spack or master tree)  <a href=\"https://github.com/brockpalen/benchmark/blob/master/setup.sh\" rel=\"nofollow noopener\">https://github.com/brockpalen/benchmark/blob/master/setup.sh</a></p>\n<p>Spack will then setup most things for you, and then you just need to source the setup-env.sh to get everything going again.</p>",
+                "post_number": 7,
+                "post_type": 1,
+                "updated_at": "2019-03-01T02:30:10.002Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 26,
+                "readers_count": 25,
+                "score": 30.2,
+                "yours": false,
+                "topic_id": 792,
+                "topic_slug": "custom-software-stack-environment-for-user-no-sudo-root",
+                "display_username": "Brock Palen",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://spack.readthedocs.io/en/latest/",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Spack \u2014 Spack 0.12.1 documentation",
+                        "clicks": 4
+                    },
+                    {
+                        "url": "https://github.com/brockpalen/benchmark/blob/master/setup.sh",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "benchmark/setup.sh at master \u00b7 brockpalen/benchmark \u00b7 GitHub",
+                        "clicks": 0
+                    },
+                    {
+                        "url": "https://www.tacc.utexas.edu/research-development/tacc-projects/lmod",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Lmod - Texas Advanced Computing Center",
+                        "clicks": 0
+                    },
+                    {
+                        "url": "http://modules.sf.net",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 138,
+                "hidden": false,
+                "trust_level": 0,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-08-24T17:58:12.603Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 1,
+                "qa_voted": [
+                    217
+                ],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1516,
+                "name": "Jay A Pfaffman",
+                "username": "pfaffman",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/pfaffman/{size}/82_2.png",
+                "created_at": "2019-03-07T17:09:34.346Z",
+                "cooked": "<p>It\u2019s not quite what you\u2019re asking for, but you can give a non-root user access to Docker and users can then use Docker to install whatever packages are desired. A Berkeley data science class that I worked with has students install <a href=\"https://ipython.org/notebook.html\" rel=\"nofollow noopener\">Jupyter</a> to provide a Python environment. Then whatever packages are needed can be installed safely in the container.</p>",
+                "post_number": 8,
+                "post_type": 1,
+                "updated_at": "2019-03-07T17:09:34.346Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 22,
+                "readers_count": 21,
+                "score": 14.4,
+                "yours": false,
+                "topic_id": 792,
+                "topic_slug": "custom-software-stack-environment-for-user-no-sudo-root",
+                "display_username": "Jay A Pfaffman",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://ipython.org/notebook.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "The Jupyter Notebook \u2014 IPython",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": true,
+                "staff": true,
+                "user_id": 130,
+                "hidden": false,
+                "trust_level": 2,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-08-17T21:39:34.592Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1573,
+                "name": "Lisa Lowe",
+                "username": "lllowe",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/l/a4c791/{size}.png",
+                "created_at": "2019-04-04T02:52:00.804Z",
+                "cooked": "<p><a>Spack</a>.</p>\n<p>Spack is so great that when I found out about it I teared up.</p>\n<p>For the installer:  get the code from github, source a script, type \u2018spack install package\u2019.  To use, \u2018spack load package\u2019.</p>\n<p>All installs are self-contained, so if you upgrade the HDF5 it won\u2019t break the IOAPI, NetCDF, CMAQ - whatever - in some other install.</p>\n<p>It has all the major bioinformatics packages including all the dependencies in the snp-pipeline (just an example of something with like 12 dependencies.)</p>\n<p>You can do permutations of libraries and compilers, although using something other than gcc is less magical.  I also had a problem with something that needed a gcc higher than our system gcc.</p>\n<p>You should modify the config files to use system openssl  This is easy.</p>",
+                "post_number": 9,
+                "post_type": 1,
+                "updated_at": "2019-04-04T02:52:00.804Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 20,
+                "readers_count": 19,
+                "score": 9.0,
+                "yours": false,
+                "topic_id": 792,
+                "topic_slug": "custom-software-stack-environment-for-user-no-sudo-root",
+                "display_username": "Lisa Lowe",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 220,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-03-31T14:43:42.681Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1611,
+                "name": "Gregory Kurtzer",
+                "username": "Gregory_Kurtzer",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/gregory_kurtzer/{size}/177_2.png",
+                "created_at": "2019-04-11T03:08:52.257Z",
+                "cooked": "<p>You can give a \u201cnon-root user\u201d access to run Docker, but that user can easily become root from within that container, as well as control a root running daemon process which lacks a reasonable control plane to manage security ACLs,\u2026 this may open up security concerns on many shared systems.</p>",
+                "post_number": 10,
+                "post_type": 1,
+                "updated_at": "2019-04-11T03:08:52.257Z",
+                "reply_count": 0,
+                "reply_to_post_number": 8,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 20,
+                "readers_count": 19,
+                "score": 59.0,
+                "yours": false,
+                "topic_id": 792,
+                "topic_slug": "custom-software-stack-environment-for-user-no-sudo-root",
+                "display_username": "Gregory Kurtzer",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "pfaffman",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/pfaffman/{size}/82_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 227,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-04-10T19:01:24.893Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1807,
+                "name": "Nicholas Schiraldi",
+                "username": "drwx",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/d/cab0a1/{size}.png",
+                "created_at": "2019-06-10T19:59:19.387Z",
+                "cooked": "<p>Singularity is great for this. We use singularity to serve CernVM-FS, so that we don\u2019t have to install cvmfs on all of our compute nodes. Github integrates nicely with <a href=\"http://singularity-hub.org\" rel=\"nofollow noopener\">singularity-hub.org</a>, but users can also run docker images. Singularity only requires root privileges when trying to build an image, so this must be done on a local machine or via github + singularity (or gitlab + local CI/CD).</p>",
+                "post_number": 11,
+                "post_type": 1,
+                "updated_at": "2019-06-10T19:59:19.387Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 13,
+                "readers_count": 12,
+                "score": 7.6,
+                "yours": false,
+                "topic_id": 792,
+                "topic_slug": "custom-software-stack-environment-for-user-no-sudo-root",
+                "display_username": "Nicholas Schiraldi",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://singularity-hub.org",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Singularity Hub",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 274,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "new_user",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-06-10T19:55:54.657Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1813,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-06-11T18:23:33.141Z",
+                "cooked": "<p>Welcome to AskCI <a class=\"mention\" href=\"/u/drwx\">@drwx</a>!</p>\n<p><a class=\"mention\" href=\"/u/wirawan0\">@wirawan0</a> if you are avoiding using containers (if not, Singularity is a nice solution) out of spack, easybuild, and conda, I\u2019d recommend trying out spack. It will handle installing mostly everything (Python, Cmake, Autotools, etc.) packages, and if there is a package missing it\u2019s relatively easy to contribute. Heck, you can even install Singularity with spack (but the user wouldn\u2019t be able to run the final command that needs sudo to change permissions). If you want to try it out and have questions, or some request for packages missing, please ping me on GitHub (<a class=\"mention\" href=\"/u/vsoch\">@vsoch</a>) and I\u2019d be happy to help!</p>",
+                "post_number": 12,
+                "post_type": 1,
+                "updated_at": "2019-06-11T18:23:33.141Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 12,
+                "readers_count": 11,
+                "score": 7.4,
+                "yours": true,
+                "topic_id": 792,
+                "topic_slug": "custom-software-stack-environment-for-user-no-sudo-root",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            1491,
+            1492,
+            1498,
+            1499,
+            1500,
+            1503,
+            1507,
+            1516,
+            1573,
+            1611,
+            1807,
+            1813
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            249
+        ],
+        [
+            3,
+            242
+        ],
+        [
+            6,
+            239
+        ],
+        [
+            7,
+            233
+        ],
+        [
+            8,
+            225
+        ],
+        [
+            9,
+            198
+        ],
+        [
+            10,
+            191
+        ],
+        [
+            11,
+            130
+        ],
+        [
+            12,
+            129
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 996,
+            "title": "Rclone vs sftp for Box.com",
+            "fancy_title": "Rclone vs sftp for Box.com",
+            "slug": "rclone-vs-sftp-for-box-com",
+            "posts_count": 4,
+            "reply_count": 1,
+            "highest_post_number": 4,
+            "image_url": null,
+            "created_at": "2019-07-23T13:39:57.218Z",
+            "last_posted_at": "2019-07-23T16:52:57.195Z",
+            "bumped": true,
+            "bumped_at": "2019-07-23T16:52:57.195Z",
+            "unseen": false,
+            "last_read_post_number": 4,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "cloud",
+                "storage"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 144,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 33,
+                        "username": "jgriffin",
+                        "name": "John Griffin",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/e79b87/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 155,
+                        "username": "iki",
+                        "name": "",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/iki/{size}/100_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 989,
+            "title": "How do I create a docker container for OpenFOAM-1.6-ext",
+            "fancy_title": "How do I create a docker container for OpenFOAM-1.6-ext",
+            "slug": "how-do-i-create-a-docker-container-for-openfoam-1-6-ext",
+            "posts_count": 21,
+            "reply_count": 12,
+            "highest_post_number": 21,
+            "image_url": "https://ask.cyberinfrastructure.org/uploads/default/optimized/1X/dee116d7ccabe784760903ab252df08e062ead7c_2_690x398.png",
+            "created_at": "2019-07-10T01:44:08.015Z",
+            "last_posted_at": "2019-07-13T02:56:57.555Z",
+            "bumped": true,
+            "bumped_at": "2019-07-13T02:56:57.555Z",
+            "unseen": false,
+            "last_read_post_number": 21,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [],
+            "archetype": "regular",
+            "like_count": 3,
+            "views": 259,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 298,
+                        "username": "ww382",
+                        "name": "Wensi Wu",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ww382/{size}/255_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1073,
+            "title": "Anatomy & Physiology HPC Use-Cases",
+            "fancy_title": "Anatomy &amp; Physiology HPC Use-Cases",
+            "slug": "anatomy-physiology-hpc-use-cases",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-09-30T21:32:53.603Z",
+            "last_posted_at": "2019-10-05T21:51:44.033Z",
+            "bumped": true,
+            "bumped_at": "2019-10-05T21:51:44.033Z",
+            "unseen": false,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "bookmarked": null,
+            "liked": null,
+            "tags": [
+                "hpc-getting-started",
+                "anatomy",
+                "physiology",
+                "bioinformatics"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 71,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 97,
+                        "username": "AdamErck",
+                        "name": "Adam Erck",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/adamerck/{size}/64_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 239,
+                        "username": "cbrown",
+                        "name": "Carrie Brown",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/c/b9bd4f/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 326,
+                        "username": "Sudhakar_Pamidighant",
+                        "name": "Sudhakar Pamidighantam",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/sudhakar_pamidighant/{size}/309_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 221,
+                        "username": "eleake",
+                        "name": "Elizabeth Leake",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/7993a0/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 328,
+                        "username": "KBClark",
+                        "name": "Kevn B. Clark, Ph.D.",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/kbclark/{size}/311_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "research-software",
+        "administering-hpc"
+    ],
+    "id": 792,
+    "title": "Custom software stack environment for user (no sudo/root)",
+    "fancy_title": "Custom software stack environment for user (no sudo/root)",
+    "posts_count": 12,
+    "created_at": "2019-02-11T17:10:32.109Z",
+    "views": 531,
+    "reply_count": 5,
+    "like_count": 2,
+    "last_posted_at": "2019-06-11T18:23:33.141Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "custom-software-stack-environment-for-user-no-sudo-root",
+    "category_id": 23,
+    "word_count": 1214,
+    "deleted_at": null,
+    "user_id": 48,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_792",
+    "draft_sequence": 1,
+    "posted": true,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 12,
+    "last_read_post_number": 12,
+    "last_read_post_id": 1813,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 9,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": false,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answerer": {
+        "id": 161,
+        "username": "vsoch",
+        "name": "Vanessasaurus",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+    },
+    "can_vote": false,
+    "vote_count": 3,
+    "user_voted": false,
+    "details": {
+        "notification_level": 2,
+        "notifications_reason_id": 4,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 48,
+                "username": "wirawan0",
+                "name": "Wirawan Purwanto",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/w/65b543/{size}.png",
+                "post_count": 3,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 191,
+                "username": "lparsons",
+                "name": "Lance Parsons",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lparsons/{size}/147_2.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 134,
+                "username": "benfulton",
+                "name": "Ben Fulton",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/benfulton/{size}/102_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 138,
+                "username": "brockp",
+                "name": "Brock Palen",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/b/3bc359/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 161,
+                "username": "vsoch",
+                "name": "Vanessasaurus",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 220,
+                "username": "lllowe",
+                "name": "Lisa Lowe",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/l/a4c791/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 227,
+                "username": "Gregory_Kurtzer",
+                "name": "Gregory Kurtzer",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/gregory_kurtzer/{size}/177_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 274,
+                "username": "drwx",
+                "name": "Nicholas Schiraldi",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/d/cab0a1/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 130,
+                "username": "pfaffman",
+                "name": "Jay A Pfaffman",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/pfaffman/{size}/82_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 48,
+            "username": "wirawan0",
+            "name": "Wirawan Purwanto",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/w/65b543/{size}.png"
+        },
+        "last_poster": {
+            "id": 161,
+            "username": "vsoch",
+            "name": "Vanessasaurus",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+        },
+        "links": [
+            {
+                "url": "https://spack.readthedocs.io/en/latest/",
+                "title": "Spack \u2014 Spack 0.12.1 documentation",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 4,
+                "user_id": 138,
+                "domain": "spack.readthedocs.io",
+                "root_domain": "readthedocs.io"
+            },
+            {
+                "url": "https://conda-forge.org/",
+                "title": "conda-forge | community driven packaging for conda",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 2,
+                "user_id": 191,
+                "domain": "conda-forge.org",
+                "root_domain": "conda-forge.org"
+            },
+            {
+                "url": "https://conda.io/projects/conda/en/latest/user-guide/getting-started.html",
+                "title": "Getting started with conda \u2014 conda 4.6.3.post15+ad7bfd6d documentation",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 191,
+                "domain": "conda.io",
+                "root_domain": "conda.io"
+            },
+            {
+                "url": "https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html",
+                "title": "Managing environments \u2014 conda 4.6.3.post15+ad7bfd6d documentation",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 191,
+                "domain": "conda.io",
+                "root_domain": "conda.io"
+            }
+        ]
+    }
+}

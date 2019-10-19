@@ -1,0 +1,762 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 32,
+                "name": "Katia Oleinik",
+                "username": "katia",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png",
+                "created_at": "2018-03-08T17:49:46.770Z",
+                "cooked": "<p><strong>CURATOR:</strong> Katia</p>\n<p>I have heard that cgroups might be very useful for cluster administrators. Could someone explain what cgroups are and how they are used?</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:44.870Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 0,
+                "reads": 17,
+                "readers_count": 16,
+                "score": 3.4,
+                "yours": false,
+                "topic_id": 26,
+                "topic_slug": "what-are-cgroups-and-how-are-people-using-them-for-cluster-administration",
+                "display_username": "Katia Oleinik",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 10,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 21,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-19T13:06:39.673Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 14,
+                    "username": "ric",
+                    "created_at": "2018-03-13T19:57:35.524Z",
+                    "updated_at": "2019-10-14T17:10:27.918Z",
+                    "name": "Ric Anderson",
+                    "seen_notification_id": 52,
+                    "last_posted_at": "2018-09-10T22:29:34.262Z",
+                    "password_hash": "13014489d7cc88453d3764c389c93cc6f6ff4460d1bcf39f16a42290305cfd86",
+                    "salt": "238f4d49996d8f62fe0007f0c159e893",
+                    "active": true,
+                    "username_lower": "ric",
+                    "last_seen_at": "2019-10-14T17:19:15.053Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-14T17:08:00.904Z",
+                    "trust_level": 3,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-03-08T15:26:08.437Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2160363381,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 12,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 10,
+                        "addr": 50551888471181234547222591859038462576,
+                        "mask_addr": 340282366920938463463374607431768211455
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-13T19:57:51.377Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-03-13T20:34:09.358Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 57,
+                "name": "Ric Anderson",
+                "username": "ric",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ric/{size}/12_2.png",
+                "created_at": "2018-03-13T20:34:09.358Z",
+                "cooked": "<p>CGroups (in the RedHat/CentOS sense) is a binding mechanism for limiting a \u201cjob\u201d to specific cores and ram.  This is useful for localizing memory references, as well as minimizing job interaction on a multi-core, multi-gigabyte compute node.  I\u2019ve used them extensively on SGI hardware (UV systems) in conjunction with PBSPro in the past, and they provide great localization and isolation, but if a user jobs bloats outside its RAM, that process will swap itself silly.  If you have multiple processes doing that, then swap space (and swap performance) both become a serious contention problem.  There are other uses, like limiting cpu cycles for a given user group, but I have no hands on experience with those.</p>\n<p>CGroups result problems on RHEL 6.x (lost kernel memory), but RHEL says the problems is fixed in RHEL 7.  We\u2019re repurposing some old hardware into a new test environment, and that will be RH 7 based, so I can get some hands on with CGroups and make sure the claims about it \u201cworking fine in 7\u201d ring true.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:44.888Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 0,
+                "reads": 17,
+                "readers_count": 16,
+                "score": 48.4,
+                "yours": false,
+                "topic_id": 26,
+                "topic_slug": "what-are-cgroups-and-how-are-people-using-them-for-cluster-administration",
+                "display_username": "Ric Anderson",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 14,
+                "hidden": false,
+                "trust_level": 3,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-13T19:57:35.524Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 14,
+                    "username": "ric",
+                    "created_at": "2018-03-13T19:57:35.524Z",
+                    "updated_at": "2019-10-14T17:10:27.918Z",
+                    "name": "Ric Anderson",
+                    "seen_notification_id": 52,
+                    "last_posted_at": "2018-09-10T22:29:34.262Z",
+                    "password_hash": "13014489d7cc88453d3764c389c93cc6f6ff4460d1bcf39f16a42290305cfd86",
+                    "salt": "238f4d49996d8f62fe0007f0c159e893",
+                    "active": true,
+                    "username_lower": "ric",
+                    "last_seen_at": "2019-10-14T17:19:15.053Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-14T17:08:00.904Z",
+                    "trust_level": 3,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-03-08T15:26:08.437Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2160363381,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 12,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 10,
+                        "addr": 50551888471181234547222591859038462576,
+                        "mask_addr": 340282366920938463463374607431768211455
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-13T19:57:51.377Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-03-13T20:34:09.358Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            32,
+            57
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            589
+        ],
+        [
+            2,
+            584
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 950,
+            "title": "How do I provide authentication on GitHub Pages?",
+            "fancy_title": "How do I provide authentication on GitHub Pages?",
+            "slug": "how-do-i-provide-authentication-on-github-pages",
+            "posts_count": 6,
+            "reply_count": 2,
+            "highest_post_number": 6,
+            "image_url": "https://ask.cyberinfrastructure.org/uploads/default/optimized/1X/684de2ead4df4449ea27c65ceca1442da329169b_2_690x136.png",
+            "created_at": "2019-06-14T15:11:50.039Z",
+            "last_posted_at": "2019-06-18T23:31:02.119Z",
+            "bumped": true,
+            "bumped_at": "2019-06-18T23:31:02.119Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "github",
+                "jekyll",
+                "github-pages",
+                "documentation"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 389,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 155,
+                        "username": "iki",
+                        "name": "",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/iki/{size}/100_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 809,
+            "title": "Pre-empting job termination by the scheduler",
+            "fancy_title": "Pre-empting job termination by the scheduler",
+            "slug": "pre-empting-job-termination-by-the-scheduler",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-03-08T16:47:49.624Z",
+            "last_posted_at": "2019-03-08T18:08:32.961Z",
+            "bumped": true,
+            "bumped_at": "2019-03-08T18:08:32.961Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "slurm",
+                "qow",
+                "scheduler"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 175,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 3,
+                        "username": "jma",
+                        "name": "Julie Ma",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 202,
+                        "username": "griznog",
+                        "name": "John Hanks",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/griznog/{size}/163_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 553,
+            "title": "Can latest version of Tensorflow be built to work on nodes with GPUs and nodes without them?",
+            "fancy_title": "Can latest version of Tensorflow be built to work on nodes with GPUs and nodes without them?",
+            "slug": "can-latest-version-of-tensorflow-be-built-to-work-on-nodes-with-gpus-and-nodes-without-them",
+            "posts_count": 1,
+            "reply_count": 0,
+            "highest_post_number": 1,
+            "image_url": null,
+            "created_at": "2018-11-01T13:33:45.122Z",
+            "last_posted_at": "2018-11-01T13:33:45.189Z",
+            "bumped": true,
+            "bumped_at": "2019-01-25T16:45:37.961Z",
+            "unseen": false,
+            "last_read_post_number": 1,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "tensorflow",
+                "gpu",
+                "parallelization",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 204,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest single",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 21,
+                        "username": "katia",
+                        "name": "Katia Oleinik",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "cgroups",
+        "scheduler"
+    ],
+    "id": 26,
+    "title": "What are cgroups and how are people using them for cluster administration?",
+    "fancy_title": "What are cgroups and how are people using them for cluster administration?",
+    "posts_count": 2,
+    "created_at": "2018-03-08T17:49:46.715Z",
+    "views": 87,
+    "reply_count": 0,
+    "like_count": 1,
+    "last_posted_at": "2018-03-13T20:34:09.358Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "what-are-cgroups-and-how-are-people-using-them-for-cluster-administration",
+    "category_id": 26,
+    "word_count": 205,
+    "deleted_at": null,
+    "user_id": 21,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_26",
+    "draft_sequence": 0,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 2,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": null,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 5,
+    "participant_count": 2,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2018-03-13T20:34:09.358Z",
+    "last_commented_on": null,
+    "answer_count": 1,
+    "comment_count": 0,
+    "last_answer_post_number": 2,
+    "last_answerer": {
+        "id": 14,
+        "username": "ric",
+        "name": "Ric Anderson",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ric/{size}/12_2.png"
+    },
+    "can_vote": true,
+    "vote_count": 0,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 14,
+                "username": "ric",
+                "name": "Ric Anderson",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ric/{size}/12_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 21,
+                "username": "katia",
+                "name": "Katia Oleinik",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 21,
+            "username": "katia",
+            "name": "Katia Oleinik",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png"
+        },
+        "last_poster": {
+            "id": 14,
+            "username": "ric",
+            "name": "Ric Anderson",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ric/{size}/12_2.png"
+        }
+    }
+}

@@ -1,0 +1,1407 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 124,
+                "name": "Christophernhill",
+                "username": "christophernhill",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/c/f08c70/{size}.png",
+                "created_at": "2018-03-16T01:22:21.547Z",
+                "cooked": "<p><strong>COMMENT</strong> This question may not have a single answer, but answers that highlight different possible ways to achieve good data transfer rates in different situations could all be useful.</p>\n<p>In all cases good transfer speeds will require that the end-point systems and the intermediate networks are configured appropriately. There is an extensive discussion of end-point configuration for fast data transfers here ( <a href=\"https://fasterdata.es.net/host-tuning/\" rel=\"nofollow noopener\">https://fasterdata.es.net/host-tuning/</a> ).</p>\n<p><strong>CURATOR:</strong> Chris Hill</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-05-31T20:14:35.188Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 6,
+                "reads": 35,
+                "readers_count": 34,
+                "score": 37.0,
+                "yours": false,
+                "topic_id": 114,
+                "topic_slug": "what-are-fast-ways-to-make-bulk-transfers",
+                "display_username": "Christophernhill",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 16,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://fasterdata.es.net/host-tuning/",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Host Tuning",
+                        "clicks": 3
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 2,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2017-11-24T16:29:28.768Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 179,
+                "name": "Christophernhill",
+                "username": "christophernhill",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/c/f08c70/{size}.png",
+                "created_at": "2018-03-29T15:04:12.937Z",
+                "cooked": "<p>One option is bbftp (<a href=\"http://software.in2p3.fr/bbftp/\" rel=\"nofollow noopener\">http://software.in2p3.fr/bbftp/</a>). It is used by a number of NASA locations. A typical bbftp transfer command requires software to be installed at both the sending and receiving location. The software can be installed by an end user. A typical bbftp command is</p>\n<pre><code class=\"lang-auto\">bbftp -s -E PATH-TO-BBFTPD-ON-REMOTE -R bbftprc -V -p 8 -r 5 -u USER -i LIST-OF-COMMANDS REMOTE-MACHINE\n</code></pre>\n<p>where</p>\n<ul>\n<li>\n<code>PATH-TO-BBFTPD-ON-REMOTE</code>: is the location on the remote system of the bbftpd server command.</li>\n<li>\n<code>USER</code>: is the user name on the remote system</li>\n<li>\n<code>REMOTE-MACHINE</code>: is the remote system to transfer files to</li>\n<li>\n<code>LIST-OF-COMMANDS</code>: is a file with a list of commands to perform a transfer e.g.</li>\n</ul>\n<p>A typical <code>LIST-OF-COMMANDS</code> file contains entries like those shown here</p>\n<pre><code class=\"lang-auto\">setoption keepaccess\nsetoption keepmode\nsetoption nocreatedir\nput /nobackupp8/cnhill1/hawaii_npac/0001171008_V_10800.8150.1_1080.3720.90 /nfs/cnhlab003/cnh/llc4320/incoming/hawaii_npac/\nsetoption keepaccess OK\nsetoption keepmode OK\nsetoption nocreatedir OK\n</code></pre>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-05-31T20:14:29.279Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 0,
+                "reads": 34,
+                "readers_count": 33,
+                "score": 6.8,
+                "yours": false,
+                "topic_id": 114,
+                "topic_slug": "what-are-fast-ways-to-make-bulk-transfers",
+                "display_username": "Christophernhill",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 6,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://software.in2p3.fr/bbftp/",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "bbFTP -- Large files transfer protocol",
+                        "clicks": 6
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 2,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2017-11-24T16:29:28.768Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 180,
+                "name": "Christophernhill",
+                "username": "christophernhill",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/c/f08c70/{size}.png",
+                "created_at": "2018-03-29T15:16:47.732Z",
+                "cooked": "<p>grid-ftp is another option</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-05-31T20:14:14.898Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 0,
+                "reads": 31,
+                "readers_count": 30,
+                "score": 6.2,
+                "yours": false,
+                "topic_id": 114,
+                "topic_slug": "what-are-fast-ways-to-make-bulk-transfers",
+                "display_username": "Christophernhill",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 3,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 2,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2017-11-24T16:29:28.768Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 181,
+                "name": "Christophernhill",
+                "username": "christophernhill",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/c/f08c70/{size}.png",
+                "created_at": "2018-03-29T15:16:59.050Z",
+                "cooked": "<p>globus is another option\u2026</p>",
+                "post_number": 4,
+                "post_type": 1,
+                "updated_at": "2019-05-31T20:14:04.786Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 0,
+                "reads": 27,
+                "readers_count": 26,
+                "score": 5.4,
+                "yours": false,
+                "topic_id": 114,
+                "topic_slug": "what-are-fast-ways-to-make-bulk-transfers",
+                "display_username": "Christophernhill",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 3,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 2,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2017-11-24T16:29:28.768Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 182,
+                "name": "Christophernhill",
+                "username": "christophernhill",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/c/f08c70/{size}.png",
+                "created_at": "2018-03-29T15:26:20.664Z",
+                "cooked": "<p>It is possible to script bulk uploads to facilities like Dropbox too. A set of scripts such as the ones here ( <a href=\"https://github.com/cpausmit/PyCox\" rel=\"nofollow noopener\">https://github.com/cpausmit/PyCox</a> ) can be used to make large scale transfers from multiple end-points to achieve good throughput.</p>",
+                "post_number": 5,
+                "post_type": 1,
+                "updated_at": "2019-05-31T20:13:52.741Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 0,
+                "reads": 27,
+                "readers_count": 26,
+                "score": 5.4,
+                "yours": false,
+                "topic_id": 114,
+                "topic_slug": "what-are-fast-ways-to-make-bulk-transfers",
+                "display_username": "Christophernhill",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 4,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://github.com/cpausmit/PyCox",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "GitHub - cpausmit/PyCox: PYthon interface using Curl to access dropbOX files.",
+                        "clicks": 2
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 2,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2017-11-24T16:29:28.768Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 183,
+                "name": "Christophernhill",
+                "username": "christophernhill",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/c/f08c70/{size}.png",
+                "created_at": "2018-03-29T16:05:43.876Z",
+                "cooked": "<p>Aspera (<a href=\"http://asperasoft.com/software/\" rel=\"nofollow noopener\">http://asperasoft.com/software/</a>) is another option. It is a commercial too, but is widely used in the bioinformatics community.</p>",
+                "post_number": 6,
+                "post_type": 1,
+                "updated_at": "2019-05-31T20:13:34.513Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 0,
+                "reads": 27,
+                "readers_count": 26,
+                "score": 5.4,
+                "yours": false,
+                "topic_id": 114,
+                "topic_slug": "what-are-fast-ways-to-make-bulk-transfers",
+                "display_username": "Christophernhill",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 3,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://asperasoft.com/software/",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Fast File Transfer Software l Aspera",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 2,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2017-11-24T16:29:28.768Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 184,
+                "name": "Christophernhill",
+                "username": "christophernhill",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/c/f08c70/{size}.png",
+                "created_at": "2018-03-29T16:14:15.772Z",
+                "cooked": "<p>Amazon S3 provides another useful solution for intermediate staging of large files. The<br>\narticle here ( <a href=\"https://arxiv.org/abs/1708.00544\" rel=\"nofollow noopener\">https://arxiv.org/abs/1708.00544</a> ) provides a description of the mechanisms<br>\nand experience doing this.</p>",
+                "post_number": 7,
+                "post_type": 1,
+                "updated_at": "2019-05-31T20:13:24.590Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 0,
+                "reads": 26,
+                "readers_count": 25,
+                "score": 5.2,
+                "yours": false,
+                "topic_id": 114,
+                "topic_slug": "what-are-fast-ways-to-make-bulk-transfers",
+                "display_username": "Christophernhill",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 3,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://arxiv.org/abs/1708.00544",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "[1708.00544] Performance Measurements of Supercomputing and Cloud Storage Solutions",
+                        "clicks": 2
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 2,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2017-11-24T16:29:28.768Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1869,
+                "name": "Richard Berger",
+                "username": "rberger",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/rberger/{size}/56_2.png",
+                "created_at": "2019-06-28T23:15:29.534Z",
+                "cooked": "<p>Besides the software solutions to this problem, there are other means to achieve good data transfer rates for bulk transfers. It can be cheaper and faster to use the \u201cFedEx protocol\u201d. Take a bunch of disks and mail them. The latency is not so great, but you can\u2019t beat the bandwidth.</p>",
+                "post_number": 8,
+                "post_type": 1,
+                "updated_at": "2019-06-28T23:18:09.663Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 13,
+                "readers_count": 12,
+                "score": 12.6,
+                "yours": false,
+                "topic_id": 114,
+                "topic_slug": "what-are-fast-ways-to-make-bulk-transfers",
+                "display_username": "Richard Berger",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 80,
+                "hidden": false,
+                "trust_level": 3,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-07-24T00:00:40.906Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1889,
+                "name": "Tru Huynh",
+                "username": "tru",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/t/3e96dc/{size}.png",
+                "created_at": "2019-07-09T15:29:44.960Z",
+                "cooked": "<p><a href=\"http://moo.nac.uci.edu/~hjm/HOWTO_move_data.html\" rel=\"nofollow noopener\">http://moo.nac.uci.edu/~hjm/HOWTO_move_data.html</a> maybe?</p>",
+                "post_number": 9,
+                "post_type": 1,
+                "updated_at": "2019-07-09T15:29:44.960Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 10,
+                "readers_count": 9,
+                "score": 7.0,
+                "yours": false,
+                "topic_id": 114,
+                "topic_slug": "what-are-fast-ways-to-make-bulk-transfers",
+                "display_username": "Tru Huynh",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://moo.nac.uci.edu/~hjm/HOWTO_move_data.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "How to transfer large amounts of data via network.",
+                        "clicks": 7
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 297,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "new_user",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-07-09T15:23:11.481Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            124,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            1869,
+            1889
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            582
+        ],
+        [
+            2,
+            569
+        ],
+        [
+            6,
+            568
+        ],
+        [
+            8,
+            112
+        ],
+        [
+            9,
+            102
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 733,
+            "title": "What are good uses for job arrays?",
+            "fancy_title": "What are good uses for job arrays?",
+            "slug": "what-are-good-uses-for-job-arrays",
+            "posts_count": 3,
+            "reply_count": 0,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2019-01-08T17:14:50.791Z",
+            "last_posted_at": "2019-01-08T21:13:59.711Z",
+            "bumped": true,
+            "bumped_at": "2019-01-10T02:46:18.565Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": true,
+            "tags": [
+                "job-array"
+            ],
+            "archetype": "regular",
+            "like_count": 3,
+            "views": 198,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 144,
+                        "username": "hjmangalam",
+                        "name": "Harry",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 202,
+                        "username": "griznog",
+                        "name": "John Hanks",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/griznog/{size}/163_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 932,
+            "title": "Monitoring GPU usage",
+            "fancy_title": "Monitoring GPU usage",
+            "slug": "monitoring-gpu-usage",
+            "posts_count": 4,
+            "reply_count": 0,
+            "highest_post_number": 4,
+            "image_url": null,
+            "created_at": "2019-06-07T15:46:22.950Z",
+            "last_posted_at": "2019-07-27T23:50:05.080Z",
+            "bumped": true,
+            "bumped_at": "2019-07-27T23:50:05.080Z",
+            "unseen": false,
+            "last_read_post_number": 4,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "tensorflow",
+                "gpu",
+                "qow",
+                "pytorch"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 358,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 3,
+                        "username": "jma",
+                        "name": "Julie Ma",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 276,
+                        "username": "Phillip_Benoit",
+                        "name": "Phillip Benoit",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/phillip_benoit/{size}/234_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 144,
+                        "username": "hjmangalam",
+                        "name": "Harry",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 821,
+            "title": "What are the biggest misconceptions about HPC?",
+            "fancy_title": "What are the biggest misconceptions about HPC?",
+            "slug": "what-are-the-biggest-misconceptions-about-hpc",
+            "posts_count": 3,
+            "reply_count": 1,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2019-03-23T23:00:46.157Z",
+            "last_posted_at": "2019-04-15T15:08:30.157Z",
+            "bumped": true,
+            "bumped_at": "2019-04-15T15:08:30.157Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": true,
+            "tags": [
+                "speculation",
+                "food-for-thought"
+            ],
+            "archetype": "regular",
+            "like_count": 4,
+            "views": 218,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 80,
+                        "username": "rberger",
+                        "name": "Richard Berger",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/rberger/{size}/56_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 134,
+                        "username": "benfulton",
+                        "name": "Ben Fulton",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/benfulton/{size}/102_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "file-transfer",
+        "data-transfer",
+        "globus"
+    ],
+    "id": 114,
+    "title": "What are fast ways to make bulk transfers?",
+    "fancy_title": "What are fast ways to make bulk transfers?",
+    "posts_count": 9,
+    "created_at": "2018-03-16T01:22:21.486Z",
+    "views": 177,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2019-07-09T15:29:44.960Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "what-are-fast-ways-to-make-bulk-transfers",
+    "category_id": 23,
+    "word_count": 404,
+    "deleted_at": null,
+    "user_id": 2,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_114",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 9,
+    "last_read_post_number": 9,
+    "last_read_post_id": 1889,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 3,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": false,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answerer": {
+        "id": 297,
+        "username": "tru",
+        "name": "Tru Huynh",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/t/3e96dc/{size}.png"
+    },
+    "can_vote": false,
+    "vote_count": null,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 2,
+                "username": "christophernhill",
+                "name": "Christophernhill",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/c/f08c70/{size}.png",
+                "post_count": 7,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 80,
+                "username": "rberger",
+                "name": "Richard Berger",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/rberger/{size}/56_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 297,
+                "username": "tru",
+                "name": "Tru Huynh",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/t/3e96dc/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 2,
+            "username": "christophernhill",
+            "name": "Christophernhill",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/c/f08c70/{size}.png"
+        },
+        "last_poster": {
+            "id": 297,
+            "username": "tru",
+            "name": "Tru Huynh",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/t/3e96dc/{size}.png"
+        },
+        "links": [
+            {
+                "url": "http://moo.nac.uci.edu/~hjm/HOWTO_move_data.html",
+                "title": "How to transfer large amounts of data via network.",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 7,
+                "user_id": 297,
+                "domain": "moo.nac.uci.edu",
+                "root_domain": "uci.edu"
+            },
+            {
+                "url": "http://software.in2p3.fr/bbftp/",
+                "title": "bbFTP -- Large files transfer protocol",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 6,
+                "user_id": 2,
+                "domain": "software.in2p3.fr",
+                "root_domain": "in2p3.fr"
+            },
+            {
+                "url": "https://fasterdata.es.net/host-tuning/",
+                "title": "Host Tuning",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 3,
+                "user_id": 17,
+                "domain": "fasterdata.es.net",
+                "root_domain": "es.net"
+            },
+            {
+                "url": "https://arxiv.org/abs/1708.00544",
+                "title": "[1708.00544] Performance Measurements of Supercomputing and Cloud Storage Solutions",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 2,
+                "user_id": 2,
+                "domain": "arxiv.org",
+                "root_domain": "arxiv.org"
+            },
+            {
+                "url": "https://github.com/cpausmit/PyCox",
+                "title": "GitHub - cpausmit/PyCox: PYthon interface using Curl to access dropbOX files.",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 2,
+                "user_id": 2,
+                "domain": "github.com",
+                "root_domain": "github.com"
+            }
+        ]
+    }
+}

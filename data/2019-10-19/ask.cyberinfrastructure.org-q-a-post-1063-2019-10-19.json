@@ -1,0 +1,937 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 2049,
+                "name": "Torey Battelle",
+                "username": "toreliza",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png",
+                "created_at": "2019-09-16T22:11:06.463Z",
+                "cooked": "<p>Hello,</p>\n<p>We\u2019re re-evaluating the battery back up policies for our data center.  Currently we have all nodes on battery back up; head nodes, storage nodes, compute nodes.  We are thinking of no longer backing up compute nodes, and are wondering what hardware/nodes other institutions consider critical to back up (via battery).  If other HPC centers have experience and/or advice they would be willing to share I\u2019d very much appreciate the wisdom!</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-09-20T19:03:39.218Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 11,
+                "readers_count": 10,
+                "score": 17.2,
+                "yours": false,
+                "topic_id": 1063,
+                "topic_slug": "ups-battery-backup-for-hpc-systems",
+                "display_username": "Torey Battelle",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 28,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-30T14:31:41.098Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 199,
+                    "username": "akkornel",
+                    "created_at": "2018-12-07T18:22:31.883Z",
+                    "updated_at": "2019-09-17T00:59:50.903Z",
+                    "name": "Karl Kornel",
+                    "seen_notification_id": 4036,
+                    "last_posted_at": "2019-09-17T00:59:50.800Z",
+                    "password_hash": "a1f0817a8f6c9b17c41f381e94edd4dd190616153b0b8a42d95dbe83460845cb",
+                    "salt": "a47faf7be304f168514f505f279a2f74",
+                    "active": true,
+                    "username_lower": "akkornel",
+                    "last_seen_at": "2019-10-05T01:39:04.566Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:32.053Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-09-17T01:31:31.803Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2873102951,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 161,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2873102951,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-12-07T18:22:32.054Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-09-17T00:59:50.800Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 2050,
+                "name": "Karl Kornel",
+                "username": "akkornel",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/akkornel/{size}/161_2.png",
+                "created_at": "2019-09-17T00:59:50.800Z",
+                "cooked": "<p>We have our entire data center protected by double-conversion flywheel UPSes, just long enough to keep things up before backup generators can kick on in the event of a power outage.  Personally, I\u2019d suggest against segregating your data center in such a way.</p>\n<p>That being said, our data center has more than just our HPC clusters.  A fair amount of space is used for data storage, and alot of our space is used for things that aren\u2019t clusters.  That\u2019s intentional, though; if you are building a data center around a cluster, and aren\u2019t going to use it for anything else, then of course things will be different.</p>\n<p>But it\u2019s also nice having the peace-of-mind.  We don\u2019t have to take the risk that someone plugged a storage controller into the non-UPS rack.  We don\u2019t have to deal with a transient power issue knocking out all of the compute nodes, not only from the sudden workload of having to bring everything back up, but also from the impact to our reputation.  It can be hard telling users that they\u2019ve lost a day of compute because we decided to save $X in capital costs.  And of course the outage would happen when there\u2019s a critical grant deadline.</p>\n<p>All that being said, there are still ways you can save money.  We use flywheel UPSes, so there are no batteries to replace.  We do fresh-air cooling whenever possible, which saves on power costs.  Our PDUs run at 240 VAC line-to-neutral (415 VAC line-to-line), which means we only need a single set of transformers (prior to the UPS), plus a small 120/240 transformer for office spaces. And our data center is single-fed:  We have two sets of cables coming in to the building, but we are getting power from just one substation.  Each rack only has one PDU, and row only has one set of busbars, and traces back to only one UPS.  We have to shut everything down once every 5 years, for several days of maintenance, but it was deemed to be an acceptable trade-off for a research data center.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-09-17T01:07:17.423Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 10,
+                "readers_count": 9,
+                "score": 7.0,
+                "yours": false,
+                "topic_id": 1063,
+                "topic_slug": "ups-battery-backup-for-hpc-systems",
+                "display_username": "Karl Kornel",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 199,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-12-07T18:22:31.883Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 199,
+                    "username": "akkornel",
+                    "created_at": "2018-12-07T18:22:31.883Z",
+                    "updated_at": "2019-09-17T00:59:50.903Z",
+                    "name": "Karl Kornel",
+                    "seen_notification_id": 4036,
+                    "last_posted_at": "2019-09-17T00:59:50.800Z",
+                    "password_hash": "a1f0817a8f6c9b17c41f381e94edd4dd190616153b0b8a42d95dbe83460845cb",
+                    "salt": "a47faf7be304f168514f505f279a2f74",
+                    "active": true,
+                    "username_lower": "akkornel",
+                    "last_seen_at": "2019-10-05T01:39:04.566Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:32.053Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-09-17T01:31:31.803Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2873102951,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 161,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2873102951,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-12-07T18:22:32.054Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-09-17T00:59:50.800Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2051,
+                "name": "Douglas J Ertz",
+                "username": "dertz",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/d/e68b1a/{size}.png",
+                "created_at": "2019-09-17T01:07:17.364Z",
+                "cooked": "<p>The batteries keep our systems up and constant power while the generator gets up to point where it produce the energy need.  This eliminates equipment failures sometimes experienced with rapid power lost.  It has been my experience that turning on and off equipment increases the risk of equipment failure.  The sudden lost of power also can also increase risks of leaving software applications in unstable states and the time required to clean up after power failures more than pays for the cost of the batteries.</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-09-17T01:07:17.364Z",
+                "reply_count": 0,
+                "reply_to_post_number": 1,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 10,
+                "readers_count": 9,
+                "score": 7.0,
+                "yours": false,
+                "topic_id": 1063,
+                "topic_slug": "ups-battery-backup-for-hpc-systems",
+                "display_username": "Douglas J Ertz",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "toreliza",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 320,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "new_user",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-09-15T03:29:40.871Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 199,
+                    "username": "akkornel",
+                    "created_at": "2018-12-07T18:22:31.883Z",
+                    "updated_at": "2019-09-17T00:59:50.903Z",
+                    "name": "Karl Kornel",
+                    "seen_notification_id": 4036,
+                    "last_posted_at": "2019-09-17T00:59:50.800Z",
+                    "password_hash": "a1f0817a8f6c9b17c41f381e94edd4dd190616153b0b8a42d95dbe83460845cb",
+                    "salt": "a47faf7be304f168514f505f279a2f74",
+                    "active": true,
+                    "username_lower": "akkornel",
+                    "last_seen_at": "2019-10-05T01:39:04.566Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:32.053Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-09-17T01:31:31.803Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2873102951,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 161,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2873102951,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-12-07T18:22:32.054Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-09-17T00:59:50.800Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            2049,
+            2050,
+            2051
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            32
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 863,
+            "title": "Understanding SLURM accounting fields",
+            "fancy_title": "Understanding SLURM accounting fields",
+            "slug": "understanding-slurm-accounting-fields",
+            "posts_count": 3,
+            "reply_count": 0,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2019-04-24T20:05:39.178Z",
+            "last_posted_at": "2019-05-22T21:25:28.381Z",
+            "bumped": true,
+            "bumped_at": "2019-05-22T21:25:28.381Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "slurm",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 373,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 48,
+                        "username": "wirawan0",
+                        "name": "Wirawan Purwanto",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/w/65b543/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 943,
+            "title": "How do I run mpi4py?",
+            "fancy_title": "How do I run mpi4py?",
+            "slug": "how-do-i-run-mpi4py",
+            "posts_count": 5,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-06-11T19:03:22.881Z",
+            "last_posted_at": "2019-06-21T15:44:53.319Z",
+            "bumped": true,
+            "bumped_at": "2019-06-21T15:44:53.319Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "python",
+                "mpi"
+            ],
+            "archetype": "regular",
+            "like_count": 2,
+            "views": 419,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 199,
+                        "username": "akkornel",
+                        "name": "Karl Kornel",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/akkornel/{size}/161_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 95,
+                        "username": "nrapstine",
+                        "name": "",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/n/5e9695/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 814,
+            "title": "What universities or national labs have software engineering groups?",
+            "fancy_title": "What universities or national labs have software engineering groups?",
+            "slug": "what-universities-or-national-labs-have-software-engineering-groups",
+            "posts_count": 4,
+            "reply_count": 1,
+            "highest_post_number": 4,
+            "image_url": null,
+            "created_at": "2019-03-10T01:36:53.570Z",
+            "last_posted_at": "2019-07-02T19:41:41.350Z",
+            "bumped": true,
+            "bumped_at": "2019-07-02T19:41:41.350Z",
+            "unseen": false,
+            "last_read_post_number": 4,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "rse"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 262,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 191,
+                        "username": "lparsons",
+                        "name": "Lance Parsons",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lparsons/{size}/147_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 294,
+                        "username": "IanCosden",
+                        "name": "Ian Cosden",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/iancosden/{size}/251_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "backup",
+        "data-center"
+    ],
+    "id": 1063,
+    "title": "UPS / Battery Backup For HPC Systems",
+    "fancy_title": "UPS / Battery Backup For HPC Systems",
+    "posts_count": 3,
+    "created_at": "2019-09-16T22:11:06.395Z",
+    "views": 64,
+    "reply_count": 1,
+    "like_count": 0,
+    "last_posted_at": "2019-09-17T01:07:17.364Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "ups-battery-backup-for-hpc-systems",
+    "category_id": 26,
+    "word_count": 528,
+    "deleted_at": null,
+    "user_id": 28,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_1063",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 3,
+    "last_read_post_number": 1,
+    "last_read_post_id": 2049,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 3,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2019-09-17T00:59:50.800Z",
+    "last_commented_on": null,
+    "answer_count": 1,
+    "comment_count": 0,
+    "last_answer_post_number": 2,
+    "last_answerer": {
+        "id": 199,
+        "username": "akkornel",
+        "name": "Karl Kornel",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/akkornel/{size}/161_2.png"
+    },
+    "can_vote": true,
+    "vote_count": 0,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 28,
+                "username": "toreliza",
+                "name": "Torey Battelle",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 199,
+                "username": "akkornel",
+                "name": "Karl Kornel",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/akkornel/{size}/161_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 320,
+                "username": "dertz",
+                "name": "Douglas J Ertz",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/d/e68b1a/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 28,
+            "username": "toreliza",
+            "name": "Torey Battelle",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+        },
+        "last_poster": {
+            "id": 320,
+            "username": "dertz",
+            "name": "Douglas J Ertz",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/d/e68b1a/{size}.png"
+        }
+    }
+}

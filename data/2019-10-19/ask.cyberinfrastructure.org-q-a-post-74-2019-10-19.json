@@ -14,7 +14,7 @@
                 "reply_count": 0,
                 "reply_to_post_number": null,
                 "quote_count": 0,
-                "incoming_link_count": 924,
+                "incoming_link_count": 925,
                 "reads": 53,
                 "readers_count": 52,
                 "score": 4487.6,
@@ -150,7 +150,7 @@
                 "reply_count": 0,
                 "reply_to_post_number": null,
                 "quote_count": 0,
-                "incoming_link_count": 30,
+                "incoming_link_count": 31,
                 "reads": 34,
                 "readers_count": 33,
                 "score": 141.8,
@@ -173,7 +173,7 @@
                         "internal": false,
                         "reflection": false,
                         "title": "Jupyter notebook server on Odyssey | FAS Research Computing",
-                        "clicks": 178
+                        "clicks": 179
                     }
                 ],
                 "read": true,
@@ -920,7 +920,7 @@
         ],
         [
             6,
-            567
+            568
         ]
     ],
     "tags": [
@@ -932,7 +932,7 @@
     "fancy_title": "How can I run Jupyter Notebooks on my institution&rsquo;s HPC cluster?",
     "posts_count": 6,
     "created_at": "2018-03-16T01:09:38.843Z",
-    "views": 1664,
+    "views": 1666,
     "reply_count": 0,
     "like_count": 0,
     "last_posted_at": "2018-11-13T19:44:23.088Z",
@@ -1102,7 +1102,7 @@
                 "internal": false,
                 "attachment": false,
                 "reflection": false,
-                "clicks": 178,
+                "clicks": 179,
                 "user_id": 43,
                 "domain": "www.rc.fas.harvard.edu",
                 "root_domain": "harvard.edu"

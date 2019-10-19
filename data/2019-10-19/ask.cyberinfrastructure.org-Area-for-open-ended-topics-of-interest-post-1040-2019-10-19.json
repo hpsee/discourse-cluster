@@ -1,0 +1,634 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 1999,
+                "name": "Wirawan Purwanto",
+                "username": "wirawan0",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/w/65b543/{size}.png",
+                "created_at": "2019-08-13T14:23:23.998Z",
+                "cooked": "<p>How can we obtain the metrics of performance and computational requirements for a<br>\ncompute-heavy workload that must run on Windows?</p>\n<p>Background: This question is related to how we can size a VM \u201cjust right\u201d for a given computational workload. And we want to make it easy for researchers to obtain these metrics on their own.</p>\n<p>Some scoping would be helpful: I am interested specifically in compute-heavy workloads that will be run under a VM, but it does not have to be so. Why VM? Because sometimes that\u2019s what available to us\u2013no access to bare metals. Let\u2019s limit ourselves to Windows 8 and up.</p>\n<p>I understand that Windows have a built-in Task Manager and it can show CPU utilization (per core) and memory usage (total and per-application). I tend to doubt whether the per-application memory usage shown on the Task Manager is really honest. Any experience on this? Is there a tool to obtain CPU &amp; memory utilization of an application as a function of time? Do we only have the option of watching the \u201ctask manager movie\u201d as the computation goes on?</p>\n<p>Wirawan</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-10-18T16:33:08.023Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 3,
+                "reads": 6,
+                "readers_count": 5,
+                "score": 16.2,
+                "yours": false,
+                "topic_id": 1040,
+                "topic_slug": "understanding-compute-demand-performance-on-windows-vm",
+                "display_username": "Wirawan Purwanto",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 48,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-08T19:28:48.229Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            1999
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            67
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 533,
+            "title": "Using RAM Disk on the queuing system to optimize file I/O",
+            "fancy_title": "Using RAM Disk on the queuing system to optimize file I/O",
+            "slug": "using-ram-disk-on-the-queuing-system-to-optimize-file-i-o",
+            "posts_count": 7,
+            "reply_count": 3,
+            "highest_post_number": 7,
+            "image_url": null,
+            "created_at": "2018-10-18T19:47:55.155Z",
+            "last_posted_at": "2019-08-20T16:00:16.710Z",
+            "bumped": true,
+            "bumped_at": "2019-08-20T16:00:16.710Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "hpc-cluster-architecture"
+            ],
+            "archetype": "regular",
+            "like_count": 2,
+            "views": 406,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 11,
+                        "username": "schadalapaka",
+                        "name": "HPC Systems Administrator",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/d6d6ee/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 116,
+                        "username": "mrobbert",
+                        "name": "Michael Robbert",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mrobbert/{size}/75_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 154,
+                        "username": "mbussonnier",
+                        "name": "Matthias Bussonnier",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mbussonnier/{size}/99_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 51,
+                        "username": "jpessin1",
+                        "name": "Jacob Pessin",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 314,
+                        "username": "ccoffey",
+                        "name": "",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/c/5daacb/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 932,
+            "title": "Monitoring GPU usage",
+            "fancy_title": "Monitoring GPU usage",
+            "slug": "monitoring-gpu-usage",
+            "posts_count": 4,
+            "reply_count": 0,
+            "highest_post_number": 4,
+            "image_url": null,
+            "created_at": "2019-06-07T15:46:22.950Z",
+            "last_posted_at": "2019-07-27T23:50:05.080Z",
+            "bumped": true,
+            "bumped_at": "2019-07-27T23:50:05.080Z",
+            "unseen": false,
+            "last_read_post_number": 4,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "tensorflow",
+                "gpu",
+                "qow",
+                "pytorch"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 358,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 3,
+                        "username": "jma",
+                        "name": "Julie Ma",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 276,
+                        "username": "Phillip_Benoit",
+                        "name": "Phillip Benoit",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/phillip_benoit/{size}/234_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 144,
+                        "username": "hjmangalam",
+                        "name": "Harry",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 961,
+            "title": "Automated HPC testing tools and techniques?",
+            "fancy_title": "Automated HPC testing tools and techniques?",
+            "slug": "automated-hpc-testing-tools-and-techniques",
+            "posts_count": 9,
+            "reply_count": 4,
+            "highest_post_number": 9,
+            "image_url": null,
+            "created_at": "2019-06-20T14:46:32.797Z",
+            "last_posted_at": "2019-08-06T20:44:48.240Z",
+            "bumped": true,
+            "bumped_at": "2019-08-06T20:44:48.240Z",
+            "unseen": false,
+            "last_read_post_number": 9,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": true,
+            "tags": [
+                "monitoring",
+                "administering-hpc",
+                "qow",
+                "cluster-management",
+                "prometheus"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 320,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 196,
+                        "username": "mrich",
+                        "name": "Matthew Rich",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mrich/{size}/242_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 202,
+                        "username": "griznog",
+                        "name": "John Hanks",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/griznog/{size}/163_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "performance",
+        "vm",
+        "windows"
+    ],
+    "id": 1040,
+    "title": "Understanding compute demand & performance on Windows (VM)",
+    "fancy_title": "Understanding compute demand &amp; performance on Windows (VM)",
+    "posts_count": 1,
+    "created_at": "2019-08-13T14:23:23.908Z",
+    "views": 55,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2019-08-13T14:23:23.998Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "understanding-compute-demand-performance-on-windows-vm",
+    "category_id": 23,
+    "word_count": 190,
+    "deleted_at": null,
+    "user_id": 48,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_1040",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 1,
+    "last_read_post_number": 1,
+    "last_read_post_id": 1999,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 3,
+    "participant_count": 1,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": false,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answerer": {
+        "id": 48,
+        "username": "wirawan0",
+        "name": "Wirawan Purwanto",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/w/65b543/{size}.png"
+    },
+    "can_vote": false,
+    "vote_count": null,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 48,
+                "username": "wirawan0",
+                "name": "Wirawan Purwanto",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/w/65b543/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 48,
+            "username": "wirawan0",
+            "name": "Wirawan Purwanto",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/w/65b543/{size}.png"
+        },
+        "last_poster": {
+            "id": 48,
+            "username": "wirawan0",
+            "name": "Wirawan Purwanto",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/w/65b543/{size}.png"
+        }
+    }
+}
