@@ -30,7 +30,9 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     python3-numpy \
     python3-pip \
+    python3-matplotlib \
     python3-setuptools \
+    python3-sklearn \
     python3-scipy \
     vim
 
@@ -45,6 +47,7 @@ COPY data/ /home/jovyan/
 RUN pip3 install gensim && \
     pip3 install jupyter && \
     pip3 install prompt-toolkit==1.0.15 && \
+    pip3 install seaborn && \
     fix-permissions ${NOTEBOOKS_DIR} && \
     useradd -m -s /bin/bash -N -u $NB_UID $NB_USER && \
     chown $NB_USER:$NB_GID $NOTEBOOKS_DIR && \
