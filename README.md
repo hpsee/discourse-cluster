@@ -68,8 +68,7 @@ and for this data output folder will have a set of data files (json), each named
 cateogory, and date of export. 
 
 ```bash
-$ tree data/
-data/
+$ tree data/2019-10-19/
 ├── ask.cyberinfrastructure.org-q-a-tags-2019-10-19.json
 └── ask.cyberinfrastructure.org-q-a-topics-2019-10-19.json
 ```
