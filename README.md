@@ -97,6 +97,24 @@ discourse API, and probably is redundant.
 
 ### 3. Cluster Posts
 
-*under development!*
+We are going to try using [Doc2Vec](https://radimrehurek.com/gensim/models/doc2vec.html) on the sentences for each post, and then generating embeddings, and using kmeans for the embeddings. Since I didn't want to install a ton of Python libraries on my host, I decided
+to build a container to generate the notebook.
 
-I'm going to try using [Doc2Vec](https://radimrehurek.com/gensim/models/doc2vec.html) on the sentences for each post, and then generating embeddings, and using kmeans for the embeddings.
+```bash
+$ docker build -t vanessa/askci-cluster-gensim .
+```
+
+Then run the container, and map port 8888 to expose the notebook.
+
+```bash
+$ docker run -it -p 8888:8888 vanessa/askci-cluster-gensim
+```
+
+*sidenote* I really dislike notebooks for reproducible work generally, but
+decided to use one here to make it easy to show the work on GitHub and
+generate plots inline. 
+
+What you'll need to do is interact with the notebook
+in your browser (given the URL that you are provided) and then Download
+to your computer to save. If we bind directories there could be a whole
+mess of weird permissions, so this seems like a reasonable approach.
