@@ -1,0 +1,597 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 114,
+                "name": "Torey Battelle",
+                "username": "toreliza",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png",
+                "created_at": "2018-03-16T01:22:18.586Z",
+                "cooked": "<p>When I start MATLAB on a remote server the interaction is very poor. The menu opens very slow and there is delay during typing. How can I improve it?</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:38.367Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 11,
+                "reads": 22,
+                "readers_count": 21,
+                "score": 66.4,
+                "yours": false,
+                "topic_id": 104,
+                "topic_slug": "poor-interaction-with-matlab-running-on-remote-server",
+                "display_username": "Torey Battelle",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 14,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 28,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-30T14:31:41.098Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 28,
+                    "username": "toreliza",
+                    "created_at": "2018-03-30T14:31:41.098Z",
+                    "updated_at": "2019-09-17T14:51:28.625Z",
+                    "name": "Torey Battelle",
+                    "seen_notification_id": 4105,
+                    "last_posted_at": "2019-09-17T14:51:28.578Z",
+                    "password_hash": "aa4aac0b502b622aae5f0a4b4f0038f59bb491e6b40ca4e2262b4f16e5cb01cf",
+                    "salt": "b3d9604268e81cab9856d131b9c29c49",
+                    "active": true,
+                    "username_lower": "toreliza",
+                    "last_seen_at": "2019-10-18T16:59:33.218Z",
+                    "admin": true,
+                    "last_emailed_at": "2019-10-05T20:52:18.527Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-14T16:56:42.409Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": true,
+                    "title": "",
+                    "uploaded_avatar_id": 157,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-30T14:31:57.749Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-04-27T14:56:57.709Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 307,
+                "name": "Torey Battelle",
+                "username": "toreliza",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png",
+                "created_at": "2018-04-27T14:56:57.709Z",
+                "cooked": "<p>If you can generate the calculations and/or output that you need without the GUI, there are some options that will prevent that overhead from initiating:</p>\n<pre><code class=\"lang-auto\">$ matlab -nodesktop -nosplash -nodisplay &lt;command&gt;\n</code></pre>\n<pre><code class=\"lang-bash\">-nodesktop\n</code></pre>\n<p>will stop the GUI from loading;</p>\n<pre><code class=\"lang-bash\">-nosplash\n</code></pre>\n<p>will keep the Matlab logo from loading;</p>\n<pre><code class=\"lang-bash\">-nodisplay\n</code></pre>\n<p>will prevent use of X11 (X11 may be required in which case, don\u2019t use this option).</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:38.456Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 19,
+                "readers_count": 18,
+                "score": 53.8,
+                "yours": false,
+                "topic_id": 104,
+                "topic_slug": "poor-interaction-with-matlab-running-on-remote-server",
+                "display_username": "Torey Battelle",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 4,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 2,
+                        "acted": true,
+                        "can_undo": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 28,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-30T14:31:41.098Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 2,
+                "qa_voted": [
+                    21,
+                    161
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 28,
+                    "username": "toreliza",
+                    "created_at": "2018-03-30T14:31:41.098Z",
+                    "updated_at": "2019-09-17T14:51:28.625Z",
+                    "name": "Torey Battelle",
+                    "seen_notification_id": 4105,
+                    "last_posted_at": "2019-09-17T14:51:28.578Z",
+                    "password_hash": "aa4aac0b502b622aae5f0a4b4f0038f59bb491e6b40ca4e2262b4f16e5cb01cf",
+                    "salt": "b3d9604268e81cab9856d131b9c29c49",
+                    "active": true,
+                    "username_lower": "toreliza",
+                    "last_seen_at": "2019-10-18T16:59:33.218Z",
+                    "admin": true,
+                    "last_emailed_at": "2019-10-05T20:52:18.527Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-14T16:56:42.409Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": true,
+                    "title": "",
+                    "uploaded_avatar_id": 157,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-30T14:31:57.749Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-04-27T14:56:57.709Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 200,
+                "name": "Katia Oleinik",
+                "username": "katia",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png",
+                "created_at": "2018-03-30T14:31:59.487Z",
+                "cooked": "<p>**ANSWER:**Depending on the cluster there are normally some ways to improve performance of GUI-based programs on a remote server.<br>\nThis includes VNC, NX, X2go and a few others.<br>\nAsk system administrator which one is available on your cluster.</p>\n<p>There are a number of webpages explaining <em>remote desktop</em> environment:<br>\nfor example:  <a href=\"http://training.nectar.org.au/package07/sections/remoteDesktop.html\">http://training.nectar.org.au/package07/sections/remoteDesktop.html</a></p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:38.485Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 22,
+                "readers_count": 21,
+                "score": 9.4,
+                "yours": false,
+                "topic_id": 104,
+                "topic_slug": "poor-interaction-with-matlab-running-on-remote-server",
+                "display_username": "Katia Oleinik",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://training.nectar.org.au/package07/sections/remoteDesktop.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Launching and Connecting",
+                        "clicks": 1
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 21,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-19T13:06:39.673Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 28,
+                    "username": "toreliza",
+                    "created_at": "2018-03-30T14:31:41.098Z",
+                    "updated_at": "2019-09-17T14:51:28.625Z",
+                    "name": "Torey Battelle",
+                    "seen_notification_id": 4105,
+                    "last_posted_at": "2019-09-17T14:51:28.578Z",
+                    "password_hash": "aa4aac0b502b622aae5f0a4b4f0038f59bb491e6b40ca4e2262b4f16e5cb01cf",
+                    "salt": "b3d9604268e81cab9856d131b9c29c49",
+                    "active": true,
+                    "username_lower": "toreliza",
+                    "last_seen_at": "2019-10-18T16:59:33.218Z",
+                    "admin": true,
+                    "last_emailed_at": "2019-10-05T20:52:18.527Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-14T16:56:42.409Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": true,
+                    "title": "",
+                    "uploaded_avatar_id": 157,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-30T14:31:57.749Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-04-27T14:56:57.709Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            114,
+            307,
+            200
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            582
+        ],
+        [
+            2,
+            540
+        ],
+        [
+            3,
+            568
+        ]
+    ],
+    "tags": [
+        "matlab",
+        "remote-servers"
+    ],
+    "id": 104,
+    "title": "Poor interaction with MATLAB running on remote server",
+    "fancy_title": "Poor interaction with MATLAB running on remote server",
+    "posts_count": 3,
+    "created_at": "2018-03-16T01:22:18.539Z",
+    "views": 210,
+    "reply_count": 0,
+    "like_count": 1,
+    "last_posted_at": "2018-04-27T14:56:57.709Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "poor-interaction-with-matlab-running-on-remote-server",
+    "category_id": 26,
+    "word_count": 166,
+    "deleted_at": null,
+    "user_id": 28,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_104",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 3,
+    "last_read_post_number": 3,
+    "last_read_post_id": 307,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 2,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [
+        307
+    ],
+    "qa_can_vote": true,
+    "last_answered_at": "2018-04-27T14:56:57.709Z",
+    "last_commented_on": null,
+    "answer_count": 2,
+    "comment_count": 0,
+    "last_answer_post_number": 3,
+    "last_answerer": {
+        "id": 28,
+        "username": "toreliza",
+        "name": "Torey Battelle",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+    },
+    "can_vote": true,
+    "vote_count": 2,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 28,
+                "username": "toreliza",
+                "name": "Torey Battelle",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 21,
+                "username": "katia",
+                "name": "Katia Oleinik",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 28,
+            "username": "toreliza",
+            "name": "Torey Battelle",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+        },
+        "last_poster": {
+            "id": 28,
+            "username": "toreliza",
+            "name": "Torey Battelle",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+        },
+        "links": [
+            {
+                "url": "http://training.nectar.org.au/package07/sections/remoteDesktop.html",
+                "title": "Launching and Connecting",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 21,
+                "domain": "training.nectar.org.au",
+                "root_domain": "nectar.org.au"
+            }
+        ]
+    }
+}

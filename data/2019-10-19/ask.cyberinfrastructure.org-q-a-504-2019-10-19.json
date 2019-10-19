@@ -1,0 +1,799 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 984,
+                "name": "HPC Systems Administrator",
+                "username": "schadalapaka",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/s/d6d6ee/{size}.png",
+                "created_at": "2018-09-26T17:02:03.202Z",
+                "cooked": "<p>One of the researchers is trying to run multiple LAMMPS jobs on a node on our cluster where a job uses 1 core.</p>\n<p>mpirun -np 1 lmp_mpi &lt; Project.txt7 &gt; output_7_1.txt</p>\n<p>However, as the user submits multiple jobs that are similar:</p>\n<p>\u2026</p>\n<p>mpirun -np 1 lmp_mpi &lt; Project.txt7 &gt; output_7_1.txt</p>\n<p>mpirun -np 1 lmp_mpi &lt; Project.txt7 &gt; output_8_1.txt</p>\n<p>\u2026</p>\n<p>and number of LAMMPS jobs running on a node increases, instances are using less than 100% CPU usage/job which is ultimately causing all the simulations to slow down.</p>\n<p>Here\u2019s the CPU usage of each of the simulations on one of the compute nodes using top command:</p>\n<p>PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND<br>\n22037 username      20   0  598632 101664   1196 R  <strong>33.2</strong>  0.1   8082:11 lmp_mpi</p>\n<p>22332 username       20   0  597292 100796   1196 R  <strong>33.2</strong>  0.1   8076:26 lmp_mpi</p>\n<p>22345 username       20   0  596560 101572   1196 R  <strong>33.2</strong>  0.1   8084:15 lmp_mpi</p>\n<p>I am have tried multiple options with MPI and Slurm like --exclusive option and trying to set --cpus-per-task --ntasks-per-node parameters but still see the same results.</p>\n<p>Is this error caused because of how much I/O processing LAMMPS takes? If so, can we reduce the verbosity of LAMMPS ?</p>\n<p>How can we get past this error?</p>\n<p><strong>System information:</strong></p>\n<p>CentOS 7</p>\n<p>Slurm Scheduler</p>\n<p>LAMMPS version - lammps-16Feb16</p>\n<p>MPI Version - openmpi-1.8/gcc</p>\n<p>Each of our compute nodes has either 20-cores / 24-cores and each core can run 1 process.</p>\n<p>Here\u2019s the complete job script of one of the simulations:</p>\n<p>#######################</p>\n<p>#!/usr/bin/env bash</p>\n<p><span class=\"hashtag\">#SBATCH</span> --job-name=Sim-8</p>\n<p><span class=\"hashtag\">#SBATCH</span> --partition=debug.q</p>\n<p><span class=\"hashtag\">#SBATCH</span> --mem=1G</p>\n<p><span class=\"hashtag\">#SBATCH</span> --export=ALL</p>\n<p><span class=\"hashtag\">#SBATCH</span> --nodelist=mrcd08</p>\n<p>module load lammps16</p>\n<p>mpirun -np 1 lmp_mpi &lt; Project.txt7 &gt; output_7_1.txt</p>\n<p>#########################</p>\n<p><strong>Sarvani Chadalapaka</strong></p>\n<p>HPC Administrator</p>\n<p>University of California Merced, Office of Information Technology</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:33.357Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 84,
+                "reads": 14,
+                "readers_count": 13,
+                "score": 422.8,
+                "yours": false,
+                "topic_id": 504,
+                "topic_slug": "running-multiple-lammps-jobs-on-a-node",
+                "display_username": "HPC Systems Administrator",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 11,
+                "hidden": false,
+                "trust_level": 3,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-13T19:53:13.159Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 11,
+                    "username": "schadalapaka",
+                    "created_at": "2018-03-13T19:53:13.159Z",
+                    "updated_at": "2018-10-18T19:47:55.281Z",
+                    "name": "HPC Systems Administrator",
+                    "seen_notification_id": 2044,
+                    "last_posted_at": "2018-10-18T19:47:55.235Z",
+                    "password_hash": "84ca5f08f7bf84a4b912870c876a66aeb16087491eba12f002389ac102c8d475",
+                    "salt": "45b1f47a6c708fa190b8d87dffb2e53f",
+                    "active": true,
+                    "username_lower": "schadalapaka",
+                    "last_seen_at": "2019-04-29T22:57:33.853Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-15T17:40:14.621Z",
+                    "trust_level": 3,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2018-11-07T00:33:02.043Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2850835991,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2850816509,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-13T19:53:30.939Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-09-26T17:02:46.166Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 985,
+                "name": "HPC Systems Administrator",
+                "username": "schadalapaka",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/s/d6d6ee/{size}.png",
+                "created_at": "2018-09-26T17:02:46.166Z",
+                "cooked": "<p>It seems like the jobs are not binding to the correct core assigned by SLURM, but overloading cores.</p>\n<p>In order for the job submission to run, the script had to be changed from</p>\n<p>mpirun -np 1 lmp_mpi &lt; Project.txt7 &gt; output_7_1.txt</p>\n<p>to</p>\n<p>srun --hint=nomultithread lmp_mpi &lt; Project.txt7 &gt; output_18_1.txt</p>\n<p>From <a href=\"https://slurm.schedmd.com/cpu_management.html#Example10\">Slurm documentation</a>, --hint=nomultithread srun option causes Slurm to allocate only one thread from each core to this job.</p>\n<p><strong>Sarvani Chadalapaka</strong></p>\n<p>HPC Administrator</p>\n<p>University of California Merced, Office of Information Technology</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:33.388Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 33,
+                "reads": 14,
+                "readers_count": 13,
+                "score": 167.8,
+                "yours": false,
+                "topic_id": 504,
+                "topic_slug": "running-multiple-lammps-jobs-on-a-node",
+                "display_username": "HPC Systems Administrator",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://slurm.schedmd.com/cpu_management.html#Example10",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Slurm Workload Manager",
+                        "clicks": 2
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 1,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 11,
+                "hidden": false,
+                "trust_level": 3,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-13T19:53:13.159Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 1,
+                "qa_voted": [
+                    45
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 11,
+                    "username": "schadalapaka",
+                    "created_at": "2018-03-13T19:53:13.159Z",
+                    "updated_at": "2018-10-18T19:47:55.281Z",
+                    "name": "HPC Systems Administrator",
+                    "seen_notification_id": 2044,
+                    "last_posted_at": "2018-10-18T19:47:55.235Z",
+                    "password_hash": "84ca5f08f7bf84a4b912870c876a66aeb16087491eba12f002389ac102c8d475",
+                    "salt": "45b1f47a6c708fa190b8d87dffb2e53f",
+                    "active": true,
+                    "username_lower": "schadalapaka",
+                    "last_seen_at": "2019-04-29T22:57:33.853Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-15T17:40:14.621Z",
+                    "trust_level": 3,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2018-11-07T00:33:02.043Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2850835991,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2850816509,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-13T19:53:30.939Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-09-26T17:02:46.166Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            984,
+            985
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            387
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 152,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 270,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 597,
+            "title": "Do you have bioinformatic specific script examples to share?",
+            "fancy_title": "Do you have bioinformatic specific script examples to share?",
+            "slug": "do-you-have-bioinformatic-specific-script-examples-to-share",
+            "posts_count": 3,
+            "reply_count": 1,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2018-11-15T03:16:11.921Z",
+            "last_posted_at": "2018-11-16T21:30:29.327Z",
+            "bumped": true,
+            "bumped_at": "2018-11-16T21:30:29.327Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "bioinformatics"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 375,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 118,
+                        "username": "cydburrows",
+                        "name": "Cyd Burrows-Schilling",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/c/ecccb3/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 662,
+            "title": "What is GAMESS?",
+            "fancy_title": "What is GAMESS?",
+            "slug": "what-is-gamess",
+            "posts_count": 4,
+            "reply_count": 2,
+            "highest_post_number": 4,
+            "image_url": null,
+            "created_at": "2018-11-28T01:22:25.490Z",
+            "last_posted_at": "2019-05-11T01:26:27.991Z",
+            "bumped": true,
+            "bumped_at": "2019-05-11T01:26:27.991Z",
+            "unseen": false,
+            "last_read_post_number": 4,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": true,
+            "tags": [
+                "gamess",
+                "computational-chemistry"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 267,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 3,
+                        "username": "jma",
+                        "name": "Julie Ma",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 48,
+                        "username": "wirawan0",
+                        "name": "Wirawan Purwanto",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/w/65b543/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 943,
+            "title": "How do I run mpi4py?",
+            "fancy_title": "How do I run mpi4py?",
+            "slug": "how-do-i-run-mpi4py",
+            "posts_count": 5,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-06-11T19:03:22.881Z",
+            "last_posted_at": "2019-06-21T15:44:53.319Z",
+            "bumped": true,
+            "bumped_at": "2019-06-21T15:44:53.319Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "python",
+                "mpi"
+            ],
+            "archetype": "regular",
+            "like_count": 2,
+            "views": 419,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 199,
+                        "username": "akkornel",
+                        "name": "Karl Kornel",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/akkornel/{size}/161_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 95,
+                        "username": "nrapstine",
+                        "name": "",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/n/5e9695/{size}.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "mpi",
+        "lammps"
+    ],
+    "id": 504,
+    "title": "Running multiple LAMMPS jobs on a node",
+    "fancy_title": "Running multiple LAMMPS jobs on a node",
+    "posts_count": 2,
+    "created_at": "2018-09-26T17:02:03.117Z",
+    "views": 413,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2018-09-26T17:02:46.166Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "running-multiple-lammps-jobs-on-a-node",
+    "category_id": 26,
+    "word_count": 412,
+    "deleted_at": null,
+    "user_id": 11,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_504",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 2,
+    "last_read_post_number": 2,
+    "last_read_post_id": 985,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 7,
+    "participant_count": 1,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2018-09-26T17:02:46.166Z",
+    "last_commented_on": null,
+    "answer_count": 1,
+    "comment_count": 0,
+    "last_answer_post_number": 2,
+    "last_answerer": {
+        "id": 11,
+        "username": "schadalapaka",
+        "name": "HPC Systems Administrator",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/s/d6d6ee/{size}.png"
+    },
+    "can_vote": true,
+    "vote_count": 2,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 11,
+                "username": "schadalapaka",
+                "name": "HPC Systems Administrator",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/s/d6d6ee/{size}.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 11,
+            "username": "schadalapaka",
+            "name": "HPC Systems Administrator",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/s/d6d6ee/{size}.png"
+        },
+        "last_poster": {
+            "id": 11,
+            "username": "schadalapaka",
+            "name": "HPC Systems Administrator",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/s/d6d6ee/{size}.png"
+        },
+        "links": [
+            {
+                "url": "https://slurm.schedmd.com/cpu_management.html#Example10",
+                "title": "Slurm Workload Manager",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 2,
+                "user_id": 11,
+                "domain": "slurm.schedmd.com",
+                "root_domain": "schedmd.com"
+            }
+        ]
+    }
+}

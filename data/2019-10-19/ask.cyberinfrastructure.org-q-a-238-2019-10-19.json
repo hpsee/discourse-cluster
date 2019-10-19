@@ -1,0 +1,561 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 425,
+                "name": "Torey Battelle",
+                "username": "toreliza",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png",
+                "created_at": "2018-06-18T17:20:07.652Z",
+                "cooked": "<p>My mpi job requires more memory than is allocated in my current node configuration. What tricks can I use to reduce memory footprint without restructuring the code?</p>\n<p><strong>CURATOR:</strong> toreliza</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:41.844Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 4,
+                "reads": 15,
+                "readers_count": 14,
+                "score": 23.0,
+                "yours": false,
+                "topic_id": 238,
+                "topic_slug": "how-to-reduce-memory-footprint-without-restructuring-mpi-code",
+                "display_username": "Torey Battelle",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 15,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 28,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-30T14:31:41.098Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 28,
+                    "username": "toreliza",
+                    "created_at": "2018-03-30T14:31:41.098Z",
+                    "updated_at": "2019-09-17T14:51:28.625Z",
+                    "name": "Torey Battelle",
+                    "seen_notification_id": 4105,
+                    "last_posted_at": "2019-09-17T14:51:28.578Z",
+                    "password_hash": "aa4aac0b502b622aae5f0a4b4f0038f59bb491e6b40ca4e2262b4f16e5cb01cf",
+                    "salt": "b3d9604268e81cab9856d131b9c29c49",
+                    "active": true,
+                    "username_lower": "toreliza",
+                    "last_seen_at": "2019-10-18T16:59:33.218Z",
+                    "admin": true,
+                    "last_emailed_at": "2019-10-05T20:52:18.527Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-14T16:56:42.409Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": true,
+                    "title": "",
+                    "uploaded_avatar_id": 157,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-30T14:31:57.749Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-07-17T10:19:18.964Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 530,
+                "name": "Torey Battelle",
+                "username": "toreliza",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png",
+                "created_at": "2018-07-17T10:19:18.964Z",
+                "cooked": "<p><strong>ANSWER:</strong></p>\n<p>A good approach to running a job with minimal <code>#SBATCH</code> variables in the submit script preamble is to include the options for number of tasks and cpus per task; below is an example:</p>\n<pre><code class=\"lang-bash\">#SBATCH --ntasks=8\n#SBATCH --cpus-per-task=2\n</code></pre>\n<p>This is because the ntasks option tells the slurm controller the maximum number of tasks to be run, and lets the controller allocate the appropriate resources. Adding the <code>--cpus-per-task</code> option lifts the default of one cpu per task, allowing more than one task per node to launch.</p>\n<p>To illustrate the above, let\u2019s use a specific scenario. Suppose the job is being submitted on 4 nodes, each node has 16 core and total RAM of 4 GB. Attempting to submit the job to the cluster results in an error that indicates that not enough memory is allocated for the job to execute successfully.</p>\n<p>The above setup (I will use SLURM notation) implies that the preamble of the submit script includes:</p>\n<pre><code class=\"lang-bash\">#SBATCH --nodes=4\n</code></pre>\n<p>Already the total amount of memory available for allocation is restricted (to the total available to four nodes). If the job needs more than 16 GB of RAM, it will not run.</p>\n<p>Let\u2019s include some options that might also be part of the script:</p>\n<pre><code class=\"lang-bash\">#SBATCH --ntasks=16\n</code></pre>\n<p>With four nodes and a default of one task per node, clearly resources are not sufficient.</p>\n<p>Let\u2019s add <code>#SBATCH --cpus-per-task=4</code></p>\n<p>Now four tasks per node are allowed, and with four nodes, 16 total tasks are at least possible. As long as each task does not require more than 1 GB of memory, the job can run. ((4 GB / node) / (4 tasks / node) = 1GB / task.)</p>\n<p>Let\u2019s say, however, that each task requires 2GB to run. We can either request more nodes (8), or fewer cpus per task (2) (and therefore fewer tasks overall-8). This resolution relies on the restraints of the current configuration being lifted (i.e., more than four nodes are available).</p>\n<p>Alternatively, if we had not specified the restriction of (four nodes), and just requested the number of tasks and the number of cpus per task, the scheduler would be free to allocate the most appropriate configuration and number of resources to satisfy the job\u2019s memory requirements.</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:41.884Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 0,
+                "reads": 10,
+                "readers_count": 9,
+                "score": 2.0,
+                "yours": false,
+                "topic_id": 238,
+                "topic_slug": "how-to-reduce-memory-footprint-without-restructuring-mpi-code",
+                "display_username": "Torey Battelle",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 3,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 2,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 28,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-30T14:31:41.098Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 2,
+                "qa_voted": [
+                    21,
+                    3
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 28,
+                    "username": "toreliza",
+                    "created_at": "2018-03-30T14:31:41.098Z",
+                    "updated_at": "2019-09-17T14:51:28.625Z",
+                    "name": "Torey Battelle",
+                    "seen_notification_id": 4105,
+                    "last_posted_at": "2019-09-17T14:51:28.578Z",
+                    "password_hash": "aa4aac0b502b622aae5f0a4b4f0038f59bb491e6b40ca4e2262b4f16e5cb01cf",
+                    "salt": "b3d9604268e81cab9856d131b9c29c49",
+                    "active": true,
+                    "username_lower": "toreliza",
+                    "last_seen_at": "2019-10-18T16:59:33.218Z",
+                    "admin": true,
+                    "last_emailed_at": "2019-10-05T20:52:18.527Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-14T16:56:42.409Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": true,
+                    "title": "",
+                    "uploaded_avatar_id": 157,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-30T14:31:57.749Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-07-17T10:19:18.964Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 426,
+                "name": "Torey Battelle",
+                "username": "toreliza",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png",
+                "created_at": "2018-06-18T18:21:57.216Z",
+                "cooked": "<p><strong>ANSWER:</strong></p>\n<p>Depending on the range of compute resources available, there are two main approaches to resolve the memory issue.  If the job is constrained by the current resource configuration (there are no more nodes available, for example), varying options that affect the amount of memory consumed by these resources can result in a workable rebalance of memory usage.   If there are resources such that the current configuration can be expanded, a good strategy is to specify only <code>ntasks</code> and <code>cpus-per-task</code> in the submit script preamble.  This allows the scheduler the flexibility to efficiently allocate cluster resources to satisfy memory requirements, while optimizing time spent in the queue and  time spent running the calculation.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:41.938Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 0,
+                "reads": 13,
+                "readers_count": 12,
+                "score": 2.6,
+                "yours": false,
+                "topic_id": 238,
+                "topic_slug": "how-to-reduce-memory-footprint-without-restructuring-mpi-code",
+                "display_username": "Torey Battelle",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 4,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 28,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-30T14:31:41.098Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 28,
+                    "username": "toreliza",
+                    "created_at": "2018-03-30T14:31:41.098Z",
+                    "updated_at": "2019-09-17T14:51:28.625Z",
+                    "name": "Torey Battelle",
+                    "seen_notification_id": 4105,
+                    "last_posted_at": "2019-09-17T14:51:28.578Z",
+                    "password_hash": "aa4aac0b502b622aae5f0a4b4f0038f59bb491e6b40ca4e2262b4f16e5cb01cf",
+                    "salt": "b3d9604268e81cab9856d131b9c29c49",
+                    "active": true,
+                    "username_lower": "toreliza",
+                    "last_seen_at": "2019-10-18T16:59:33.218Z",
+                    "admin": true,
+                    "last_emailed_at": "2019-10-05T20:52:18.527Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-14T16:56:42.409Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": true,
+                    "title": "",
+                    "uploaded_avatar_id": 157,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2319647816,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-30T14:31:57.749Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-07-17T10:19:18.964Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            425,
+            530,
+            426
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            487
+        ],
+        [
+            2,
+            459
+        ],
+        [
+            3,
+            487
+        ]
+    ],
+    "tags": [
+        "scripting",
+        "mpi",
+        "memory"
+    ],
+    "id": 238,
+    "title": "How to reduce memory footprint without restructuring mpi code",
+    "fancy_title": "How to reduce memory footprint without restructuring mpi code",
+    "posts_count": 3,
+    "created_at": "2018-06-18T17:20:07.494Z",
+    "views": 134,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2018-07-17T10:19:18.964Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "how-to-reduce-memory-footprint-without-restructuring-mpi-code",
+    "category_id": 26,
+    "word_count": 527,
+    "deleted_at": null,
+    "user_id": 28,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_238",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 3,
+    "last_read_post_number": 3,
+    "last_read_post_id": 530,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 1,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2018-07-17T10:19:18.964Z",
+    "last_commented_on": null,
+    "answer_count": 2,
+    "comment_count": 0,
+    "last_answer_post_number": 3,
+    "last_answerer": {
+        "id": 28,
+        "username": "toreliza",
+        "name": "Torey Battelle",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+    },
+    "can_vote": true,
+    "vote_count": 2,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 28,
+                "username": "toreliza",
+                "name": "Torey Battelle",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png",
+                "post_count": 3,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 28,
+            "username": "toreliza",
+            "name": "Torey Battelle",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+        },
+        "last_poster": {
+            "id": 28,
+            "username": "toreliza",
+            "name": "Torey Battelle",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+        }
+    }
+}

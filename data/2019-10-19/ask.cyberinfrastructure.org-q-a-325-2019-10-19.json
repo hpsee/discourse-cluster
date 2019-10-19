@@ -1,0 +1,733 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 601,
+                "name": "Jack Smith",
+                "username": "jacks9",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jacks9/{size}/9_2.png",
+                "created_at": "2018-07-24T15:58:32.129Z",
+                "cooked": "<p>Is there a command/option you can run to determine the specifics of why a SLURM job is still pending execution besides the REASON CODE given by the squeue command (with default options)?   E.g. What resources is it waiting on and/or what currently running/pending jobs might be competing for those resources?</p>\n<p><strong>CURATOR:</strong> Jack Smith</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:44.229Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 685,
+                "reads": 18,
+                "readers_count": 17,
+                "score": 3308.4,
+                "yours": false,
+                "topic_id": 325,
+                "topic_slug": "slurm-how-can-i-get-more-details-about-why-a-job-still-pending-execution",
+                "display_username": "Jack Smith",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 5,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 9,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-08T18:10:59.950Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 40,
+                    "username": "payerle",
+                    "created_at": "2018-04-13T16:19:58.206Z",
+                    "updated_at": "2019-01-17T15:38:30.175Z",
+                    "name": "Tom Payerle",
+                    "seen_notification_id": 360,
+                    "last_posted_at": "2019-01-17T15:38:30.128Z",
+                    "password_hash": "0baad29bf6b6f24d8759c53a47afe9d9e3ace8c2ad05337ecdaba1c8858763df",
+                    "salt": "02b73fd392f5deee96f26d388c7d817b",
+                    "active": true,
+                    "username_lower": "payerle",
+                    "last_seen_at": "2019-04-15T17:40:55.224Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-16T05:42:26.156Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-03-29T19:39:38.330Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2148070279,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2148070279,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-04-13T16:27:16.449Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-08-31T17:38:02.689Z",
+                "answer_count": 3,
+                "last_answer_post_number": 4,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 602,
+                "name": "Mike Hanby",
+                "username": "mhanby",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mhanby/{size}/50_2.png",
+                "created_at": "2018-07-24T16:00:23.836Z",
+                "cooked": "<p>Here\u2019s one example, using the <strong>scontrol</strong> command using <strong>grep</strong> to filter out the out the other 30ish lines:</p>\n<pre><code>scontrol -d show job &lt;JOBID&gt; | grep Reason\n\nJobState=PENDING Reason=launch_failed_requeued_held Dependency=(null)</code></pre>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:44.265Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 17,
+                "readers_count": 16,
+                "score": 13.4,
+                "yours": false,
+                "topic_id": 325,
+                "topic_slug": "slurm-how-can-i-get-more-details-about-why-a-job-still-pending-execution",
+                "display_username": "Mike Hanby",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 2,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 75,
+                "hidden": false,
+                "trust_level": 0,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": "Ownership transferred from jma to mhanby",
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-07-17T15:51:37.527Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 2,
+                "qa_voted": [
+                    50,
+                    31
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 40,
+                    "username": "payerle",
+                    "created_at": "2018-04-13T16:19:58.206Z",
+                    "updated_at": "2019-01-17T15:38:30.175Z",
+                    "name": "Tom Payerle",
+                    "seen_notification_id": 360,
+                    "last_posted_at": "2019-01-17T15:38:30.128Z",
+                    "password_hash": "0baad29bf6b6f24d8759c53a47afe9d9e3ace8c2ad05337ecdaba1c8858763df",
+                    "salt": "02b73fd392f5deee96f26d388c7d817b",
+                    "active": true,
+                    "username_lower": "payerle",
+                    "last_seen_at": "2019-04-15T17:40:55.224Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-16T05:42:26.156Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-03-29T19:39:38.330Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2148070279,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2148070279,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-04-13T16:27:16.449Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-08-31T17:38:02.689Z",
+                "answer_count": 3,
+                "last_answer_post_number": 4,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 914,
+                "name": "Tom Payerle",
+                "username": "payerle",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/p/90ced4/{size}.png",
+                "created_at": "2018-08-31T17:38:02.689Z",
+                "cooked": "<p>I don\u2019t think the standard Slurm commands will give you much beyond the REASON code.<br>\nAnd I believe that the REASON code is from the last time the job was examined in the normal scheduler run (I don\u2019t think it gets updated by the backfill process).  Depending where the job is in the queue, there may be a field SchedNodeList which will show you what nodes Slurm is thinking about using for this job (I believe this is available if REASON=Resources).  And note that the StartTime field may have the estimated start time for the job.  That\u2019s about all I ever found really usable for jobs with REASON=Resources.</p>\n<p>REASON=Priority and the various held states are pretty self explanatory.  Stuff like QOSResourceLimit, and AssocGrpCPUMinsLimit might take a little work to figure out what limit is being hit, but usually not to bad to do so.</p>\n<p>Other reasons, like \u201claunch_failed_requeued\u201d typically indicate something abnormal in the system, and the sysadmin should examine logs on the node the job ran on to see what is up.</p>",
+                "post_number": 4,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:44.290Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 12,
+                "readers_count": 11,
+                "score": 7.4,
+                "yours": false,
+                "topic_id": 325,
+                "topic_slug": "slurm-how-can-i-get-more-details-about-why-a-job-still-pending-execution",
+                "display_username": "Tom Payerle",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 1,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 40,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-04-13T16:19:58.206Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 1,
+                "qa_voted": [
+                    116
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 40,
+                    "username": "payerle",
+                    "created_at": "2018-04-13T16:19:58.206Z",
+                    "updated_at": "2019-01-17T15:38:30.175Z",
+                    "name": "Tom Payerle",
+                    "seen_notification_id": 360,
+                    "last_posted_at": "2019-01-17T15:38:30.128Z",
+                    "password_hash": "0baad29bf6b6f24d8759c53a47afe9d9e3ace8c2ad05337ecdaba1c8858763df",
+                    "salt": "02b73fd392f5deee96f26d388c7d817b",
+                    "active": true,
+                    "username_lower": "payerle",
+                    "last_seen_at": "2019-04-15T17:40:55.224Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-16T05:42:26.156Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-03-29T19:39:38.330Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2148070279,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2148070279,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-04-13T16:27:16.449Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-08-31T17:38:02.689Z",
+                "answer_count": 3,
+                "last_answer_post_number": 4,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 757,
+                "name": "Michael Robbert",
+                "username": "mrobbert",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mrobbert/{size}/75_2.png",
+                "created_at": "2018-07-30T21:15:32.480Z",
+                "cooked": "<p>The most common Reason code is \u201cResources\u201d and if that is the case then a good place to look is your job\u2019s priority. That can be queried with the sprio command. That command should list all pending jobs with their priority number along with the priority factors that are used to calculate the overall number. You may want to restrict the output to the partition that you\u2019re job was submitted to. There may be several factors that weigh into your jobs priority depending on your site\u2019s configuration. You can see those weights with \u201csprio -w\u201d.<br>\nAnother thing that you may want to look at is if this job was submitted with any Dependency.</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:44.327Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 10,
+                "reads": 14,
+                "readers_count": 13,
+                "score": 52.8,
+                "yours": false,
+                "topic_id": 325,
+                "topic_slug": "slurm-how-can-i-get-more-details-about-why-a-job-still-pending-execution",
+                "display_username": "Michael Robbert",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 116,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-07-30T20:06:04.169Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 40,
+                    "username": "payerle",
+                    "created_at": "2018-04-13T16:19:58.206Z",
+                    "updated_at": "2019-01-17T15:38:30.175Z",
+                    "name": "Tom Payerle",
+                    "seen_notification_id": 360,
+                    "last_posted_at": "2019-01-17T15:38:30.128Z",
+                    "password_hash": "0baad29bf6b6f24d8759c53a47afe9d9e3ace8c2ad05337ecdaba1c8858763df",
+                    "salt": "02b73fd392f5deee96f26d388c7d817b",
+                    "active": true,
+                    "username_lower": "payerle",
+                    "last_seen_at": "2019-04-15T17:40:55.224Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-16T05:42:26.156Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-03-29T19:39:38.330Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2148070279,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2148070279,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-04-13T16:27:16.449Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-08-31T17:38:02.689Z",
+                "answer_count": 3,
+                "last_answer_post_number": 4,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            601,
+            602,
+            914,
+            757
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            451
+        ],
+        [
+            3,
+            413
+        ],
+        [
+            4,
+            445
+        ]
+    ],
+    "tags": [
+        "pending-jobs",
+        "slurm",
+        "scheduler"
+    ],
+    "id": 325,
+    "title": "SLURM: how can I get more details about why a job still pending execution?",
+    "fancy_title": "SLURM: how can I get more details about why a job still pending execution?",
+    "posts_count": 4,
+    "created_at": "2018-07-24T15:58:32.042Z",
+    "views": 1345,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2018-08-31T17:38:02.689Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "slurm-how-can-i-get-more-details-about-why-a-job-still-pending-execution",
+    "category_id": 26,
+    "word_count": 384,
+    "deleted_at": null,
+    "user_id": 9,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_325",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 4,
+    "last_read_post_number": 4,
+    "last_read_post_id": 914,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 24,
+    "participant_count": 4,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2018-08-31T17:38:02.689Z",
+    "last_commented_on": null,
+    "answer_count": 3,
+    "comment_count": 0,
+    "last_answer_post_number": 4,
+    "last_answerer": {
+        "id": 40,
+        "username": "payerle",
+        "name": "Tom Payerle",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/p/90ced4/{size}.png"
+    },
+    "can_vote": true,
+    "vote_count": 0,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 9,
+                "username": "jacks9",
+                "name": "Jack Smith",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jacks9/{size}/9_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 40,
+                "username": "payerle",
+                "name": "Tom Payerle",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/p/90ced4/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 75,
+                "username": "mhanby",
+                "name": "Mike Hanby",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mhanby/{size}/50_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 116,
+                "username": "mrobbert",
+                "name": "Michael Robbert",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mrobbert/{size}/75_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 9,
+            "username": "jacks9",
+            "name": "Jack Smith",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jacks9/{size}/9_2.png"
+        },
+        "last_poster": {
+            "id": 40,
+            "username": "payerle",
+            "name": "Tom Payerle",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/p/90ced4/{size}.png"
+        }
+    }
+}

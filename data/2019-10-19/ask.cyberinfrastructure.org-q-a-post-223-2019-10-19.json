@@ -1,0 +1,632 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 387,
+                "name": "Katia Oleinik",
+                "username": "katia",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png",
+                "created_at": "2018-06-01T13:27:48.653Z",
+                "cooked": "<p>I am running an MPI job using 8 nodes with 16 cores each. When I execute <code>qstat -u username</code> command it shows only the master node. How can I view all the nodes that are used for my job?</p>\n<p><strong>Curator</strong>: Katia</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:33.467Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 248,
+                "reads": 16,
+                "readers_count": 15,
+                "score": 1198.2,
+                "yours": false,
+                "topic_id": 223,
+                "topic_slug": "how-can-i-see-the-names-of-the-nodes-my-multi-node-mpi-job-is-using-on-our-sge-cluster",
+                "display_username": "Katia Oleinik",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 6,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 21,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-19T13:06:39.673Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 144,
+                    "username": "hjmangalam",
+                    "created_at": "2018-09-10T22:06:15.372Z",
+                    "updated_at": "2019-10-10T03:36:48.868Z",
+                    "name": "Harry",
+                    "seen_notification_id": 1988,
+                    "last_posted_at": "2019-10-10T03:36:48.665Z",
+                    "password_hash": "a7f5ad10ae5bac21177891a902feebd9a074e66a8d68cc0c30e2526218e27bfc",
+                    "salt": "126748839ddddcaa68e756d81ee6df39",
+                    "active": true,
+                    "username_lower": "hjmangalam",
+                    "last_seen_at": "2019-10-10T19:08:12.067Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-17T19:12:06.794Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-10T03:36:27.589Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 1141241385,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2160599715,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-09-10T22:10:57.776Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-09-10T22:40:47.769Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 942,
+                "name": "Harry",
+                "username": "hjmangalam",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png",
+                "created_at": "2018-09-10T22:40:47.769Z",
+                "cooked": "<p>This will not give you the precise answer if you have multiple, multiple node MP jobs running, but will give you all the nodes that all your jobs are running on:</p>\n<p><a href=\"http://moo.nac.uci.edu/~hjm/qbetta\" class=\"onebox\" target=\"_blank\" rel=\"nofollow noopener\">http://moo.nac.uci.edu/~hjm/qbetta</a></p>\n<p>It\u2019s a fast and dirty perl script that merges the output of \u2018qstat -s r\u2019 and \u2018qhost -h (host) -q\u2019 and does some dirty math on the result to show which nodes are under/overloaded.</p>\n<p>grep the result for anything you want (usually hostnames or usernames).</p>\n<p>Here\u2019s a stanza of output.  takes no option - just grep for what you want.</p>\n<pre><code>Shows most of the info shown from 'qhost -q' and 'qstat -s r' but in one\nline.  Also shows whether a node is over (+) or under(-) loaded.  At the end\nof each line is the status of all Qs that use this node.  Only compute nodes\nare shown in this output.\n           under/    CPUs           RAM        (Assigned/Total)\nHOSTNAME    over  USED/TOTAL     USED/TOTAL    Queue    v  [flags] users,jobs\ncompute-1-10    64.06 /  64      3.5G / 126.2G  free64(64/64) vturlo,64  tw(0/64) \ncompute-1-11    64.03 /  64      3.9G / 126.2G  free64(64/64) vturlo,64  tw(0/64) \ncompute-1-12  - 27.01 /  64      1.8G / 126.2G  free64(0/64)[S] tw(24/64) frankes,24  \ncompute-1-13  -  0.05 /  64      3.8G / 252.4G  \ncompute-1-14  -  0.53 /  24      7.2G /  94.7G  free24i(0/24)[S] gpu(3/24) staimour,2  yoshitom,1  \ncompute-1-2   -  3.99 /  64      3.9G / 252.4G  abio(0/64) free64(64/64) jfarran,61  vojh1,3  sf(0/64) \ncompute-1-3     64.04 /  64      6.2G / 252.4G  free64(64/64) meganjm1,64  \ncompute-1-4     64.07 /  64      4.2G / 252.4G  air(0/32) chem(0/32) free64(64/64) vturlo,64  \n</code></pre>\n<p>To run it, you\u2019ll also need <a href=\"http://moo.nac.uci.edu/~hjm/scut\" rel=\"nofollow noopener\">scut</a></p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:33.516Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 5,
+                "reads": 10,
+                "readers_count": 9,
+                "score": 27.0,
+                "yours": false,
+                "topic_id": 223,
+                "topic_slug": "how-can-i-see-the-names-of-the-nodes-my-multi-node-mpi-job-is-using-on-our-sge-cluster",
+                "display_username": "Harry",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://moo.nac.uci.edu/~hjm/qbetta",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 11
+                    },
+                    {
+                        "url": "http://moo.nac.uci.edu/~hjm/scut",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "count": 1,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 1,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 144,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 6,
+                "reviewable_score_count": 1,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-09-10T22:06:15.372Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 1,
+                "qa_voted": [
+                    51
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 144,
+                    "username": "hjmangalam",
+                    "created_at": "2018-09-10T22:06:15.372Z",
+                    "updated_at": "2019-10-10T03:36:48.868Z",
+                    "name": "Harry",
+                    "seen_notification_id": 1988,
+                    "last_posted_at": "2019-10-10T03:36:48.665Z",
+                    "password_hash": "a7f5ad10ae5bac21177891a902feebd9a074e66a8d68cc0c30e2526218e27bfc",
+                    "salt": "126748839ddddcaa68e756d81ee6df39",
+                    "active": true,
+                    "username_lower": "hjmangalam",
+                    "last_seen_at": "2019-10-10T19:08:12.067Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-17T19:12:06.794Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-10T03:36:27.589Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 1141241385,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2160599715,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-09-10T22:10:57.776Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-09-10T22:40:47.769Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 408,
+                "name": "Jacob Pessin",
+                "username": "jpessin1",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png",
+                "created_at": "2018-06-08T20:44:01.907Z",
+                "cooked": "<p>qstat by default tries for easy reading - and limits output to one line per, but there are several way to customize the output.  <code>$ man qstat</code> or<br>\n<a href=\"http://gridscheduler.sourceforge.net/htmlman/htmlman1/qstat.html\" class=\"onebox\" target=\"_blank\">http://gridscheduler.sourceforge.net/htmlman/htmlman1/qstat.html</a><br>\nhas number of options for outputs.</p>\n<p>In this case the <code>-g</code> flag might do the trick, add  <code>-g t</code>  and it will give the info one line per process/processor and a bit more info.</p>\n<p>For example if you want to keep a snapshot of this for later parsing:<br>\n<code>$ qstat -g t -u username &gt;&gt; myQstatOutput</code></p>\n<p>as explained by the man page</p>\n<blockquote>\n<p>With -g t parallel jobs are displayed verbosely in a one line per parallel job task fashion. By  default, parallel job tasks are displayed in a single line. Also with the -g t option, the function of each parallel task is displayed, rather than the jobs slot amount (see section OUTPUT FORMATS).</p>\n</blockquote>\n<p>** <strong>EDIT:</strong>  Additionally <code>qhost -j</code> will give you jobs by host set.<br>\nBoth can be select jobs by user name with the -u flag.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:33.611Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 4,
+                "reads": 16,
+                "readers_count": 15,
+                "score": 23.2,
+                "yours": false,
+                "topic_id": 223,
+                "topic_slug": "how-can-i-see-the-names-of-the-nodes-my-multi-node-mpi-job-is-using-on-our-sge-cluster",
+                "display_username": "Jacob Pessin",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 4,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://gridscheduler.sourceforge.net/htmlman/htmlman1/qstat.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "qstat man page - Sun Grid Engine",
+                        "clicks": 4
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 51,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-09T15:19:23.696Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 144,
+                    "username": "hjmangalam",
+                    "created_at": "2018-09-10T22:06:15.372Z",
+                    "updated_at": "2019-10-10T03:36:48.868Z",
+                    "name": "Harry",
+                    "seen_notification_id": 1988,
+                    "last_posted_at": "2019-10-10T03:36:48.665Z",
+                    "password_hash": "a7f5ad10ae5bac21177891a902feebd9a074e66a8d68cc0c30e2526218e27bfc",
+                    "salt": "126748839ddddcaa68e756d81ee6df39",
+                    "active": true,
+                    "username_lower": "hjmangalam",
+                    "last_seen_at": "2019-10-10T19:08:12.067Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-17T19:12:06.794Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-10-10T03:36:27.589Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 1141241385,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2160599715,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-09-10T22:10:57.776Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-09-10T22:40:47.769Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            387,
+            942,
+            408
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            505
+        ],
+        [
+            2,
+            403
+        ],
+        [
+            3,
+            497
+        ]
+    ],
+    "tags": [
+        "mpi",
+        "sge",
+        "programming-for-hpc",
+        "parallelization",
+        "scheduler"
+    ],
+    "id": 223,
+    "title": "How can I see the names of the nodes my multi-node MPI job is using on our SGE cluster?",
+    "fancy_title": "How can I see the names of the nodes my multi-node MPI job is using on our SGE cluster?",
+    "posts_count": 3,
+    "created_at": "2018-06-01T13:27:48.564Z",
+    "views": 520,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2018-09-10T22:40:47.769Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "how-can-i-see-the-names-of-the-nodes-my-multi-node-mpi-job-is-using-on-our-sge-cluster",
+    "category_id": 26,
+    "word_count": 538,
+    "deleted_at": null,
+    "user_id": 21,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_223",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 3,
+    "last_read_post_number": 3,
+    "last_read_post_id": 942,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 3,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2018-09-10T22:40:47.769Z",
+    "last_commented_on": null,
+    "answer_count": 2,
+    "comment_count": 0,
+    "last_answer_post_number": 3,
+    "last_answerer": {
+        "id": 144,
+        "username": "hjmangalam",
+        "name": "Harry",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png"
+    },
+    "can_vote": true,
+    "vote_count": 1,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 21,
+                "username": "katia",
+                "name": "Katia Oleinik",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 51,
+                "username": "jpessin1",
+                "name": "Jacob Pessin",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 144,
+                "username": "hjmangalam",
+                "name": "Harry",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 21,
+            "username": "katia",
+            "name": "Katia Oleinik",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png"
+        },
+        "last_poster": {
+            "id": 144,
+            "username": "hjmangalam",
+            "name": "Harry",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png"
+        },
+        "links": [
+            {
+                "url": "http://moo.nac.uci.edu/~hjm/qbetta",
+                "title": null,
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 11,
+                "user_id": 144,
+                "domain": "moo.nac.uci.edu",
+                "root_domain": "uci.edu"
+            },
+            {
+                "url": "http://gridscheduler.sourceforge.net/htmlman/htmlman1/qstat.html",
+                "title": "qstat man page - Sun Grid Engine",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 4,
+                "user_id": 51,
+                "domain": "gridscheduler.sourceforge.net",
+                "root_domain": "sourceforge.net"
+            }
+        ]
+    }
+}

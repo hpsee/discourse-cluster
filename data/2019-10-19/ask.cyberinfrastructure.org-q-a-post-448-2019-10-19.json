@@ -1,0 +1,941 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 888,
+                "name": "Bruce Segee",
+                "username": "segee",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/s/b9e5f3/{size}.png",
+                "created_at": "2018-08-28T19:41:50.298Z",
+                "cooked": "<p>I have a virtual machine image in openstack.  It is running ubuntu.  I used it in a class about a year ago, but I have forgotten the password, and even the user name (but I do remember they were chosen to be secure).  I also remember that the ubuntu user was removed and root logins were disabled, specifically to make the machine hard to attack.  I can launch the machine and get the login prompt, but I can\u2019t sign in without credentials.  What can I do?</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:41.520Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 4,
+                "reads": 18,
+                "readers_count": 17,
+                "score": 23.6,
+                "yours": false,
+                "topic_id": 448,
+                "topic_slug": "starting-a-virtual-machine-image-without-knowing-the-user-name-or-password",
+                "display_username": "Bruce Segee",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 22,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-21T18:59:38.174Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 123,
+                    "username": "azzawi",
+                    "created_at": "2018-07-31T20:01:49.038Z",
+                    "updated_at": "2018-08-29T17:52:13.144Z",
+                    "name": "Hussein Al-Azzawi",
+                    "seen_notification_id": 1935,
+                    "last_posted_at": "2018-08-29T17:52:13.056Z",
+                    "password_hash": "9e87116106a7516244e5c010aebe50f71ea03ebf6c10afaa56a4543a7162034f",
+                    "salt": "1b4481ceb5976973653be864f4a121a0",
+                    "active": true,
+                    "username_lower": "azzawi",
+                    "last_seen_at": "2018-09-24T02:41:25.349Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-09-18T04:15:07.103Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2018-09-03T06:55:58.270Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 1231164544,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 1080717155,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-07-31T20:02:15.707Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-08-29T17:52:13.056Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 891,
+                "name": "Bruce Segee",
+                "username": "segee",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/s/b9e5f3/{size}.png",
+                "created_at": "2018-08-28T20:07:44.895Z",
+                "cooked": "<p>I found the solution!  When launching the image, there\u2019s a \u201cPost-Creation\u201d tab that lets you specify a script to run after the machine is launched, see below<br>\n<div class=\"lightbox-wrapper\"><a class=\"lightbox\" href=\"https://ask.cyberinfrastructure.org/uploads/default/original/1X/ad7dcacd28c11623be9063f04937499bab297151.png\" data-download-href=\"https://ask.cyberinfrastructure.org/uploads/default/ad7dcacd28c11623be9063f04937499bab297151\" title=\"Screen Shot 2018-08-28 at 3.47.03 PM.png\"><img src=\"https://ask.cyberinfrastructure.org/uploads/default/optimized/1X/ad7dcacd28c11623be9063f04937499bab297151_2_690x277.png\" alt=\"03%20PM\" width=\"690\" height=\"277\" srcset=\"https://ask.cyberinfrastructure.org/uploads/default/optimized/1X/ad7dcacd28c11623be9063f04937499bab297151_2_690x277.png, https://ask.cyberinfrastructure.org/uploads/default/original/1X/ad7dcacd28c11623be9063f04937499bab297151.png 1.5x, https://ask.cyberinfrastructure.org/uploads/default/original/1X/ad7dcacd28c11623be9063f04937499bab297151.png 2x\" data-small-upload=\"https://ask.cyberinfrastructure.org/uploads/default/optimized/1X/ad7dcacd28c11623be9063f04937499bab297151_2_10x10.png\"><div class=\"meta\">\n<svg class=\"fa d-icon d-icon-far-image svg-icon\" aria-hidden=\"true\"><use xlink:href=\"#far-image\"></use></svg><span class=\"filename\">Screen Shot 2018-08-28 at 3.47.03 PM.png</span><span class=\"informations\">719\u00d7289 22.9 KB</span><svg class=\"fa d-icon d-icon-discourse-expand svg-icon\" aria-hidden=\"true\"><use xlink:href=\"#discourse-expand\"></use></svg>\n</div></a></div></p>\n<p>If you pick direct input, you can type (or paste) a shell script into a text box and have it run once when the machine is launched.  I had it create a user called temporary and a password called temporary.  The password must be changed on the first login.  The user has sudo rights, so can view which user accounts exist, change passwords to a known value, look at files, or whatever.</p>\n<p>#!/bin/bash<br>\nUSERNAME=\u2018temporary\u2019<br>\nPASSWORD=\u2018temporary\u2019</p>\n<p>useradd -m -U -G adm,dialout,cdrom,floppy,sudo,audio,dip,video,plugdev,netdev -s /bin/bash $USERNAME<br>\necho \u201c$USERNAME:$PASSWORD\u201d | chpasswd<br>\nchage -d 0 $USERNAME</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:41.553Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 18,
+                "readers_count": 17,
+                "score": 13.6,
+                "yours": false,
+                "topic_id": 448,
+                "topic_slug": "starting-a-virtual-machine-image-without-knowing-the-user-name-or-password",
+                "display_username": "Bruce Segee",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://ask.cyberinfrastructure.org/uploads/default/original/1X/ad7dcacd28c11623be9063f04937499bab297151.png",
+                        "internal": true,
+                        "reflection": false,
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 1,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 22,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-21T18:59:38.174Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 1,
+                "qa_voted": [
+                    43
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 123,
+                    "username": "azzawi",
+                    "created_at": "2018-07-31T20:01:49.038Z",
+                    "updated_at": "2018-08-29T17:52:13.144Z",
+                    "name": "Hussein Al-Azzawi",
+                    "seen_notification_id": 1935,
+                    "last_posted_at": "2018-08-29T17:52:13.056Z",
+                    "password_hash": "9e87116106a7516244e5c010aebe50f71ea03ebf6c10afaa56a4543a7162034f",
+                    "salt": "1b4481ceb5976973653be864f4a121a0",
+                    "active": true,
+                    "username_lower": "azzawi",
+                    "last_seen_at": "2018-09-24T02:41:25.349Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-09-18T04:15:07.103Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2018-09-03T06:55:58.270Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 1231164544,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 1080717155,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-07-31T20:02:15.707Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-08-29T17:52:13.056Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 899,
+                "name": "Hussein Al-Azzawi",
+                "username": "azzawi",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/a/858c86/{size}.png",
+                "created_at": "2018-08-29T17:52:13.056Z",
+                "cooked": "<p>Remember not to apply the following directly to your VM! Test it first on a clone or a backup image before applying it to your production VM.</p>\n<p>It depends on your installation, but in general you should be able to do this by booting into rescue mode (you can select this as the machine is booting up). This will give you a shell, remount the file system with read/write (it\u2019s read only at this point). Then you will be able to edit the shadow file and delete root/user hashed password and reboot.</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:41.584Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 15,
+                "readers_count": 14,
+                "score": 13.0,
+                "yours": false,
+                "topic_id": 448,
+                "topic_slug": "starting-a-virtual-machine-image-without-knowing-the-user-name-or-password",
+                "display_username": "Hussein Al-Azzawi",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 123,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-07-31T20:01:49.038Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 123,
+                    "username": "azzawi",
+                    "created_at": "2018-07-31T20:01:49.038Z",
+                    "updated_at": "2018-08-29T17:52:13.144Z",
+                    "name": "Hussein Al-Azzawi",
+                    "seen_notification_id": 1935,
+                    "last_posted_at": "2018-08-29T17:52:13.056Z",
+                    "password_hash": "9e87116106a7516244e5c010aebe50f71ea03ebf6c10afaa56a4543a7162034f",
+                    "salt": "1b4481ceb5976973653be864f4a121a0",
+                    "active": true,
+                    "username_lower": "azzawi",
+                    "last_seen_at": "2018-09-24T02:41:25.349Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-09-18T04:15:07.103Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2018-09-03T06:55:58.270Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 1231164544,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 1080717155,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-07-31T20:02:15.707Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-08-29T17:52:13.056Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            888,
+            891,
+            899
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            416
+        ],
+        [
+            3,
+            415
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 152,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 270,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1063,
+            "title": "UPS / Battery Backup For HPC Systems",
+            "fancy_title": "UPS / Battery Backup For HPC Systems",
+            "slug": "ups-battery-backup-for-hpc-systems",
+            "posts_count": 3,
+            "reply_count": 1,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2019-09-16T22:11:06.395Z",
+            "last_posted_at": "2019-09-17T01:07:17.364Z",
+            "bumped": true,
+            "bumped_at": "2019-09-17T01:07:17.364Z",
+            "unseen": false,
+            "last_read_post_number": 1,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "backup",
+                "data-center"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 63,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 199,
+                        "username": "akkornel",
+                        "name": "Karl Kornel",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/akkornel/{size}/161_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 320,
+                        "username": "dertz",
+                        "name": "Douglas J Ertz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/d/e68b1a/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 809,
+            "title": "Pre-empting job termination by the scheduler",
+            "fancy_title": "Pre-empting job termination by the scheduler",
+            "slug": "pre-empting-job-termination-by-the-scheduler",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-03-08T16:47:49.624Z",
+            "last_posted_at": "2019-03-08T18:08:32.961Z",
+            "bumped": true,
+            "bumped_at": "2019-03-08T18:08:32.961Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "slurm",
+                "qow",
+                "scheduler"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 174,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 3,
+                        "username": "jma",
+                        "name": "Julie Ma",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 202,
+                        "username": "griznog",
+                        "name": "John Hanks",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/griznog/{size}/163_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 854,
+            "title": "Access to /dev/infiniband from user space",
+            "fancy_title": "Access to /dev/infiniband from user space",
+            "slug": "access-to-dev-infiniband-from-user-space",
+            "posts_count": 8,
+            "reply_count": 3,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-04-16T21:50:32.544Z",
+            "last_posted_at": "2019-04-23T14:22:23.326Z",
+            "bumped": true,
+            "bumped_at": "2019-04-23T14:22:23.326Z",
+            "unseen": false,
+            "last_read_post_number": 8,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": true,
+            "tags": [
+                "singularity",
+                "parallelization",
+                "programming-for-hpc",
+                "infiniband"
+            ],
+            "archetype": "regular",
+            "like_count": 3,
+            "views": 337,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 233,
+                        "username": "adrianjhpc",
+                        "name": "Adrian Jackson",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/a/7feea3/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 226,
+                        "username": "victorsndvg",
+                        "name": "Victor",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/v/7ea924/{size}.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "cloud",
+        "openstack",
+        "vm"
+    ],
+    "id": 448,
+    "title": "Starting a virtual machine image without knowing the user name or password",
+    "fancy_title": "Starting a virtual machine image without knowing the user name or password",
+    "posts_count": 3,
+    "created_at": "2018-08-28T19:41:50.234Z",
+    "views": 182,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2018-08-29T17:52:13.056Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "starting-a-virtual-machine-image-without-knowing-the-user-name-or-password",
+    "category_id": 26,
+    "word_count": 321,
+    "deleted_at": null,
+    "user_id": 22,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_448",
+    "draft_sequence": 1,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 3,
+    "last_read_post_number": 3,
+    "last_read_post_id": 899,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 2,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2018-08-29T17:52:13.056Z",
+    "last_commented_on": null,
+    "answer_count": 2,
+    "comment_count": 0,
+    "last_answer_post_number": 3,
+    "last_answerer": {
+        "id": 123,
+        "username": "azzawi",
+        "name": "Hussein Al-Azzawi",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/a/858c86/{size}.png"
+    },
+    "can_vote": true,
+    "vote_count": 1,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 22,
+                "username": "segee",
+                "name": "Bruce Segee",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/s/b9e5f3/{size}.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 123,
+                "username": "azzawi",
+                "name": "Hussein Al-Azzawi",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/a/858c86/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 22,
+            "username": "segee",
+            "name": "Bruce Segee",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/s/b9e5f3/{size}.png"
+        },
+        "last_poster": {
+            "id": 123,
+            "username": "azzawi",
+            "name": "Hussein Al-Azzawi",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/a/858c86/{size}.png"
+        }
+    }
+}

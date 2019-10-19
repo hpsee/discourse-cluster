@@ -1,0 +1,872 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 1754,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-05-20T14:26:49.187Z",
+                "cooked": "<p>I was browsing <a href=\"https://code.nasa.gov/\" rel=\"nofollow noopener\">https://code.nasa.gov/</a> and heard that there is an interesting story behind the development of TASC, the \u201cTool for Analysis of Surface Cracks\u201d <a href=\"https://software.nasa.gov/software/MFS-33082-1\" rel=\"nofollow noopener\">https://software.nasa.gov/software/MFS-33082-1</a>. I\u2019m generally interested in stories about the development of open source projects, and was curious if anyone had details, along with how this software might be useful for our community. Thanks!</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:36.630Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 9,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 46.4,
+                "yours": true,
+                "topic_id": 903,
+                "topic_slug": "what-is-the-tool-for-analysis-of-surface-cracks-tasc-from-nasa",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 3,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://software.nasa.gov/software/MFS-33082-1",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Software Details",
+                        "clicks": 1
+                    },
+                    {
+                        "url": "https://code.nasa.gov/",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "NASA Open Source Software",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 213,
+                    "username": "Mike_Renfro",
+                    "created_at": "2019-02-20T21:43:33.290Z",
+                    "updated_at": "2019-08-05T16:32:23.002Z",
+                    "name": "Mike Renfro",
+                    "seen_notification_id": 3546,
+                    "last_posted_at": "2019-08-05T16:32:22.953Z",
+                    "password_hash": "3b9eabe8ad271de449e0ed412a8629977ea3034ae5c91c4bbd2ea4b37935258c",
+                    "salt": "b3d9465c5ac38b8c1c9e44418ccda654",
+                    "active": true,
+                    "username_lower": "mike_renfro",
+                    "last_seen_at": "2019-08-09T15:32:51.699Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:38.748Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-08-05T19:35:05.368Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2509608798,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 169,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2509570660,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-02-20T21:43:33.607Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-05-22T23:28:48.813Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 1768,
+                "name": "Mike Renfro",
+                "username": "Mike_Renfro",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mike_renfro/{size}/169_2.png",
+                "created_at": "2019-05-22T23:28:48.813Z",
+                "cooked": "<p>So I\u2019m late with my story. In my immediate academic lineage, the primary author of TASC is PhD student <span class=\"hashtag\">#1</span>, and I\u2019m PhD student <span class=\"hashtag\">#3</span>. Its origins are somewhat given in <a href=\"https://www.sciencedirect.com/science/article/pii/S0013794414000551\" rel=\"nofollow noopener\">Allen and Wells: Interpolation methodology for elastic\u2013plastic <em>J</em>-integral solutions for surface cracked plates in tension</a>.</p>\n<p>The basic situation is that determining when cracks will grow at all (or when the cracked structure will just fracture entirely) gets more intractable as the crack geometry, the applied stresses, and the material properties get more complex. Two-dimensional crack geometries (edge cuts, center slits) are easier than three-dimensional geometries (surface cracks or corner cracks, as if you\u2019d stuck your thumbnail into a block of clay); constant states of tension are easier than bending (where part of the crack is in tension, and other parts are in compression); brittle materials are easier than ones that can withstand substantial permanent deformation under increasing stress; etc.</p>\n<p>So the applicable <a href=\"https://www.astm.org/Standards/E2899.htm\" rel=\"nofollow noopener\">ASTM standard</a> (press release <a href=\"https://www.astm.org/cms/drupal-7.51/newsroom/new-astm-fatigue-standard-will-enable-fracture-toughness-testing\" rel=\"nofollow noopener\">here</a>) encompasses semi-elliptical surface cracks in tension or in bending, and for flat plates where the plate behavior is brittle (purely linear elastic behavior) or where substantial deformation can occur under increasing stress (elastic-plastic behavior).</p>\n<p>For linear elastic materials, there are handbook solutions for certain crack behavior derived from curve fits for a wide range of semi-elliptical surface crack shapes and sizes, for both tension and bending. For elastic-plastic materials, there are no such curve fits. The default way to calculate this crack behavior would be to make a purpose-built finite element model of the cracked plate for any arbitrary geometry and material. These models would generally have to be recalculated from scratch if the geometry or material changed.</p>\n<p>So PhD student <span class=\"hashtag\">#1</span> worked up a method to make a database of numerical solutions for the same range of surface crack geometry (20 normalized shapes and sizes) and a wide range of elastic-plastic materials (30 normalized materials) for plates in uniform tension. That\u2019s 600 solutions in the solution space, and solutions for intermediate values can be interpolated among the 600 solutions as needed. All of this is detailed in the first link above.</p>\n<p>As PhD student <span class=\"hashtag\">#1</span> is a regular engineer, and not a professional software developer, he wrote up an interpolation code and GUI in MATLAB, and that\u2019s <a href=\"https://software.nasa.gov/software/MFS-33082-1\" rel=\"nofollow noopener\">TASC</a>. He had prior experience with MATLAB, could avoid reinventing wheels, and there are ways to make standalone executables in MATLAB that don\u2019t require a MATLAB installation to run. A different developer might have picked numpy, scipy, and some other Python GUI library.</p>\n<p>PhD student <span class=\"hashtag\">#3</span> (me) had a bit more software development experience and a few mental quirks that led to a <strong>lot</strong> of MATLAB code cleanup and a database of 600 finite element models for surface cracks in bending. That database covers the same range of crack geometry and materials as the original TASC tension database, and the models were mostly programmatically generated and evaluated. That development is generally documented in chapters 3-5 of <a href=\"https://github.com/mikerenfro/phd/tree/master/dissertation\" rel=\"nofollow noopener\">my dissertation</a> (still have to get all the Python automation code uploaded this summer). The still-in-testing TASC code for both tension and bending is in <a href=\"https://github.com/mikerenfro/tasc\" rel=\"nofollow noopener\">one of my Github repositories</a>.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:36.685Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 56.4,
+                "yours": false,
+                "topic_id": 903,
+                "topic_slug": "what-is-the-tool-for-analysis-of-surface-cracks-tasc-from-nasa",
+                "display_username": "Mike Renfro",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://www.sciencedirect.com/science/article/pii/S0013794414000551",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Interpolation methodology for elastic\u2013plastic J-integral solutions for surface cracked plates in tension - ScienceDirect",
+                        "clicks": 1
+                    },
+                    {
+                        "url": "https://github.com/mikerenfro/tasc",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "GitHub - mikerenfro/tasc: NASA TASC: Tool for Analysis of Surface Cracks",
+                        "clicks": 1
+                    },
+                    {
+                        "url": "https://software.nasa.gov/software/MFS-33082-1",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Software Details",
+                        "clicks": 0
+                    },
+                    {
+                        "url": "https://www.astm.org/Standards/E2899.htm",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "ASTM E2899 - 15 Standard Test Method for Measurement of Initiation Toughness in Surface Cracks Under Tension and Bending",
+                        "clicks": 0
+                    },
+                    {
+                        "url": "https://github.com/mikerenfro/phd/tree/master/dissertation",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "phd/dissertation at master \u00b7 mikerenfro/phd \u00b7 GitHub",
+                        "clicks": 0
+                    },
+                    {
+                        "url": "https://www.astm.org/cms/drupal-7.51/newsroom/new-astm-fatigue-standard-will-enable-fracture-toughness-testing",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "New ASTM Fatigue Standard Will Enable Fracture Toughness Testing | www.astm.org",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 1,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 213,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-02-20T21:43:33.290Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 1,
+                "qa_voted": [
+                    3
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 213,
+                    "username": "Mike_Renfro",
+                    "created_at": "2019-02-20T21:43:33.290Z",
+                    "updated_at": "2019-08-05T16:32:23.002Z",
+                    "name": "Mike Renfro",
+                    "seen_notification_id": 3546,
+                    "last_posted_at": "2019-08-05T16:32:22.953Z",
+                    "password_hash": "3b9eabe8ad271de449e0ed412a8629977ea3034ae5c91c4bbd2ea4b37935258c",
+                    "salt": "b3d9465c5ac38b8c1c9e44418ccda654",
+                    "active": true,
+                    "username_lower": "mike_renfro",
+                    "last_seen_at": "2019-08-09T15:32:51.699Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:38.748Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-08-05T19:35:05.368Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2509608798,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 169,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2509570660,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-02-20T21:43:33.607Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-05-22T23:28:48.813Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            1754,
+            1768
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            152
+        ],
+        [
+            2,
+            149
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 152,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 270,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 846,
+            "title": "How do I use Singularity containers on an HPC cluster?",
+            "fancy_title": "How do I use Singularity containers on an HPC cluster?",
+            "slug": "how-do-i-use-singularity-containers-on-an-hpc-cluster",
+            "posts_count": 3,
+            "reply_count": 0,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2019-04-10T20:24:55.075Z",
+            "last_posted_at": "2019-04-19T14:49:16.218Z",
+            "bumped": true,
+            "bumped_at": "2019-04-19T14:49:16.218Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "cuda",
+                "gpu",
+                "sge",
+                "singularity",
+                "containers"
+            ],
+            "archetype": "regular",
+            "like_count": 2,
+            "views": 571,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 228,
+                        "username": "bdusell",
+                        "name": "Brian DuSell",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/b/e9a140/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 43,
+                        "username": "raminder",
+                        "name": "Raminder Singh",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/r/58956e/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 991,
+            "title": "Running Different GRUB2 Configuration for Multiple Diskless Clients?",
+            "fancy_title": "Running Different GRUB2 Configuration for Multiple Diskless Clients?",
+            "slug": "running-different-grub2-configuration-for-multiple-diskless-clients",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-07-11T13:16:34.502Z",
+            "last_posted_at": "2019-07-11T14:16:10.588Z",
+            "bumped": true,
+            "bumped_at": "2019-07-11T14:16:10.588Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 91,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 299,
+                        "username": "hakasapl",
+                        "name": "",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/h/8c91f0/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 202,
+                        "username": "griznog",
+                        "name": "John Hanks",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/griznog/{size}/163_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 943,
+            "title": "How do I run mpi4py?",
+            "fancy_title": "How do I run mpi4py?",
+            "slug": "how-do-i-run-mpi4py",
+            "posts_count": 5,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-06-11T19:03:22.881Z",
+            "last_posted_at": "2019-06-21T15:44:53.319Z",
+            "bumped": true,
+            "bumped_at": "2019-06-21T15:44:53.319Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "python",
+                "mpi"
+            ],
+            "archetype": "regular",
+            "like_count": 2,
+            "views": 419,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 199,
+                        "username": "akkornel",
+                        "name": "Karl Kornel",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/akkornel/{size}/161_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 95,
+                        "username": "nrapstine",
+                        "name": "",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/n/5e9695/{size}.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "research-software",
+        "nasa",
+        "open-source"
+    ],
+    "id": 903,
+    "title": "What is the Tool for Analysis of Surface Cracks (TASC) from NASA?",
+    "fancy_title": "What is the Tool for Analysis of Surface Cracks (TASC) from NASA?",
+    "posts_count": 2,
+    "created_at": "2019-05-20T14:26:49.118Z",
+    "views": 127,
+    "reply_count": 0,
+    "like_count": 1,
+    "last_posted_at": "2019-05-22T23:28:48.813Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "what-is-the-tool-for-analysis-of-surface-cracks-tasc-from-nasa",
+    "category_id": 26,
+    "word_count": 662,
+    "deleted_at": null,
+    "user_id": 161,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_903",
+    "draft_sequence": 5,
+    "posted": true,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 2,
+    "last_read_post_number": 2,
+    "last_read_post_id": 1768,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 2,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2019-05-22T23:28:48.813Z",
+    "last_commented_on": null,
+    "answer_count": 1,
+    "comment_count": 0,
+    "last_answer_post_number": 2,
+    "last_answerer": {
+        "id": 213,
+        "username": "Mike_Renfro",
+        "name": "Mike Renfro",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mike_renfro/{size}/169_2.png"
+    },
+    "can_vote": true,
+    "vote_count": 1,
+    "user_voted": false,
+    "details": {
+        "notification_level": 3,
+        "notifications_reason_id": 1,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 161,
+                "username": "vsoch",
+                "name": "Vanessasaurus",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 213,
+                "username": "Mike_Renfro",
+                "name": "Mike Renfro",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mike_renfro/{size}/169_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 161,
+            "username": "vsoch",
+            "name": "Vanessasaurus",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+        },
+        "last_poster": {
+            "id": 213,
+            "username": "Mike_Renfro",
+            "name": "Mike Renfro",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mike_renfro/{size}/169_2.png"
+        },
+        "links": [
+            {
+                "url": "https://github.com/mikerenfro/tasc",
+                "title": "GitHub - mikerenfro/tasc: NASA TASC: Tool for Analysis of Surface Cracks",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 213,
+                "domain": "github.com",
+                "root_domain": "github.com"
+            },
+            {
+                "url": "https://software.nasa.gov/software/MFS-33082-1",
+                "title": "Software Details",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 161,
+                "domain": "software.nasa.gov",
+                "root_domain": "nasa.gov"
+            },
+            {
+                "url": "https://www.sciencedirect.com/science/article/pii/S0013794414000551",
+                "title": "Interpolation methodology for elastic\u2013plastic J-integral solutions for surface cracked plates in tension - ScienceDirect",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 213,
+                "domain": "www.sciencedirect.com",
+                "root_domain": "sciencedirect.com"
+            }
+        ]
+    }
+}

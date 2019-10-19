@@ -1,0 +1,1340 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 1641,
+                "name": "Adrian Jackson",
+                "username": "adrianjhpc",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/a/7feea3/{size}.png",
+                "created_at": "2019-04-16T21:50:32.629Z",
+                "cooked": "<p>Hi,</p>\n<p>I\u2019m trying to get a singularity container to run using the infiniband network on a cluster I have access to. I can get it to run using MPI fine, but it\u2019s only using TCP/IP and hence the MPI performance is 10x slower than it should be.</p>\n<p>Tracing through where things are going wrong it looks like it\u2019s failing where it\u2019s trying to write to: /dev/infiniband/uverbs0. It looks like it doesn\u2019t have permission to write into there, although such a call works fine for applications run outside singularity (for debugging all I\u2019m running is ibv_devinfo inside and outside singularity and stracing what happens).</p>\n<p>Anyone any ideas why this would happen or what I should do to get around this issue?</p>\n<p>thanks</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:42.080Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 76,
+                "reads": 12,
+                "readers_count": 11,
+                "score": 377.4,
+                "yours": false,
+                "topic_id": 854,
+                "topic_slug": "access-to-dev-infiniband-from-user-space",
+                "display_username": "Adrian Jackson",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 233,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "new_user",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-04-16T21:48:40.417Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 226,
+                    "username": "victorsndvg",
+                    "created_at": "2019-04-10T18:54:24.795Z",
+                    "updated_at": "2019-04-23T14:22:23.579Z",
+                    "name": "Victor",
+                    "seen_notification_id": 3351,
+                    "last_posted_at": "2019-04-23T14:22:23.326Z",
+                    "password_hash": "3bd219d3bdc2f8e0f2911f833ca0f44e237dfc8d81cfa031bff202330907842c",
+                    "salt": "b2309cdeb221f3251e25a90737a6f325",
+                    "active": true,
+                    "username_lower": "victorsndvg",
+                    "last_seen_at": "2019-06-05T07:11:37.949Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:40.579Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-06-04T17:34:17.921Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 3159753902,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2677272358,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-04-10T18:54:52.569Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-04-23T14:22:23.326Z",
+                "answer_count": 4,
+                "last_answer_post_number": 8,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 1645,
+                "name": "Victor",
+                "username": "victorsndvg",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/v/7ea924/{size}.png",
+                "created_at": "2019-04-18T06:12:47.145Z",
+                "cooked": "<p>Hi Adrian,</p>\n<p>Singularity recommendations explicitly says 'To support infiniband the container must support it\". It means that you have to install infiniband libraries and link MPI to them inside the container.</p>\n<p>IMHO, bind-mount external libraries can be a dangerous approach and must be done carefully. We can tell that bind-mounting host libraries inside the container is safe whenever these libraries maintains API/ABI compatibility.</p>\n<p>Can you tell us which library are you overwriting that is the one incompatible (host-container versions)?</p>\n<p>Here I\u2019ve a singularity recipe to install infiniband libraries, It\u2019s old stuff and probable there are more up-to-date recipes anywhere:</p>\n<aside class=\"onebox githubblob\">\n  <header class=\"source\">\n      <a href=\"https://github.com/MSO4SC/Singularity/blob/master/examples/bootstrap_mpi_template.def\" target=\"_blank\" rel=\"nofollow noopener\">github.com</a>\n  </header>\n  <article class=\"onebox-body\">\n    <h4><a href=\"https://github.com/MSO4SC/Singularity/blob/master/examples/bootstrap_mpi_template.def\" target=\"_blank\" rel=\"nofollow noopener\">MSO4SC/Singularity/blob/master/examples/bootstrap_mpi_template.def</a></h4>\n<pre><code class=\"lang-def\">BootStrap: docker\nFrom: ubuntu:xenial\n#BootStrap: debootstrap\n#OSVersion: xenial\n#MirrorURL: http://us.archive.ubuntu.com/ubuntu/\n\n%setup\n#######################\n# ACTIONS FROM HOST\n# use $SINGULARITY_ROOTFS to refer to container root (/)\n#######################\n\n\n%post\n#######################\n# INSTALL SECTION\n#######################\n\n    #------------------\n    # REQUERIMENTS\n</code></pre>\n\n  This file has been truncated. <a href=\"https://github.com/MSO4SC/Singularity/blob/master/examples/bootstrap_mpi_template.def\" target=\"_blank\" rel=\"nofollow noopener\">show original</a>\n\n  </article>\n  <div class=\"onebox-metadata\">\n    \n    \n  </div>\n  <div style=\"clear: both\"></div>\n</aside>\n\n<p>Here is a solution in one of the singularity issues:</p>\n<aside class=\"onebox githubissue\">\n  <header class=\"source\">\n      <a href=\"https://github.com/sylabs/singularity/issues/876#issuecomment-323907353\" target=\"_blank\" rel=\"nofollow noopener\">github.com/sylabs/singularity</a>\n  </header>\n  <article class=\"onebox-body\">\n    <a href=\"https://github.com/renganxu\" rel=\"nofollow noopener\">\n<img src=\"https://ask.cyberinfrastructure.org/uploads/default/original/1X/36c9a02eefbbd55dcdcf8d75c3f2b9e48bad2eb9.png\" class=\"thumbnail onebox-avatar\" width=\"420\" height=\"420\">\n</a>\n\n<h4><a href=\"https://github.com/sylabs/singularity/issues/876#issuecomment-323907353\" target=\"_blank\" rel=\"nofollow noopener\">Issue: How to use Infiniband with Singularity</a></h4>\n\n<div class=\"date\" style=\"margin-top:10px;\">\n\t<div class=\"user\" style=\"margin-top:10px;\">\n\topened by <a href=\"https://github.com/renganxu\" target=\"_blank\" rel=\"nofollow noopener\">renganxu</a>\n\ton <a href=\"https://github.com/sylabs/singularity/issues/876#issuecomment-323907353\" target=\"_blank\" rel=\"nofollow noopener\">2017-08-17</a>\n\t</div>\n\t<div class=\"user\">\n\t</div>\n</div>\n\n<pre class=\"content\" style=\"white-space: pre-wrap;\">I am running HPL with Infiniband IBverbs with Singularity container, but I found it is not easy to use. I didn't...</pre>\n\n<div class=\"labels\">\n</div>\n\n  </article>\n  <div class=\"onebox-metadata\">\n    \n    \n  </div>\n  <div style=\"clear: both\"></div>\n</aside>\n\n<p>Finally, containers are usually built outside of the HPC and libraries/application must be compiled against OpenMPI/PMIx/IB stuff before moving the container to the infrastructure. If you decide to bind-mount host libraries, do not forget to install things before into the container.</p>\n<p>Hope it helps!</p>\n<p>V\u00edctor</p>",
+                "post_number": 5,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:42.146Z",
+                "reply_count": 2,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 10,
+                "readers_count": 9,
+                "score": 62.0,
+                "yours": false,
+                "topic_id": 854,
+                "topic_slug": "access-to-dev-infiniband-from-user-space",
+                "display_username": "Victor",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://github.com/sylabs/singularity/issues/876#issuecomment-323907353",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "How to use Infiniband with Singularity \u00b7 Issue #876 \u00b7 sylabs/singularity \u00b7 GitHub",
+                        "clicks": 1
+                    },
+                    {
+                        "url": "https://github.com/renganxu",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "renganxu (Rengan Xu) \u00b7 GitHub",
+                        "clicks": 0
+                    },
+                    {
+                        "url": "https://github.com/MSO4SC/Singularity/blob/master/examples/bootstrap_mpi_template.def",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Singularity/bootstrap_mpi_template.def at master \u00b7 MSO4SC/Singularity \u00b7 GitHub",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "acted": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 2,
+                        "acted": true,
+                        "can_undo": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 226,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "new_user",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-04-10T18:54:24.795Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 2,
+                "qa_voted": [
+                    161,
+                    51
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 226,
+                    "username": "victorsndvg",
+                    "created_at": "2019-04-10T18:54:24.795Z",
+                    "updated_at": "2019-04-23T14:22:23.579Z",
+                    "name": "Victor",
+                    "seen_notification_id": 3351,
+                    "last_posted_at": "2019-04-23T14:22:23.326Z",
+                    "password_hash": "3bd219d3bdc2f8e0f2911f833ca0f44e237dfc8d81cfa031bff202330907842c",
+                    "salt": "b2309cdeb221f3251e25a90737a6f325",
+                    "active": true,
+                    "username_lower": "victorsndvg",
+                    "last_seen_at": "2019-06-05T07:11:37.949Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:40.579Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-06-04T17:34:17.921Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 3159753902,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2677272358,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-04-10T18:54:52.569Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-04-23T14:22:23.326Z",
+                "answer_count": 4,
+                "last_answer_post_number": 8,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1648,
+                "name": "Victor",
+                "username": "victorsndvg",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/v/7ea924/{size}.png",
+                "created_at": "2019-04-18T16:14:27.679Z",
+                "cooked": "<p>In addition, I would like to also post another (debian based) Singularity recipe piece where I install infiniband dependencies:</p>\n<pre><code>...\napt-get install -y dkms infiniband-diags libibverbs* ibacm librdmacm* libmlx4* libmlx5* mstflint libibcm.* libibmad.* libibumad* opensm srptools libmlx4-dev librdmacm-dev rdmacm-utils ibverbs-utils perftest vlan ibutils \n</code></pre>\n<p>\u2026</p>\n<p>Here I\u2019m installing too much things, probably the installation of some of these libraries can be avoided.</p>\n<p>Best,<br>\nV\u00edctor</p>",
+                "post_number": 6,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:42.192Z",
+                "reply_count": 0,
+                "reply_to_post_number": 5,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 8,
+                "readers_count": 7,
+                "score": 6.6,
+                "yours": false,
+                "topic_id": 854,
+                "topic_slug": "access-to-dev-infiniband-from-user-space",
+                "display_username": "Victor",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "victorsndvg",
+                    "avatar_template": "/letter_avatar_proxy/v4/letter/v/7ea924/{size}.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 226,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-04-10T18:54:24.795Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 226,
+                    "username": "victorsndvg",
+                    "created_at": "2019-04-10T18:54:24.795Z",
+                    "updated_at": "2019-04-23T14:22:23.579Z",
+                    "name": "Victor",
+                    "seen_notification_id": 3351,
+                    "last_posted_at": "2019-04-23T14:22:23.326Z",
+                    "password_hash": "3bd219d3bdc2f8e0f2911f833ca0f44e237dfc8d81cfa031bff202330907842c",
+                    "salt": "b2309cdeb221f3251e25a90737a6f325",
+                    "active": true,
+                    "username_lower": "victorsndvg",
+                    "last_seen_at": "2019-06-05T07:11:37.949Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:40.579Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-06-04T17:34:17.921Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 3159753902,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2677272358,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-04-10T18:54:52.569Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-04-23T14:22:23.326Z",
+                "answer_count": 4,
+                "last_answer_post_number": 8,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1663,
+                "name": "Adrian Jackson",
+                "username": "adrianjhpc",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/a/7feea3/{size}.png",
+                "created_at": "2019-04-23T12:08:02.111Z",
+                "cooked": "<p>Hi Victor,</p>\n<p>Thanks, I think the issue I encountered here was a difference between the versions of the infiniband drivers on the host and installed inside the container. Getting the correct infiniband drivers to install in the container is not always possible, i.e.:<br>\n<a href=\"http://www.mellanox.com/page/products_dyn?product_family=26&amp;mtag=linux_sw_drivers\" class=\"onebox\" target=\"_blank\" rel=\"nofollow noopener\">http://www.mellanox.com/page/products_dyn?product_family=26&amp;mtag=linux_sw_drivers</a><br>\nThe only available drivers are the latest version and don\u2019t match those installed on the host system. In this case it seems the only way to get the container to use infiniband rather than TCP/IP is to bind the host infiniband drivers.</p>",
+                "post_number": 7,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:42.251Z",
+                "reply_count": 0,
+                "reply_to_post_number": 5,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 26.4,
+                "yours": false,
+                "topic_id": 854,
+                "topic_slug": "access-to-dev-infiniband-from-user-space",
+                "display_username": "Adrian Jackson",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://www.mellanox.com/page/products_dyn?product_family=26&mtag=linux_sw_drivers",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "victorsndvg",
+                    "avatar_template": "/letter_avatar_proxy/v4/letter/v/7ea924/{size}.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 233,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-04-16T21:48:40.417Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 226,
+                    "username": "victorsndvg",
+                    "created_at": "2019-04-10T18:54:24.795Z",
+                    "updated_at": "2019-04-23T14:22:23.579Z",
+                    "name": "Victor",
+                    "seen_notification_id": 3351,
+                    "last_posted_at": "2019-04-23T14:22:23.326Z",
+                    "password_hash": "3bd219d3bdc2f8e0f2911f833ca0f44e237dfc8d81cfa031bff202330907842c",
+                    "salt": "b2309cdeb221f3251e25a90737a6f325",
+                    "active": true,
+                    "username_lower": "victorsndvg",
+                    "last_seen_at": "2019-06-05T07:11:37.949Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:40.579Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-06-04T17:34:17.921Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 3159753902,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2677272358,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-04-10T18:54:52.569Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-04-23T14:22:23.326Z",
+                "answer_count": 4,
+                "last_answer_post_number": 8,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1642,
+                "name": "Adrian Jackson",
+                "username": "adrianjhpc",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/a/7feea3/{size}.png",
+                "created_at": "2019-04-16T21:51:15.912Z",
+                "cooked": "<p>I should have said, this is Singularity 3.0.3, I\u2019ve installed the infiniband drivers inside the container and strace is showing they are being found. It is likely the infiniband libraries inside the container are not exactly the same version as on the system. At the point I\u2019m getting this error I\u2019ve not yet touched MPI, I\u2019m still just trying to get the infiniband tools working (i.e. ibv_devinfo which should just print out the details information about the infiniband devices I have in the system). ibstat does work, so the container can see the infiniband device is there, but it cannot access it to get detailed information (which I can do outside the container).</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:42.317Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 10,
+                "readers_count": 9,
+                "score": 7.0,
+                "yours": false,
+                "topic_id": 854,
+                "topic_slug": "access-to-dev-infiniband-from-user-space",
+                "display_username": "Adrian Jackson",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 233,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-04-16T21:48:40.417Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 226,
+                    "username": "victorsndvg",
+                    "created_at": "2019-04-10T18:54:24.795Z",
+                    "updated_at": "2019-04-23T14:22:23.579Z",
+                    "name": "Victor",
+                    "seen_notification_id": 3351,
+                    "last_posted_at": "2019-04-23T14:22:23.326Z",
+                    "password_hash": "3bd219d3bdc2f8e0f2911f833ca0f44e237dfc8d81cfa031bff202330907842c",
+                    "salt": "b2309cdeb221f3251e25a90737a6f325",
+                    "active": true,
+                    "username_lower": "victorsndvg",
+                    "last_seen_at": "2019-06-05T07:11:37.949Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:40.579Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-06-04T17:34:17.921Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 3159753902,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2677272358,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-04-10T18:54:52.569Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-04-23T14:22:23.326Z",
+                "answer_count": 4,
+                "last_answer_post_number": 8,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1643,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-04-17T20:10:08.184Z",
+                "cooked": "<p>This is a response after some discussion from one of the users on the Singularity list, posted with permission, and summarized.</p>\n<hr>\n<p>On our HPC cluster, I bind infiniband related libraries and folders from host to container, I\u2019m able to run <code>ibv_devinfo</code> correctly. Here we first start on the host. <code>LD_LIBRARY_PATH</code> is set as as:</p>\n<pre><code class=\"lang-bash\">$ export LD_LIBRARY_PATH=$MY_LD_LIBRARY_PATH:.:/host/lib:$LD_LIBRARY_PATH\n</code></pre>\n<p>And then we can write a quick testing script.</p>\n<pre><code class=\"lang-bash\">[wang@c17-04 osu-bench]$ cat run-test2.sh \n</code></pre>\n<pre><code class=\"lang-bash\">#!/bin/bash\nimg=/beegfs/work/public/singularity/ubuntu-18.10.simg\nib=/etc/libibverbs.d\nfor lib in /opt/slurm/lib64/lib*.so* /usr/lib64/libosmcomp.so.3* /usr/lib64/libmlx*.so* /usr/lib64/libi40iw-rdmav2.so* /lib64/libib*.so* /usr/lib64/libnl.so*; do\n    ib=\"$lib:/host/lib/$(basename $lib),$ib\"\ndone\nsingularity exec --bind /opt/slurm,/usr/bin/ibv_devinfo,$ib $img ibv_devinfo\n</code></pre>\n<p>Notice how the final command will execute <code>ibv_devinfo</code> to the container, given all the binds are done.<br>\nThis is part of the script above, but I\u2019ll rewrite for clarity:</p>\n<pre><code class=\"lang-bash\">$ singularity exec --bind /opt/slurm,/usr/bin/ibv_devinfo,$ib $img ibv_devinfo\n</code></pre>\n<p>And then to put it all together, here is the output running the script on the host:</p>\n<pre><code class=\"lang-bash\">[wang@c17-04 osu-bench]$ sh run-test2.sh \nhca_id: mlx5_0\n        transport:                      InfiniBand (0)\n        fw_ver:                         12.16.1020\n        node_guid:                      7cfe:9003:0026:9360\n        sys_image_guid:                 7cfe:9003:0026:9360\n        vendor_id:                      0x02c9\n        vendor_part_id:                 4115\n        hw_ver:                         0x0\n        board_id:                       DEL2180110032\n        phys_port_cnt:                  1\n        Device ports:\n                port:   1\n                        state:                  PORT_ACTIVE (4)\n                        max_mtu:                4096 (5)\n                        active_mtu:             4096 (5)\n                        sm_lid:                 194\n                        port_lid:               102\n                        port_lmc:               0x00\n                        link_layer:             InfiniBand\nhca_id: mlx5_0\n        transport:                      InfiniBand (0)\n        fw_ver:                         12.16.1020\n        node_guid:                      7cfe:9003:0026:9360\n        sys_image_guid:                 7cfe:9003:0026:9360\n        vendor_id:                      0x02c9\n        vendor_part_id:                 4115\n        hw_ver:                         0x0\n        board_id:                       DEL2180110032\n        phys_port_cnt:                  1\n\n        Device ports:\n                port:   1\n                        state:                  PORT_ACTIVE (4)\n                        max_mtu:                4096 (5)\n                        active_mtu:             4096 (5)\n                        sm_lid:                 194\n                        port_lid:               102\n                        port_lmc:               0x00\n                        link_layer:             InfiniBand\n</code></pre>\n<p>The setup and details might of course vary by cluster, but this could be a good start for testing.</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:42.419Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 8,
+                "readers_count": 7,
+                "score": 11.6,
+                "yours": true,
+                "topic_id": 854,
+                "topic_slug": "access-to-dev-infiniband-from-user-space",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 226,
+                    "username": "victorsndvg",
+                    "created_at": "2019-04-10T18:54:24.795Z",
+                    "updated_at": "2019-04-23T14:22:23.579Z",
+                    "name": "Victor",
+                    "seen_notification_id": 3351,
+                    "last_posted_at": "2019-04-23T14:22:23.326Z",
+                    "password_hash": "3bd219d3bdc2f8e0f2911f833ca0f44e237dfc8d81cfa031bff202330907842c",
+                    "salt": "b2309cdeb221f3251e25a90737a6f325",
+                    "active": true,
+                    "username_lower": "victorsndvg",
+                    "last_seen_at": "2019-06-05T07:11:37.949Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:40.579Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-06-04T17:34:17.921Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 3159753902,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2677272358,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-04-10T18:54:52.569Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-04-23T14:22:23.326Z",
+                "answer_count": 4,
+                "last_answer_post_number": 8,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1664,
+                "name": "Victor",
+                "username": "victorsndvg",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/v/7ea924/{size}.png",
+                "created_at": "2019-04-23T14:22:23.326Z",
+                "cooked": "<p>Thanks Adrian,</p>\n<p>I will take this into account for the next infrastructure I test!</p>\n<p>Best,<br>\nV\u00edctor</p>",
+                "post_number": 8,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:42.476Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 6,
+                "readers_count": 5,
+                "score": 6.2,
+                "yours": false,
+                "topic_id": 854,
+                "topic_slug": "access-to-dev-infiniband-from-user-space",
+                "display_username": "Victor",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 226,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-04-10T18:54:24.795Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 226,
+                    "username": "victorsndvg",
+                    "created_at": "2019-04-10T18:54:24.795Z",
+                    "updated_at": "2019-04-23T14:22:23.579Z",
+                    "name": "Victor",
+                    "seen_notification_id": 3351,
+                    "last_posted_at": "2019-04-23T14:22:23.326Z",
+                    "password_hash": "3bd219d3bdc2f8e0f2911f833ca0f44e237dfc8d81cfa031bff202330907842c",
+                    "salt": "b2309cdeb221f3251e25a90737a6f325",
+                    "active": true,
+                    "username_lower": "victorsndvg",
+                    "last_seen_at": "2019-06-05T07:11:37.949Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:40.579Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-06-04T17:34:17.921Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 3159753902,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2677272358,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-04-10T18:54:52.569Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-04-23T14:22:23.326Z",
+                "answer_count": 4,
+                "last_answer_post_number": 8,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1644,
+                "name": "Adrian Jackson",
+                "username": "adrianjhpc",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/a/7feea3/{size}.png",
+                "created_at": "2019-04-17T21:57:41.784Z",
+                "cooked": "<p>Thanks, in the end, for me, this is what I did:</p>\n<p>export SINGULARITY_CONTAINLIBS=/lib64/libmlx5-rdmav2.so,/lib64/libibverbs.so,/lib64/libibverbs.so.1,/lib64/libmlx4-rdmav2.so</p>\n<p>mpirun -x SINGULARITY_CONTAINLIBS   --prefix /lustre/home/z04/adrianj/openmpi/2.1.0 --mca btl openib  --hostfile $PBS_NODEFILE \u2026</p>\n<p>This was after installing the infiniband libraries in the container and building OpenMPI correctly in both places.</p>",
+                "post_number": 4,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:42.448Z",
+                "reply_count": 0,
+                "reply_to_post_number": 3,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 8,
+                "readers_count": 7,
+                "score": 51.6,
+                "yours": false,
+                "topic_id": 854,
+                "topic_slug": "access-to-dev-infiniband-from-user-space",
+                "display_username": "Adrian Jackson",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "vsoch",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "acted": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 233,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-04-16T21:48:40.417Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 226,
+                    "username": "victorsndvg",
+                    "created_at": "2019-04-10T18:54:24.795Z",
+                    "updated_at": "2019-04-23T14:22:23.579Z",
+                    "name": "Victor",
+                    "seen_notification_id": 3351,
+                    "last_posted_at": "2019-04-23T14:22:23.326Z",
+                    "password_hash": "3bd219d3bdc2f8e0f2911f833ca0f44e237dfc8d81cfa031bff202330907842c",
+                    "salt": "b2309cdeb221f3251e25a90737a6f325",
+                    "active": true,
+                    "username_lower": "victorsndvg",
+                    "last_seen_at": "2019-06-05T07:11:37.949Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:40.579Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-06-04T17:34:17.921Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 3159753902,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2677272358,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-04-10T18:54:52.569Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-04-23T14:22:23.326Z",
+                "answer_count": 4,
+                "last_answer_post_number": 8,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            1641,
+            1645,
+            1648,
+            1663,
+            1642,
+            1643,
+            1664,
+            1644
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            185
+        ],
+        [
+            2,
+            184
+        ],
+        [
+            3,
+            183
+        ],
+        [
+            4,
+            179
+        ],
+        [
+            5,
+            185
+        ],
+        [
+            6,
+            184
+        ],
+        [
+            7,
+            179
+        ],
+        [
+            8,
+            184
+        ]
+    ],
+    "tags": [
+        "singularity",
+        "infiniband",
+        "programming-for-hpc",
+        "parallelization"
+    ],
+    "id": 854,
+    "title": "Access to /dev/infiniband from user space",
+    "fancy_title": "Access to /dev/infiniband from user space",
+    "posts_count": 8,
+    "created_at": "2019-04-16T21:50:32.544Z",
+    "views": 336,
+    "reply_count": 3,
+    "like_count": 3,
+    "last_posted_at": "2019-04-23T14:22:23.326Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "access-to-dev-infiniband-from-user-space",
+    "category_id": 26,
+    "word_count": 1013,
+    "deleted_at": null,
+    "user_id": 233,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_854",
+    "draft_sequence": 2,
+    "posted": true,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 8,
+    "last_read_post_number": 8,
+    "last_read_post_id": 1664,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 3,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [
+        1645
+    ],
+    "qa_can_vote": true,
+    "last_answered_at": "2019-04-23T14:22:23.326Z",
+    "last_commented_on": null,
+    "answer_count": 4,
+    "comment_count": 0,
+    "last_answer_post_number": 8,
+    "last_answerer": {
+        "id": 226,
+        "username": "victorsndvg",
+        "name": "Victor",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/v/7ea924/{size}.png"
+    },
+    "can_vote": true,
+    "vote_count": 3,
+    "user_voted": true,
+    "details": {
+        "notification_level": 2,
+        "notifications_reason_id": 4,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 233,
+                "username": "adrianjhpc",
+                "name": "Adrian Jackson",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/a/7feea3/{size}.png",
+                "post_count": 4,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 226,
+                "username": "victorsndvg",
+                "name": "Victor",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/v/7ea924/{size}.png",
+                "post_count": 3,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 161,
+                "username": "vsoch",
+                "name": "Vanessasaurus",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 233,
+            "username": "adrianjhpc",
+            "name": "Adrian Jackson",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/a/7feea3/{size}.png"
+        },
+        "last_poster": {
+            "id": 226,
+            "username": "victorsndvg",
+            "name": "Victor",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/v/7ea924/{size}.png"
+        },
+        "links": [
+            {
+                "url": "https://github.com/sylabs/singularity/issues/876#issuecomment-323907353",
+                "title": "How to use Infiniband with Singularity \u00b7 Issue #876 \u00b7 sylabs/singularity \u00b7 GitHub",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 226,
+                "domain": "github.com",
+                "root_domain": "github.com"
+            }
+        ]
+    }
+}

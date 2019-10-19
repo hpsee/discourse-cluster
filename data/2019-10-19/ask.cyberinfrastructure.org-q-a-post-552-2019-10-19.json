@@ -1,0 +1,930 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 1054,
+                "name": "Katia Oleinik",
+                "username": "katia",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png",
+                "created_at": "2018-11-01T13:27:52.556Z",
+                "cooked": "<p>What is the best way to customize a modulefile (used to specify a particular version of a software) based on some properties of the node? For example, if the node has a GPU, I would like to set the PATH environment variable to point out to the installation directory of the Tensorflow that corresponds to the binaries that handle GPU computations. If however the node does not have GPUs I would like to set the PATH to another directory that contains CPU version of Tensorflow package.</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:39.689Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 12,
+                "reads": 12,
+                "readers_count": 11,
+                "score": 62.4,
+                "yours": false,
+                "topic_id": 552,
+                "topic_slug": "customize-modulefile-based-on-the-node-properties",
+                "display_username": "Katia Oleinik",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 3,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 21,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-19T13:06:39.673Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 134,
+                    "username": "benfulton",
+                    "created_at": "2018-08-23T18:55:48.961Z",
+                    "updated_at": "2019-04-21T00:36:55.365Z",
+                    "name": "Ben Fulton",
+                    "seen_notification_id": 3294,
+                    "last_posted_at": "2019-04-21T00:36:55.258Z",
+                    "password_hash": "12545cdf7e13ed91aa569aa4c995e64600f563942bcbe54f244fd48e808b7df1",
+                    "salt": "05e24e82d6bcf0e300d83b8faed09824",
+                    "active": true,
+                    "username_lower": "benfulton",
+                    "last_seen_at": "2019-06-12T19:05:04.525Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-16T23:09:24.526Z",
+                    "trust_level": 2,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-06-12T12:44:42.894Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2510340320,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 102,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2360761504,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-08-23T18:56:55.646Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-11-02T14:09:47.976Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 1085,
+                "name": "Ben Fulton",
+                "username": "benfulton",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/benfulton/{size}/102_2.png",
+                "created_at": "2018-11-02T14:09:47.976Z",
+                "cooked": "<p>A module file is just a TCL file, so you can use TCL constructs in it. Here I\u2019ve used an \u201cexec\u201d statement to grep the output of lspci and see it finds an NVidia driver. If it does, I\u2019ll set my path accordingly:</p>\n<pre><code>if {[catch {exec /sbin/lspci | grep NVIDIA} results options]} {\n  set gpu_available false\n  append-path PATH /path/to/cpu/tensorflow \n} else {\n  set gpu_available true\n  append-path PATH /path/to/gpu/tensorflow \n}\n\nputs stderr \"Has GPU? $gpu_available\"</code></pre>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:39.712Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 12,
+                "readers_count": 11,
+                "score": 59.4,
+                "yours": false,
+                "topic_id": 552,
+                "topic_slug": "customize-modulefile-based-on-the-node-properties",
+                "display_username": "Ben Fulton",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 2,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 134,
+                "hidden": false,
+                "trust_level": 2,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-08-23T18:55:48.961Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 2,
+                "qa_voted": [
+                    51,
+                    61
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 134,
+                    "username": "benfulton",
+                    "created_at": "2018-08-23T18:55:48.961Z",
+                    "updated_at": "2019-04-21T00:36:55.365Z",
+                    "name": "Ben Fulton",
+                    "seen_notification_id": 3294,
+                    "last_posted_at": "2019-04-21T00:36:55.258Z",
+                    "password_hash": "12545cdf7e13ed91aa569aa4c995e64600f563942bcbe54f244fd48e808b7df1",
+                    "salt": "05e24e82d6bcf0e300d83b8faed09824",
+                    "active": true,
+                    "username_lower": "benfulton",
+                    "last_seen_at": "2019-06-12T19:05:04.525Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-16T23:09:24.526Z",
+                    "trust_level": 2,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-06-12T12:44:42.894Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2510340320,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 102,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2360761504,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-08-23T18:56:55.646Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-11-02T14:09:47.976Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1088,
+                "name": "Katia Oleinik",
+                "username": "katia",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png",
+                "created_at": "2018-11-02T14:28:38.753Z",
+                "cooked": "<p>Thank you, Ben!<br>\nThis is exactly what I was looking for.<br>\n\u2013Katia</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:39.734Z",
+                "reply_count": 0,
+                "reply_to_post_number": 2,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 11,
+                "readers_count": 10,
+                "score": 7.2,
+                "yours": false,
+                "topic_id": 552,
+                "topic_slug": "customize-modulefile-based-on-the-node-properties",
+                "display_username": "Katia Oleinik",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "benfulton",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/benfulton/{size}/102_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 21,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-19T13:06:39.673Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 134,
+                    "username": "benfulton",
+                    "created_at": "2018-08-23T18:55:48.961Z",
+                    "updated_at": "2019-04-21T00:36:55.365Z",
+                    "name": "Ben Fulton",
+                    "seen_notification_id": 3294,
+                    "last_posted_at": "2019-04-21T00:36:55.258Z",
+                    "password_hash": "12545cdf7e13ed91aa569aa4c995e64600f563942bcbe54f244fd48e808b7df1",
+                    "salt": "05e24e82d6bcf0e300d83b8faed09824",
+                    "active": true,
+                    "username_lower": "benfulton",
+                    "last_seen_at": "2019-06-12T19:05:04.525Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-16T23:09:24.526Z",
+                    "trust_level": 2,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-06-12T12:44:42.894Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2510340320,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 102,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2360761504,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-08-23T18:56:55.646Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-11-02T14:09:47.976Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            1054,
+            1085,
+            1088
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            352
+        ],
+        [
+            2,
+            351
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 152,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 270,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 809,
+            "title": "Pre-empting job termination by the scheduler",
+            "fancy_title": "Pre-empting job termination by the scheduler",
+            "slug": "pre-empting-job-termination-by-the-scheduler",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-03-08T16:47:49.624Z",
+            "last_posted_at": "2019-03-08T18:08:32.961Z",
+            "bumped": true,
+            "bumped_at": "2019-03-08T18:08:32.961Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "slurm",
+                "qow",
+                "scheduler"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 174,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 3,
+                        "username": "jma",
+                        "name": "Julie Ma",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 202,
+                        "username": "griznog",
+                        "name": "John Hanks",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/griznog/{size}/163_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 857,
+            "title": "What is the correct procedure for setting ssh keys up to interface with github and servers outside of the campus cluster?",
+            "fancy_title": "What is the correct procedure for setting ssh keys up to interface with github and servers outside of the campus cluster?",
+            "slug": "what-is-the-correct-procedure-for-setting-ssh-keys-up-to-interface-with-github-and-servers-outside-of-the-campus-cluster",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-04-19T15:49:48.963Z",
+            "last_posted_at": "2019-04-21T00:36:55.258Z",
+            "bumped": true,
+            "bumped_at": "2019-04-21T00:36:55.258Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ssh",
+                "git",
+                "github",
+                "key-management"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 96,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 15,
+                        "username": "aculich",
+                        "name": "Aaron Culich",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/aculich/{size}/79_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 134,
+                        "username": "benfulton",
+                        "name": "Ben Fulton",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/benfulton/{size}/102_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 662,
+            "title": "What is GAMESS?",
+            "fancy_title": "What is GAMESS?",
+            "slug": "what-is-gamess",
+            "posts_count": 4,
+            "reply_count": 2,
+            "highest_post_number": 4,
+            "image_url": null,
+            "created_at": "2018-11-28T01:22:25.490Z",
+            "last_posted_at": "2019-05-11T01:26:27.991Z",
+            "bumped": true,
+            "bumped_at": "2019-05-11T01:26:27.991Z",
+            "unseen": false,
+            "last_read_post_number": 4,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": true,
+            "tags": [
+                "gamess",
+                "computational-chemistry"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 266,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 3,
+                        "username": "jma",
+                        "name": "Julie Ma",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 48,
+                        "username": "wirawan0",
+                        "name": "Wirawan Purwanto",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/w/65b543/{size}.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "machine-learning",
+        "tensorflow",
+        "gpu",
+        "parallelization"
+    ],
+    "id": 552,
+    "title": "Customize modulefile based on the node properties",
+    "fancy_title": "Customize modulefile based on the node properties",
+    "posts_count": 3,
+    "created_at": "2018-11-01T13:27:52.493Z",
+    "views": 263,
+    "reply_count": 1,
+    "like_count": 1,
+    "last_posted_at": "2018-11-02T14:28:38.753Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "customize-modulefile-based-on-the-node-properties",
+    "category_id": 26,
+    "word_count": 178,
+    "deleted_at": null,
+    "user_id": 21,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_552",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 3,
+    "last_read_post_number": 3,
+    "last_read_post_id": 1088,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 13,
+    "participant_count": 2,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2018-11-02T14:09:47.976Z",
+    "last_commented_on": null,
+    "answer_count": 1,
+    "comment_count": 0,
+    "last_answer_post_number": 2,
+    "last_answerer": {
+        "id": 134,
+        "username": "benfulton",
+        "name": "Ben Fulton",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/benfulton/{size}/102_2.png"
+    },
+    "can_vote": true,
+    "vote_count": 4,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 21,
+                "username": "katia",
+                "name": "Katia Oleinik",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 134,
+                "username": "benfulton",
+                "name": "Ben Fulton",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/benfulton/{size}/102_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 21,
+            "username": "katia",
+            "name": "Katia Oleinik",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png"
+        },
+        "last_poster": {
+            "id": 21,
+            "username": "katia",
+            "name": "Katia Oleinik",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png"
+        }
+    }
+}

@@ -1,0 +1,625 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 116,
+                "name": "Raminder Singh",
+                "username": "raminder",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/r/58956e/{size}.png",
+                "created_at": "2018-03-16T01:22:19.129Z",
+                "cooked": "<p>I want to transfer data from my workstation (laptop) to an HPC machine and vice versa.  The resource has a Globus endpoint available. How can I use the Globus endpoint to transfer inputs to the cluster and results back to my workstation for further analysis?</p>\n<p><strong>CURATOR:</strong> Raminder Singh</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:38.678Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 21,
+                "reads": 26,
+                "readers_count": 25,
+                "score": 105.2,
+                "yours": false,
+                "topic_id": 106,
+                "topic_slug": "how-do-i-use-a-globus-file-transfer-service",
+                "display_username": "Raminder Singh",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 12,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 43,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-04-20T13:51:22.232Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 195,
+                    "username": "jnugent",
+                    "created_at": "2018-11-29T01:44:49.219Z",
+                    "updated_at": "2018-12-04T19:34:17.901Z",
+                    "name": "Janna Nugent",
+                    "seen_notification_id": 2572,
+                    "last_posted_at": "2018-12-04T19:34:17.862Z",
+                    "password_hash": "c44eb0ce17546bf4a71f94b37352bd06027a402214a6c97e7027de3e7ff998d8",
+                    "salt": "14ec07ceaeb1d6fe7df830c8e70d39f8",
+                    "active": true,
+                    "username_lower": "jnugent",
+                    "last_seen_at": "2018-12-12T02:50:46.083Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:34.796Z",
+                    "trust_level": 0,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2018-12-11T20:37:26.280Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 403649546,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 1240907331,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-11-29T01:45:03.363Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-11-29T02:01:30.184Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 1289,
+                "name": "Janna Nugent",
+                "username": "jnugent",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/ee59a6/{size}.png",
+                "created_at": "2018-11-29T02:01:30.184Z",
+                "cooked": "<p>Since your HPC resource already has a Globus endpoint, just make your workstation a Globus Personal Connect endpoint:</p>\n<ol>\n<li>login to <a href=\"http://globus.org\" rel=\"nofollow noopener\">globus.org</a>\n</li>\n<li>on the left hand menu, select \u201cEndpoints\u201d</li>\n<li>in the upper right, click \u201cCreate new endpoint\u201d, then select \u201cGlobus Connect Personal\u201d and follow the instructions from there.</li>\n</ol>\n<p>Once you have your workstation set up as a personal endpoint, use the web portal at <a href=\"http://Globus.org\" rel=\"nofollow noopener\">Globus.org</a> to select both your HPC endpoint and your Personal Connect endpoint to initiate a data transfer between them.</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:38.701Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 17,
+                "readers_count": 16,
+                "score": 8.4,
+                "yours": false,
+                "topic_id": 106,
+                "topic_slug": "how-do-i-use-a-globus-file-transfer-service",
+                "display_username": "Janna Nugent",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://globus.org",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 2
+                    },
+                    {
+                        "url": "http://Globus.org",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 1,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 195,
+                "hidden": false,
+                "trust_level": 0,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-29T01:44:49.219Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 1,
+                "qa_voted": [
+                    43
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 195,
+                    "username": "jnugent",
+                    "created_at": "2018-11-29T01:44:49.219Z",
+                    "updated_at": "2018-12-04T19:34:17.901Z",
+                    "name": "Janna Nugent",
+                    "seen_notification_id": 2572,
+                    "last_posted_at": "2018-12-04T19:34:17.862Z",
+                    "password_hash": "c44eb0ce17546bf4a71f94b37352bd06027a402214a6c97e7027de3e7ff998d8",
+                    "salt": "14ec07ceaeb1d6fe7df830c8e70d39f8",
+                    "active": true,
+                    "username_lower": "jnugent",
+                    "last_seen_at": "2018-12-12T02:50:46.083Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:34.796Z",
+                    "trust_level": 0,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2018-12-11T20:37:26.280Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 403649546,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 1240907331,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-11-29T01:45:03.363Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-11-29T02:01:30.184Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 333,
+                "name": "Grace Wilson Caudill",
+                "username": "gwcunhcie",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/g/6bbea6/{size}.png",
+                "created_at": "2018-05-08T22:22:09.850Z",
+                "cooked": "<p>A Globus endpoint  is used in similar fashion as you would use an FTP site. Globus endpoints can be either Private or Public. For Private endpoints you will need to have an account and the applicable user permissions granted, on those endpoints. For Public endpoints you can transfer data to and from without having an account or being granted user permissions on those endpoints.</p>\n<p>Step 1: GO to <a href=\"https://www.globusid.org/\">https://www.globusid.org/</a><br>\nand create a Globus account<br>\nStep 2:  Log in to Globus<br>\nStep 3:  Create an endpoint on your institution\u2019s local Data Transfer Node (DTN)<br>\nStep 4:   Activate endpoint(endpoints are active for typically 24 hrs)<br>\nStep 5:   Transfer Files from a DTN at <a href=\"http://Globus.org\">Globus.org</a><br>\nexample of a Globus Public DTN is:<br>\n&gt; ESnet Read-Only Test DTN at New York&gt;</p>\n<p>(Select DTN for file transfer \u2013 push or pull) \u2013 depending on need and your permissions on DTN</p>\n<p>Points to Note:<br>\nThe Institution MUST have a DTN, for the Globus tool to be useful<br>\nA Domain Name (DN) on the Globus endpoint must be shared between collaborating DTNs.<br>\nGlobus back-end ties in with Microsoft Active Directory using LDAP for authentication with your institution\u2019s local DTN.</p>\n<p>Local DTN Parameters needed to create endpoint:</p>\n<p><strong>Host: DTN01.universityname.edu</strong><br>\n<strong>DN: /C=US/O=Globus Consortium/OU=Globus Connect Service/CN=0aba6458-2418-11e6-bfeb-22000b1701d1</strong><br>\n<strong>Control Port: 2811</strong></p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:38.731Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 0,
+                "reads": 22,
+                "readers_count": 21,
+                "score": 4.4,
+                "yours": false,
+                "topic_id": 106,
+                "topic_slug": "how-do-i-use-a-globus-file-transfer-service",
+                "display_username": "Grace Wilson Caudill",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://Globus.org",
+                        "internal": false,
+                        "reflection": false,
+                        "clicks": 0
+                    },
+                    {
+                        "url": "https://www.globusid.org/",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Globus ID",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 47,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-04T20:00:01.075Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 195,
+                    "username": "jnugent",
+                    "created_at": "2018-11-29T01:44:49.219Z",
+                    "updated_at": "2018-12-04T19:34:17.901Z",
+                    "name": "Janna Nugent",
+                    "seen_notification_id": 2572,
+                    "last_posted_at": "2018-12-04T19:34:17.862Z",
+                    "password_hash": "c44eb0ce17546bf4a71f94b37352bd06027a402214a6c97e7027de3e7ff998d8",
+                    "salt": "14ec07ceaeb1d6fe7df830c8e70d39f8",
+                    "active": true,
+                    "username_lower": "jnugent",
+                    "last_seen_at": "2018-12-12T02:50:46.083Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:34.796Z",
+                    "trust_level": 0,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2018-12-11T20:37:26.280Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 403649546,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 1240907331,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-11-29T01:45:03.363Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-11-29T02:01:30.184Z",
+                "answer_count": 2,
+                "last_answer_post_number": 3,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            116,
+            1289,
+            333
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            582
+        ],
+        [
+            2,
+            324
+        ],
+        [
+            3,
+            528
+        ]
+    ],
+    "tags": [
+        "file-transfer",
+        "data-transfer",
+        "globus",
+        "dtn"
+    ],
+    "id": 106,
+    "title": "How do I use a Globus file transfer service?",
+    "fancy_title": "How do I use a Globus file transfer service?",
+    "posts_count": 3,
+    "created_at": "2018-03-16T01:22:19.087Z",
+    "views": 261,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2018-11-29T02:01:30.184Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "how-do-i-use-a-globus-file-transfer-service",
+    "category_id": 26,
+    "word_count": 363,
+    "deleted_at": null,
+    "user_id": 43,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_106",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 3,
+    "last_read_post_number": 3,
+    "last_read_post_id": 1289,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 9,
+    "participant_count": 3,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2018-11-29T02:01:30.184Z",
+    "last_commented_on": null,
+    "answer_count": 2,
+    "comment_count": 0,
+    "last_answer_post_number": 3,
+    "last_answerer": {
+        "id": 195,
+        "username": "jnugent",
+        "name": "Janna Nugent",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ee59a6/{size}.png"
+    },
+    "can_vote": true,
+    "vote_count": 1,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 43,
+                "username": "raminder",
+                "name": "Raminder Singh",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/r/58956e/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 47,
+                "username": "gwcunhcie",
+                "name": "Grace Wilson Caudill",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/g/6bbea6/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 195,
+                "username": "jnugent",
+                "name": "Janna Nugent",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/ee59a6/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 43,
+            "username": "raminder",
+            "name": "Raminder Singh",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/r/58956e/{size}.png"
+        },
+        "last_poster": {
+            "id": 195,
+            "username": "jnugent",
+            "name": "Janna Nugent",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/j/ee59a6/{size}.png"
+        },
+        "links": [
+            {
+                "url": "http://globus.org",
+                "title": null,
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 2,
+                "user_id": 195,
+                "domain": "globus.org",
+                "root_domain": "globus.org"
+            }
+        ]
+    }
+}

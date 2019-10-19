@@ -1,0 +1,1449 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 1779,
+                "name": "BJ Lougee",
+                "username": "almightybeeij",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/almightybeeij/{size}/92_2.png",
+                "created_at": "2019-05-24T18:09:48.414Z",
+                "cooked": "<p>Greetings,<br>\nIs there an example of tying Open OnDemand with a virtual machine environment such as VMware, oVirt, RHEVM, OpenStack? We utilize batch connect for our compute environment; however, we would really like to utilize our RHEVM environment for virtual desktops.</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-08-19T20:06:52.614Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 26,
+                "reads": 24,
+                "readers_count": 23,
+                "score": 134.8,
+                "yours": false,
+                "topic_id": 921,
+                "topic_slug": "open-ondemand-with-vm-infrastructure",
+                "display_username": "BJ Lougee",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 3,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 139,
+                "hidden": false,
+                "trust_level": 0,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "returning_user",
+                "notice_args": "2018-08-29T17:52:06Z",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-08-29T17:42:07.530Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 312,
+                    "username": "william.wilson",
+                    "created_at": "2019-08-19T20:04:01.291Z",
+                    "updated_at": "2019-10-07T16:54:36.631Z",
+                    "name": "William Wilson",
+                    "seen_notification_id": 3995,
+                    "last_posted_at": "2019-10-07T16:54:36.556Z",
+                    "password_hash": "d85d2770fcf2bd3a4f945b56e239c8754f8a3a7360caadea4db51732b6f51452",
+                    "salt": "759c62ecdf4265de6c08cc9c6a477c06",
+                    "active": true,
+                    "username_lower": "william.wilson",
+                    "last_seen_at": "2019-10-07T17:48:24.726Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:25.698Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-09-30T22:34:03.888Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2255626243,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2255626243,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-08-19T20:04:45.455Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-08-19T20:06:52.583Z",
+                "answer_count": 5,
+                "last_answer_post_number": 6,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 1868,
+                "name": "Eric Franz",
+                "username": "ericfranz",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png",
+                "created_at": "2019-06-28T20:36:01.143Z",
+                "cooked": "<p>There are two integration models for OnDemand and VMs that we have been considering at the moment:</p>\n<ol>\n<li>Use a VM as an optional \u201ccluster\u201d to submit batch connect \u201cjobs\u201d to in order to do interactive work, such as utilizing Jupyter or RStudio for a short period of time, measured in hours.</li>\n<li>Use OnDemand interactive app interface as a way to provision, start up, shut down, and eventually destroy VM images, where the management of the VM might last over a long period of time such as the whole semester for a class</li>\n</ol>\n<p>Which is the model you are primarily interested in? Do you have other models in mind?</p>\n<p>The first has been done before by a site using Slurm and their <a href=\"https://slurm.schedmd.com/elastic_computing.html\" rel=\"nofollow noopener\">cloud bursting feature</a> with AWS.</p>\n<p>We are also looking at possibilities for interfacing directly with cloud environments like OpenStack or AWS and container orchestration like Kubernetes for interactive work, but that is still a work in progress.</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-08-19T20:06:52.637Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 15,
+                "readers_count": 14,
+                "score": 23.0,
+                "yours": false,
+                "topic_id": 921,
+                "topic_slug": "open-ondemand-with-vm-infrastructure",
+                "display_username": "Eric Franz",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://slurm.schedmd.com/elastic_computing.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Slurm Workload Manager - Slurm Elastic Computing (Cloud Bursting)",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 1,
+                        "acted": true,
+                        "can_undo": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 292,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "new_user",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-06-28T20:22:54.422Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 1,
+                "qa_voted": [
+                    161
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 312,
+                    "username": "william.wilson",
+                    "created_at": "2019-08-19T20:04:01.291Z",
+                    "updated_at": "2019-10-07T16:54:36.631Z",
+                    "name": "William Wilson",
+                    "seen_notification_id": 3995,
+                    "last_posted_at": "2019-10-07T16:54:36.556Z",
+                    "password_hash": "d85d2770fcf2bd3a4f945b56e239c8754f8a3a7360caadea4db51732b6f51452",
+                    "salt": "759c62ecdf4265de6c08cc9c6a477c06",
+                    "active": true,
+                    "username_lower": "william.wilson",
+                    "last_seen_at": "2019-10-07T17:48:24.726Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:25.698Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-09-30T22:34:03.888Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2255626243,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2255626243,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-08-19T20:04:45.455Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-08-19T20:06:52.583Z",
+                "answer_count": 5,
+                "last_answer_post_number": 6,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1871,
+                "name": "BJ Lougee",
+                "username": "almightybeeij",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/almightybeeij/{size}/92_2.png",
+                "created_at": "2019-07-01T15:24:51.300Z",
+                "cooked": "<p>What we did in the end was the following. We created an app that is similar to the SSH app that comes with OOD. This custom app calls various backend scripts that is written with ovirt4 python sdk. Using cloud-init within the VM image we can setup websockify and the vncserver. We can then connect to that VM using noVNC through the browser. The upside is that this works and we can load balance user VMs with migration policies. The downside is, it is not plugged into any of the OOD templates and in fact is basically a stand alone app at this point.</p>",
+                "post_number": 4,
+                "post_type": 1,
+                "updated_at": "2019-08-19T20:06:52.654Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 14,
+                "readers_count": 13,
+                "score": 7.8,
+                "yours": false,
+                "topic_id": 921,
+                "topic_slug": "open-ondemand-with-vm-infrastructure",
+                "display_username": "BJ Lougee",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 1,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 139,
+                "hidden": false,
+                "trust_level": 0,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-08-29T17:42:07.530Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 1,
+                "qa_voted": [
+                    3
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 312,
+                    "username": "william.wilson",
+                    "created_at": "2019-08-19T20:04:01.291Z",
+                    "updated_at": "2019-10-07T16:54:36.631Z",
+                    "name": "William Wilson",
+                    "seen_notification_id": 3995,
+                    "last_posted_at": "2019-10-07T16:54:36.556Z",
+                    "password_hash": "d85d2770fcf2bd3a4f945b56e239c8754f8a3a7360caadea4db51732b6f51452",
+                    "salt": "759c62ecdf4265de6c08cc9c6a477c06",
+                    "active": true,
+                    "username_lower": "william.wilson",
+                    "last_seen_at": "2019-10-07T17:48:24.726Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:25.698Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-09-30T22:34:03.888Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2255626243,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2255626243,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-08-19T20:04:45.455Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-08-19T20:06:52.583Z",
+                "answer_count": 5,
+                "last_answer_post_number": 6,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1863,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-06-28T15:32:47.339Z",
+                "cooked": "<p>Did you mean installation of OnDemand in something like Vagrant? There are a few repos that have those examples, and I assume you would need to customize for your cluster:</p>\n<ul>\n<li><a href=\"https://github.com/OSC/ood-images\" rel=\"nofollow noopener\">https://github.com/OSC/ood-images</a></li>\n<li><a href=\"https://github.com/OSC/ood-images-full\" rel=\"nofollow noopener\">https://github.com/OSC/ood-images-full</a></li>\n</ul>\n<p>For how to integrate into some VM manager, likely you\u2019d want to ask on their repository directly, and (even better) direct them to this issue to answer.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-08-19T20:06:52.684Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 13,
+                "readers_count": 12,
+                "score": 7.6,
+                "yours": true,
+                "topic_id": 921,
+                "topic_slug": "open-ondemand-with-vm-infrastructure",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://github.com/OSC/ood-images-full",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "GitHub - OSC/ood-images-full",
+                        "clicks": 1
+                    },
+                    {
+                        "url": "https://github.com/OSC/ood-images",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "GitHub - OSC/ood-images",
+                        "clicks": 1
+                    }
+                ],
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 312,
+                    "username": "william.wilson",
+                    "created_at": "2019-08-19T20:04:01.291Z",
+                    "updated_at": "2019-10-07T16:54:36.631Z",
+                    "name": "William Wilson",
+                    "seen_notification_id": 3995,
+                    "last_posted_at": "2019-10-07T16:54:36.556Z",
+                    "password_hash": "d85d2770fcf2bd3a4f945b56e239c8754f8a3a7360caadea4db51732b6f51452",
+                    "salt": "759c62ecdf4265de6c08cc9c6a477c06",
+                    "active": true,
+                    "username_lower": "william.wilson",
+                    "last_seen_at": "2019-10-07T17:48:24.726Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:25.698Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-09-30T22:34:03.888Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2255626243,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2255626243,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-08-19T20:04:45.455Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-08-19T20:06:52.583Z",
+                "answer_count": 5,
+                "last_answer_post_number": 6,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2006,
+                "name": "Alan Chalker",
+                "username": "Chalker",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/c/ad7895/{size}.png",
+                "created_at": "2019-08-16T15:23:53.036Z",
+                "cooked": "<p>Just to followup on this, for anyone looking for more information about Open OnDemand, our website is <a href=\"http://openondemand.org/\" rel=\"nofollow noopener\">http://openondemand.org/</a></p>\n<p>We also have a very active discussion board at <a href=\"https://discourse.osc.edu/c/open-ondemand\" rel=\"nofollow noopener\">https://discourse.osc.edu/c/open-ondemand</a></p>",
+                "post_number": 5,
+                "post_type": 1,
+                "updated_at": "2019-08-19T20:06:52.709Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 8,
+                "readers_count": 7,
+                "score": 6.6,
+                "yours": false,
+                "topic_id": 921,
+                "topic_slug": "open-ondemand-with-vm-infrastructure",
+                "display_username": "Alan Chalker",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://discourse.osc.edu/c/open-ondemand",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Open OnDemand - OSC",
+                        "clicks": 1
+                    },
+                    {
+                        "url": "http://openondemand.org/",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Open OnDemand by OSC",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 311,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-08-16T14:46:44.357Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 312,
+                    "username": "william.wilson",
+                    "created_at": "2019-08-19T20:04:01.291Z",
+                    "updated_at": "2019-10-07T16:54:36.631Z",
+                    "name": "William Wilson",
+                    "seen_notification_id": 3995,
+                    "last_posted_at": "2019-10-07T16:54:36.556Z",
+                    "password_hash": "d85d2770fcf2bd3a4f945b56e239c8754f8a3a7360caadea4db51732b6f51452",
+                    "salt": "759c62ecdf4265de6c08cc9c6a477c06",
+                    "active": true,
+                    "username_lower": "william.wilson",
+                    "last_seen_at": "2019-10-07T17:48:24.726Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:25.698Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-09-30T22:34:03.888Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2255626243,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2255626243,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-08-19T20:04:45.455Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-08-19T20:06:52.583Z",
+                "answer_count": 5,
+                "last_answer_post_number": 6,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2013,
+                "name": "William Wilson",
+                "username": "william.wilson",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/w/97f17d/{size}.png",
+                "created_at": "2019-08-19T20:06:52.583Z",
+                "cooked": "<p>We run ood on a vm and use it to jumpstart people on our cluster. The scripts are submitted from the ood vm via slurm and run on our metal compute nodes. We\u2019ve had pretty good luck with it so far. Our power users use the cli though.</p>",
+                "post_number": 6,
+                "post_type": 1,
+                "updated_at": "2019-08-19T20:06:52.744Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 7,
+                "readers_count": 6,
+                "score": 6.4,
+                "yours": false,
+                "topic_id": 921,
+                "topic_slug": "open-ondemand-with-vm-infrastructure",
+                "display_username": "William Wilson",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 312,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "new_user",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-08-19T20:04:01.291Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 312,
+                    "username": "william.wilson",
+                    "created_at": "2019-08-19T20:04:01.291Z",
+                    "updated_at": "2019-10-07T16:54:36.631Z",
+                    "name": "William Wilson",
+                    "seen_notification_id": 3995,
+                    "last_posted_at": "2019-10-07T16:54:36.556Z",
+                    "password_hash": "d85d2770fcf2bd3a4f945b56e239c8754f8a3a7360caadea4db51732b6f51452",
+                    "salt": "759c62ecdf4265de6c08cc9c6a477c06",
+                    "active": true,
+                    "username_lower": "william.wilson",
+                    "last_seen_at": "2019-10-07T17:48:24.726Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-18T16:46:25.698Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-09-30T22:34:03.888Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2255626243,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2255626243,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2019-08-19T20:04:45.455Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-08-19T20:06:52.583Z",
+                "answer_count": 5,
+                "last_answer_post_number": 6,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            1779,
+            1868,
+            1871,
+            1863,
+            2006,
+            2013
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            147
+        ],
+        [
+            2,
+            112
+        ],
+        [
+            3,
+            109
+        ],
+        [
+            4,
+            112
+        ],
+        [
+            5,
+            63
+        ],
+        [
+            6,
+            60
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 152,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 270,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 863,
+            "title": "Understanding SLURM accounting fields",
+            "fancy_title": "Understanding SLURM accounting fields",
+            "slug": "understanding-slurm-accounting-fields",
+            "posts_count": 3,
+            "reply_count": 0,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2019-04-24T20:05:39.178Z",
+            "last_posted_at": "2019-05-22T21:25:28.381Z",
+            "bumped": true,
+            "bumped_at": "2019-05-22T21:25:28.381Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "slurm",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 372,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 48,
+                        "username": "wirawan0",
+                        "name": "Wirawan Purwanto",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/w/65b543/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 950,
+            "title": "How do I provide authentication on GitHub Pages?",
+            "fancy_title": "How do I provide authentication on GitHub Pages?",
+            "slug": "how-do-i-provide-authentication-on-github-pages",
+            "posts_count": 6,
+            "reply_count": 2,
+            "highest_post_number": 6,
+            "image_url": "https://ask.cyberinfrastructure.org/uploads/default/optimized/1X/684de2ead4df4449ea27c65ceca1442da329169b_2_690x136.png",
+            "created_at": "2019-06-14T15:11:50.039Z",
+            "last_posted_at": "2019-06-18T23:31:02.119Z",
+            "bumped": true,
+            "bumped_at": "2019-06-18T23:31:02.119Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "github",
+                "jekyll",
+                "github-pages",
+                "documentation"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 388,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 155,
+                        "username": "iki",
+                        "name": "",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/iki/{size}/100_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 903,
+            "title": "What is the Tool for Analysis of Surface Cracks (TASC) from NASA?",
+            "fancy_title": "What is the Tool for Analysis of Surface Cracks (TASC) from NASA?",
+            "slug": "what-is-the-tool-for-analysis-of-surface-cracks-tasc-from-nasa",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-05-20T14:26:49.118Z",
+            "last_posted_at": "2019-05-22T23:28:48.813Z",
+            "bumped": true,
+            "bumped_at": "2019-05-22T23:28:48.813Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "nasa",
+                "open-source",
+                "research-software"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 128,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 213,
+                        "username": "Mike_Renfro",
+                        "name": "Mike Renfro",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mike_renfro/{size}/169_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "ondemand",
+        "vm",
+        "qow"
+    ],
+    "id": 921,
+    "title": "Open OnDemand with VM infrastructure",
+    "fancy_title": "Open OnDemand with VM infrastructure",
+    "posts_count": 6,
+    "created_at": "2019-05-24T18:09:48.348Z",
+    "views": 278,
+    "reply_count": 0,
+    "like_count": 1,
+    "last_posted_at": "2019-08-19T20:06:52.583Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "open-ondemand-with-vm-infrastructure",
+    "category_id": 26,
+    "word_count": 468,
+    "deleted_at": null,
+    "user_id": 139,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_921",
+    "draft_sequence": 3,
+    "posted": true,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 6,
+    "last_read_post_number": 6,
+    "last_read_post_id": 2013,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 5,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [
+        1868
+    ],
+    "qa_can_vote": true,
+    "last_answered_at": "2019-08-19T20:06:52.583Z",
+    "last_commented_on": null,
+    "answer_count": 5,
+    "comment_count": 0,
+    "last_answer_post_number": 6,
+    "last_answerer": {
+        "id": 312,
+        "username": "william.wilson",
+        "name": "William Wilson",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/w/97f17d/{size}.png"
+    },
+    "can_vote": true,
+    "vote_count": 3,
+    "user_voted": false,
+    "details": {
+        "notification_level": 2,
+        "notifications_reason_id": 4,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 139,
+                "username": "almightybeeij",
+                "name": "BJ Lougee",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/almightybeeij/{size}/92_2.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 161,
+                "username": "vsoch",
+                "name": "Vanessasaurus",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 292,
+                "username": "ericfranz",
+                "name": "Eric Franz",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 311,
+                "username": "Chalker",
+                "name": "Alan Chalker",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/c/ad7895/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 312,
+                "username": "william.wilson",
+                "name": "William Wilson",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/w/97f17d/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 139,
+            "username": "almightybeeij",
+            "name": "BJ Lougee",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/almightybeeij/{size}/92_2.png"
+        },
+        "last_poster": {
+            "id": 312,
+            "username": "william.wilson",
+            "name": "William Wilson",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/w/97f17d/{size}.png"
+        },
+        "links": [
+            {
+                "url": "https://discourse.osc.edu/c/open-ondemand",
+                "title": "Open OnDemand - OSC",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 311,
+                "domain": "discourse.osc.edu",
+                "root_domain": "osc.edu"
+            },
+            {
+                "url": "https://github.com/OSC/ood-images",
+                "title": "GitHub - OSC/ood-images",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 161,
+                "domain": "github.com",
+                "root_domain": "github.com"
+            },
+            {
+                "url": "https://github.com/OSC/ood-images-full",
+                "title": "GitHub - OSC/ood-images-full",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 161,
+                "domain": "github.com",
+                "root_domain": "github.com"
+            }
+        ]
+    }
+}

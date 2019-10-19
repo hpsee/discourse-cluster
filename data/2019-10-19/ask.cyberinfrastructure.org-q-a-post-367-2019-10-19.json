@@ -1,0 +1,769 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 722,
+                "name": "Eric Walter",
+                "username": "ewalter",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ewalter/{size}/73_2.png",
+                "created_at": "2018-07-30T15:12:08.972Z",
+                "cooked": "<p>Hi all,</p>\n<p>We have recently upgraded to using Torque with cgroups.  We have been happy with the use of cgroups in general however, I have recently found that MPI process affinity usually does nothing to improve run times and sometimes slows down certain MPI applications.  I assume this is due to process affinity interfering with cgroups(?).</p>\n<p>My question is, since the MPI versions we support here at W&amp;M (IntelMPI, Mvapich2 and OpenMPI) all have some sort of process binding by default, do you somehow disable MPI process affinity system-wide, do you simply warn your users to investigate the effect of process affinity, or do you not see any effect of processes affinity + cgroups.</p>\n<p>Just wondering what the common wisdom is since most google searching and looking at the MPI websites don\u2019t seem to address effects of cgroups and</p>\n<p>Thanks for any information that can be shared.</p>\n<p>Regards,</p>\n<p>Eric</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:40.371Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 23,
+                "reads": 19,
+                "readers_count": 18,
+                "score": 118.8,
+                "yours": false,
+                "topic_id": 367,
+                "topic_slug": "cgroups-with-mpi-process-affinity",
+                "display_username": "Eric Walter",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 109,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-07-27T20:45:42.399Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 109,
+                    "username": "ewalter",
+                    "created_at": "2018-07-27T20:45:42.399Z",
+                    "updated_at": "2019-08-15T20:41:01.697Z",
+                    "name": "Eric Walter",
+                    "seen_notification_id": 1710,
+                    "last_posted_at": "2019-08-15T20:41:01.398Z",
+                    "password_hash": "6a22d6561bb1751a422ef024ad5a068d896ee370335a465abe9c119f04c19592",
+                    "salt": "bf017775f02eba6cfeaf7ceb65f9b1e8",
+                    "active": true,
+                    "username_lower": "ewalter",
+                    "last_seen_at": "2019-08-15T20:41:28.279Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-17T22:41:21.143Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-08-12T20:33:08.008Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2163147577,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 73,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 419357618,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-07-27T20:46:00.274Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-08-02T18:11:35.560Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 790,
+                "name": "Eric Walter",
+                "username": "ewalter",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ewalter/{size}/73_2.png",
+                "created_at": "2018-08-02T18:11:35.560Z",
+                "cooked": "<p>Actually, upon further research:</p>\n<ol>\n<li>\n<p>cgroups is not really involved, the effect of affinity seems to happen outside of Torque.</p>\n</li>\n<li>\n<p>The effect of process affinity seems to be minor for other codes I have tested.  I guess the one benchmark (lu-mz from the NASA parallel benchmark suite:  <a href=\"https://www.nas.nasa.gov/publications/npb.html\" rel=\"nofollow noopener\">https://www.nas.nasa.gov/publications/npb.html</a>) seems to be quite sensitive to affinity a process placement.</p>\n</li>\n<li>\n<p>Also, I have found one of our sub-cluster which seems to yield much better run times without process affinity enforced however however, this doesn\u2019t happen on any other machines in our cluster.  Probably something sub-optimal about the configuration.</p>\n</li>\n</ol>\n<p>So, the bottom line seems to be that each code needs to be tested separately to determine whether it benefits from process affinity or not.  Also, the cgroups being involved was an assumption / confusion on my part.</p>\n<p>Eric</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:40.400Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 18,
+                "readers_count": 17,
+                "score": 8.6,
+                "yours": false,
+                "topic_id": 367,
+                "topic_slug": "cgroups-with-mpi-process-affinity",
+                "display_username": "Eric Walter",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://www.nas.nasa.gov/publications/npb.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "NAS Parallel Benchmarks",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 109,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-07-27T20:45:42.399Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 109,
+                    "username": "ewalter",
+                    "created_at": "2018-07-27T20:45:42.399Z",
+                    "updated_at": "2019-08-15T20:41:01.697Z",
+                    "name": "Eric Walter",
+                    "seen_notification_id": 1710,
+                    "last_posted_at": "2019-08-15T20:41:01.398Z",
+                    "password_hash": "6a22d6561bb1751a422ef024ad5a068d896ee370335a465abe9c119f04c19592",
+                    "salt": "bf017775f02eba6cfeaf7ceb65f9b1e8",
+                    "active": true,
+                    "username_lower": "ewalter",
+                    "last_seen_at": "2019-08-15T20:41:28.279Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-17T22:41:21.143Z",
+                    "trust_level": 1,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-08-12T20:33:08.008Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2163147577,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 73,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 419357618,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-07-27T20:46:00.274Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-08-02T18:11:35.560Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            722,
+            790
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            445
+        ],
+        [
+            2,
+            442
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 152,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 270,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 599,
+            "title": "How do I install Python 2.7 on my Comet allocation and where can I store data long term?",
+            "fancy_title": "How do I install Python 2.7 on my Comet allocation and where can I store data long term?",
+            "slug": "how-do-i-install-python-2-7-on-my-comet-allocation-and-where-can-i-store-data-long-term",
+            "posts_count": 3,
+            "reply_count": 1,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2018-11-15T03:18:24.776Z",
+            "last_posted_at": "2018-11-16T21:20:59.013Z",
+            "bumped": true,
+            "bumped_at": "2018-11-16T21:20:59.013Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": true,
+            "tags": [
+                "python",
+                "storage",
+                "xsede"
+            ],
+            "archetype": "regular",
+            "like_count": 2,
+            "views": 212,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 118,
+                        "username": "cydburrows",
+                        "name": "Cyd Burrows-Schilling",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/c/ecccb3/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1065,
+            "title": "Power (watts) utilization data from nodes",
+            "fancy_title": "Power (watts) utilization data from nodes",
+            "slug": "power-watts-utilization-data-from-nodes",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-09-18T17:01:53.272Z",
+            "last_posted_at": "2019-10-05T01:22:26.753Z",
+            "bumped": true,
+            "bumped_at": "2019-10-05T01:22:26.753Z",
+            "unseen": false,
+            "last_read_post_number": 1,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "monitoring",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 102,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 219,
+                        "username": "bburnett",
+                        "name": "Ben Burnett",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/b/d6d6ee/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 749,
+            "title": "Cannot determine start time for job",
+            "fancy_title": "Cannot determine start time for job",
+            "slug": "cannot-determine-start-time-for-job",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-01-14T20:38:56.843Z",
+            "last_posted_at": "2019-01-25T16:21:12.908Z",
+            "bumped": true,
+            "bumped_at": "2019-01-25T16:21:12.908Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "pbs",
+                "scheduler"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 175,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 134,
+                        "username": "benfulton",
+                        "name": "Ben Fulton",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/benfulton/{size}/102_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "mpi",
+        "parallelization"
+    ],
+    "id": 367,
+    "title": "Cgroups with MPI process affinity",
+    "fancy_title": "Cgroups with MPI process affinity",
+    "posts_count": 2,
+    "created_at": "2018-07-30T15:12:08.900Z",
+    "views": 289,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2018-08-02T18:11:35.560Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "cgroups-with-mpi-process-affinity",
+    "category_id": 26,
+    "word_count": 298,
+    "deleted_at": null,
+    "user_id": 109,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_367",
+    "draft_sequence": 1,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 2,
+    "last_read_post_number": 2,
+    "last_read_post_id": 790,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 1,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2018-08-02T18:11:35.560Z",
+    "last_commented_on": null,
+    "answer_count": 1,
+    "comment_count": 0,
+    "last_answer_post_number": 2,
+    "last_answerer": {
+        "id": 109,
+        "username": "ewalter",
+        "name": "Eric Walter",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ewalter/{size}/73_2.png"
+    },
+    "can_vote": true,
+    "vote_count": 1,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 109,
+                "username": "ewalter",
+                "name": "Eric Walter",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ewalter/{size}/73_2.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 109,
+            "username": "ewalter",
+            "name": "Eric Walter",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ewalter/{size}/73_2.png"
+        },
+        "last_poster": {
+            "id": 109,
+            "username": "ewalter",
+            "name": "Eric Walter",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ewalter/{size}/73_2.png"
+        }
+    }
+}

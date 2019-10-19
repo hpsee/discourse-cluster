@@ -1,0 +1,777 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 335,
+                "name": "Kristina Plazonic",
+                "username": "KrisP",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/k/e95f7d/{size}.png",
+                "created_at": "2018-05-09T23:32:57.011Z",
+                "cooked": "<p>I know that my cluster has some gpus and a mix of hardware bought at different times and having different processors. How do I make sure that slurm allocates my job to specific nodes, for example, a specific node with a gpu?</p>\n<p><strong>CURATOR</strong>: Kristina Plazonic</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:38.927Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 6,
+                "reads": 11,
+                "readers_count": 10,
+                "score": 32.2,
+                "yours": false,
+                "topic_id": 200,
+                "topic_slug": "how-do-i-request-a-node-with-a-specific-resource-like-gpu-in-slurm",
+                "display_username": "Kristina Plazonic",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 8,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 50,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-08T19:58:42.924Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 50,
+                    "username": "KrisP",
+                    "created_at": "2018-05-08T19:58:42.924Z",
+                    "updated_at": "2018-08-24T21:05:18.781Z",
+                    "name": "Kristina Plazonic",
+                    "seen_notification_id": 1970,
+                    "last_posted_at": "2018-08-24T21:05:18.709Z",
+                    "password_hash": "ae6eeb25945299375bfc44213ed00731e711463fea95f5d6d9edfcaf3d856fb9",
+                    "salt": "b8e5bbe48ea8e6e6f053e026991b95aa",
+                    "active": true,
+                    "username_lower": "krisp",
+                    "last_seen_at": "2018-09-04T19:37:40.858Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-09-30T23:29:56.287Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2018-09-04T17:50:36.743Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2147886357,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2783371653,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-05-08T20:02:39.030Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-05-11T16:08:46.859Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 346,
+                "name": "Kristina Plazonic",
+                "username": "KrisP",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/k/e95f7d/{size}.png",
+                "created_at": "2018-05-11T16:08:46.859Z",
+                "cooked": "<p>There are a number of options you can request with <code>salloc</code>, <code>srun</code> or <code>sbatch</code> that indicate which nodes or resources you would like to use. For example:</p>\n<ul>\n<li>\n<code>nodelist</code> = list of nodes where to run e.g. <code>--nodelist=mynodename1,mynodename2</code>\n</li>\n<li>\n<code>nodefile</code> = like <code>nodelist</code> but you specify the file with a list of nodes e.g. <code>--nodefile=mynodefilelist.txt</code>\n</li>\n<li>\n<code>constraint</code> = list of features that need to be present on the node\n<ul>\n<li>e.g. <code>--constraint=pascal</code> - and this can be a boolean expression like<br>\n<code>--constraint=\"pascal|tesla\"</code> or <code>--constraint=\"pascal&amp;skylake\"</code>\n</li>\n</ul>\n</li>\n</ul>\n<p>For example, your command might be:<br>\nsrun -N 1 -n 1 -c 2 --nodelist=mynodename1,mynodename2  --constraint=pascal myscript.sh</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:38.959Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 0,
+                "reads": 9,
+                "readers_count": 8,
+                "score": 46.8,
+                "yours": false,
+                "topic_id": 200,
+                "topic_slug": "how-do-i-request-a-node-with-a-specific-resource-like-gpu-in-slurm",
+                "display_username": "Kristina Plazonic",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 50,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-08T19:58:42.924Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 50,
+                    "username": "KrisP",
+                    "created_at": "2018-05-08T19:58:42.924Z",
+                    "updated_at": "2018-08-24T21:05:18.781Z",
+                    "name": "Kristina Plazonic",
+                    "seen_notification_id": 1970,
+                    "last_posted_at": "2018-08-24T21:05:18.709Z",
+                    "password_hash": "ae6eeb25945299375bfc44213ed00731e711463fea95f5d6d9edfcaf3d856fb9",
+                    "salt": "b8e5bbe48ea8e6e6f053e026991b95aa",
+                    "active": true,
+                    "username_lower": "krisp",
+                    "last_seen_at": "2018-09-04T19:37:40.858Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-09-30T23:29:56.287Z",
+                    "trust_level": 4,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2018-09-04T17:50:36.743Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2147886357,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": null,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2783371653,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-05-08T20:02:39.030Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-05-11T16:08:46.859Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            335,
+            346
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            527
+        ],
+        [
+            2,
+            525
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 152,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 270,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 912,
+            "title": "How to attach to a running job to run top on compute node",
+            "fancy_title": "How to attach to a running job to run top on compute node",
+            "slug": "how-to-attach-to-a-running-job-to-run-top-on-compute-node",
+            "posts_count": 3,
+            "reply_count": 1,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2019-05-22T13:16:02.352Z",
+            "last_posted_at": "2019-05-23T12:33:52.339Z",
+            "bumped": true,
+            "bumped_at": "2019-05-23T12:33:52.339Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "slurm",
+                "scheduler"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 193,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 258,
+                        "username": "schnabelr",
+                        "name": "Robert Schnabel",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/59ef9b/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 89,
+                        "username": "tmiddelk",
+                        "name": "Timothy Middelkoop",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/t/8baadc/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 213,
+                        "username": "Mike_Renfro",
+                        "name": "Mike Renfro",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mike_renfro/{size}/169_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 991,
+            "title": "Running Different GRUB2 Configuration for Multiple Diskless Clients?",
+            "fancy_title": "Running Different GRUB2 Configuration for Multiple Diskless Clients?",
+            "slug": "running-different-grub2-configuration-for-multiple-diskless-clients",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-07-11T13:16:34.502Z",
+            "last_posted_at": "2019-07-11T14:16:10.588Z",
+            "bumped": true,
+            "bumped_at": "2019-07-11T14:16:10.588Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 91,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 299,
+                        "username": "hakasapl",
+                        "name": "",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/h/8c91f0/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 202,
+                        "username": "griznog",
+                        "name": "John Hanks",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/griznog/{size}/163_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 854,
+            "title": "Access to /dev/infiniband from user space",
+            "fancy_title": "Access to /dev/infiniband from user space",
+            "slug": "access-to-dev-infiniband-from-user-space",
+            "posts_count": 8,
+            "reply_count": 3,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-04-16T21:50:32.544Z",
+            "last_posted_at": "2019-04-23T14:22:23.326Z",
+            "bumped": true,
+            "bumped_at": "2019-04-23T14:22:23.326Z",
+            "unseen": false,
+            "last_read_post_number": 8,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": true,
+            "tags": [
+                "singularity",
+                "parallelization",
+                "programming-for-hpc",
+                "infiniband"
+            ],
+            "archetype": "regular",
+            "like_count": 3,
+            "views": 337,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 233,
+                        "username": "adrianjhpc",
+                        "name": "Adrian Jackson",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/a/7feea3/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 226,
+                        "username": "victorsndvg",
+                        "name": "Victor",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/v/7ea924/{size}.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "slurm",
+        "gpu",
+        "programming-for-hpc",
+        "scheduler"
+    ],
+    "id": 200,
+    "title": "How do I request a node with a specific resource (like gpu) in Slurm?",
+    "fancy_title": "How do I request a node with a specific resource (like gpu) in Slurm?",
+    "posts_count": 2,
+    "created_at": "2018-05-09T23:32:56.927Z",
+    "views": 83,
+    "reply_count": 0,
+    "like_count": 1,
+    "last_posted_at": "2018-05-11T16:08:46.859Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "how-do-i-request-a-node-with-a-specific-resource-like-gpu-in-slurm",
+    "category_id": 26,
+    "word_count": 153,
+    "deleted_at": null,
+    "user_id": 50,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_200",
+    "draft_sequence": 0,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 2,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": null,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 4,
+    "participant_count": 1,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2018-05-11T16:08:46.859Z",
+    "last_commented_on": null,
+    "answer_count": 1,
+    "comment_count": 0,
+    "last_answer_post_number": 2,
+    "last_answerer": {
+        "id": 50,
+        "username": "KrisP",
+        "name": "Kristina Plazonic",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/k/e95f7d/{size}.png"
+    },
+    "can_vote": true,
+    "vote_count": 1,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 50,
+                "username": "KrisP",
+                "name": "Kristina Plazonic",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/k/e95f7d/{size}.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 50,
+            "username": "KrisP",
+            "name": "Kristina Plazonic",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/k/e95f7d/{size}.png"
+        },
+        "last_poster": {
+            "id": 50,
+            "username": "KrisP",
+            "name": "Kristina Plazonic",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/k/e95f7d/{size}.png"
+        }
+    }
+}

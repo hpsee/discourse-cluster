@@ -1,0 +1,931 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 1382,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-01-11T19:11:49.550Z",
+                "cooked": "<p>In high performance computing, we generally work in a terminal, meaning using some shell. Have you ever seen these lines at the top of your \u201cshell scripts?\u201d</p>\n<pre><code class=\"lang-bash\">#!/bin/sh\n</code></pre>\n<p>or</p>\n<pre><code class=\"lang-bash\">#!/bin/sh\n</code></pre>\n<p>Those first lines are the interpreter lines - or an instruction for what program to use to run the script. If you look at the variable <code>SHELL</code> in your terminal, you likely will see the shell that <em>you are using as we speak!</em></p>\n<pre><code class=\"lang-bash\">echo $SHELL\n/bin/bash\n</code></pre>\n<p>There is a <a href=\"https://en.wikipedia.org/wiki/Bash_(Unix_shell)\" rel=\"nofollow noopener\">rich history</a> of how the Unix shell became the \u201cBourne again\u201d shell, or what we commonly refer to as bash.</p>\n<blockquote>\n<p>So why bash?</p>\n</blockquote>\n<p>The reason I want you to get excited about bash is because there are SO many things you can do with it that you would typically rely on a higher level language (python, R, etc.) to do. For example, you can trim strings, write functions to otherwise manipulate strings, calculate quantities, read files, count things\u2026 it\u2019s a powerful language! Here is a one line function to make a string all lowercase:</p>\n<pre><code class=\"lang-bash\">lower() {\n    printf '%s\\n' \"${1,,}\"\n}\n\n$ lower LiKeOmGTaCoS\nlikeomgtacos\n</code></pre>\n<p>Specifically, I want to share <a href=\"https://github.com/dylanaraps/pure-bash-bible\" rel=\"nofollow noopener\">THE BASH BIBLE</a> that is not only interesting, it\u2019s fun and a great resource to learn from! So the next time you want to do some special thing from the command line? Ask yourself if you can do it with bash first, before you delve into requiring a higher level language dependency.</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:31.347Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 20,
+                "reads": 19,
+                "readers_count": 18,
+                "score": 103.8,
+                "yours": true,
+                "topic_id": 744,
+                "topic_slug": "how-do-i-do-insert-thing-here-in-bash",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 3,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://github.com/dylanaraps/pure-bash-bible",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "GitHub - dylanaraps/pure-bash-bible: \ud83d\udcd6 A collection of pure bash alternatives to external processes.",
+                        "clicks": 11
+                    },
+                    {
+                        "url": "https://en.wikipedia.org/wiki/Bash_(Unix_shell)",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Bash (Unix shell) - Wikipedia",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 75,
+                    "username": "mhanby",
+                    "created_at": "2018-07-17T15:51:37.527Z",
+                    "updated_at": "2019-01-15T22:00:19.290Z",
+                    "name": "Mike Hanby",
+                    "seen_notification_id": 1269,
+                    "last_posted_at": "2019-01-15T22:00:19.176Z",
+                    "password_hash": "11b6b88a666850dcec4fd2a09f42b599c7c5215d8456eb11938f202b6b7d62b4",
+                    "salt": "70902612c90acdbfffd01b535460650e",
+                    "active": true,
+                    "username_lower": "mhanby",
+                    "last_seen_at": "2019-01-15T22:02:37.438Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-16T05:42:24.865Z",
+                    "trust_level": 0,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2018-08-24T16:23:35.745Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 3626629007,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 50,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2758799978,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-07-17T15:51:58.918Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-01-15T22:00:19.176Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 1392,
+                "name": "Mike Hanby",
+                "username": "mhanby",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mhanby/{size}/50_2.png",
+                "created_at": "2019-01-15T22:00:19.176Z",
+                "cooked": "<p>It\u2019s also very simple to use loops in BASH:</p>\n<ul>\n<li>Simple <strong>for</strong> loop</li>\n</ul>\n<pre><code class=\"lang-bash\">for node in compute{1..10}; do\n  ssh $node 'hostname -s'\ndone\n</code></pre>\n<ul>\n<li>Simple <strong>while</strong> loop</li>\n</ul>\n<pre><code class=\"lang-bash\">count=1\nwhile /bin/true; do\n  echo \"looped ${count} times\"\n  let count=${count}+1\n  sleep 10\ndone\n</code></pre>\n<p>And classic <strong>if then else</strong> statement</p>\n<pre><code class=\"lang-bash\">result=0\n\nif [[ \"$result\" == \"0\" ]];then\n  echo \"Success\"\nelse\n  echo \"Fail\"\nfi\n</code></pre>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:31.381Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 16,
+                "readers_count": 15,
+                "score": 58.2,
+                "yours": false,
+                "topic_id": 744,
+                "topic_slug": "how-do-i-do-insert-thing-here-in-bash",
+                "display_username": "Mike Hanby",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "acted": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 75,
+                "hidden": false,
+                "trust_level": 0,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-07-17T15:51:37.527Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 75,
+                    "username": "mhanby",
+                    "created_at": "2018-07-17T15:51:37.527Z",
+                    "updated_at": "2019-01-15T22:00:19.290Z",
+                    "name": "Mike Hanby",
+                    "seen_notification_id": 1269,
+                    "last_posted_at": "2019-01-15T22:00:19.176Z",
+                    "password_hash": "11b6b88a666850dcec4fd2a09f42b599c7c5215d8456eb11938f202b6b7d62b4",
+                    "salt": "70902612c90acdbfffd01b535460650e",
+                    "active": true,
+                    "username_lower": "mhanby",
+                    "last_seen_at": "2019-01-15T22:02:37.438Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-16T05:42:24.865Z",
+                    "trust_level": 0,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2018-08-24T16:23:35.745Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 3626629007,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 50,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2758799978,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-07-17T15:51:58.918Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-01-15T22:00:19.176Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 1393,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-01-15T22:22:17.366Z",
+                "cooked": "<p>Agreed! Another useful example is to loop over a listing of files, or generally any terminal command that produces a list of things:</p>\n<pre><code class=\"lang-bash\">for file in $(ls $PWD); \n    do \n    echo $file; \ndone\n</code></pre>\n<p>That would generate an echo of all the files in the present working directory. You can imagine running a command instead and using the variable! Another simple loop is literally just a line of space separated strings, like this:</p>\n<pre><code class=\"lang-bash\">$ for thing in \"one\" \"two\";\n    do \n        echo $thing \n    done\n</code></pre>\n<p>That would print out:</p>\n<pre><code class=\"lang-bash\">one\ntwo\n</code></pre>\n<p><img src=\"https://ask.cyberinfrastructure.org/uploads/default/original/1X/c9082f89fe6207c900c02e9342612ef92814ad90.jpeg\" alt=\"image\" width=\"350\" height=\"350\"></p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:31.416Z",
+                "reply_count": 0,
+                "reply_to_post_number": 2,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 15,
+                "readers_count": 14,
+                "score": 8.0,
+                "yours": true,
+                "topic_id": 744,
+                "topic_slug": "how-do-i-do-insert-thing-here-in-bash",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "reply_to_user": {
+                    "username": "mhanby",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mhanby/{size}/50_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 75,
+                    "username": "mhanby",
+                    "created_at": "2018-07-17T15:51:37.527Z",
+                    "updated_at": "2019-01-15T22:00:19.290Z",
+                    "name": "Mike Hanby",
+                    "seen_notification_id": 1269,
+                    "last_posted_at": "2019-01-15T22:00:19.176Z",
+                    "password_hash": "11b6b88a666850dcec4fd2a09f42b599c7c5215d8456eb11938f202b6b7d62b4",
+                    "salt": "70902612c90acdbfffd01b535460650e",
+                    "active": true,
+                    "username_lower": "mhanby",
+                    "last_seen_at": "2019-01-15T22:02:37.438Z",
+                    "admin": false,
+                    "last_emailed_at": "2019-10-16T05:42:24.865Z",
+                    "trust_level": 0,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2018-08-24T16:23:35.745Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 3626629007,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": false,
+                    "title": null,
+                    "uploaded_avatar_id": 50,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2758799978,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-07-17T15:51:58.918Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": null,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2019-01-15T22:00:19.176Z",
+                "answer_count": 1,
+                "last_answer_post_number": 2,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            1382,
+            1392,
+            1393
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            280
+        ],
+        [
+            2,
+            276
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 152,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 270,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1065,
+            "title": "Power (watts) utilization data from nodes",
+            "fancy_title": "Power (watts) utilization data from nodes",
+            "slug": "power-watts-utilization-data-from-nodes",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-09-18T17:01:53.272Z",
+            "last_posted_at": "2019-10-05T01:22:26.753Z",
+            "bumped": true,
+            "bumped_at": "2019-10-05T01:22:26.753Z",
+            "unseen": false,
+            "last_read_post_number": 1,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "monitoring",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 103,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 219,
+                        "username": "bburnett",
+                        "name": "Ben Burnett",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/b/d6d6ee/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1072,
+            "title": "Restrict server for only file transfers",
+            "fancy_title": "Restrict server for only file transfers",
+            "slug": "restrict-server-for-only-file-transfers",
+            "posts_count": 4,
+            "reply_count": 1,
+            "highest_post_number": 4,
+            "image_url": null,
+            "created_at": "2019-09-27T19:58:18.790Z",
+            "last_posted_at": "2019-10-04T15:12:25.872Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T15:12:25.872Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 59,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 323,
+                        "username": "rjepperson",
+                        "name": "",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/r/b77776/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 284,
+                        "username": "bennet",
+                        "name": "Bennet Fauber",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/b/0ea827/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 327,
+                        "username": "jchappell",
+                        "name": "Jacob Chappell",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jchappell/{size}/310_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 749,
+            "title": "Cannot determine start time for job",
+            "fancy_title": "Cannot determine start time for job",
+            "slug": "cannot-determine-start-time-for-job",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-01-14T20:38:56.843Z",
+            "last_posted_at": "2019-01-25T16:21:12.908Z",
+            "bumped": true,
+            "bumped_at": "2019-01-25T16:21:12.908Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "pbs",
+                "scheduler"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 176,
+            "category_id": 26,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 134,
+                        "username": "benfulton",
+                        "name": "Ben Fulton",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/benfulton/{size}/102_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "bash",
+        "getting-started"
+    ],
+    "id": 744,
+    "title": "How do I do <insert thing here> in bash?",
+    "fancy_title": "How do I do &lt;insert thing here&gt; in bash?",
+    "posts_count": 3,
+    "created_at": "2019-01-11T19:11:49.460Z",
+    "views": 323,
+    "reply_count": 1,
+    "like_count": 1,
+    "last_posted_at": "2019-01-15T22:22:17.366Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "how-do-i-do-insert-thing-here-in-bash",
+    "category_id": 26,
+    "word_count": 420,
+    "deleted_at": null,
+    "user_id": 161,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_744",
+    "draft_sequence": 7,
+    "posted": true,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 3,
+    "last_read_post_number": 3,
+    "last_read_post_id": 1393,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 2,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answered_at": "2019-01-15T22:00:19.176Z",
+    "last_commented_on": null,
+    "answer_count": 1,
+    "comment_count": 0,
+    "last_answer_post_number": 2,
+    "last_answerer": {
+        "id": 75,
+        "username": "mhanby",
+        "name": "Mike Hanby",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mhanby/{size}/50_2.png"
+    },
+    "can_vote": true,
+    "vote_count": 0,
+    "user_voted": false,
+    "details": {
+        "notification_level": 3,
+        "notifications_reason_id": 1,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 161,
+                "username": "vsoch",
+                "name": "Vanessasaurus",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 75,
+                "username": "mhanby",
+                "name": "Mike Hanby",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mhanby/{size}/50_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 161,
+            "username": "vsoch",
+            "name": "Vanessasaurus",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+        },
+        "last_poster": {
+            "id": 161,
+            "username": "vsoch",
+            "name": "Vanessasaurus",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+        },
+        "links": [
+            {
+                "url": "https://github.com/dylanaraps/pure-bash-bible",
+                "title": "GitHub - dylanaraps/pure-bash-bible: \ud83d\udcd6 A collection of pure bash alternatives to external processes.",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 11,
+                "user_id": 161,
+                "domain": "github.com",
+                "root_domain": "github.com"
+            }
+        ]
+    }
+}

@@ -1,0 +1,944 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 263,
+                "name": "Katia Oleinik",
+                "username": "katia",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png",
+                "created_at": "2018-04-13T14:58:46.496Z",
+                "cooked": "<p>I would like to parallelize my Python script over multiple nodes on the cluster. Which Python package is most efficient for this purpose?</p>\n<p><strong>CURATOR:</strong> Katia</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:41.643Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 595,
+                "reads": 29,
+                "readers_count": 28,
+                "score": 2920.8,
+                "yours": false,
+                "topic_id": 171,
+                "topic_slug": "what-is-the-most-efficient-python-package-to-run-a-parallel-job-over-multiple-nodes",
+                "display_username": "Katia Oleinik",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 15,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 21,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-19T13:06:39.673Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 15,
+                    "username": "aculich",
+                    "created_at": "2018-03-13T19:59:07.199Z",
+                    "updated_at": "2019-04-19T15:55:01.299Z",
+                    "name": "Aaron Culich",
+                    "seen_notification_id": 3679,
+                    "last_posted_at": "2019-04-19T15:55:01.246Z",
+                    "password_hash": "2eba0d5e8230f8ef7b2b8c157914f4f740539453a2967be04e9c517c8dd31ddf",
+                    "salt": "6936d7940acc42b1685a429f985d1371",
+                    "active": true,
+                    "username_lower": "aculich",
+                    "last_seen_at": "2019-09-12T17:02:32.637Z",
+                    "admin": true,
+                    "last_emailed_at": "2019-10-18T16:34:28.429Z",
+                    "trust_level": 3,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-08-09T15:49:26.470Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2291699594,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": true,
+                    "title": null,
+                    "uploaded_avatar_id": 79,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2850411564,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-14T14:33:43.370Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-08-20T21:44:38.215Z",
+                "answer_count": 2,
+                "last_answer_post_number": 4,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false,
+                "can_vote": true
+            },
+            {
+                "id": 835,
+                "name": "Aaron Culich",
+                "username": "aculich",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/aculich/{size}/79_2.png",
+                "created_at": "2018-08-20T21:44:38.215Z",
+                "cooked": "<p>For the python ecosystem, consider using <a href=\"http://dask.pydata.org/en/latest/\">Dask</a> which provides advanced parallelism for analytics. <a href=\"http://dask.pydata.org/en/latest/why.html\">Why use Dask</a> versus (or along with) other options? Dask integrates with Numpy, Pandas, and Scikit-Learn, and it also:</p>\n<ul>\n<li>\n<a href=\"http://dask.pydata.org/en/latest/why.html#scales-out-to-clusters\">scales up to clusters</a> with multiple nodes</li>\n<li>\n<a href=\"https://dask-jobqueue.readthedocs.io/en/latest/\">deployable on job queuing systems</a> like PBS, Slurm, MOAB, SGE, and LSF</li>\n<li>also <a href=\"http://dask.pydata.org/en/latest/why.html#scales-down-to-single-computers\">scales down to parallel usage of a single-node such as a server or laptop</a>\u2014 modern laptops often have a multi-core CPU, 16-32GB of RAM, and flash-based hard drives that can stream through data several times faster than HDDs or SSDs of even a year or two ago.</li>\n<li>supports a <a href=\"http://dask.pydata.org/en/latest/why.html#supports-complex-applications\">map-shuffle-reduce pattern</a> popularized by Hadoop and is a smaller, lightweight <a href=\"http://dask.pydata.org/en/latest/spark.html\">alternative to Spark</a>.</li>\n<li>works with <a href=\"http://dask.pydata.org/en/latest/setup/hpc.html#using-mpi\">MPI via mpi4py library</a> (see <a class=\"mention\" href=\"/u/jpessin1\">@jpessin1</a>\u2019s <a href=\"https://ask.cyberinfrastructure.org/t/what-is-the-most-efficient-python-package-to-run-a-parallel-job-over-multiple-nodes/171/2\">suggestion above</a>)  and compatible with <a href=\"http://dask.pydata.org/en/latest/setup/hpc.html#high-performance-network\">infiniband or other high speed networks</a>.</li>\n</ul>\n<p>See example <a href=\"https://dask-jobqueue.readthedocs.io/en/latest/#example\">Dask Jobqueue for PBS cluster</a>:</p>\n<pre><code class=\"lang-auto\">from dask_jobqueue import PBSCluster\ncluster = PBSCluster()\ncluster.scale(10)         # Ask for ten workers\n\nfrom dask.distributed import Client\nclient = Client(cluster)  # Connect this local process to remote workers\n\n# wait for jobs to arrive, depending on the queue, this may take some time\n\nimport dask.array as da\nx = ...                   # Dask commands now use these distributed resources\n</code></pre>\n<div class=\"lazyYT\" data-youtube-id=\"FXsgmwpRExM\" data-youtube-title=\"Dask on HPC Introduction\" data-width=\"480\" data-height=\"270\" data-parameters=\"feature=oembed&amp;wmode=opaque\"></div>",
+                "post_number": 4,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:41.742Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 29,
+                "reads": 17,
+                "readers_count": 16,
+                "score": 145.4,
+                "yours": false,
+                "topic_id": 171,
+                "topic_slug": "what-is-the-most-efficient-python-package-to-run-a-parallel-job-over-multiple-nodes",
+                "display_username": "Aaron Culich",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://dask.pydata.org/en/latest/",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Dask: Scalable analytics in Python",
+                        "clicks": 50
+                    },
+                    {
+                        "url": "https://dask-jobqueue.readthedocs.io/en/latest/",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Dask-Jobqueue \u2014 Dask-jobqueue 0.3.0+32.g2dd7724 documentation",
+                        "clicks": 16
+                    },
+                    {
+                        "url": "http://dask.pydata.org/en/latest/why.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Why Dask? \u2014 Dask 0.18.2 documentation",
+                        "clicks": 12
+                    },
+                    {
+                        "url": "https://dask-jobqueue.readthedocs.io/en/latest/#example",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Dask-Jobqueue \u2014 Dask-jobqueue 0.3.0+32.g2dd7724 documentation",
+                        "clicks": 8
+                    },
+                    {
+                        "url": "http://dask.pydata.org/en/latest/why.html#scales-out-to-clusters",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Why Dask? \u2014 Dask 0.18.2 documentation",
+                        "clicks": 7
+                    },
+                    {
+                        "url": "http://dask.pydata.org/en/latest/setup/hpc.html#using-mpi",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "High Performance Computers \u2014 Dask 0.18.2 documentation",
+                        "clicks": 4
+                    },
+                    {
+                        "url": "https://www.youtube.com/watch?v=FXsgmwpRExM",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "YouTube",
+                        "clicks": 2
+                    },
+                    {
+                        "url": "http://dask.pydata.org/en/latest/why.html#scales-down-to-single-computers",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Why Dask? \u2014 Dask 0.18.2 documentation",
+                        "clicks": 2
+                    },
+                    {
+                        "url": "http://dask.pydata.org/en/latest/setup/hpc.html#high-performance-network",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "High Performance Computers \u2014 Dask 0.18.2 documentation",
+                        "clicks": 1
+                    },
+                    {
+                        "url": "http://dask.pydata.org/en/latest/why.html#supports-complex-applications",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Why Dask? \u2014 Dask 0.18.2 documentation",
+                        "clicks": 1
+                    },
+                    {
+                        "url": "http://dask.pydata.org/en/latest/spark.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Comparison to Spark \u2014 Dask 0.18.2 documentation",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "count": 4,
+                        "acted": true,
+                        "can_undo": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 15,
+                "hidden": false,
+                "trust_level": 3,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-03-13T19:59:07.199Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 4,
+                "qa_voted": [
+                    51,
+                    80,
+                    161,
+                    180
+                ],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 15,
+                    "username": "aculich",
+                    "created_at": "2018-03-13T19:59:07.199Z",
+                    "updated_at": "2019-04-19T15:55:01.299Z",
+                    "name": "Aaron Culich",
+                    "seen_notification_id": 3679,
+                    "last_posted_at": "2019-04-19T15:55:01.246Z",
+                    "password_hash": "2eba0d5e8230f8ef7b2b8c157914f4f740539453a2967be04e9c517c8dd31ddf",
+                    "salt": "6936d7940acc42b1685a429f985d1371",
+                    "active": true,
+                    "username_lower": "aculich",
+                    "last_seen_at": "2019-09-12T17:02:32.637Z",
+                    "admin": true,
+                    "last_emailed_at": "2019-10-18T16:34:28.429Z",
+                    "trust_level": 3,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-08-09T15:49:26.470Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2291699594,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": true,
+                    "title": null,
+                    "uploaded_avatar_id": 79,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2850411564,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-14T14:33:43.370Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-08-20T21:44:38.215Z",
+                "answer_count": 2,
+                "last_answer_post_number": 4,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 359,
+                "name": "Jacob Pessin",
+                "username": "jpessin1",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png",
+                "created_at": "2018-05-25T22:14:16.132Z",
+                "cooked": "<p>If you are looking for parallel processing the traditional (and still very valid) approach is use an MPI library,<br>\nmpi4py is an example of a python based wrapper, and <a href=\"https://mpi4py.readthedocs.io/en/stable/intro.html\">https://mpi4py.readthedocs.io/en/stable/intro.html</a><br>\nincludes a good overview of the concepts and related methods. (Not an endorsement, just not reinventing the wheel here)</p>\n<p>Some other things to consider:<br>\nWould it be less work to make the job fit on a single node?  With tools like concurrent.futures (or the underlying multiprocessing &amp; threading modules) or mixed tools like numpy/scipy/pandas with Cython?</p>\n<p><i>Would a faster python implementation (like pypy) provide enough speed? </i></p>\n<p>Not that they go away when you move to multi-node, but they are often, though not always sufficient and less demanding of the user/developers time.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:41.767Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 7,
+                "reads": 23,
+                "readers_count": 22,
+                "score": 34.6,
+                "yours": false,
+                "topic_id": 171,
+                "topic_slug": "what-is-the-most-efficient-python-package-to-run-a-parallel-job-over-multiple-nodes",
+                "display_username": "Jacob Pessin",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 6,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://mpi4py.readthedocs.io/en/stable/intro.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Introduction \u2014 MPI for Python 3.0.0 documentation",
+                        "clicks": 42
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 51,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-09T15:19:23.696Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 15,
+                    "username": "aculich",
+                    "created_at": "2018-03-13T19:59:07.199Z",
+                    "updated_at": "2019-04-19T15:55:01.299Z",
+                    "name": "Aaron Culich",
+                    "seen_notification_id": 3679,
+                    "last_posted_at": "2019-04-19T15:55:01.246Z",
+                    "password_hash": "2eba0d5e8230f8ef7b2b8c157914f4f740539453a2967be04e9c517c8dd31ddf",
+                    "salt": "6936d7940acc42b1685a429f985d1371",
+                    "active": true,
+                    "username_lower": "aculich",
+                    "last_seen_at": "2019-09-12T17:02:32.637Z",
+                    "admin": true,
+                    "last_emailed_at": "2019-10-18T16:34:28.429Z",
+                    "trust_level": 3,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-08-09T15:49:26.470Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2291699594,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": true,
+                    "title": null,
+                    "uploaded_avatar_id": 79,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2850411564,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-14T14:33:43.370Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-08-20T21:44:38.215Z",
+                "answer_count": 2,
+                "last_answer_post_number": 4,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 829,
+                "name": "Jacob Pessin",
+                "username": "jpessin1",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png",
+                "created_at": "2018-08-18T20:35:53.053Z",
+                "cooked": "<p><a class=\"mention\" href=\"/u/katia\">@katia</a>  As an aside if you are trying to bring more hardware resources to bear but the jobs don\u2019t require true parallelization, message queuing is an alternate/async approach, (queue is in the standard lib), there are several message queuing (MQ) systems out there for or in python off the top of my head zMQ (null-MQ), and RabbitMQ</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-07-02T19:48:41.808Z",
+                "reply_count": 0,
+                "reply_to_post_number": 2,
+                "quote_count": 0,
+                "incoming_link_count": 15,
+                "reads": 15,
+                "readers_count": 14,
+                "score": 68.0,
+                "yours": false,
+                "topic_id": 171,
+                "topic_slug": "what-is-the-most-efficient-python-package-to-run-a-parallel-job-over-multiple-nodes",
+                "display_username": "Jacob Pessin",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": false,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "jpessin1",
+                    "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    },
+                    {
+                        "id": 100,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 51,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-09T15:19:23.696Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": true,
+                "last_answerer": {
+                    "id": 15,
+                    "username": "aculich",
+                    "created_at": "2018-03-13T19:59:07.199Z",
+                    "updated_at": "2019-04-19T15:55:01.299Z",
+                    "name": "Aaron Culich",
+                    "seen_notification_id": 3679,
+                    "last_posted_at": "2019-04-19T15:55:01.246Z",
+                    "password_hash": "2eba0d5e8230f8ef7b2b8c157914f4f740539453a2967be04e9c517c8dd31ddf",
+                    "salt": "6936d7940acc42b1685a429f985d1371",
+                    "active": true,
+                    "username_lower": "aculich",
+                    "last_seen_at": "2019-09-12T17:02:32.637Z",
+                    "admin": true,
+                    "last_emailed_at": "2019-10-18T16:34:28.429Z",
+                    "trust_level": 3,
+                    "approved": false,
+                    "approved_by_id": null,
+                    "approved_at": null,
+                    "previous_visit_at": "2019-08-09T15:49:26.470Z",
+                    "suspended_at": null,
+                    "suspended_till": null,
+                    "date_of_birth": null,
+                    "views": 0,
+                    "flag_level": 0,
+                    "ip_address": {
+                        "family": 2,
+                        "addr": 2291699594,
+                        "mask_addr": 4294967295
+                    },
+                    "moderator": true,
+                    "title": null,
+                    "uploaded_avatar_id": 79,
+                    "locale": "en_US",
+                    "primary_group_id": null,
+                    "registration_ip_address": {
+                        "family": 2,
+                        "addr": 2850411564,
+                        "mask_addr": 4294967295
+                    },
+                    "staged": false,
+                    "first_seen_at": "2018-03-14T14:33:43.370Z",
+                    "silenced_till": null,
+                    "group_locked_trust_level": null,
+                    "manual_locked_trust_level": 3,
+                    "secure_identifier": null
+                },
+                "last_answered_at": "2018-08-20T21:44:38.215Z",
+                "answer_count": 2,
+                "last_answer_post_number": 4,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            263,
+            835,
+            359,
+            829
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            554
+        ],
+        [
+            2,
+            424
+        ],
+        [
+            3,
+            511
+        ],
+        [
+            4,
+            426
+        ]
+    ],
+    "tags": [
+        "python",
+        "programming-for-hpc",
+        "parallelization",
+        "zeta:for-sc18"
+    ],
+    "id": 171,
+    "title": "What is the most efficient Python package to run a parallel job over multiple nodes?",
+    "fancy_title": "What is the most efficient Python package to run a parallel job over multiple nodes?",
+    "posts_count": 4,
+    "created_at": "2018-04-13T14:58:46.329Z",
+    "views": 1030,
+    "reply_count": 1,
+    "like_count": 0,
+    "last_posted_at": "2018-08-20T21:44:38.215Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "what-is-the-most-efficient-python-package-to-run-a-parallel-job-over-multiple-nodes",
+    "category_id": 26,
+    "word_count": 547,
+    "deleted_at": null,
+    "user_id": 21,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_171",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 4,
+    "last_read_post_number": 4,
+    "last_read_post_id": 835,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 30,
+    "participant_count": 3,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": true,
+    "qa_votes": [
+        835
+    ],
+    "qa_can_vote": true,
+    "last_answered_at": "2018-08-20T21:44:38.215Z",
+    "last_commented_on": null,
+    "answer_count": 2,
+    "comment_count": 0,
+    "last_answer_post_number": 4,
+    "last_answerer": {
+        "id": 15,
+        "username": "aculich",
+        "name": "Aaron Culich",
+        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/aculich/{size}/79_2.png"
+    },
+    "can_vote": true,
+    "vote_count": 0,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 51,
+                "username": "jpessin1",
+                "name": "Jacob Pessin",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 15,
+                "username": "aculich",
+                "name": "Aaron Culich",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/aculich/{size}/79_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 21,
+                "username": "katia",
+                "name": "Katia Oleinik",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 21,
+            "username": "katia",
+            "name": "Katia Oleinik",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png"
+        },
+        "last_poster": {
+            "id": 15,
+            "username": "aculich",
+            "name": "Aaron Culich",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/aculich/{size}/79_2.png"
+        },
+        "links": [
+            {
+                "url": "http://dask.pydata.org/en/latest/",
+                "title": "Dask: Scalable analytics in Python",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 50,
+                "user_id": 15,
+                "domain": "dask.pydata.org",
+                "root_domain": "pydata.org"
+            },
+            {
+                "url": "https://mpi4py.readthedocs.io/en/stable/intro.html",
+                "title": "Introduction \u2014 MPI for Python 3.0.0 documentation",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 42,
+                "user_id": 51,
+                "domain": "mpi4py.readthedocs.io",
+                "root_domain": "readthedocs.io"
+            },
+            {
+                "url": "https://dask-jobqueue.readthedocs.io/en/latest/",
+                "title": "Dask-Jobqueue \u2014 Dask-jobqueue 0.3.0+32.g2dd7724 documentation",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 16,
+                "user_id": 15,
+                "domain": "dask-jobqueue.readthedocs.io",
+                "root_domain": "readthedocs.io"
+            },
+            {
+                "url": "http://dask.pydata.org/en/latest/why.html",
+                "title": "Why Dask? \u2014 Dask 0.18.2 documentation",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 12,
+                "user_id": 15,
+                "domain": "dask.pydata.org",
+                "root_domain": "pydata.org"
+            },
+            {
+                "url": "https://dask-jobqueue.readthedocs.io/en/latest/#example",
+                "title": "Dask-Jobqueue \u2014 Dask-jobqueue 0.3.0+32.g2dd7724 documentation",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 8,
+                "user_id": 15,
+                "domain": "dask-jobqueue.readthedocs.io",
+                "root_domain": "readthedocs.io"
+            },
+            {
+                "url": "http://dask.pydata.org/en/latest/why.html#scales-out-to-clusters",
+                "title": "Why Dask? \u2014 Dask 0.18.2 documentation",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 7,
+                "user_id": 15,
+                "domain": "dask.pydata.org",
+                "root_domain": "pydata.org"
+            },
+            {
+                "url": "http://dask.pydata.org/en/latest/setup/hpc.html#using-mpi",
+                "title": "High Performance Computers \u2014 Dask 0.18.2 documentation",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 4,
+                "user_id": 15,
+                "domain": "dask.pydata.org",
+                "root_domain": "pydata.org"
+            },
+            {
+                "url": "http://dask.pydata.org/en/latest/why.html#scales-down-to-single-computers",
+                "title": "Why Dask? \u2014 Dask 0.18.2 documentation",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 2,
+                "user_id": 15,
+                "domain": "dask.pydata.org",
+                "root_domain": "pydata.org"
+            },
+            {
+                "url": "https://www.youtube.com/watch?v=FXsgmwpRExM",
+                "title": "YouTube",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 2,
+                "user_id": 15,
+                "domain": "www.youtube.com",
+                "root_domain": "youtube.com"
+            },
+            {
+                "url": "http://dask.pydata.org/en/latest/why.html#supports-complex-applications",
+                "title": "Why Dask? \u2014 Dask 0.18.2 documentation",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 15,
+                "domain": "dask.pydata.org",
+                "root_domain": "pydata.org"
+            },
+            {
+                "url": "http://dask.pydata.org/en/latest/setup/hpc.html#high-performance-network",
+                "title": "High Performance Computers \u2014 Dask 0.18.2 documentation",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 15,
+                "domain": "dask.pydata.org",
+                "root_domain": "pydata.org"
+            }
+        ]
+    }
+}
