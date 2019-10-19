@@ -1,0 +1,999 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 2089,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-10-05T22:49:28.752Z",
+                "cooked": "<p>I know of individual research support staff that have experience optimizing code, or have proactively reached out to specific users to do so, and it seems like something that should be so easy to provide as a service - e.g., - the user can add a flag to some job, the job will be run as normal but with some recording of overall usage metrics, it gets sent to support staff to analyze, and then a report (and possible suggestions are returned, given that the user is able to share code after some back and forth).</p>\n<p>Is anyone doing this? If not, why not, and how could we automate it? Assume we have a large group of users, and some cluster resource with support staff and a job manager. What tools could be used, and how might it work?</p>\n<p>What brought this to mind is this post: <a href=\"https://easyperf.net/blog/2019/10/05/Performance-Analysis-Of-MT-apps\" rel=\"nofollow noopener\">https://easyperf.net/blog/2019/10/05/Performance-Analysis-Of-MT-apps</a></p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-10-12T11:20:54.622Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 3,
+                "reads": 10,
+                "readers_count": 9,
+                "score": 16.8,
+                "yours": true,
+                "topic_id": 1081,
+                "topic_slug": "how-could-you-provide-an-optimization-service",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://easyperf.net/blog/2019/10/05/Performance-Analysis-Of-MT-apps",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Performance analysis of multithreaded applications. | Easyperf",
+                        "clicks": 5
+                    }
+                ],
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2102,
+                "name": "Robert Thoelen",
+                "username": "shmget",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png",
+                "created_at": "2019-10-08T02:54:51.809Z",
+                "cooked": "<p>Just brainstorming here, but maybe sys admins could create a post execution script that returns some data on usage on all nodes, such as the output of \u201csar\u201d in Linux.  I\u2019ve used that before to determine what is happening with CPU, RAM, etc. during different phases of a code running.  It is a bit tedious to try to stitch all the information together.  Your post has me thinking as I\u2019ve wanted to profile some of what gets run to determine if we can optimize how the nodes are running.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-10-10T03:36:48.741Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 8,
+                "readers_count": 7,
+                "score": 11.6,
+                "yours": false,
+                "topic_id": 1081,
+                "topic_slug": "how-could-you-provide-an-optimization-service",
+                "display_username": "Robert Thoelen",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 321,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-09-25T18:00:38.332Z",
+                "user_date_of_birth": "1904-07-06",
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2103,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-10-08T13:06:38.603Z",
+                "cooked": "<p>That\u2019s a cool idea! Here is sar for those interested:</p>\n<p><a href=\"https://linux.die.net/man/1/sar\" class=\"onebox\" target=\"_blank\" rel=\"nofollow noopener\">https://linux.die.net/man/1/sar</a></p>\n<p>I\u2019m frustrated about this topic, because unlike a lot of things, I\u2019m not actually empowered to do or try anything. It comes down to a game of trying to convince those that are, and I always lose. Does anyone have a cluster resource that is open to experimenting / trying new things that I can help with?</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-10-10T03:36:48.762Z",
+                "reply_count": 0,
+                "reply_to_post_number": 2,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 6,
+                "readers_count": 5,
+                "score": 11.2,
+                "yours": true,
+                "topic_id": 1081,
+                "topic_slug": "how-could-you-provide-an-optimization-service",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://linux.die.net/man/1/sar",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "sar(1) - Linux man page",
+                        "clicks": 1
+                    }
+                ],
+                "read": true,
+                "user_title": "",
+                "reply_to_user": {
+                    "username": "shmget",
+                    "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2104,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-10-08T21:58:52.767Z",
+                "cooked": "<p>I had some quick discussion with folks from my team, and while we don\u2019t have bandwidth to develop this, I wanted to share the knowledge in the case / in hopes that if someone did have interest and time, they could have the idea!</p>\n<p>Technically, if nodes are between jobs, this makes profiling a bit more complicated but not impossible. We also must take into account having different filesystems. For the major filesystems, it should be done at the Lustre server side, using job statistics provided by Lustre</p>\n<p><a href=\"https://build.whamcloud.com/job/lustre-manual/lastSuccessfulBuild/artifact/lustre_manual.xhtml#idm139901745537120\" class=\"onebox\" target=\"_blank\" rel=\"nofollow noopener\">https://build.whamcloud.com/job/lustre-manual/lastSuccessfulBuild/artifact/lustre_manual.xhtml#idm139901745537120</a></p>\n<p>and bound to Slurm Job IDs.</p>\n<ul>\n<li>On the  <strong>backend</strong> , we would need (1) a scalable way to gather these metrics from all Lustre servers (a few tens of servers max, so not big deal), then (2) feed a database with the data;</li>\n<li>On the  <strong>frontend</strong> , we need a SSO-enabled web interface to display the data per group/user, likely controlled by Stanford Workgroup (or in your case, whatever identity management / groups your institution uses).</li>\n</ul>\n<p>A user could then see their job execution time and all I/O stats performed during the job. That\u2019s the general idea. We likely need a small (virtualized) Slurm+Lustre test platform to develop this.</p>",
+                "post_number": 4,
+                "post_type": 1,
+                "updated_at": "2019-10-10T03:36:48.803Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 4,
+                "readers_count": 3,
+                "score": 5.8,
+                "yours": true,
+                "topic_id": 1081,
+                "topic_slug": "how-could-you-provide-an-optimization-service",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://build.whamcloud.com/job/lustre-manual/lastSuccessfulBuild/artifact/lustre_manual.xhtml#idm139901745537120",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Lustre* Software Release 2.x",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2106,
+                "name": "Harry",
+                "username": "hjmangalam",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png",
+                "created_at": "2019-10-10T03:36:48.665Z",
+                "cooked": "<p>There are a variety of profiling and optimization tools that could be brought to bear on this kind of problems and I\u2019ve used a lot of them, but what I see mostly is not application optimization bottlenecks such as in the link you provided, but application bottlenecks due to simple IO, often caused by specifying the wrong device for temp files or not pre-staging data to an appropriate device (running tiny, but heavy IO back to a main cluster filesystem instead of using /dev/shm or a local NVME FS).  The other problem I see quite often is interfering resource usage where one user\u2019s app is hosing a multi-CPU server, or indeed the entire cluster\u2019s FS via unthinking launching of their app with default options (which is not surprising since there\u2019s no support for teaching any of this to incoming grad students on an official basis).<br>\nI\u2019ve come up with <a href=\"http://moo.nac.uci.edu/~hjm/hpc/profilemyjobs/profilemyjobs.html\" rel=\"nofollow noopener\">profilemyjobs</a>, an unholy goulash of bash and gnuplot that allows users to record long-running processes and also visualize it simultaneously.  It records about 30 performance parameters (not all visualized at the same time) and plots them on the same screen so you can see which ones interact without switching screens back and forth, which is a failing of some of the more sophisticated tools available like PCP, XDMoD, etc.  It also logs those variables, and autogenerates the gnuplot file to review the plot afterwards.  There\u2019s a separate gnuplot pane for detailed disk IO if wanted.  Also a wrapper called pmj to submit the whole thing in a batch job (obviously not for same-time viz).</p>\n<p>It was an experiment to see how easy it would be to use bash instead of a real programming language to do something useful.  I won\u2019t do that again.  But it is straight bash, so it ought to be quite portable.  Not meant for nanosecond profiling, but for minutes/hours/days profiling.</p>\n<p>I came to depend on it for cluster admin as well as debugging overloaded apps, slow IO, memory overflows/constrictions, bad SGE params, etc.</p>\n<p>harry</p>",
+                "post_number": 5,
+                "post_type": 1,
+                "updated_at": "2019-10-10T03:36:48.826Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 4,
+                "readers_count": 3,
+                "score": 5.6,
+                "yours": false,
+                "topic_id": 1081,
+                "topic_slug": "how-could-you-provide-an-optimization-service",
+                "display_username": "Harry",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://moo.nac.uci.edu/~hjm/hpc/profilemyjobs/profilemyjobs.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "profilemyjobs",
+                        "clicks": 2
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 144,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-09-10T22:06:15.372Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            2089,
+            2102,
+            2103,
+            2104,
+            2106
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            13
+        ],
+        [
+            2,
+            11
+        ],
+        [
+            4,
+            10
+        ],
+        [
+            5,
+            9
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 152,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 270,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1021,
+            "title": "What is a checkpoint?",
+            "fancy_title": "What is a checkpoint?",
+            "slug": "what-is-a-checkpoint",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-07-30T17:06:22.898Z",
+            "last_posted_at": "2019-08-05T16:32:22.953Z",
+            "bumped": true,
+            "bumped_at": "2019-08-05T16:32:22.953Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 100,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 293,
+                        "username": "paulobaptista",
+                        "name": "paulo baptista",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/paulobaptista/{size}/249_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 213,
+                        "username": "Mike_Renfro",
+                        "name": "Mike Renfro",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mike_renfro/{size}/169_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1045,
+            "title": "Useful Tools for HPC Research (and in General)",
+            "fancy_title": "Useful Tools for HPC Research (and in General)",
+            "slug": "useful-tools-for-hpc-research-and-in-general",
+            "posts_count": 7,
+            "reply_count": 1,
+            "highest_post_number": 7,
+            "image_url": null,
+            "created_at": "2019-08-19T18:30:24.839Z",
+            "last_posted_at": "2019-10-05T20:42:16.351Z",
+            "bumped": true,
+            "bumped_at": "2019-10-05T20:42:16.351Z",
+            "unseen": false,
+            "last_read_post_number": 7,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "qow",
+                "hpc-tools"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 281,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 314,
+                        "username": "ccoffey",
+                        "name": "",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/c/5daacb/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 214,
+                        "username": "jeremymann",
+                        "name": "Jeremy Mann",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/f0a364/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 253,
+                        "username": "7yl4r",
+                        "name": "Tylar Murray",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/7yl4r/{size}/221_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 3,
+                        "username": "jma",
+                        "name": "Julie Ma",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/jma/{size}/303_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 920,
+            "title": "How busy is your Hadoop cluster?",
+            "fancy_title": "How busy is your Hadoop cluster?",
+            "slug": "how-busy-is-your-hadoop-cluster",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2019-05-24T15:44:43.426Z",
+            "last_posted_at": "2019-05-29T19:03:34.495Z",
+            "bumped": true,
+            "bumped_at": "2019-05-29T19:03:34.495Z",
+            "unseen": false,
+            "last_read_post_number": 2,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "programming-for-hpc",
+                "qow",
+                "hadoop"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 222,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 21,
+                        "username": "katia",
+                        "name": "Katia Oleinik",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/katia/{size}/14_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 57,
+                        "username": "hoang",
+                        "name": "",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/h/9de0a6/{size}.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "optimization"
+    ],
+    "id": 1081,
+    "title": "How could you provide an optimization service?",
+    "fancy_title": "How could you provide an optimization service?",
+    "posts_count": 5,
+    "created_at": "2019-10-05T22:49:28.685Z",
+    "views": 75,
+    "reply_count": 1,
+    "like_count": 0,
+    "last_posted_at": "2019-10-10T03:36:48.665Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "how-could-you-provide-an-optimization-service",
+    "category_id": 23,
+    "word_count": 898,
+    "deleted_at": null,
+    "user_id": 161,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_1081",
+    "draft_sequence": 4,
+    "posted": true,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 5,
+    "last_read_post_number": 5,
+    "last_read_post_id": 2106,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 14,
+    "participant_count": 3,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": false,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answerer": {
+        "id": 144,
+        "username": "hjmangalam",
+        "name": "Harry",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png"
+    },
+    "can_vote": false,
+    "vote_count": 1,
+    "user_voted": false,
+    "details": {
+        "notification_level": 3,
+        "notifications_reason_id": 1,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 161,
+                "username": "vsoch",
+                "name": "Vanessasaurus",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "post_count": 3,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 144,
+                "username": "hjmangalam",
+                "name": "Harry",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 321,
+                "username": "shmget",
+                "name": "Robert Thoelen",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 161,
+            "username": "vsoch",
+            "name": "Vanessasaurus",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+        },
+        "last_poster": {
+            "id": 144,
+            "username": "hjmangalam",
+            "name": "Harry",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png"
+        },
+        "links": [
+            {
+                "url": "https://easyperf.net/blog/2019/10/05/Performance-Analysis-Of-MT-apps",
+                "title": "Performance analysis of multithreaded applications. | Easyperf",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 5,
+                "user_id": 161,
+                "domain": "easyperf.net",
+                "root_domain": "easyperf.net"
+            },
+            {
+                "url": "http://moo.nac.uci.edu/~hjm/hpc/profilemyjobs/profilemyjobs.html",
+                "title": "profilemyjobs",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 2,
+                "user_id": 144,
+                "domain": "moo.nac.uci.edu",
+                "root_domain": "uci.edu"
+            },
+            {
+                "url": "https://linux.die.net/man/1/sar",
+                "title": "sar(1) - Linux man page",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 161,
+                "domain": "linux.die.net",
+                "root_domain": "die.net"
+            }
+        ]
+    }
+}

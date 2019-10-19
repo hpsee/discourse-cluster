@@ -1,0 +1,696 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 878,
+                "name": "",
+                "username": "helen",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/h/a88e57/{size}.png",
+                "created_at": "2018-08-24T18:32:32.190Z",
+                "cooked": "<p>Does anyone have any ballpark figures for the power bill for running hpc nodes ?</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-05-31T20:20:31.501Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 3,
+                "reads": 27,
+                "readers_count": 26,
+                "score": 20.4,
+                "yours": false,
+                "topic_id": 441,
+                "topic_slug": "cost-of-running-hpc-nodes",
+                "display_username": "",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 2,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": false,
+                "staff": true,
+                "user_id": 104,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-07-27T18:25:53.005Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 917,
+                "name": "Brock Palen",
+                "username": "brockp",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/b/3bc359/{size}.png",
+                "created_at": "2018-09-02T17:57:42.043Z",
+                "cooked": "<p>Nodes your looking at peak power draw of about 1KW/4 2 socket nodes.  This assumes no GPU\u2019s or large number of memory modules etc.   This is peak actual measured, likely your actuals will be much lower and also account for how well utilized your nodes are.  Also if you use 200W CPU\u2019s your peak might be higher.</p>\n<p>Also this is just the node.  If your looking at TCO you need to include your data center power for cooling.  Ask your facilities people for the PUE of the room: <a href=\"https://en.wikipedia.org/wiki/Power_usage_effectiveness\" rel=\"nofollow noopener\">https://en.wikipedia.org/wiki/Power_usage_effectiveness</a></p>\n<p>Most standard data centers without air containment, or liquid cooling, your probably looking at a PUE of 2.  So that would double the total power to run a node.</p>\n<p>For actual cost also ask your facilities.  Often data centers are costed at comercial rates as you own your own distribution which lowers the cost.  Eg were $0.08/kw-hr  while at my house were $0.14/kw-hr.</p>\n<p>Talk with your vendor, their numbers are always very conservative, so they will report much higher power draw peak than you likely will see in practice even win HPC at 100% CPU load.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2018-09-02T17:57:42.043Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 20,
+                "readers_count": 19,
+                "score": 54.0,
+                "yours": false,
+                "topic_id": 441,
+                "topic_slug": "cost-of-running-hpc-nodes",
+                "display_username": "Brock Palen",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://en.wikipedia.org/wiki/Power_usage_effectiveness",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Power usage effectiveness - Wikipedia",
+                        "clicks": 1
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "count": 1,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 138,
+                "hidden": false,
+                "trust_level": 0,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-08-24T17:58:12.603Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            878,
+            917
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            420
+        ],
+        [
+            2,
+            411
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 612,
+            "title": "Easybuild vs Spack: Anyone have opinions of which is better for bioinformatics?",
+            "fancy_title": "Easybuild vs Spack: Anyone have opinions of which is better for bioinformatics?",
+            "slug": "easybuild-vs-spack-anyone-have-opinions-of-which-is-better-for-bioinformatics",
+            "posts_count": 3,
+            "reply_count": 0,
+            "highest_post_number": 3,
+            "image_url": null,
+            "created_at": "2018-11-15T18:59:12.162Z",
+            "last_posted_at": "2019-04-04T03:03:49.970Z",
+            "bumped": true,
+            "bumped_at": "2019-04-04T03:03:49.970Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-software",
+                "bioinformatics",
+                "open-source",
+                "comparison"
+            ],
+            "archetype": "regular",
+            "like_count": 2,
+            "views": 851,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 167,
+                        "username": "anthony",
+                        "name": "Anthony Losada",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/a/49beb7/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 202,
+                        "username": "griznog",
+                        "name": "John Hanks",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/griznog/{size}/163_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 220,
+                        "username": "lllowe",
+                        "name": "Lisa Lowe",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/l/a4c791/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 975,
+            "title": "The lifecycle of a cluster",
+            "fancy_title": "The lifecycle of a cluster",
+            "slug": "the-lifecycle-of-a-cluster",
+            "posts_count": 3,
+            "reply_count": 0,
+            "highest_post_number": 3,
+            "image_url": "https://ask.cyberinfrastructure.org/uploads/default/original/1X/dfbb8cc43257f78f14cff56af316b6a54a40520e.jpeg",
+            "created_at": "2019-07-02T02:30:38.488Z",
+            "last_posted_at": "2019-08-05T16:17:46.711Z",
+            "bumped": true,
+            "bumped_at": "2019-08-05T16:17:46.711Z",
+            "unseen": false,
+            "last_read_post_number": 3,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 158,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": "latest",
+                    "description": "Original Poster, Most Recent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 276,
+                        "username": "Phillip_Benoit",
+                        "name": "Phillip Benoit",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/phillip_benoit/{size}/234_2.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1081,
+            "title": "How could you provide an optimization service?",
+            "fancy_title": "How could you provide an optimization service?",
+            "slug": "how-could-you-provide-an-optimization-service",
+            "posts_count": 5,
+            "reply_count": 1,
+            "highest_post_number": 5,
+            "image_url": null,
+            "created_at": "2019-10-05T22:49:28.685Z",
+            "last_posted_at": "2019-10-10T03:36:48.665Z",
+            "bumped": true,
+            "bumped_at": "2019-10-10T03:36:48.665Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "optimization"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 76,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 144,
+                        "username": "hjmangalam",
+                        "name": "Harry",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "cost-analysis"
+    ],
+    "id": 441,
+    "title": "Cost of running hpc nodes",
+    "fancy_title": "Cost of running hpc nodes",
+    "posts_count": 2,
+    "created_at": "2018-08-24T18:32:32.148Z",
+    "views": 226,
+    "reply_count": 0,
+    "like_count": 1,
+    "last_posted_at": "2018-09-02T17:57:42.043Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "cost-of-running-hpc-nodes",
+    "category_id": 23,
+    "word_count": 213,
+    "deleted_at": null,
+    "user_id": 104,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_441",
+    "draft_sequence": 1,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 2,
+    "last_read_post_number": 2,
+    "last_read_post_id": 917,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 2,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": false,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answerer": {
+        "id": 138,
+        "username": "brockp",
+        "name": "Brock Palen",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/b/3bc359/{size}.png"
+    },
+    "can_vote": false,
+    "vote_count": 1,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 104,
+                "username": "helen",
+                "name": "",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/h/a88e57/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 138,
+                "username": "brockp",
+                "name": "Brock Palen",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/b/3bc359/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 104,
+            "username": "helen",
+            "name": "",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/h/a88e57/{size}.png"
+        },
+        "last_poster": {
+            "id": 138,
+            "username": "brockp",
+            "name": "Brock Palen",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/b/3bc359/{size}.png"
+        },
+        "links": [
+            {
+                "url": "https://en.wikipedia.org/wiki/Power_usage_effectiveness",
+                "title": "Power usage effectiveness - Wikipedia",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 138,
+                "domain": "en.wikipedia.org",
+                "root_domain": "wikipedia.org"
+            }
+        ]
+    }
+}

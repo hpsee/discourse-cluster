@@ -26,6 +26,7 @@ category = os.environ.get('DISCOURSE_CATEGORY', 'q-a')
 if not api_key or not username:
     sys.exit("Please export your DISCOURSE_API_KEY and DISOURCE_API_USER")
 
+print("Category is %s" % category)
 url = "%s/c/%s.json" %(api_base, category)
 
 headers = {

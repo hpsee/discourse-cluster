@@ -1,0 +1,1277 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 2078,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-10-04T15:37:31.571Z",
+                "cooked": "<p>When you\u2019re testing a script, or running jobs on a cluster, things can go wrong. You get an ugly error message, your script exists, and then what? Part of learning to be a researcher or student is knowing how to ask for help. With this in mind, let\u2019s talk about all the different ways that you might ask:</p>\n<ul>\n<li>attending office hours to interact with support staff at your institution</li>\n<li>emailing support staff directly</li>\n<li>submitting a ticket to a help desk</li>\n<li>using a command line tool to submit a help request (e.g., <a href=\"https://vsoch.github.io/helpme/helper-discourse\" rel=\"nofollow noopener\">helpme</a>)</li>\n<li>opening up an issue on a bug tracker (e.g., GitHub)</li>\n</ul>\n<p>If you are a student - what are your favorite ways to ask for help? How quickly do you get a response, what is the quality of the response, and how do those two things relate? How could support be better?</p>\n<p>On the flip side, if you are a provider of help (a maintainer on a GitHub board or a support staff) what kind of tools or services make your life easier? Is there a format or a tool that works really well, or that doesn\u2019t?</p>\n<p>For this question - for support providers and receivers alike - let\u2019s talk about how we can do this better. If you could design the perfect interaction, what would it look like?</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2019-10-11T15:34:21.727Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 9,
+                "reads": 17,
+                "readers_count": 16,
+                "score": 48.2,
+                "yours": true,
+                "topic_id": 1079,
+                "topic_slug": "hpc-how-do-you-ask-for-help",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 4,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://vsoch.github.io/helpme/helper-discourse",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "Discourse Helper | HelpMe",
+                        "clicks": 4
+                    }
+                ],
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2079,
+                "name": "Jeremy Mann",
+                "username": "jeremymann",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/f0a364/{size}.png",
+                "created_at": "2019-10-04T19:53:27.238Z",
+                "cooked": "<p>As a support provider, the two main issues I have with users is that they never provide enough information related to their problem, and never read our documentation.</p>\n<p>Issue <span class=\"hashtag\">#1</span>, they email us directly with something like \u201cHey, my job didn\u2019t run, can you take a look?\u201d I email back with the common questions, what is your username, what is the location of your work directory, where are your job scripts, etc\u2026 3 to 4 emails later I finally have enough information to diagnose the problem. Central IT has a ticket system but users rarely (if ever) use it and they just email us directly.</p>\n<p>Issue <span class=\"hashtag\">#2</span>, most of the problems that arise from their jobs we have documented in our support wiki. I am constantly sending the link to users (new and old) and politely suggesting them to read the wiki.</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2019-10-04T19:53:27.238Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 14,
+                "readers_count": 13,
+                "score": 12.6,
+                "yours": false,
+                "topic_id": 1079,
+                "topic_slug": "hpc-how-do-you-ask-for-help",
+                "display_username": "Jeremy Mann",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 214,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-02-21T18:07:24.189Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2080,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-10-04T20:07:29.405Z",
+                "cooked": "<p><a class=\"mention\" href=\"/u/jeremymann\">@jeremymann</a> you might be interested in a tool like HelpMe then - it will submit the user environment and a screen recording to a service of your choosing (e.g., UserVoice is our ticketing system <a href=\"https://vsoch.github.io/helpme/helper-uservoice\" rel=\"nofollow noopener\">https://vsoch.github.io/helpme/helper-uservoice</a>) and there is also support for GitHub and Discourse. If you have some other system with an API I\u2019d be happy to add that as an integration! And we can also customize the helper further to have some other kind of recorder (aside from terminal asciinema recording) or collector (aside from the environment).</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2019-10-04T20:07:29.405Z",
+                "reply_count": 0,
+                "reply_to_post_number": 2,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 14,
+                "readers_count": 13,
+                "score": 7.6,
+                "yours": true,
+                "topic_id": 1079,
+                "topic_slug": "hpc-how-do-you-ask-for-help",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "https://vsoch.github.io/helpme/helper-uservoice",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "UserVoice Helper | HelpMe",
+                        "clicks": 3
+                    }
+                ],
+                "read": true,
+                "user_title": "",
+                "reply_to_user": {
+                    "username": "jeremymann",
+                    "avatar_template": "/letter_avatar_proxy/v4/letter/j/f0a364/{size}.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2081,
+                "name": "Robert Thoelen",
+                "username": "shmget",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png",
+                "created_at": "2019-10-04T23:06:50.886Z",
+                "cooked": "<p>I\u2019m a support provider as well.  We have a help desk system, and we usually insist that people put in a ticket or at least put in one afterwards if it is an emergency.  I\u2019ve found that our support organization has a similar issue to what Jeremy mentioned. We might get a ticket with very vague information, and then we have to try and figure out. Or we get led down a path because someone thinks it is one thing but actually another. For instance, someone might say the code said the network was unavailable, but their job actually used up RAM and the kernel killed it.</p>\n<p>We also find that users of our clusters share information among themselves on how to set up their account to run a code. Most times it is correct, but when it isn\u2019t, bad practice starts to spread.</p>\n<p>I worked in engineering before moving to HPC application / Linux support.  Because of that I find it easy to talk to our users. Simply going and making \u201chouse calls\u201d and following up on \u201chow are things working?\u201d has helped to give a good impression of our group. I think in HPC developing relationships with the users has helped me immensely in providing support.</p>\n<p>My favorite question is: \u201cWhat are you trying to do?\u201d or \u201cWhat problem are you trying to solve?\u201d.  It allows me to get into the deeper aspects of how they are trying to run codes on the system.</p>",
+                "post_number": 4,
+                "post_type": 1,
+                "updated_at": "2019-10-04T23:06:50.886Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 12,
+                "readers_count": 11,
+                "score": 7.2,
+                "yours": false,
+                "topic_id": 1079,
+                "topic_slug": "hpc-how-do-you-ask-for-help",
+                "display_username": "Robert Thoelen",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 321,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "new_user",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-09-25T18:00:38.332Z",
+                "user_date_of_birth": "1904-07-06",
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2083,
+                "name": "Vanessasaurus",
+                "username": "vsoch",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "created_at": "2019-10-04T23:34:45.117Z",
+                "cooked": "<p>For both of you, what\u2019s the ratio between users and support? I like the idea of house calls, but I\u2019d imagine that gets harder to do when you have fewer support staff per users on campus.</p>",
+                "post_number": 5,
+                "post_type": 1,
+                "updated_at": "2019-10-04T23:34:45.117Z",
+                "reply_count": 1,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 12,
+                "readers_count": 11,
+                "score": 12.2,
+                "yours": true,
+                "topic_id": 1079,
+                "topic_slug": "hpc-how-do-you-ask-for-help",
+                "display_username": "Vanessasaurus",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": "",
+                "actions_summary": [
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 161,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-11-09T18:02:15.583Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2085,
+                "name": "Robert Thoelen",
+                "username": "shmget",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png",
+                "created_at": "2019-10-05T14:30:09.715Z",
+                "cooked": "<p>I would say it is a pretty low number of support to users.  We do our best.  Most codes our users run are off the shelf so most support is when either someone is getting an account setup, trying to run a new code, or something breaks.</p>",
+                "post_number": 6,
+                "post_type": 1,
+                "updated_at": "2019-10-05T14:30:09.715Z",
+                "reply_count": 0,
+                "reply_to_post_number": 5,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 10,
+                "readers_count": 9,
+                "score": 6.8,
+                "yours": false,
+                "topic_id": 1079,
+                "topic_slug": "hpc-how-do-you-ask-for-help",
+                "display_username": "Robert Thoelen",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "reply_to_user": {
+                    "username": "vsoch",
+                    "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                },
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 321,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-09-25T18:00:38.332Z",
+                "user_date_of_birth": "1904-07-06",
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2090,
+                "name": "William Wilson",
+                "username": "william.wilson",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/w/97f17d/{size}.png",
+                "created_at": "2019-10-07T16:54:36.556Z",
+                "cooked": "<p>We have two methods for our people to ask for support, they may email our support email address (which we advertise all over), or they may put in a service ticket directly to our team.</p>",
+                "post_number": 7,
+                "post_type": 1,
+                "updated_at": "2019-10-07T16:54:36.556Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 10,
+                "readers_count": 9,
+                "score": 6.8,
+                "yours": false,
+                "topic_id": 1079,
+                "topic_slug": "hpc-how-do-you-ask-for-help",
+                "display_username": "William Wilson",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 312,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2019-08-19T20:04:01.291Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 2105,
+                "name": "Harry",
+                "username": "hjmangalam",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png",
+                "created_at": "2019-10-10T03:16:38.434Z",
+                "cooked": "<p>I sympathize with any support crew who play email ping-pong to try to extract the relevant information from a user who\u2019s requesting help.  In order to speed up the process, I\u2019ve written 2 things; one is a HOWTO: <a href=\"http://moo.nac.uci.edu/~hjm/HOWTO_Ask_a_question.html\" rel=\"nofollow noopener\">How to ask a question</a> (which I\u2019ve added to an email reply template which I use to smack the user if the initial request isn\u2019t enough to start work on the problem) and the other is  a simple bash script called <a href=\"http://moo.nac.uci.edu/~hjm/hpc/HPC-Mayday.html\" rel=\"nofollow noopener\">mayday</a>\u2026</p>\n<p>The second is referenced in the first, but it\u2019s worth noting separately.  Being pure bash, it should not be hard to port to other clusters.  It also uses the very handy termbin to keep emails reasonably short.  YMMV whether it works or you, but I\u2019d be interested in providing mods to other users if they have other systems that need to be incorporated (SLURM instead of SGE, etc)</p>\n<p>best<br>\nharry</p>",
+                "post_number": 8,
+                "post_type": 1,
+                "updated_at": "2019-10-10T03:16:38.434Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 1,
+                "reads": 5,
+                "readers_count": 4,
+                "score": 5.8,
+                "yours": false,
+                "topic_id": 1079,
+                "topic_slug": "hpc-how-do-you-ask-for-help",
+                "display_username": "Harry",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "link_counts": [
+                    {
+                        "url": "http://moo.nac.uci.edu/~hjm/hpc/HPC-Mayday.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "mayday, the HPC Bug Reporter",
+                        "clicks": 1
+                    },
+                    {
+                        "url": "http://moo.nac.uci.edu/~hjm/HOWTO_Ask_a_question.html",
+                        "internal": false,
+                        "reflection": false,
+                        "title": "How to ask for help with the HPC cluster",
+                        "clicks": 0
+                    }
+                ],
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 144,
+                "hidden": false,
+                "trust_level": 1,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "notice_type": "returning_user",
+                "notice_args": "2019-06-11T15:05:57Z",
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-09-10T22:06:15.372Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            2078,
+            2079,
+            2080,
+            2081,
+            2083,
+            2085,
+            2090,
+            2105
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            14
+        ],
+        [
+            7,
+            11
+        ],
+        [
+            8,
+            9
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 152,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 270,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 676,
+            "title": "HPC access models: many nodes for short periods of time",
+            "fancy_title": "HPC access models: many nodes for short periods of time",
+            "slug": "hpc-access-models-many-nodes-for-short-periods-of-time",
+            "posts_count": 2,
+            "reply_count": 0,
+            "highest_post_number": 2,
+            "image_url": null,
+            "created_at": "2018-12-04T19:34:17.793Z",
+            "last_posted_at": "2019-01-15T19:03:49.434Z",
+            "bumped": true,
+            "bumped_at": "2019-01-15T19:03:49.434Z",
+            "unseen": false,
+            "last_read_post_number": 1,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "administering-hpc"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 179,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 195,
+                        "username": "jnugent",
+                        "name": "Janna Nugent",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ee59a6/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 40,
+                        "username": "payerle",
+                        "name": "Tom Payerle",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/p/90ced4/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1081,
+            "title": "How could you provide an optimization service?",
+            "fancy_title": "How could you provide an optimization service?",
+            "slug": "how-could-you-provide-an-optimization-service",
+            "posts_count": 5,
+            "reply_count": 1,
+            "highest_post_number": 5,
+            "image_url": null,
+            "created_at": "2019-10-05T22:49:28.685Z",
+            "last_posted_at": "2019-10-10T03:36:48.665Z",
+            "bumped": true,
+            "bumped_at": "2019-10-10T03:36:48.665Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 3,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "optimization"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 76,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 144,
+                        "username": "hjmangalam",
+                        "name": "Harry",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1073,
+            "title": "Anatomy & Physiology HPC Use-Cases",
+            "fancy_title": "Anatomy &amp; Physiology HPC Use-Cases",
+            "slug": "anatomy-physiology-hpc-use-cases",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-09-30T21:32:53.603Z",
+            "last_posted_at": "2019-10-05T21:51:44.033Z",
+            "bumped": true,
+            "bumped_at": "2019-10-05T21:51:44.033Z",
+            "unseen": false,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "bookmarked": null,
+            "liked": null,
+            "tags": [
+                "hpc-getting-started",
+                "anatomy",
+                "physiology",
+                "bioinformatics"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 70,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 97,
+                        "username": "AdamErck",
+                        "name": "Adam Erck",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/adamerck/{size}/64_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 239,
+                        "username": "cbrown",
+                        "name": "Carrie Brown",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/c/b9bd4f/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 326,
+                        "username": "Sudhakar_Pamidighant",
+                        "name": "Sudhakar Pamidighantam",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/sudhakar_pamidighant/{size}/309_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 221,
+                        "username": "eleake",
+                        "name": "Elizabeth Leake",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/7993a0/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 328,
+                        "username": "KBClark",
+                        "name": "Kevn B. Clark, Ph.D.",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/kbclark/{size}/311_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "support",
+        "help"
+    ],
+    "id": 1079,
+    "title": "HPC: How do you ask for help?",
+    "fancy_title": "HPC: How do you ask for help?",
+    "posts_count": 8,
+    "created_at": "2019-10-04T15:37:31.492Z",
+    "views": 146,
+    "reply_count": 2,
+    "like_count": 0,
+    "last_posted_at": "2019-10-10T03:16:38.434Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "hpc-how-do-you-ask-for-help",
+    "category_id": 23,
+    "word_count": 1011,
+    "deleted_at": null,
+    "user_id": 161,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_1079",
+    "draft_sequence": 19,
+    "posted": true,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 8,
+    "last_read_post_number": 8,
+    "last_read_post_id": 2105,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 5,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": false,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answerer": {
+        "id": 144,
+        "username": "hjmangalam",
+        "name": "Harry",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png"
+    },
+    "can_vote": false,
+    "vote_count": null,
+    "user_voted": false,
+    "details": {
+        "notification_level": 3,
+        "notifications_reason_id": 1,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 161,
+                "username": "vsoch",
+                "name": "Vanessasaurus",
+                "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png",
+                "post_count": 3,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 321,
+                "username": "shmget",
+                "name": "Robert Thoelen",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png",
+                "post_count": 2,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 144,
+                "username": "hjmangalam",
+                "name": "Harry",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 214,
+                "username": "jeremymann",
+                "name": "Jeremy Mann",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/f0a364/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 312,
+                "username": "william.wilson",
+                "name": "William Wilson",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/w/97f17d/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 161,
+            "username": "vsoch",
+            "name": "Vanessasaurus",
+            "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+        },
+        "last_poster": {
+            "id": 144,
+            "username": "hjmangalam",
+            "name": "Harry",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/h/977dab/{size}.png"
+        },
+        "links": [
+            {
+                "url": "https://vsoch.github.io/helpme/helper-discourse",
+                "title": "Discourse Helper | HelpMe",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 4,
+                "user_id": 161,
+                "domain": "vsoch.github.io",
+                "root_domain": "vsoch.github.io"
+            },
+            {
+                "url": "https://vsoch.github.io/helpme/helper-uservoice",
+                "title": "UserVoice Helper | HelpMe",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 3,
+                "user_id": 161,
+                "domain": "vsoch.github.io",
+                "root_domain": "vsoch.github.io"
+            },
+            {
+                "url": "http://moo.nac.uci.edu/~hjm/hpc/HPC-Mayday.html",
+                "title": "mayday, the HPC Bug Reporter",
+                "internal": false,
+                "attachment": false,
+                "reflection": false,
+                "clicks": 1,
+                "user_id": 144,
+                "domain": "moo.nac.uci.edu",
+                "root_domain": "uci.edu"
+            }
+        ]
+    }
+}

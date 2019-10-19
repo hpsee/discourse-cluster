@@ -1,0 +1,832 @@
+{
+    "post_stream": {
+        "posts": [
+            {
+                "id": 723,
+                "name": "Jason Simms",
+                "username": "jlsimms",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/9de0a6/{size}.png",
+                "created_at": "2018-07-30T15:37:02.231Z",
+                "cooked": "<p>I\u2019m wondering how various institutions are handling questions of deploying notebook-type technologies at scale, especially in terms of their economics. In particular, we would like to deploy JupyterHub as a campus service. Right now, it\u2019s mainly been used as part of a pilot in two courses, with a total of about 60 students. The pilot has been rather successful, and we would like to make it available to the campus at large. We are also in the process of evaluating RStudio Server Pro, which is similar, and might be considering a deployment for broader campus use soon.</p>\n<p>My problem is that these technologies don\u2019t seem to scale well. My research and conversations with JH developers indicate that each session requires about 1GB of memory as a reasonable floor, and it\u2019s common to cap at about 2GB. The issue is that for 90% or more of the semester, we might see 0-4 concurrent sessions, and such traffic can be handled easily by a comparatively small server/VM. But - students being students - they will regularly want until the night before to work on homework or projects, and it\u2019s not uncommon to see 40-60 concurrent sessions. We are in a classic problem of needing a high amount of resources for a really small sliver of time.</p>\n<p>We don\u2019t have a system on-campus that can be dedicated to this, as it would require 128GB or so of memory to be allocated. (Cores and disk space are more trivial, but are not completely excluded; it\u2019s just that RAM is the primary limiting factor.) For example, Digital Ocean\u2019s \u201cdroplet\u201d VM that offers 128GB of memory comes in around $640/mo., whereas most of our typical concurrent needs could be met with, say, a VM with 16GB of RAM for $80/mo. There seems to be no effective way to \u201cburst up\u201d for those specific times that require additional resources.</p>\n<p>I thought, perhaps, that I could accomplish this with Kubernetes through Google Cloud, but that doesn\u2019t seem to be an option, really. I can provision a few smaller nodes and allow Kubernetes to \u201cload balance\u201d the requests, but it looks like I pay for the <em>availability</em> of those rather than their actual usage. And in this case, it comes out to somewhere around $700/mo. to offer a Kubernetes cluster with three smaller VMs.</p>\n<p>Ultimately, I\u2019d like a solution where I can burst up when needed, while paying more or less some base fixed cost plus whatever is needed to support the additional intermittent load. Because if we are facing these struggles trying to provide a service for 60 students, I can\u2019t imagine trying to offer something that upwards of 200-300 students might need each semester.</p>\n<p>I would welcome any thoughts or guidance.</p>\n<p>Warmest regards,<br>\nJason Simms</p>",
+                "post_number": 1,
+                "post_type": 1,
+                "updated_at": "2018-07-30T15:37:02.231Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 23,
+                "reads": 23,
+                "readers_count": 22,
+                "score": 121.6,
+                "yours": false,
+                "topic_id": 368,
+                "topic_slug": "economics-of-jupyterhub-at-scale",
+                "display_username": "Jason Simms",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": false,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 100,
+                "hidden": false,
+                "trust_level": 0,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-07-27T17:50:27.542Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 766,
+                "name": "Kristina Plazonic",
+                "username": "KrisP",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/k/e95f7d/{size}.png",
+                "created_at": "2018-07-31T16:36:33.827Z",
+                "cooked": "<p>We are currently using Open OnDemand to launch Jupyter notebooks in general, rather than JupyterHub. Though we have both JupyterHub and Open Ondemand, currently JupyterHub is just a VM and will probably not be able to sustain a lot of students. So, Open Ondemand is a better choice.</p>\n<p>We are looking into using batch spawner to launch Jupyter notebooks on the cluster as well.  One thing that Jupyterhub does better is incorporating nbgrader, which makes it easy to assign, collect and grade assignments. Though nbgrader could also be set up on a cluster, I have not yet made it so. (e.g. One class is fine, but what about several concurrent classes?)</p>\n<p>Another possibility is XSEDE JetStream instead of GCP for Kubernetes, which would solve the cost problem. I\u2019d love to learn about how to launch Kubernetes on JetStream!</p>",
+                "post_number": 2,
+                "post_type": 1,
+                "updated_at": "2018-07-31T16:36:33.827Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 20,
+                "readers_count": 19,
+                "score": 14.0,
+                "yours": false,
+                "topic_id": 368,
+                "topic_slug": "economics-of-jupyterhub-at-scale",
+                "display_username": "Kristina Plazonic",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": false,
+                "admin": false,
+                "staff": false,
+                "user_id": 50,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-08T19:58:42.924Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            },
+            {
+                "id": 822,
+                "name": "Jacob Pessin",
+                "username": "jpessin1",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png",
+                "created_at": "2018-08-16T19:57:24.611Z",
+                "cooked": "<p>hmmm \u2026 that kind of sounds like it might be config issue \u2026</p>\n<p>GCP (including the Kubernetes engine) bills primarily on occupancy,  is it possible parts of your system are staying up?</p>\n<p>Though As KrisP mentioned jetstream is a good resource, with help and experience attached.</p>",
+                "post_number": 3,
+                "post_type": 1,
+                "updated_at": "2018-08-16T19:57:24.611Z",
+                "reply_count": 0,
+                "reply_to_post_number": null,
+                "quote_count": 0,
+                "incoming_link_count": 2,
+                "reads": 16,
+                "readers_count": 15,
+                "score": 13.2,
+                "yours": false,
+                "topic_id": 368,
+                "topic_slug": "economics-of-jupyterhub-at-scale",
+                "display_username": "Jacob Pessin",
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_bg_color": null,
+                "primary_group_flair_color": null,
+                "version": 1,
+                "can_edit": true,
+                "can_delete": true,
+                "can_recover": null,
+                "can_wiki": true,
+                "read": true,
+                "user_title": null,
+                "actions_summary": [
+                    {
+                        "id": 2,
+                        "can_act": true
+                    },
+                    {
+                        "id": 3,
+                        "can_act": true
+                    },
+                    {
+                        "id": 4,
+                        "can_act": true
+                    },
+                    {
+                        "id": 8,
+                        "can_act": true
+                    },
+                    {
+                        "id": 6,
+                        "can_act": true
+                    },
+                    {
+                        "id": 7,
+                        "can_act": true
+                    }
+                ],
+                "moderator": true,
+                "admin": true,
+                "staff": true,
+                "user_id": 51,
+                "hidden": false,
+                "trust_level": 4,
+                "deleted_at": null,
+                "user_deleted": false,
+                "edit_reason": null,
+                "can_view_edit_history": true,
+                "wiki": false,
+                "reviewable_id": 0,
+                "reviewable_score_count": 0,
+                "reviewable_score_pending_count": 0,
+                "user_created_at": "2018-05-09T15:19:23.696Z",
+                "user_date_of_birth": null,
+                "qa_vote_count": 0,
+                "qa_voted": [],
+                "qa_enabled": false,
+                "can_accept_answer": false,
+                "can_unaccept_answer": false,
+                "accepted_answer": false
+            }
+        ],
+        "stream": [
+            723,
+            766,
+            822
+        ]
+    },
+    "timeline_lookup": [
+        [
+            1,
+            445
+        ],
+        [
+            2,
+            444
+        ],
+        [
+            3,
+            428
+        ]
+    ],
+    "suggested_topics": [
+        {
+            "id": 1018,
+            "title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "fancy_title": "What conferences might I attend that focus on Research Computing and Facilitation?",
+            "slug": "what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-07-26T19:00:21.370Z",
+            "last_posted_at": "2019-10-04T23:23:44.832Z",
+            "bumped": true,
+            "bumped_at": "2019-10-04T23:23:44.832Z",
+            "unseen": false,
+            "last_read_post_number": 5,
+            "unread": 0,
+            "new_posts": 1,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "research-computing",
+                "networking"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 153,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 28,
+                        "username": "toreliza",
+                        "name": "Torey Battelle",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/toreliza/{size}/157_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 271,
+                        "username": "ctnumn",
+                        "name": "Charles Nguyen",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/ctnumn/{size}/231_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 321,
+                        "username": "shmget",
+                        "name": "Robert Thoelen",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/71e660/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "fancy_title": "VNC, FastX, Open OnDemand experience, opinions?",
+            "slug": "vnc-fastx-open-ondemand-experience-opinions",
+            "posts_count": 8,
+            "reply_count": 2,
+            "highest_post_number": 8,
+            "image_url": null,
+            "created_at": "2019-08-01T02:05:41.152Z",
+            "last_posted_at": "2019-08-19T21:34:54.987Z",
+            "bumped": true,
+            "bumped_at": "2019-08-19T21:34:54.987Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 2,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "ondemand",
+                "vnc",
+                "qow"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 271,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 232,
+                        "username": "mirestrepo",
+                        "name": "Isabel Restrepo",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mirestrepo/{size}/187_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 240,
+                        "username": "LMWeakley",
+                        "name": "Le Mai Weakley",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/lmweakley/{size}/200_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 313,
+                        "username": "johnbot",
+                        "name": "John Lilley",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/ecccb3/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 533,
+            "title": "Using RAM Disk on the queuing system to optimize file I/O",
+            "fancy_title": "Using RAM Disk on the queuing system to optimize file I/O",
+            "slug": "using-ram-disk-on-the-queuing-system-to-optimize-file-i-o",
+            "posts_count": 7,
+            "reply_count": 3,
+            "highest_post_number": 7,
+            "image_url": null,
+            "created_at": "2018-10-18T19:47:55.155Z",
+            "last_posted_at": "2019-08-20T16:00:16.710Z",
+            "bumped": true,
+            "bumped_at": "2019-08-20T16:00:16.710Z",
+            "unseen": false,
+            "last_read_post_number": 6,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 1,
+            "bookmarked": false,
+            "liked": false,
+            "tags": [
+                "hpc-cluster-architecture"
+            ],
+            "archetype": "regular",
+            "like_count": 2,
+            "views": 406,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 11,
+                        "username": "schadalapaka",
+                        "name": "HPC Systems Administrator",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/s/d6d6ee/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 116,
+                        "username": "mrobbert",
+                        "name": "Michael Robbert",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mrobbert/{size}/75_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 154,
+                        "username": "mbussonnier",
+                        "name": "Matthias Bussonnier",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mbussonnier/{size}/99_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 51,
+                        "username": "jpessin1",
+                        "name": "Jacob Pessin",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 314,
+                        "username": "ccoffey",
+                        "name": "",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/c/5daacb/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 961,
+            "title": "Automated HPC testing tools and techniques?",
+            "fancy_title": "Automated HPC testing tools and techniques?",
+            "slug": "automated-hpc-testing-tools-and-techniques",
+            "posts_count": 9,
+            "reply_count": 4,
+            "highest_post_number": 9,
+            "image_url": null,
+            "created_at": "2019-06-20T14:46:32.797Z",
+            "last_posted_at": "2019-08-06T20:44:48.240Z",
+            "bumped": true,
+            "bumped_at": "2019-08-06T20:44:48.240Z",
+            "unseen": false,
+            "last_read_post_number": 9,
+            "unread": 0,
+            "new_posts": 0,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "notification_level": 2,
+            "bookmarked": false,
+            "liked": true,
+            "tags": [
+                "monitoring",
+                "administering-hpc",
+                "qow",
+                "cluster-management",
+                "prometheus"
+            ],
+            "archetype": "regular",
+            "like_count": 1,
+            "views": 320,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 196,
+                        "username": "mrich",
+                        "name": "Matthew Rich",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/mrich/{size}/242_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 202,
+                        "username": "griznog",
+                        "name": "John Hanks",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/griznog/{size}/163_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 161,
+                        "username": "vsoch",
+                        "name": "Vanessasaurus",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/vsoch/{size}/112_2.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 292,
+                        "username": "ericfranz",
+                        "name": "Eric Franz",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/d9b06d/{size}.png"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1073,
+            "title": "Anatomy & Physiology HPC Use-Cases",
+            "fancy_title": "Anatomy &amp; Physiology HPC Use-Cases",
+            "slug": "anatomy-physiology-hpc-use-cases",
+            "posts_count": 6,
+            "reply_count": 1,
+            "highest_post_number": 6,
+            "image_url": null,
+            "created_at": "2019-09-30T21:32:53.603Z",
+            "last_posted_at": "2019-10-05T21:51:44.033Z",
+            "bumped": true,
+            "bumped_at": "2019-10-05T21:51:44.033Z",
+            "unseen": false,
+            "pinned": false,
+            "unpinned": null,
+            "visible": true,
+            "closed": false,
+            "archived": false,
+            "bookmarked": null,
+            "liked": null,
+            "tags": [
+                "hpc-getting-started",
+                "anatomy",
+                "physiology",
+                "bioinformatics"
+            ],
+            "archetype": "regular",
+            "like_count": 0,
+            "views": 71,
+            "category_id": 23,
+            "featured_link": null,
+            "has_accepted_answer": false,
+            "posters": [
+                {
+                    "extras": null,
+                    "description": "Original Poster",
+                    "user": {
+                        "id": 97,
+                        "username": "AdamErck",
+                        "name": "Adam Erck",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/adamerck/{size}/64_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 239,
+                        "username": "cbrown",
+                        "name": "Carrie Brown",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/c/b9bd4f/{size}.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 326,
+                        "username": "Sudhakar_Pamidighant",
+                        "name": "Sudhakar Pamidighantam",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/sudhakar_pamidighant/{size}/309_2.png"
+                    }
+                },
+                {
+                    "extras": null,
+                    "description": "Frequent Poster",
+                    "user": {
+                        "id": 221,
+                        "username": "eleake",
+                        "name": "Elizabeth Leake",
+                        "avatar_template": "/letter_avatar_proxy/v4/letter/e/7993a0/{size}.png"
+                    }
+                },
+                {
+                    "extras": "latest",
+                    "description": "Most Recent Poster",
+                    "user": {
+                        "id": 328,
+                        "username": "KBClark",
+                        "name": "Kevn B. Clark, Ph.D.",
+                        "avatar_template": "/user_avatar/ask.cyberinfrastructure.org/kbclark/{size}/311_2.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "jupyter"
+    ],
+    "id": 368,
+    "title": "Economics of JupyterHub at Scale?",
+    "fancy_title": "Economics of JupyterHub at Scale?",
+    "posts_count": 3,
+    "created_at": "2018-07-30T15:37:02.160Z",
+    "views": 252,
+    "reply_count": 0,
+    "like_count": 0,
+    "last_posted_at": "2018-08-16T19:57:24.611Z",
+    "visible": true,
+    "closed": false,
+    "archived": false,
+    "has_summary": false,
+    "archetype": "regular",
+    "slug": "economics-of-jupyterhub-at-scale",
+    "category_id": 23,
+    "word_count": 660,
+    "deleted_at": null,
+    "user_id": 100,
+    "featured_link": null,
+    "pinned_globally": false,
+    "pinned_at": null,
+    "pinned_until": null,
+    "draft": null,
+    "draft_key": "topic_368",
+    "draft_sequence": 0,
+    "posted": false,
+    "unpinned": null,
+    "pinned": false,
+    "current_post_number": 1,
+    "highest_post_number": 3,
+    "last_read_post_number": 3,
+    "last_read_post_id": 822,
+    "deleted_by": null,
+    "has_deleted": false,
+    "actions_summary": [
+        {
+            "id": 4,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 8,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        },
+        {
+            "id": 7,
+            "count": 0,
+            "hidden": false,
+            "can_act": true
+        }
+    ],
+    "chunk_size": 1000,
+    "bookmarked": false,
+    "topic_timer": null,
+    "private_topic_timer": null,
+    "message_bus_last_id": 0,
+    "participant_count": 3,
+    "show_read_indicator": false,
+    "tags_disable_ads": false,
+    "qa_enabled": false,
+    "qa_votes": [],
+    "qa_can_vote": true,
+    "last_answerer": {
+        "id": 51,
+        "username": "jpessin1",
+        "name": "Jacob Pessin",
+        "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png"
+    },
+    "can_vote": false,
+    "vote_count": null,
+    "user_voted": false,
+    "details": {
+        "notification_level": 1,
+        "notifications_reason_id": null,
+        "can_move_posts": true,
+        "can_edit": true,
+        "can_delete": true,
+        "can_remove_allowed_users": true,
+        "can_invite_to": true,
+        "can_invite_via_email": true,
+        "can_create_post": true,
+        "can_reply_as_new_topic": true,
+        "can_flag_topic": true,
+        "can_convert_topic": true,
+        "can_review_topic": true,
+        "can_remove_self_id": 161,
+        "participants": [
+            {
+                "id": 50,
+                "username": "KrisP",
+                "name": "Kristina Plazonic",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/k/e95f7d/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 51,
+                "username": "jpessin1",
+                "name": "Jacob Pessin",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            },
+            {
+                "id": 100,
+                "username": "jlsimms",
+                "name": "Jason Simms",
+                "avatar_template": "/letter_avatar_proxy/v4/letter/j/9de0a6/{size}.png",
+                "post_count": 1,
+                "primary_group_name": null,
+                "primary_group_flair_url": null,
+                "primary_group_flair_color": null,
+                "primary_group_flair_bg_color": null
+            }
+        ],
+        "created_by": {
+            "id": 100,
+            "username": "jlsimms",
+            "name": "Jason Simms",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/j/9de0a6/{size}.png"
+        },
+        "last_poster": {
+            "id": 51,
+            "username": "jpessin1",
+            "name": "Jacob Pessin",
+            "avatar_template": "/letter_avatar_proxy/v4/letter/j/96bed5/{size}.png"
+        }
+    }
+}
