@@ -1,7 +1,7 @@
 [
     {
-        "x": -3.964473,
-        "y": 0.010452,
+        "x": -3.108025,
+        "y": 1.215231,
         "post_id": 303,
         "posts_count": 1,
         "tags": [],
@@ -11,8 +11,8 @@
         "title": "About the Q&A category"
     },
     {
-        "x": -2.321813,
-        "y": 1.276595,
+        "x": -4.244079,
+        "y": -1.09954,
         "post_id": 74,
         "posts_count": 6,
         "tags": [
@@ -25,8 +25,8 @@
         "title": "How can I run Jupyter Notebooks on my institution's HPC cluster?"
     },
     {
-        "x": -9.421871,
-        "y": -1.995241,
+        "x": 5.028221,
+        "y": 3.989664,
         "post_id": 264,
         "posts_count": 8,
         "tags": [
@@ -41,8 +41,8 @@
         "title": "Is there a way to process archived files without fully extracting them to disk?"
     },
     {
-        "x": 10.551637,
-        "y": 4.93732,
+        "x": -9.662129,
+        "y": 8.582119,
         "post_id": 215,
         "posts_count": 2,
         "tags": [
@@ -56,8 +56,8 @@
         "title": "My R loop slows down when I increase the number of iterations on an HPC"
     },
     {
-        "x": -5.115278,
-        "y": 5.462491,
+        "x": -1.586062,
+        "y": -6.785835,
         "post_id": 552,
         "posts_count": 3,
         "tags": [
@@ -72,8 +72,8 @@
         "title": "Customize modulefile based on the node properties"
     },
     {
-        "x": -5.490857,
-        "y": 3.46419,
+        "x": -3.027185,
+        "y": -5.829289,
         "post_id": 606,
         "posts_count": 2,
         "tags": [
@@ -87,8 +87,8 @@
         "title": "How can I compile my cuda code so I can call it from my R script"
     },
     {
-        "x": 1.485437,
-        "y": -9.11974,
+        "x": 3.222102,
+        "y": -6.711196,
         "post_id": 921,
         "posts_count": 6,
         "tags": [
@@ -102,8 +102,8 @@
         "title": "Open OnDemand with VM infrastructure"
     },
     {
-        "x": 11.258007,
-        "y": 5.374764,
+        "x": -8.997122,
+        "y": 7.554074,
         "post_id": 854,
         "posts_count": 8,
         "tags": [
@@ -118,8 +118,8 @@
         "title": "Access to /dev/infiniband from user space"
     },
     {
-        "x": 2.474,
-        "y": -8.375004,
+        "x": 2.871001,
+        "y": -8.036823,
         "post_id": 863,
         "posts_count": 3,
         "tags": [
@@ -132,8 +132,8 @@
         "title": "Understanding SLURM accounting fields"
     },
     {
-        "x": -1.633132,
-        "y": 6.061689,
+        "x": -7.290306,
+        "y": -4.040137,
         "post_id": 108,
         "posts_count": 4,
         "tags": [
@@ -147,8 +147,8 @@
         "title": "Using LMOD to load Python libraries from a user's home directory"
     },
     {
-        "x": 2.875852,
-        "y": -8.16911,
+        "x": 3.979491,
+        "y": -7.641813,
         "post_id": 126,
         "posts_count": 2,
         "tags": [
@@ -162,8 +162,8 @@
         "title": "How do I use DMTCP to create a checkpoint and restart my program?"
     },
     {
-        "x": -1.561151,
-        "y": 5.045424,
+        "x": -6.599764,
+        "y": -3.667502,
         "post_id": 242,
         "posts_count": 6,
         "tags": [
@@ -175,8 +175,8 @@
         "title": "How do I search for which modules are available on an HPC?"
     },
     {
-        "x": -5.360351,
-        "y": 3.601223,
+        "x": -1.762304,
+        "y": -4.346524,
         "post_id": 943,
         "posts_count": 5,
         "tags": [
@@ -189,8 +189,8 @@
         "title": "How do I run mpi4py?"
     },
     {
-        "x": -2.525129,
-        "y": -0.366283,
+        "x": -4.101689,
+        "y": 0.403098,
         "post_id": 73,
         "posts_count": 2,
         "tags": [
@@ -202,8 +202,8 @@
         "title": "How do I run Apache Spark in an HPC environment?"
     },
     {
-        "x": 1.714914,
-        "y": -10.394923,
+        "x": 0.669564,
+        "y": -7.559392,
         "post_id": 553,
         "posts_count": 1,
         "tags": [
@@ -218,8 +218,8 @@
         "title": "Can latest version of Tensorflow be built to work on nodes with GPUs and nodes without them?"
     },
     {
-        "x": 4.971497,
-        "y": 6.810111,
+        "x": -4.674899,
+        "y": 10.05978,
         "post_id": 92,
         "posts_count": 2,
         "tags": [
@@ -234,8 +234,8 @@
         "title": "How do I redirect stdout/stderr in my SLURM job scripts?"
     },
     {
-        "x": 10.768646,
-        "y": 3.513862,
+        "x": -11.058113,
+        "y": 8.120485,
         "post_id": 30,
         "posts_count": 2,
         "tags": [
@@ -248,8 +248,8 @@
         "title": "How do I estimate if the hard time limit will be exceeded before submitting a job?"
     },
     {
-        "x": -6.234547,
-        "y": 2.693185,
+        "x": -1.596397,
+        "y": -4.153131,
         "post_id": 238,
         "posts_count": 3,
         "tags": [
@@ -263,8 +263,8 @@
         "title": "How to reduce memory footprint without restructuring mpi code"
     },
     {
-        "x": -6.040069,
-        "y": 2.556426,
+        "x": -1.636638,
+        "y": -4.11553,
         "post_id": 504,
         "posts_count": 2,
         "tags": [
@@ -277,8 +277,8 @@
         "title": "Running multiple LAMMPS jobs on a node"
     },
     {
-        "x": 11.011954,
-        "y": 5.404431,
+        "x": -9.144803,
+        "y": 6.919495,
         "post_id": 225,
         "posts_count": 3,
         "tags": [
@@ -294,8 +294,8 @@
         "title": "Tensorflow script to run on single core"
     },
     {
-        "x": -9.778447,
-        "y": -2.100798,
+        "x": 5.250594,
+        "y": 4.297948,
         "post_id": 414,
         "posts_count": 2,
         "tags": [
@@ -310,8 +310,8 @@
         "title": "What is a Science DMZ?"
     },
     {
-        "x": -3.070995,
-        "y": -1.502952,
+        "x": -5.420108,
+        "y": 0.937957,
         "post_id": 214,
         "posts_count": 5,
         "tags": [
@@ -323,8 +323,8 @@
         "title": "How can one determine the amount of RAM a node has in an HPC environment?"
     },
     {
-        "x": -2.304367,
-        "y": 0.780239,
+        "x": -4.494871,
+        "y": -0.496444,
         "post_id": 104,
         "posts_count": 3,
         "tags": [
@@ -337,8 +337,8 @@
         "title": "Poor interaction with MATLAB running on remote server"
     },
     {
-        "x": 10.552847,
-        "y": 4.95217,
+        "x": -9.656354,
+        "y": 8.587562,
         "post_id": 263,
         "posts_count": 2,
         "tags": [
@@ -352,8 +352,8 @@
         "title": "Is there an appreciable difference between a single thread waiting for work and multiple threads that are created and destroyed on demand?"
     },
     {
-        "x": -0.490362,
-        "y": -0.615109,
+        "x": -1.717984,
+        "y": 2.026376,
         "post_id": 431,
         "posts_count": 6,
         "tags": [
@@ -366,8 +366,8 @@
         "title": "PacBIO SmrtAnalysis"
     },
     {
-        "x": 3.522578,
-        "y": 6.257965,
+        "x": -3.101992,
+        "y": 9.862919,
         "post_id": 67,
         "posts_count": 4,
         "tags": [
@@ -381,8 +381,8 @@
         "title": "How can I use passwordless ssh in an HPC environment?"
     },
     {
-        "x": 0.952299,
-        "y": -9.609703,
+        "x": 3.822824,
+        "y": -6.449956,
         "post_id": 456,
         "posts_count": 3,
         "tags": [
@@ -398,8 +398,8 @@
         "title": "Using GPFS and CephFS together"
     },
     {
-        "x": 4.78037,
-        "y": -2.745962,
+        "x": -1.248872,
+        "y": -3.632742,
         "post_id": 72,
         "posts_count": 3,
         "tags": [
@@ -411,8 +411,8 @@
         "title": "How do I check that all mount points are in place, and mark a node out of service if a mount point is missing before a job is scheduled in Slurm?"
     },
     {
-        "x": -10.66584,
-        "y": -2.360363,
+        "x": 5.974206,
+        "y": 4.992306,
         "post_id": 106,
         "posts_count": 3,
         "tags": [
@@ -427,8 +427,8 @@
         "title": "How do I use a Globus file transfer service?"
     },
     {
-        "x": -3.437663,
-        "y": 5.447665,
+        "x": -3.174385,
+        "y": -5.538766,
         "post_id": 169,
         "posts_count": 4,
         "tags": [
@@ -441,8 +441,8 @@
         "title": "Which R package is more efficient to use for parallelization?"
     },
     {
-        "x": 11.123046,
-        "y": 5.175399,
+        "x": -9.137087,
+        "y": 7.64034,
         "post_id": 168,
         "posts_count": 3,
         "tags": [
@@ -456,8 +456,8 @@
         "title": "Running R code in parallel in an HPC environment"
     },
     {
-        "x": -3.450991,
-        "y": -0.936921,
+        "x": -3.387715,
+        "y": 1.293681,
         "post_id": 265,
         "posts_count": 1,
         "tags": [
@@ -469,8 +469,8 @@
         "title": "Why is casting a double to an integer so slow?"
     },
     {
-        "x": -3.237219,
-        "y": 3.529309,
+        "x": -7.593543,
+        "y": 1.05559,
         "post_id": 448,
         "posts_count": 3,
         "tags": [
@@ -484,8 +484,8 @@
         "title": "Starting a virtual machine image without knowing the user name or password"
     },
     {
-        "x": -9.861054,
-        "y": 5.494397,
+        "x": -8.820488,
+        "y": -8.420871,
         "post_id": 258,
         "posts_count": 2,
         "tags": [
@@ -499,8 +499,8 @@
         "title": "How can I determine how much memory I need before submitting my GAMESS calculation?"
     },
     {
-        "x": -4.909179,
-        "y": 4.772209,
+        "x": -2.063481,
+        "y": -5.201602,
         "post_id": 367,
         "posts_count": 2,
         "tags": [
@@ -513,8 +513,8 @@
         "title": "Cgroups with MPI process affinity"
     },
     {
-        "x": -0.627056,
-        "y": -8.383284,
+        "x": 3.936674,
+        "y": -2.154067,
         "post_id": 98,
         "posts_count": 3,
         "tags": [
@@ -530,8 +530,8 @@
         "title": "With MPI jobs using an Isilon Storage system for scratch, are there I/o issues that can be avoided?"
     },
     {
-        "x": -3.041201,
-        "y": 0.003273,
+        "x": -2.913563,
+        "y": -0.216751,
         "post_id": 75,
         "posts_count": 2,
         "tags": [
@@ -543,8 +543,8 @@
         "title": "How do you add your institutional HPC cluster to the Open Science Grid (OSG)?"
     },
     {
-        "x": 7.50244,
-        "y": -3.576288,
+        "x": -14.598634,
+        "y": 3.071571,
         "post_id": 912,
         "posts_count": 3,
         "tags": [
@@ -557,8 +557,8 @@
         "title": "How to attach to a running job to run top on compute node"
     },
     {
-        "x": -3.394126,
-        "y": 4.412724,
+        "x": -6.16254,
+        "y": -4.294343,
         "post_id": 599,
         "posts_count": 3,
         "tags": [
@@ -572,8 +572,8 @@
         "title": "How do I install Python 2.7 on my Comet allocation and where can I store data long term?"
     },
     {
-        "x": -1.960641,
-        "y": 4.970548,
+        "x": -5.233834,
+        "y": -3.101574,
         "post_id": 77,
         "posts_count": 3,
         "tags": [
@@ -587,8 +587,8 @@
         "title": "What are good ways to allow the use of software containers in a shared HPC cluster?"
     },
     {
-        "x": 7.040887,
-        "y": -3.887238,
+        "x": -14.514594,
+        "y": 2.584096,
         "post_id": 35,
         "posts_count": 3,
         "tags": [
@@ -601,8 +601,8 @@
         "title": "\"slurmstepd: error: Exceeded step memory limit at some point\""
     },
     {
-        "x": 5.636036,
-        "y": -2.18165,
+        "x": -11.031438,
+        "y": 1.799249,
         "post_id": 87,
         "posts_count": 2,
         "tags": [
@@ -615,8 +615,8 @@
         "title": "In a PBS Pro select statement, what's the difference between procs and mpiprocs?"
     },
     {
-        "x": 7.961685,
-        "y": -3.994114,
+        "x": -14.862986,
+        "y": 3.094282,
         "post_id": 38,
         "posts_count": 6,
         "tags": [
@@ -630,8 +630,8 @@
         "title": "How can I use SLURM's sacct command to show memory usage statistics for a job that I am running?"
     },
     {
-        "x": 10.448601,
-        "y": 5.357337,
+        "x": -9.472359,
+        "y": 8.977023,
         "post_id": 122,
         "posts_count": 2,
         "tags": [
@@ -646,8 +646,8 @@
         "title": "What is a \"Burst Buffer\"?"
     },
     {
-        "x": 10.768191,
-        "y": 3.517102,
+        "x": -11.059584,
+        "y": 8.119536,
         "post_id": 158,
         "posts_count": 2,
         "tags": [
@@ -660,8 +660,8 @@
         "title": "How I can improve the performance of my job that needs to perform many I/O operations with a very large text file"
     },
     {
-        "x": -6.238908,
-        "y": -6.053741,
+        "x": 0.65449,
+        "y": 5.212975,
         "post_id": 903,
         "posts_count": 2,
         "tags": [
@@ -675,8 +675,8 @@
         "title": "What is the Tool for Analysis of Surface Cracks (TASC) from NASA?"
     },
     {
-        "x": -1.559602,
-        "y": 5.044617,
+        "x": -6.599189,
+        "y": -3.668948,
         "post_id": 236,
         "posts_count": 3,
         "tags": [
@@ -688,8 +688,8 @@
         "title": "What are some ways to organize the modules created to manage multiple versions and combinations of compilers, tools, drivers and libraries on a shared cluster?"
     },
     {
-        "x": 10.797136,
-        "y": 2.427298,
+        "x": -11.727196,
+        "y": 6.636572,
         "post_id": 200,
         "posts_count": 2,
         "tags": [
@@ -704,8 +704,8 @@
         "title": "How do I request a node with a specific resource (like gpu) in Slurm?"
     },
     {
-        "x": 11.322804,
-        "y": 3.765369,
+        "x": -10.246319,
+        "y": 7.016888,
         "post_id": 223,
         "posts_count": 3,
         "tags": [
@@ -721,8 +721,8 @@
         "title": "How can I see the names of the nodes my multi-node MPI job is using on our SGE cluster?"
     },
     {
-        "x": -1.65211,
-        "y": -6.651457,
+        "x": 3.88083,
+        "y": -1.23048,
         "post_id": 119,
         "posts_count": 4,
         "tags": [
@@ -736,8 +736,8 @@
         "title": "What kind of hardware works best for the Amber Molecular Dynamics Package?"
     },
     {
-        "x": -3.37635,
-        "y": -3.943821,
+        "x": 0.393773,
+        "y": 1.003788,
         "post_id": 266,
         "posts_count": 4,
         "tags": [
@@ -749,8 +749,8 @@
         "title": "What are the relative benefits of a stateful vs. stateless cluster configuration?"
     },
     {
-        "x": -7.176368,
-        "y": -5.316921,
+        "x": 1.641729,
+        "y": 4.920608,
         "post_id": 858,
         "posts_count": 3,
         "tags": [
@@ -767,8 +767,8 @@
         "title": "How can i install git LFS on a shared campus cluster running SL7?"
     },
     {
-        "x": -9.861054,
-        "y": 5.494397,
+        "x": -8.82014,
+        "y": -8.421244,
         "post_id": 259,
         "posts_count": 2,
         "tags": [
@@ -782,8 +782,8 @@
         "title": "How can I restart my GAMESS calculation and resubmit?"
     },
     {
-        "x": -9.187626,
-        "y": 4.440795,
+        "x": -7.85942,
+        "y": -7.575361,
         "post_id": 662,
         "posts_count": 4,
         "tags": [
@@ -796,8 +796,8 @@
         "title": "What is GAMESS?"
     },
     {
-        "x": 5.830225,
-        "y": -2.235502,
+        "x": -10.865905,
+        "y": 1.523303,
         "post_id": 276,
         "posts_count": 2,
         "tags": [
@@ -811,8 +811,8 @@
         "title": "How to determine if jobs are dying on their own or from the scheduler?"
     },
     {
-        "x": -1.926552,
-        "y": -5.798422,
+        "x": 2.716439,
+        "y": -0.670589,
         "post_id": 125,
         "posts_count": 3,
         "tags": [
@@ -826,8 +826,8 @@
         "title": "InCommon Federation for HPC Clusters"
     },
     {
-        "x": 4.95456,
-        "y": 6.791234,
+        "x": -4.634899,
+        "y": 10.070621,
         "post_id": 201,
         "posts_count": 3,
         "tags": [
@@ -841,8 +841,8 @@
         "title": "How do I get the list of features and resources of each node in Slurm?"
     },
     {
-        "x": -0.633119,
-        "y": 1.247476,
+        "x": -5.514755,
+        "y": -1.394842,
         "post_id": 950,
         "posts_count": 6,
         "tags": [
@@ -857,8 +857,8 @@
         "title": "How do I provide authentication on GitHub Pages?"
     },
     {
-        "x": -3.565378,
-        "y": 0.466667,
+        "x": -2.870958,
+        "y": -0.245598,
         "post_id": 814,
         "posts_count": 4,
         "tags": [
@@ -870,8 +870,8 @@
         "title": "What universities or national labs have software engineering groups?"
     },
     {
-        "x": 6.079146,
-        "y": -0.684843,
+        "x": -10.867379,
+        "y": -0.650664,
         "post_id": 149,
         "posts_count": 2,
         "tags": [
@@ -885,8 +885,8 @@
         "title": "I am exploring a parameter space, and need to launch several hundred variants of the same small job. What can I do to ensure the shortest completion time?"
     },
     {
-        "x": -2.258729,
-        "y": 2.836006,
+        "x": -4.116145,
+        "y": -2.429197,
         "post_id": 207,
         "posts_count": 3,
         "tags": [
@@ -899,8 +899,8 @@
         "title": "Glibc not found"
     },
     {
-        "x": -3.126489,
-        "y": -7.009729,
+        "x": 2.518557,
+        "y": -5.314136,
         "post_id": 838,
         "posts_count": 4,
         "tags": [
@@ -914,8 +914,8 @@
         "title": "Navigating the NSF/DOE data management grant requirements!"
     },
     {
-        "x": 6.225597,
-        "y": -0.831131,
+        "x": -10.801635,
+        "y": -0.283539,
         "post_id": 33,
         "posts_count": 3,
         "tags": [
@@ -932,8 +932,8 @@
         "title": "How can I manage a large number of very small independent jobs of varying length with some order dependencies?"
     },
     {
-        "x": -2.007208,
-        "y": 3.555032,
+        "x": -4.99852,
+        "y": -2.170177,
         "post_id": 205,
         "posts_count": 4,
         "tags": [
@@ -946,8 +946,8 @@
         "title": "Why is Docker not widely used in multi-user cluster environments?"
     },
     {
-        "x": -3.964666,
-        "y": -3.900785,
+        "x": -0.206242,
+        "y": 2.463164,
         "post_id": 857,
         "posts_count": 2,
         "tags": [
@@ -962,8 +962,8 @@
         "title": "What is the correct procedure for setting ssh keys up to interface with github and servers outside of the campus cluster?"
     },
     {
-        "x": -2.001637,
-        "y": 1.264864,
+        "x": -4.543034,
+        "y": -1.098674,
         "post_id": 851,
         "posts_count": 7,
         "tags": [
@@ -977,8 +977,8 @@
         "title": "What HPC Infrastructure was used to generate the picture of the black hole?"
     },
     {
-        "x": -3.736152,
-        "y": -0.271166,
+        "x": -2.522647,
+        "y": 0.436219,
         "post_id": 1072,
         "posts_count": 4,
         "tags": [],
@@ -988,8 +988,8 @@
         "title": "Restrict server for only file transfers"
     },
     {
-        "x": 10.795183,
-        "y": 2.379572,
+        "x": -11.77858,
+        "y": 6.670714,
         "post_id": 209,
         "posts_count": 4,
         "tags": [
@@ -1005,8 +1005,8 @@
         "title": "I am a Sun Grid Engine user moving to SLURM. What are a few of the basic commands that I can use to get started?"
     },
     {
-        "x": -2.86408,
-        "y": 1.24891,
+        "x": -3.835029,
+        "y": -1.177786,
         "post_id": 927,
         "posts_count": 2,
         "tags": [
@@ -1018,8 +1018,8 @@
         "title": "How do I get access to high performance computing resources?"
     },
     {
-        "x": 2.841894,
-        "y": 6.997374,
+        "x": -2.714279,
+        "y": 8.791518,
         "post_id": 871,
         "posts_count": 5,
         "tags": [
@@ -1032,8 +1032,8 @@
         "title": "How do I get started with Python on HPC?"
     },
     {
-        "x": -1.892763,
-        "y": -6.061366,
+        "x": 2.951075,
+        "y": -0.913141,
         "post_id": 111,
         "posts_count": 2,
         "tags": [
@@ -1046,8 +1046,8 @@
         "title": "What speed up does the latest Intel compiler achieve on the Stream benchmark relative to the latest GNU compilers?"
     },
     {
-        "x": 6.08792,
-        "y": -0.519285,
+        "x": -10.895768,
+        "y": -0.73613,
         "post_id": 270,
         "posts_count": 2,
         "tags": [
@@ -1063,8 +1063,8 @@
         "title": "How to use a parameter-sweep or task array without numbering the files?"
     },
     {
-        "x": -4.535711,
-        "y": 5.276439,
+        "x": -2.981557,
+        "y": -5.949094,
         "post_id": 846,
         "posts_count": 3,
         "tags": [
@@ -1080,8 +1080,8 @@
         "title": "How do I use Singularity containers on an HPC cluster?"
     },
     {
-        "x": 7.137146,
-        "y": -4.06243,
+        "x": -15.063254,
+        "y": 2.398188,
         "post_id": 31,
         "posts_count": 3,
         "tags": [
@@ -1095,8 +1095,8 @@
         "title": "I am an LSF user moving to SLURM. What are a few basic commands that I can use to get started?"
     },
     {
-        "x": 7.940248,
-        "y": -3.862133,
+        "x": -14.865153,
+        "y": 3.107854,
         "post_id": 36,
         "posts_count": 2,
         "tags": [
@@ -1110,8 +1110,8 @@
         "title": "SLURM: If my job fails, how can I ensure that temporary data are cleaned up?"
     },
     {
-        "x": 7.502275,
-        "y": -3.576367,
+        "x": -14.660728,
+        "y": 2.440258,
         "post_id": 132,
         "posts_count": 3,
         "tags": [
@@ -1124,8 +1124,8 @@
         "title": "How to view info about my previous SLURM jobs?"
     },
     {
-        "x": -9.869576,
-        "y": 5.504339,
+        "x": -8.955595,
+        "y": -8.360276,
         "post_id": 233,
         "posts_count": 2,
         "tags": [
@@ -1141,8 +1141,8 @@
         "title": "How can I run Gaussian09 on a server?"
     },
     {
-        "x": 7.040222,
-        "y": -3.887375,
+        "x": -14.462237,
+        "y": 2.789632,
         "post_id": 39,
         "posts_count": 2,
         "tags": [
@@ -1155,8 +1155,8 @@
         "title": "How does one configure SLURM groups to limit access to partitions?"
     },
     {
-        "x": -5.5707,
-        "y": 1.434293,
+        "x": -0.872765,
+        "y": -1.361611,
         "post_id": 220,
         "posts_count": 3,
         "tags": [
@@ -1169,8 +1169,8 @@
         "title": "Why am I exceeding the quota?"
     },
     {
-        "x": 4.876001,
-        "y": 5.811218,
+        "x": -3.838423,
+        "y": 10.912641,
         "post_id": 37,
         "posts_count": 4,
         "tags": [
@@ -1185,8 +1185,8 @@
         "title": "How do I get my jobs to be scheduled as fast as possible?"
     },
     {
-        "x": -5.499558,
-        "y": 1.587117,
+        "x": -0.84923,
+        "y": -1.406382,
         "post_id": 107,
         "posts_count": 3,
         "tags": [
@@ -1200,8 +1200,8 @@
         "title": "When should I use /scratch and when should I use /home?"
     },
     {
-        "x": 10.340425,
-        "y": 5.128521,
+        "x": -9.181392,
+        "y": 8.395938,
         "post_id": 206,
         "posts_count": 2,
         "tags": [
@@ -1214,8 +1214,8 @@
         "title": "MPI program runs out of memory"
     },
     {
-        "x": 11.123218,
-        "y": 3.918226,
+        "x": -10.469911,
+        "y": 7.519882,
         "post_id": 159,
         "posts_count": 2,
         "tags": [
@@ -1229,8 +1229,8 @@
         "title": "How to achieve the best throughput of many parallel jobs?"
     },
     {
-        "x": 5.570467,
-        "y": -2.214253,
+        "x": -11.058768,
+        "y": 1.844032,
         "post_id": 26,
         "posts_count": 2,
         "tags": [
@@ -1243,8 +1243,8 @@
         "title": "What are cgroups and how are people using them for cluster administration?"
     },
     {
-        "x": -9.118137,
-        "y": 4.335683,
+        "x": -7.704532,
+        "y": -7.436963,
         "post_id": 934,
         "posts_count": 4,
         "tags": [
@@ -1258,8 +1258,8 @@
         "title": "Implementing full geometry constraints in GROMACS simulations"
     },
     {
-        "x": 8.039082,
-        "y": -3.428312,
+        "x": -15.576247,
+        "y": 3.138885,
         "post_id": 32,
         "posts_count": 3,
         "tags": [
@@ -1274,8 +1274,8 @@
         "title": "How do I convert my openmpi PBS job script to a SLURM script?"
     },
     {
-        "x": -3.413259,
-        "y": 5.488209,
+        "x": -3.185701,
+        "y": -5.556585,
         "post_id": 112,
         "posts_count": 2,
         "tags": [
@@ -1288,8 +1288,8 @@
         "title": "HPC versus HTC differences"
     },
     {
-        "x": -1.560812,
-        "y": 5.045747,
+        "x": -6.600631,
+        "y": -3.666681,
         "post_id": 113,
         "posts_count": 2,
         "tags": [
@@ -1301,8 +1301,8 @@
         "title": "What is the best place and/or mechanism to load modules to run a calculation?"
     },
     {
-        "x": -6.076501,
-        "y": -5.801903,
+        "x": 0.206238,
+        "y": 4.762351,
         "post_id": 279,
         "posts_count": 2,
         "tags": [
@@ -1315,8 +1315,8 @@
         "title": "Can anyone provide a brief overview of LAMMPS and its capabilities?"
     },
     {
-        "x": 3.540353,
-        "y": 6.240109,
+        "x": -3.10851,
+        "y": 9.903659,
         "post_id": 283,
         "posts_count": 2,
         "tags": [
@@ -1330,8 +1330,8 @@
         "title": "How can I find information about the version of GPFS running on a cluster?"
     },
     {
-        "x": 7.672802,
-        "y": -4.232985,
+        "x": -15.053961,
+        "y": 2.292354,
         "post_id": 150,
         "posts_count": 3,
         "tags": [
@@ -1345,8 +1345,8 @@
         "title": "How can I use SLURM\u2019s sacct command to show memory usage statistics on a cluster that I am administering?"
     },
     {
-        "x": 7.172886,
-        "y": -5.357393,
+        "x": -16.826464,
+        "y": 3.563727,
         "post_id": 82,
         "posts_count": 2,
         "tags": [
@@ -1363,8 +1363,8 @@
         "title": "Running Amber using GPUs under SLURM with the MVAPICH version of MPI"
     },
     {
-        "x": 1.424933,
-        "y": -8.836864,
+        "x": 3.298982,
+        "y": -6.58687,
         "post_id": 1065,
         "posts_count": 2,
         "tags": [
@@ -1377,8 +1377,8 @@
         "title": "Power (watts) utilization data from nodes"
     },
     {
-        "x": 6.383579,
-        "y": -5.920379,
+        "x": 3.467758,
+        "y": -8.729043,
         "post_id": 809,
         "posts_count": 2,
         "tags": [
@@ -1392,8 +1392,8 @@
         "title": "Pre-empting job termination by the scheduler"
     },
     {
-        "x": 11.519411,
-        "y": 5.106341,
+        "x": -8.884882,
+        "y": 7.121339,
         "post_id": 222,
         "posts_count": 4,
         "tags": [
@@ -1408,8 +1408,8 @@
         "title": "How do I know if my job is parallelizing when submitted as a batch script?"
     },
     {
-        "x": 5.636548,
-        "y": -2.181473,
+        "x": -11.031436,
+        "y": 1.799244,
         "post_id": 749,
         "posts_count": 2,
         "tags": [
@@ -1422,8 +1422,8 @@
         "title": "Cannot determine start time for job"
     },
     {
-        "x": 2.896328,
-        "y": 6.991087,
+        "x": -2.887707,
+        "y": 8.724478,
         "post_id": 744,
         "posts_count": 3,
         "tags": [
@@ -1436,8 +1436,8 @@
         "title": "How do I do <insert thing here> in bash?"
     },
     {
-        "x": -1.673584,
-        "y": -6.205236,
+        "x": 3.437382,
+        "y": -1.098233,
         "post_id": 79,
         "posts_count": 4,
         "tags": [
@@ -1449,8 +1449,8 @@
         "title": "What are good tools for determining where a program is spending the most wallclock time?"
     },
     {
-        "x": -6.238908,
-        "y": -6.053744,
+        "x": 0.652422,
+        "y": 5.214412,
         "post_id": 644,
         "posts_count": 2,
         "tags": [
@@ -1464,8 +1464,8 @@
         "title": "How do I run paraview or openfoam on an HPC resource?"
     },
     {
-        "x": -0.341014,
-        "y": 0.794934,
+        "x": -5.996734,
+        "y": -1.192313,
         "post_id": 193,
         "posts_count": 2,
         "tags": [
@@ -1478,8 +1478,8 @@
         "title": "Which conferences are available for the publishing of scholarly work in research computing?"
     },
     {
-        "x": -0.556649,
-        "y": -0.736549,
+        "x": -1.719693,
+        "y": 1.997862,
         "post_id": 597,
         "posts_count": 3,
         "tags": [
@@ -1491,8 +1491,8 @@
         "title": "Do you have bioinformatic specific script examples to share?"
     },
     {
-        "x": -9.131904,
-        "y": -1.930405,
+        "x": 4.826019,
+        "y": 3.764811,
         "post_id": 275,
         "posts_count": 3,
         "tags": [
@@ -1506,8 +1506,8 @@
         "title": "How to prepare projects in R for archiving?"
     },
     {
-        "x": 7.926071,
-        "y": -4.23825,
+        "x": -15.1381,
+        "y": 2.592299,
         "post_id": 325,
         "posts_count": 4,
         "tags": [
@@ -1521,8 +1521,8 @@
         "title": "SLURM: how can I get more details about why a job still pending execution?"
     },
     {
-        "x": 12.035123,
-        "y": 5.401943,
+        "x": -8.497475,
+        "y": 7.034609,
         "post_id": 171,
         "posts_count": 4,
         "tags": [
@@ -1537,8 +1537,8 @@
         "title": "What is the most efficient Python package to run a parallel job over multiple nodes?"
     },
     {
-        "x": 8.39417,
-        "y": -5.265687,
+        "x": -14.302427,
+        "y": 1.394904,
         "post_id": 513,
         "posts_count": 5,
         "tags": [
@@ -1552,8 +1552,8 @@
         "title": "Is it possible (and advisable) to run Turbomole without ssh enabled?"
     },
     {
-        "x": 10.781656,
-        "y": 2.453551,
+        "x": -11.773505,
+        "y": 6.778974,
         "post_id": 90,
         "posts_count": 3,
         "tags": [
@@ -1567,8 +1567,8 @@
         "title": "Obtaining local (temporary) disk space information using SLURM"
     },
     {
-        "x": -5.172021,
-        "y": -4.257972,
+        "x": -0.330311,
+        "y": 3.521606,
         "post_id": 136,
         "posts_count": 4,
         "tags": [
@@ -1582,8 +1582,8 @@
         "title": "How do I get involved in Software Carpentry?"
     },
     {
-        "x": -10.212979,
-        "y": -2.265952,
+        "x": 5.357128,
+        "y": 4.995905,
         "post_id": 116,
         "posts_count": 2,
         "tags": [
@@ -1599,8 +1599,8 @@
         "title": "Transferring multiple TB-sized files between my local cluster and AWS S3 storage"
     },
     {
-        "x": 3.493954,
-        "y": 7.667401,
+        "x": -3.591643,
+        "y": 7.817223,
         "post_id": 271,
         "posts_count": 3,
         "tags": [
@@ -1616,8 +1616,8 @@
         "title": "Is there a way to do startup and cleanup tasks with an SGE task array?"
     },
     {
-        "x": -3.115571,
-        "y": 0.718457,
+        "x": -4.323479,
+        "y": -0.115761,
         "post_id": 110,
         "posts_count": 2,
         "tags": [
@@ -1630,8 +1630,8 @@
         "title": "How can I use EasyBuild to manage building multiple versions of netCDF for different compiler and MPI versions?"
     },
     {
-        "x": -1.497072,
-        "y": 5.449005,
+        "x": -6.851259,
+        "y": -3.815053,
         "post_id": 101,
         "posts_count": 2,
         "tags": [
@@ -1644,8 +1644,8 @@
         "title": "Environment modules file for my own build of LAMPPS, netCDF and MPI"
     },
     {
-        "x": -9.842918,
-        "y": 5.457083,
+        "x": -8.866138,
+        "y": -8.282872,
         "post_id": 232,
         "posts_count": 2,
         "tags": [
@@ -1660,8 +1660,8 @@
         "title": "How many processors and how much memory should I request for a Gaussian calculation?"
     },
     {
-        "x": 5.621738,
-        "y": -1.238947,
+        "x": -9.822512,
+        "y": 0.333289,
         "post_id": 86,
         "posts_count": 2,
         "tags": [
@@ -1677,8 +1677,8 @@
         "title": "When should I use CfnCluster over Batch for HPC workloads in AWS?"
     },
     {
-        "x": 10.98457,
-        "y": 3.441408,
+        "x": -11.599108,
+        "y": 8.49355,
         "post_id": 269,
         "posts_count": 2,
         "tags": [
@@ -1692,8 +1692,8 @@
         "title": "How do I do a \"parameter-sweep\" with SGE?"
     },
     {
-        "x": -3.376353,
-        "y": -3.943901,
+        "x": 0.393798,
+        "y": 1.003635,
         "post_id": 510,
         "posts_count": 6,
         "tags": [
@@ -1705,8 +1705,8 @@
         "title": "Managing make on login (-j)"
     },
     {
-        "x": -2.845007,
-        "y": -0.920194,
+        "x": -2.640623,
+        "y": 0.778914,
         "post_id": 991,
         "posts_count": 2,
         "tags": [],
@@ -1716,8 +1716,8 @@
         "title": "Running Different GRUB2 Configuration for Multiple Diskless Clients?"
     },
     {
-        "x": 10.491562,
-        "y": 4.927665,
+        "x": -9.653047,
+        "y": 8.574145,
         "post_id": 170,
         "posts_count": 2,
         "tags": [
@@ -1730,8 +1730,8 @@
         "title": "R Random number generation in an HPC environment"
     },
     {
-        "x": 1.711615,
-        "y": -9.345372,
+        "x": 2.650744,
+        "y": -7.409924,
         "post_id": 1035,
         "posts_count": 5,
         "tags": [
@@ -1745,8 +1745,8 @@
         "title": "Anyone else have failures with Intel 2019-mpi with Mellanox IB for # of cores > 300?"
     },
     {
-        "x": -5.052679,
-        "y": 0.69888,
+        "x": -3.24215,
+        "y": 2.387047,
         "post_id": 971,
         "posts_count": 3,
         "tags": [
@@ -1758,8 +1758,8 @@
         "title": "How do I develop applications with Open On Demand?"
     },
     {
-        "x": -9.860123,
-        "y": 5.494091,
+        "x": -8.820141,
+        "y": -8.421242,
         "post_id": 262,
         "posts_count": 3,
         "tags": [
@@ -1773,8 +1773,8 @@
         "title": "Does GAMESS benefit from running calculations on multiple compute nodes? If so, what methods scale the best across many compute nodes on a cluster?"
     },
     {
-        "x": -9.861054,
-        "y": 5.494397,
+        "x": -8.82014,
+        "y": -8.421244,
         "post_id": 261,
         "posts_count": 2,
         "tags": [
@@ -1788,8 +1788,8 @@
         "title": "Is there a way to reduce the amount of disk files GAMESS uses, or even run the calculations entirely in RAM?"
     },
     {
-        "x": -0.394687,
-        "y": 3.587239,
+        "x": -7.944934,
+        "y": 0.796018,
         "post_id": 109,
         "posts_count": 2,
         "tags": [
@@ -1803,8 +1803,8 @@
         "title": "How will the AWS suspend capability affect price comparisons between in-house operated resources and cloud based?"
     },
     {
-        "x": -9.063797,
-        "y": -1.917888,
+        "x": 4.771006,
+        "y": 3.736128,
         "post_id": 1063,
         "posts_count": 3,
         "tags": [
@@ -1817,8 +1817,8 @@
         "title": "UPS / Battery Backup For HPC Systems"
     },
     {
-        "x": 5.516545,
-        "y": -2.243701,
+        "x": -11.081474,
+        "y": 1.88047,
         "post_id": 80,
         "posts_count": 3,
         "tags": [
@@ -1830,8 +1830,8 @@
         "title": "How do I estimate wall clock time?"
     },
     {
-        "x": -1.832187,
-        "y": -6.4821,
+        "x": 2.973504,
+        "y": -1.158755,
         "post_id": 198,
         "posts_count": 2,
         "tags": [
@@ -1847,8 +1847,8 @@
         "title": "What are on-loading and off-loading interconnects?"
     },
     {
-        "x": -1.700476,
-        "y": -0.924847,
+        "x": -4.938692,
+        "y": 0.266753,
         "post_id": 221,
         "posts_count": 3,
         "tags": [
@@ -1861,8 +1861,8 @@
         "title": "Why does my remote session to the cluster get disconnected?"
     },
     {
-        "x": 7.1429,
-        "y": -4.65359,
+        "x": -16.256603,
+        "y": 3.320438,
         "post_id": 40,
         "posts_count": 2,
         "tags": [
@@ -1878,8 +1878,8 @@
         "title": "How do I write a SLURM batch script for jobs that use both MPI and OpenMP?"
     },
     {
-        "x": 7.366359,
-        "y": -4.665773,
+        "x": -16.13842,
+        "y": 3.313059,
         "post_id": 78,
         "posts_count": 2,
         "tags": [
@@ -1894,8 +1894,8 @@
         "title": "How do I submit an MPI/OpenMP job in a slurm cluster?"
     },
     {
-        "x": -2.854227,
-        "y": 0.612136,
+        "x": -3.438555,
+        "y": -0.661969,
         "post_id": 280,
         "posts_count": 5,
         "tags": [
@@ -1907,8 +1907,8 @@
         "title": "What types of Electronic Lab Notebooks (ELN) are available and what criteria do I use to decide which one to use?"
     },
     {
-        "x": -5.976182,
-        "y": -5.545514,
+        "x": 0.273528,
+        "y": 4.662241,
         "post_id": 277,
         "posts_count": 2,
         "tags": [
@@ -1921,8 +1921,8 @@
         "title": "Build of Abinit v8 with netCDF"
     },
     {
-        "x": -2.528968,
-        "y": -0.363035,
+        "x": -3.497667,
+        "y": 0.157231,
         "post_id": 248,
         "posts_count": 3,
         "tags": [
@@ -1935,8 +1935,8 @@
         "title": "How to debug R code within a package"
     },
     {
-        "x": -4.006854,
-        "y": -1.586979,
+        "x": -5.081058,
+        "y": 1.631628,
         "post_id": 268,
         "posts_count": 1,
         "tags": [
@@ -1948,8 +1948,8 @@
         "title": "Duo for Multi-Factor Authentication using Bridges"
     },
     {
-        "x": -5.624293,
-        "y": 1.350395,
+        "x": -0.878066,
+        "y": -1.347649,
         "post_id": 278,
         "posts_count": 2,
         "tags": [
@@ -1961,8 +1961,8 @@
         "title": "How can I mount a Common Internet File System (CIFS) on a Linux server with group write permissions?"
     },
     {
-        "x": -3.964471,
-        "y": 0.010453,
+        "x": -2.933755,
+        "y": 0.968727,
         "post_id": 210,
         "posts_count": 1,
         "tags": [],
@@ -1972,8 +1972,8 @@
         "title": "About the Discussion Zone category"
     },
     {
-        "x": -3.398074,
-        "y": 1.63352,
+        "x": -2.837598,
+        "y": -1.173127,
         "post_id": 1040,
         "posts_count": 1,
         "tags": [
@@ -1987,8 +1987,8 @@
         "title": "Understanding compute demand & performance on Windows (VM)"
     },
     {
-        "x": 1.316367,
-        "y": -9.405011,
+        "x": 3.861446,
+        "y": -6.633928,
         "post_id": 797,
         "posts_count": 1,
         "tags": [
@@ -2002,8 +2002,8 @@
         "title": "How is storage performance for high I/O HPC jobs affected by running in the cloud?"
     },
     {
-        "x": -3.565378,
-        "y": 0.466668,
+        "x": -3.523439,
+        "y": 0.172727,
         "post_id": 1081,
         "posts_count": 5,
         "tags": [
@@ -2015,8 +2015,8 @@
         "title": "How could you provide an optimization service?"
     },
     {
-        "x": -2.314926,
-        "y": 0.202688,
+        "x": -3.513465,
+        "y": -0.540454,
         "post_id": 1079,
         "posts_count": 8,
         "tags": [
@@ -2029,8 +2029,8 @@
         "title": "HPC: How do you ask for help?"
     },
     {
-        "x": 3.534658,
-        "y": 6.227956,
+        "x": -3.09676,
+        "y": 9.854815,
         "post_id": 1073,
         "posts_count": 6,
         "tags": [
@@ -2045,8 +2045,8 @@
         "title": "Anatomy & Physiology HPC Use-Cases"
     },
     {
-        "x": 0.047909,
-        "y": -8.073464,
+        "x": 4.008045,
+        "y": -5.462431,
         "post_id": 1045,
         "posts_count": 7,
         "tags": [
@@ -2059,8 +2059,8 @@
         "title": "Useful Tools for HPC Research (and in General)"
     },
     {
-        "x": -4.984515,
-        "y": -4.164535,
+        "x": -0.338902,
+        "y": 3.274694,
         "post_id": 1018,
         "posts_count": 6,
         "tags": [
@@ -2073,8 +2073,8 @@
         "title": "What conferences might I attend that focus on Research Computing and Facilitation?"
     },
     {
-        "x": -4.593404,
-        "y": -1.061668,
+        "x": -4.077456,
+        "y": 1.627631,
         "post_id": 1076,
         "posts_count": 2,
         "tags": [
@@ -2086,8 +2086,8 @@
         "title": "CI Needs Survey"
     },
     {
-        "x": 1.489684,
-        "y": -8.777112,
+        "x": 3.100044,
+        "y": -6.706938,
         "post_id": 1064,
         "posts_count": 2,
         "tags": [
@@ -2099,8 +2099,8 @@
         "title": "Future Direction of Question of the Week"
     },
     {
-        "x": 1.792009,
-        "y": -9.207821,
+        "x": 2.647029,
+        "y": -7.422362,
         "post_id": 953,
         "posts_count": 1,
         "tags": [
@@ -2113,8 +2113,8 @@
         "title": "Getting started with RoCE?"
     },
     {
-        "x": -1.897184,
-        "y": -6.027676,
+        "x": 2.854477,
+        "y": -0.864597,
         "post_id": 533,
         "posts_count": 7,
         "tags": [
@@ -2126,8 +2126,8 @@
         "title": "Using RAM Disk on the queuing system to optimize file I/O"
     },
     {
-        "x": 1.44245,
-        "y": -9.051663,
+        "x": 3.141433,
+        "y": -6.70045,
         "post_id": 1023,
         "posts_count": 8,
         "tags": [
@@ -2141,8 +2141,8 @@
         "title": "VNC, FastX, Open OnDemand experience, opinions?"
     },
     {
-        "x": -0.872835,
-        "y": -8.121513,
+        "x": 4.06091,
+        "y": -4.444665,
         "post_id": 961,
         "posts_count": 9,
         "tags": [
@@ -2158,8 +2158,8 @@
         "title": "Automated HPC testing tools and techniques?"
     },
     {
-        "x": -2.845008,
-        "y": -0.920194,
+        "x": -2.442425,
+        "y": 0.212342,
         "post_id": 1021,
         "posts_count": 2,
         "tags": [],
@@ -2169,8 +2169,8 @@
         "title": "What is a checkpoint?"
     },
     {
-        "x": -3.799157,
-        "y": -0.544501,
+        "x": -3.774024,
+        "y": 1.017437,
         "post_id": 975,
         "posts_count": 3,
         "tags": [],
@@ -2180,8 +2180,8 @@
         "title": "The lifecycle of a cluster"
     },
     {
-        "x": -10.61783,
-        "y": -2.16885,
+        "x": 6.043151,
+        "y": 4.716907,
         "post_id": 115,
         "posts_count": 2,
         "tags": [
@@ -2195,8 +2195,8 @@
         "title": "Best practices for compliance with requirements for private and/or personally identifiable data"
     },
     {
-        "x": 1.631258,
-        "y": -10.013643,
+        "x": 1.142118,
+        "y": -7.540444,
         "post_id": 932,
         "posts_count": 4,
         "tags": [
@@ -2211,8 +2211,8 @@
         "title": "Monitoring GPU usage"
     },
     {
-        "x": -4.075561,
-        "y": 3.185128,
+        "x": -7.308827,
+        "y": 0.881923,
         "post_id": 996,
         "posts_count": 4,
         "tags": [
@@ -2225,8 +2225,8 @@
         "title": "Rclone vs sftp for Box.com"
     },
     {
-        "x": -3.245163,
-        "y": -0.543612,
+        "x": -3.697179,
+        "y": 0.936295,
         "post_id": 989,
         "posts_count": 21,
         "tags": [],
@@ -2236,8 +2236,8 @@
         "title": "How do I create a docker container for OpenFOAM-1.6-ext"
     },
     {
-        "x": -10.623013,
-        "y": -2.342486,
+        "x": 5.934559,
+        "y": 4.958941,
         "post_id": 114,
         "posts_count": 9,
         "tags": [
@@ -2251,8 +2251,8 @@
         "title": "What are fast ways to make bulk transfers?"
     },
     {
-        "x": -5.699941,
-        "y": -6.18364,
+        "x": -0.123355,
+        "y": 4.810483,
         "post_id": 792,
         "posts_count": 12,
         "tags": [
@@ -2265,8 +2265,8 @@
         "title": "Custom software stack environment for user (no sudo/root)"
     },
     {
-        "x": -5.217523,
-        "y": 0.497492,
+        "x": -4.247223,
+        "y": 2.815749,
         "post_id": 254,
         "posts_count": 1,
         "tags": [
@@ -2280,8 +2280,8 @@
         "title": "Are there guidelines and/or restrictions for monitoring resource allocation session per user?"
     },
     {
-        "x": 7.099847,
-        "y": -2.926639,
+        "x": -15.999869,
+        "y": 2.652365,
         "post_id": 88,
         "posts_count": 2,
         "tags": [
@@ -2295,8 +2295,8 @@
         "title": "Under what conditions should I use MPI to run jobs in parallel?"
     },
     {
-        "x": 9.664577,
-        "y": 5.787688,
+        "x": 5.304563,
+        "y": -5.098336,
         "post_id": 920,
         "posts_count": 2,
         "tags": [
@@ -2310,8 +2310,8 @@
         "title": "How busy is your Hadoop cluster?"
     },
     {
-        "x": -9.330218,
-        "y": -2.046893,
+        "x": 4.737931,
+        "y": 4.362801,
         "post_id": 105,
         "posts_count": 2,
         "tags": [
@@ -2326,8 +2326,8 @@
         "title": "What sort of approaches work well for providing encrypted storage for research computing environments?"
     },
     {
-        "x": -3.041816,
-        "y": 0.000521,
+        "x": -4.112854,
+        "y": 0.404421,
         "post_id": 580,
         "posts_count": 4,
         "tags": [
@@ -2339,8 +2339,8 @@
         "title": "Programmatic Access via API"
     },
     {
-        "x": 1.018282,
-        "y": -8.80144,
+        "x": 3.601132,
+        "y": -6.175249,
         "post_id": 856,
         "posts_count": 4,
         "tags": [
@@ -2354,8 +2354,8 @@
         "title": "How do I create my own cluster?"
     },
     {
-        "x": -3.40503,
-        "y": 6.272444,
+        "x": -3.903416,
+        "y": -3.896384,
         "post_id": 821,
         "posts_count": 3,
         "tags": [
@@ -2368,8 +2368,8 @@
         "title": "What are the biggest misconceptions about HPC?"
     },
     {
-        "x": -2.129672,
-        "y": 4.423546,
+        "x": -4.737296,
+        "y": -3.108057,
         "post_id": 443,
         "posts_count": 9,
         "tags": [
@@ -2382,8 +2382,8 @@
         "title": "What support does your center provide for containers?"
     },
     {
-        "x": -6.263667,
-        "y": -6.123648,
+        "x": 0.676856,
+        "y": 5.282676,
         "post_id": 612,
         "posts_count": 3,
         "tags": [
@@ -2398,8 +2398,8 @@
         "title": "Easybuild vs Spack: Anyone have opinions of which is better for bioinformatics?"
     },
     {
-        "x": -1.921715,
-        "y": -5.726749,
+        "x": 2.57475,
+        "y": -0.567786,
         "post_id": 676,
         "posts_count": 2,
         "tags": [
@@ -2411,8 +2411,8 @@
         "title": "HPC access models: many nodes for short periods of time"
     },
     {
-        "x": -1.24172,
-        "y": 4.171735,
+        "x": -8.400958,
+        "y": 1.469674,
         "post_id": 733,
         "posts_count": 3,
         "tags": [
@@ -2424,8 +2424,8 @@
         "title": "What are good uses for job arrays?"
     },
     {
-        "x": 2.910971,
-        "y": 6.946464,
+        "x": -2.815192,
+        "y": 8.822046,
         "post_id": 89,
         "posts_count": 6,
         "tags": [
@@ -2438,8 +2438,8 @@
         "title": "Hello world examples for HPC training"
     },
     {
-        "x": -0.262047,
-        "y": 1.010085,
+        "x": -6.088244,
+        "y": -1.421961,
         "post_id": 129,
         "posts_count": 2,
         "tags": [
@@ -2453,8 +2453,8 @@
         "title": "What tools or techniques can I use to make it possible for my software to be cited in research papers?"
     },
     {
-        "x": 3.350983,
-        "y": 6.371238,
+        "x": -2.815324,
+        "y": 9.475268,
         "post_id": 84,
         "posts_count": 3,
         "tags": [
@@ -2467,8 +2467,8 @@
         "title": "Simple parallel program to introduce Nuclear Engineering students to using HPC resources?"
     },
     {
-        "x": 5.620483,
-        "y": -1.086726,
+        "x": -9.746878,
+        "y": 0.272781,
         "post_id": 91,
         "posts_count": 5,
         "tags": [
@@ -2484,8 +2484,8 @@
         "title": "HPC job managers and migrating to the cloud"
     },
     {
-        "x": -4.51272,
-        "y": -0.600941,
+        "x": -4.440959,
+        "y": 0.998001,
         "post_id": 441,
         "posts_count": 2,
         "tags": [
@@ -2497,8 +2497,8 @@
         "title": "Cost of running hpc nodes"
     },
     {
-        "x": 1.426664,
-        "y": -10.278173,
+        "x": 1.043399,
+        "y": -7.583509,
         "post_id": 427,
         "posts_count": 2,
         "tags": [
@@ -2514,8 +2514,8 @@
         "title": "Optimizing very large neural network that is greater than size of GPU memory"
     },
     {
-        "x": -3.588186,
-        "y": -0.792504,
+        "x": -3.136412,
+        "y": 0.541135,
         "post_id": 394,
         "posts_count": 3,
         "tags": [],
@@ -2525,8 +2525,8 @@
         "title": "What configurations best support sensitive data in a shared cluster environment?"
     },
     {
-        "x": -2.324114,
-        "y": 0.27815,
+        "x": -3.957075,
+        "y": -0.370454,
         "post_id": 368,
         "posts_count": 3,
         "tags": [
@@ -2538,8 +2538,8 @@
         "title": "Economics of JupyterHub at Scale?"
     },
     {
-        "x": 2.910982,
-        "y": 6.946493,
+        "x": -2.815293,
+        "y": 8.822986,
         "post_id": 197,
         "posts_count": 2,
         "tags": [
@@ -2552,8 +2552,8 @@
         "title": "HPC Training Resources"
     },
     {
-        "x": -2.541078,
-        "y": 3.096576,
+        "x": -3.710182,
+        "y": -3.105685,
         "post_id": 245,
         "posts_count": 2,
         "tags": [
@@ -2566,8 +2566,8 @@
         "title": "What packages are most efficient for image classification?"
     },
     {
-        "x": -10.73405,
-        "y": -1.378224,
+        "x": 6.554097,
+        "y": 3.998229,
         "post_id": 154,
         "posts_count": 2,
         "tags": [
@@ -2581,8 +2581,8 @@
         "title": "Where can I find introductory material on publishing research data?"
     },
     {
-        "x": -0.317966,
-        "y": 3.641331,
+        "x": -8.236123,
+        "y": 0.5816,
         "post_id": 99,
         "posts_count": 2,
         "tags": [
@@ -2597,8 +2597,8 @@
         "title": "How suited to HPC software are cloud resources, including AWS, Azure and GCE?"
     },
     {
-        "x": 5.862318,
-        "y": -1.895207,
+        "x": -11.01159,
+        "y": 1.685354,
         "post_id": 273,
         "posts_count": 2,
         "tags": [
