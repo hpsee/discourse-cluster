@@ -101,14 +101,16 @@ discourse API, and probably is redundant.
 
 ### 3. Cluster Posts
 
-We are going to try using [Doc2Vec](https://radimrehurek.com/gensim/models/doc2vec.html) on the sentences for each post, and then generating embeddings, and using kmeans for the embeddings. Since I didn't want to install a ton of Python libraries on my host, I decided
-to build a container to generate the notebook.
+We are going to try using [Doc2Vec](https://radimrehurek.com/gensim/models/doc2vec.html) on the sentences for each post, and then generating embeddings, and using kmeans for the embeddings. Since I didn't want to install a ton of Python libraries on my host, I decided to build a container to generate the notebook.
 
 ```bash
 $ docker build -t vanessa/askci-cluster-gensim .
 ```
 
-Then run the container, and map port 8888 to expose the notebook.
+You actually don't need to do this if you don't want to, the container
+is provide on [Docker Hub](https://hub.docker.com/r/vanessa/askci-cluster-gensim/tags) (note
+that I've also tagged a version for the date of data export). Either way, 
+then run the container, and map port 8888 to expose the notebook.
 
 ```bash
 $ docker run -it -p 8888:8888 vanessa/askci-cluster-gensim
@@ -118,13 +120,16 @@ $ docker run -it -p 8888:8888 vanessa/askci-cluster-gensim
 decided to use one here to make it easy to show the work on GitHub and
 generate plots inline. 
 
-What you'll need to do is interact with the notebook
+If you run the container and make changes that you want to keep, 
+what you'll need to do is interact with the notebook
 in your browser (given the URL that you are provided) and then Download
 to your computer to save. If we bind directories there could be a whole
-mess of weird permissions, so this seems like a reasonable approach.
+mess of weird permissions, but if you want to try that, it would work too.
 
-What I wound up doing is copying the notebook and data files that I needed out
-of the container, after saving:
+I'm not a fan of click to download and then (still) needing to move and rename
+the file, so what I wound up doing is copying the notebook and data files that I needed out
+of the container, after saving. For a container named "amazing_ganguly", you
+can copy both notebooks and data generated (if you run them):
 
 ```bash
 # Notebooks
@@ -133,7 +138,7 @@ $ docker cp amazing_ganguly:/home/jovyan/cluster-analysis-tags.ipynb cluster-ana
 
 # Data Output
 $ docker cp amazing_ganguly:/home/jovyan/askci-post-tsne-179x2.json docs/askci-post-tsne-179x2.json
-for num in {1..7}; do
+for num in {1..10}; do
     docker cp amazing_ganguly:/home/jovyan/askci-tags-ica-embeddings-ncomps-${num}.json docs/askci-tags-ica-embeddings-ncomps-${num}.json
 done
 ```
