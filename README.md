@@ -118,3 +118,11 @@ What you'll need to do is interact with the notebook
 in your browser (given the URL that you are provided) and then Download
 to your computer to save. If we bind directories there could be a whole
 mess of weird permissions, so this seems like a reasonable approach.
+
+What I wound up doing is copying the notebook and data files that I needed out
+of the container, after saving:
+
+```bash
+$ docker cp relaxed_boyd:/home/jovyan/cluster-analysis-gensim.ipynb cluster-analysis-gensim.ipynb 
+$ docker cp relaxed_boyd:/home/jovyan/askci-post-tsne-179x2.json docs/askci-post-tsne-179x2.json
+```

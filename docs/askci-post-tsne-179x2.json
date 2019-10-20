@@ -1,0 +1,2613 @@
+[
+    {
+        "x": 12.16555,
+        "y": -11.055776,
+        "post_id": "303",
+        "posts_count": 1,
+        "tags": [],
+        "url": "https://ask.cyberinfrastructure.org/t/about-the-q-a-category/303/",
+        "views": 125,
+        "like_count": 0,
+        "title": "About the Q&A category"
+    },
+    {
+        "x": -2.493132,
+        "y": 3.514468,
+        "post_id": "74",
+        "posts_count": 6,
+        "tags": [
+            "notebooks",
+            "jupyter"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-i-run-jupyter-notebooks-on-my-institutions-hpc-cluster/74/",
+        "views": 1666,
+        "like_count": 0,
+        "title": "How can I run Jupyter Notebooks on my institution's HPC cluster?"
+    },
+    {
+        "x": -10.207353,
+        "y": 9.604471,
+        "post_id": "264",
+        "posts_count": 8,
+        "tags": [
+            "bash",
+            "data-analysis",
+            "file-formats",
+            "scaling"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/is-there-a-way-to-process-archived-files-without-fully-extracting-them-to-disk/264/",
+        "views": 598,
+        "like_count": 0,
+        "title": "Is there a way to process archived files without fully extracting them to disk?"
+    },
+    {
+        "x": 0.458137,
+        "y": 1.944135,
+        "post_id": "215",
+        "posts_count": 2,
+        "tags": [
+            "r",
+            "programming-for-hpc",
+            "scaling"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/my-r-loop-slows-down-when-i-increase-the-number-of-iterations-on-an-hpc/215/",
+        "views": 177,
+        "like_count": 0,
+        "title": "My R loop slows down when I increase the number of iterations on an HPC"
+    },
+    {
+        "x": 6.043508,
+        "y": -4.217728,
+        "post_id": "552",
+        "posts_count": 3,
+        "tags": [
+            "machine-learning",
+            "tensorflow",
+            "gpu",
+            "parallelization"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/customize-modulefile-based-on-the-node-properties/552/",
+        "views": 264,
+        "like_count": 1,
+        "title": "Customize modulefile based on the node properties"
+    },
+    {
+        "x": 0.281041,
+        "y": 1.023769,
+        "post_id": "606",
+        "posts_count": 2,
+        "tags": [
+            "cuda",
+            "r",
+            "gpu"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-i-compile-my-cuda-code-so-i-can-call-it-from-my-r-script/606/",
+        "views": 281,
+        "like_count": 1,
+        "title": "How can I compile my cuda code so I can call it from my R script"
+    },
+    {
+        "x": -5.400107,
+        "y": 6.516092,
+        "post_id": "921",
+        "posts_count": 6,
+        "tags": [
+            "ondemand",
+            "vm",
+            "qow"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/open-ondemand-with-vm-infrastructure/921/",
+        "views": 278,
+        "like_count": 1,
+        "title": "Open OnDemand with VM infrastructure"
+    },
+    {
+        "x": -12.287963,
+        "y": 12.060299,
+        "post_id": "854",
+        "posts_count": 8,
+        "tags": [
+            "singularity",
+            "parallelization",
+            "programming-for-hpc",
+            "infiniband"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/access-to-dev-infiniband-from-user-space/854/",
+        "views": 337,
+        "like_count": 3,
+        "title": "Access to /dev/infiniband from user space"
+    },
+    {
+        "x": -3.422291,
+        "y": 4.567171,
+        "post_id": "863",
+        "posts_count": 3,
+        "tags": [
+            "slurm",
+            "qow"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/understanding-slurm-accounting-fields/863/",
+        "views": 372,
+        "like_count": 0,
+        "title": "Understanding SLURM accounting fields"
+    },
+    {
+        "x": -10.743152,
+        "y": 10.572245,
+        "post_id": "108",
+        "posts_count": 4,
+        "tags": [
+            "python",
+            "environment-modules",
+            "lmod"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/using-lmod-to-load-python-libraries-from-a-users-home-directory/108/",
+        "views": 415,
+        "like_count": 0,
+        "title": "Using LMOD to load Python libraries from a user's home directory"
+    },
+    {
+        "x": -10.11188,
+        "y": 9.431089,
+        "post_id": "126",
+        "posts_count": 2,
+        "tags": [
+            "qow",
+            "scheduler",
+            "dmtcp"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-use-dmtcp-to-create-a-checkpoint-and-restart-my-program/126/",
+        "views": 491,
+        "like_count": 0,
+        "title": "How do I use DMTCP to create a checkpoint and restart my program?"
+    },
+    {
+        "x": -8.427773,
+        "y": 8.077156,
+        "post_id": "242",
+        "posts_count": 6,
+        "tags": [
+            "environment-modules"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-search-for-which-modules-are-available-on-an-hpc/242/",
+        "views": 400,
+        "like_count": 1,
+        "title": "How do I search for which modules are available on an HPC?"
+    },
+    {
+        "x": -3.777296,
+        "y": 4.945949,
+        "post_id": "943",
+        "posts_count": 5,
+        "tags": [
+            "python",
+            "mpi"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-run-mpi4py/943/",
+        "views": 419,
+        "like_count": 2,
+        "title": "How do I run mpi4py?"
+    },
+    {
+        "x": 11.607672,
+        "y": -9.819407,
+        "post_id": "73",
+        "posts_count": 2,
+        "tags": [
+            "spark"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-run-apache-spark-in-an-hpc-environment/73/",
+        "views": 146,
+        "like_count": 0,
+        "title": "How do I run Apache Spark in an HPC environment?"
+    },
+    {
+        "x": 12.250348,
+        "y": -10.246879,
+        "post_id": "553",
+        "posts_count": 1,
+        "tags": [
+            "tensorflow",
+            "gpu",
+            "parallelization",
+            "qow"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/can-latest-version-of-tensorflow-be-built-to-work-on-nodes-with-gpus-and-nodes-without-them/553/",
+        "views": 204,
+        "like_count": 0,
+        "title": "Can latest version of Tensorflow be built to work on nodes with GPUs and nodes without them?"
+    },
+    {
+        "x": 7.893366,
+        "y": -6.761667,
+        "post_id": "92",
+        "posts_count": 2,
+        "tags": [
+            "slurm",
+            "hpc-getting-started",
+            "scripting",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-redirect-stdout-stderr-in-my-slurm-job-scripts/92/",
+        "views": 1130,
+        "like_count": 0,
+        "title": "How do I redirect stdout/stderr in my SLURM job scripts?"
+    },
+    {
+        "x": 7.712214,
+        "y": -5.307677,
+        "post_id": "30",
+        "posts_count": 2,
+        "tags": [
+            "programming-for-hpc",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-estimate-if-the-hard-time-limit-will-be-exceeded-before-submitting-a-job/30/",
+        "views": 160,
+        "like_count": 0,
+        "title": "How do I estimate if the hard time limit will be exceeded before submitting a job?"
+    },
+    {
+        "x": -5.579449,
+        "y": 5.428757,
+        "post_id": "238",
+        "posts_count": 3,
+        "tags": [
+            "mpi",
+            "scripting",
+            "memory"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-to-reduce-memory-footprint-without-restructuring-mpi-code/238/",
+        "views": 134,
+        "like_count": 0,
+        "title": "How to reduce memory footprint without restructuring mpi code"
+    },
+    {
+        "x": -7.242778,
+        "y": 6.499748,
+        "post_id": "504",
+        "posts_count": 2,
+        "tags": [
+            "mpi",
+            "lammps"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/running-multiple-lammps-jobs-on-a-node/504/",
+        "views": 413,
+        "like_count": 0,
+        "title": "Running multiple LAMMPS jobs on a node"
+    },
+    {
+        "x": 7.455638,
+        "y": -6.798261,
+        "post_id": "225",
+        "posts_count": 3,
+        "tags": [
+            "tensorflow",
+            "programming-for-hpc",
+            "ai",
+            "machine-learning",
+            "scripting"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/tensorflow-script-to-run-on-single-core/225/",
+        "views": 173,
+        "like_count": 0,
+        "title": "Tensorflow script to run on single core"
+    },
+    {
+        "x": -2.134524,
+        "y": 3.585264,
+        "post_id": "414",
+        "posts_count": 2,
+        "tags": [
+            "sciencedmz",
+            "network",
+            "data-transfer",
+            "cyberinfrastructure"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-is-a-science-dmz/414/",
+        "views": 183,
+        "like_count": 0,
+        "title": "What is a Science DMZ?"
+    },
+    {
+        "x": -4.705475,
+        "y": 4.614824,
+        "post_id": "214",
+        "posts_count": 5,
+        "tags": [
+            "memory"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-one-determine-the-amount-of-ram-a-node-has-in-an-hpc-environment/214/",
+        "views": 203,
+        "like_count": 0,
+        "title": "How can one determine the amount of RAM a node has in an HPC environment?"
+    },
+    {
+        "x": 7.47522,
+        "y": -5.518219,
+        "post_id": "104",
+        "posts_count": 3,
+        "tags": [
+            "matlab",
+            "remote-servers"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/poor-interaction-with-matlab-running-on-remote-server/104/",
+        "views": 210,
+        "like_count": 1,
+        "title": "Poor interaction with MATLAB running on remote server"
+    },
+    {
+        "x": 3.451829,
+        "y": -0.898251,
+        "post_id": "263",
+        "posts_count": 2,
+        "tags": [
+            "programming-for-hpc",
+            "c",
+            "pthreads"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/is-there-an-appreciable-difference-between-a-single-thread-waiting-for-work-and-multiple-threads-that-are-created-and-destroyed-on-demand/263/",
+        "views": 175,
+        "like_count": 0,
+        "title": "Is there an appreciable difference between a single thread waiting for work and multiple threads that are created and destroyed on demand?"
+    },
+    {
+        "x": -11.455695,
+        "y": 12.727551,
+        "post_id": "431",
+        "posts_count": 6,
+        "tags": [
+            "bioinformatics",
+            "smrtanalysis"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/pacbio-smrtanalysis/431/",
+        "views": 618,
+        "like_count": 0,
+        "title": "PacBIO SmrtAnalysis"
+    },
+    {
+        "x": -12.261982,
+        "y": 9.895341,
+        "post_id": "67",
+        "posts_count": 4,
+        "tags": [
+            "site-specific",
+            "hpc-getting-started",
+            "ssh"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-i-use-passwordless-ssh-in-an-hpc-environment/67/",
+        "views": 440,
+        "like_count": 0,
+        "title": "How can I use passwordless ssh in an HPC environment?"
+    },
+    {
+        "x": 9.253521,
+        "y": -8.129418,
+        "post_id": "456",
+        "posts_count": 3,
+        "tags": [
+            "qow",
+            "storage",
+            "gpfs",
+            "cephfs",
+            "file-system"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/using-gpfs-and-cephfs-together/456/",
+        "views": 382,
+        "like_count": 0,
+        "title": "Using GPFS and CephFS together"
+    },
+    {
+        "x": -6.823235,
+        "y": 6.477123,
+        "post_id": "72",
+        "posts_count": 3,
+        "tags": [
+            "slurm"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-check-that-all-mount-points-are-in-place-and-mark-a-node-out-of-service-if-a-mount-point-is-missing-before-a-job-is-scheduled-in-slurm/72/",
+        "views": 135,
+        "like_count": 0,
+        "title": "How do I check that all mount points are in place, and mark a node out of service if a mount point is missing before a job is scheduled in Slurm?"
+    },
+    {
+        "x": -4.673937,
+        "y": 5.668617,
+        "post_id": "106",
+        "posts_count": 3,
+        "tags": [
+            "data-transfer",
+            "file-transfer",
+            "dtn",
+            "globus"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-use-a-globus-file-transfer-service/106/",
+        "views": 262,
+        "like_count": 0,
+        "title": "How do I use a Globus file transfer service?"
+    },
+    {
+        "x": 4.501465,
+        "y": -1.76608,
+        "post_id": "169",
+        "posts_count": 4,
+        "tags": [
+            "r",
+            "parallelization"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/which-r-package-is-more-efficient-to-use-for-parallelization/169/",
+        "views": 145,
+        "like_count": 0,
+        "title": "Which R package is more efficient to use for parallelization?"
+    },
+    {
+        "x": -0.458831,
+        "y": 1.87714,
+        "post_id": "168",
+        "posts_count": 3,
+        "tags": [
+            "r",
+            "programming-for-hpc",
+            "parallelization"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/running-r-code-in-parallel-in-an-hpc-environment/168/",
+        "views": 287,
+        "like_count": 0,
+        "title": "Running R code in parallel in an HPC environment"
+    },
+    {
+        "x": 11.806025,
+        "y": -10.723399,
+        "post_id": "265",
+        "posts_count": 1,
+        "tags": [
+            "c"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/why-is-casting-a-double-to-an-integer-so-slow/265/",
+        "views": 124,
+        "like_count": 0,
+        "title": "Why is casting a double to an integer so slow?"
+    },
+    {
+        "x": -3.094347,
+        "y": 4.18925,
+        "post_id": "448",
+        "posts_count": 3,
+        "tags": [
+            "cloud",
+            "openstack",
+            "vm"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/starting-a-virtual-machine-image-without-knowing-the-user-name-or-password/448/",
+        "views": 183,
+        "like_count": 0,
+        "title": "Starting a virtual machine image without knowing the user name or password"
+    },
+    {
+        "x": 9.73152,
+        "y": -8.597372,
+        "post_id": "258",
+        "posts_count": 2,
+        "tags": [
+            "computational-chemistry",
+            "quantum-chemistry",
+            "gamess"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-i-determine-how-much-memory-i-need-before-submitting-my-gamess-calculation/258/",
+        "views": 106,
+        "like_count": 0,
+        "title": "How can I determine how much memory I need before submitting my GAMESS calculation?"
+    },
+    {
+        "x": -1.56488,
+        "y": 2.908614,
+        "post_id": "367",
+        "posts_count": 2,
+        "tags": [
+            "parallelization",
+            "mpi"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/cgroups-with-mpi-process-affinity/367/",
+        "views": 290,
+        "like_count": 0,
+        "title": "Cgroups with MPI process affinity"
+    },
+    {
+        "x": -1.259222,
+        "y": 2.621106,
+        "post_id": "98",
+        "posts_count": 3,
+        "tags": [
+            "qow",
+            "storage",
+            "isilon",
+            "hpc-arch-and-perf",
+            "mpi"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/with-mpi-jobs-using-an-isilon-storage-system-for-scratch-are-there-i-o-issues-that-can-be-avoided/98/",
+        "views": 424,
+        "like_count": 1,
+        "title": "With MPI jobs using an Isilon Storage system for scratch, are there I/o issues that can be avoided?"
+    },
+    {
+        "x": 10.249116,
+        "y": -9.061128,
+        "post_id": "75",
+        "posts_count": 2,
+        "tags": [
+            "osg"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-you-add-your-institutional-hpc-cluster-to-the-open-science-grid-osg/75/",
+        "views": 162,
+        "like_count": 0,
+        "title": "How do you add your institutional HPC cluster to the Open Science Grid (OSG)?"
+    },
+    {
+        "x": 8.703026,
+        "y": -7.879151,
+        "post_id": "912",
+        "posts_count": 3,
+        "tags": [
+            "slurm",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-to-attach-to-a-running-job-to-run-top-on-compute-node/912/",
+        "views": 193,
+        "like_count": 1,
+        "title": "How to attach to a running job to run top on compute node"
+    },
+    {
+        "x": 8.409551,
+        "y": -6.012909,
+        "post_id": "599",
+        "posts_count": 3,
+        "tags": [
+            "python",
+            "storage",
+            "xsede"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-install-python-2-7-on-my-comet-allocation-and-where-can-i-store-data-long-term/599/",
+        "views": 213,
+        "like_count": 2,
+        "title": "How do I install Python 2.7 on my Comet allocation and where can I store data long term?"
+    },
+    {
+        "x": 9.682776,
+        "y": -7.747078,
+        "post_id": "77",
+        "posts_count": 3,
+        "tags": [
+            "containers",
+            "docker",
+            "singularity"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-are-good-ways-to-allow-the-use-of-software-containers-in-a-shared-hpc-cluster/77/",
+        "views": 176,
+        "like_count": 0,
+        "title": "What are good ways to allow the use of software containers in a shared HPC cluster?"
+    },
+    {
+        "x": -4.287691,
+        "y": 5.333354,
+        "post_id": "35",
+        "posts_count": 3,
+        "tags": [
+            "slurm",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/slurmstepd-error-exceeded-step-memory-limit-at-some-point/35/",
+        "views": 2312,
+        "like_count": 0,
+        "title": "\"slurmstepd: error: Exceeded step memory limit at some point\""
+    },
+    {
+        "x": 7.521874,
+        "y": -6.086723,
+        "post_id": "87",
+        "posts_count": 2,
+        "tags": [
+            "scheduler",
+            "pbs"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/in-a-pbs-pro-select-statement-whats-the-difference-between-procs-and-mpiprocs/87/",
+        "views": 234,
+        "like_count": 0,
+        "title": "In a PBS Pro select statement, what's the difference between procs and mpiprocs?"
+    },
+    {
+        "x": -7.081774,
+        "y": 7.259144,
+        "post_id": "38",
+        "posts_count": 6,
+        "tags": [
+            "slurm",
+            "scheduler",
+            "stats"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-i-use-slurms-sacct-command-to-show-memory-usage-statistics-for-a-job-that-i-am-running/38/",
+        "views": 463,
+        "like_count": 4,
+        "title": "How can I use SLURM's sacct command to show memory usage statistics for a job that I am running?"
+    },
+    {
+        "x": 1.791585,
+        "y": 1.049176,
+        "post_id": "122",
+        "posts_count": 2,
+        "tags": [
+            "storage",
+            "lustre",
+            "programming-for-hpc",
+            "gpfs"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-is-a-burst-buffer/122/",
+        "views": 125,
+        "like_count": 0,
+        "title": "What is a \"Burst Buffer\"?"
+    },
+    {
+        "x": 7.336016,
+        "y": -5.116395,
+        "post_id": "158",
+        "posts_count": 2,
+        "tags": [
+            "programming-for-hpc",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-i-can-improve-the-performance-of-my-job-that-needs-to-perform-many-i-o-operations-with-a-very-large-text-file/158/",
+        "views": 90,
+        "like_count": 0,
+        "title": "How I can improve the performance of my job that needs to perform many I/O operations with a very large text file"
+    },
+    {
+        "x": -11.472259,
+        "y": 10.877976,
+        "post_id": "903",
+        "posts_count": 2,
+        "tags": [
+            "nasa",
+            "open-source",
+            "research-software"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-is-the-tool-for-analysis-of-surface-cracks-tasc-from-nasa/903/",
+        "views": 128,
+        "like_count": 1,
+        "title": "What is the Tool for Analysis of Surface Cracks (TASC) from NASA?"
+    },
+    {
+        "x": -9.095806,
+        "y": 9.57628,
+        "post_id": "236",
+        "posts_count": 3,
+        "tags": [
+            "environment-modules"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-are-some-ways-to-organize-the-modules-created-to-manage-multiple-versions-and-combinations-of-compilers-tools-drivers-and-libraries-on-a-shared-cluster/236/",
+        "views": 90,
+        "like_count": 0,
+        "title": "What are some ways to organize the modules created to manage multiple versions and combinations of compilers, tools, drivers and libraries on a shared cluster?"
+    },
+    {
+        "x": 8.260976,
+        "y": -5.653194,
+        "post_id": "200",
+        "posts_count": 2,
+        "tags": [
+            "slurm",
+            "programming-for-hpc",
+            "scheduler",
+            "gpu"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-request-a-node-with-a-specific-resource-like-gpu-in-slurm/200/",
+        "views": 84,
+        "like_count": 1,
+        "title": "How do I request a node with a specific resource (like gpu) in Slurm?"
+    },
+    {
+        "x": -7.822264,
+        "y": 7.760626,
+        "post_id": "223",
+        "posts_count": 3,
+        "tags": [
+            "sge",
+            "mpi",
+            "programming-for-hpc",
+            "scheduler",
+            "parallelization"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-i-see-the-names-of-the-nodes-my-multi-node-mpi-job-is-using-on-our-sge-cluster/223/",
+        "views": 521,
+        "like_count": 0,
+        "title": "How can I see the names of the nodes my multi-node MPI job is using on our SGE cluster?"
+    },
+    {
+        "x": 2.527936,
+        "y": -1.237158,
+        "post_id": "119",
+        "posts_count": 4,
+        "tags": [
+            "amber",
+            "molecular-dynamics",
+            "hpc-arch-and-perf"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-kind-of-hardware-works-best-for-the-amber-molecular-dynamics-package/119/",
+        "views": 239,
+        "like_count": 0,
+        "title": "What kind of hardware works best for the Amber Molecular Dynamics Package?"
+    },
+    {
+        "x": -8.793746,
+        "y": 9.057778,
+        "post_id": "266",
+        "posts_count": 4,
+        "tags": [
+            "cluster-management"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-are-the-relative-benefits-of-a-stateful-vs-stateless-cluster-configuration/266/",
+        "views": 521,
+        "like_count": 0,
+        "title": "What are the relative benefits of a stateful vs. stateless cluster configuration?"
+    },
+    {
+        "x": -2.003864,
+        "y": 3.495627,
+        "post_id": "858",
+        "posts_count": 3,
+        "tags": [
+            "data-management",
+            "git",
+            "git-lfs",
+            "compiling",
+            "missing-libraries",
+            "software-installation"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-i-install-git-lfs-on-a-shared-campus-cluster-running-sl7/858/",
+        "views": 182,
+        "like_count": 0,
+        "title": "How can i install git LFS on a shared campus cluster running SL7?"
+    },
+    {
+        "x": 2.696571,
+        "y": 0.245893,
+        "post_id": "259",
+        "posts_count": 2,
+        "tags": [
+            "computational-chemistry",
+            "quantum-chemistry",
+            "gamess"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-i-restart-my-gamess-calculation-and-resubmit/259/",
+        "views": 420,
+        "like_count": 0,
+        "title": "How can I restart my GAMESS calculation and resubmit?"
+    },
+    {
+        "x": -5.983716,
+        "y": 6.31404,
+        "post_id": "662",
+        "posts_count": 4,
+        "tags": [
+            "gamess",
+            "computational-chemistry"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-is-gamess/662/",
+        "views": 267,
+        "like_count": 1,
+        "title": "What is GAMESS?"
+    },
+    {
+        "x": 2.765809,
+        "y": -1.050432,
+        "post_id": "276",
+        "posts_count": 2,
+        "tags": [
+            "monitoring",
+            "sge",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-to-determine-if-jobs-are-dying-on-their-own-or-from-the-scheduler/276/",
+        "views": 200,
+        "like_count": 0,
+        "title": "How to determine if jobs are dying on their own or from the scheduler?"
+    },
+    {
+        "x": 2.660576,
+        "y": -0.740021,
+        "post_id": "125",
+        "posts_count": 3,
+        "tags": [
+            "federated_authentication",
+            "administering-hpc",
+            "security"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/incommon-federation-for-hpc-clusters/125/",
+        "views": 220,
+        "like_count": 0,
+        "title": "InCommon Federation for HPC Clusters"
+    },
+    {
+        "x": -12.542242,
+        "y": 11.830176,
+        "post_id": "201",
+        "posts_count": 3,
+        "tags": [
+            "slurm",
+            "hpc-getting-started",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-get-the-list-of-features-and-resources-of-each-node-in-slurm/201/",
+        "views": 818,
+        "like_count": 2,
+        "title": "How do I get the list of features and resources of each node in Slurm?"
+    },
+    {
+        "x": -9.843207,
+        "y": 8.004089,
+        "post_id": "950",
+        "posts_count": 6,
+        "tags": [
+            "github",
+            "jekyll",
+            "github-pages",
+            "documentation"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-provide-authentication-on-github-pages/950/",
+        "views": 389,
+        "like_count": 0,
+        "title": "How do I provide authentication on GitHub Pages?"
+    },
+    {
+        "x": 5.38312,
+        "y": -3.361325,
+        "post_id": "814",
+        "posts_count": 4,
+        "tags": [
+            "rse"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-universities-or-national-labs-have-software-engineering-groups/814/",
+        "views": 262,
+        "like_count": 0,
+        "title": "What universities or national labs have software engineering groups?"
+    },
+    {
+        "x": 2.590943,
+        "y": -0.89773,
+        "post_id": "149",
+        "posts_count": 2,
+        "tags": [
+            "job-array",
+            "parameter-sweep",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/i-am-exploring-a-parameter-space-and-need-to-launch-several-hundred-variants-of-the-same-small-job-what-can-i-do-to-ensure-the-shortest-completion-time/149/",
+        "views": 80,
+        "like_count": 0,
+        "title": "I am exploring a parameter space, and need to launch several hundred variants of the same small job. What can I do to ensure the shortest completion time?"
+    },
+    {
+        "x": 0.489586,
+        "y": 0.427235,
+        "post_id": "207",
+        "posts_count": 3,
+        "tags": [
+            "r",
+            "singularity"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/glibc-not-found/207/",
+        "views": 43,
+        "like_count": 0,
+        "title": "Glibc not found"
+    },
+    {
+        "x": -9.021543,
+        "y": 8.036299,
+        "post_id": "838",
+        "posts_count": 4,
+        "tags": [
+            "qow",
+            "data-management",
+            "research-grants"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/navigating-the-nsf-doe-data-management-grant-requirements/838/",
+        "views": 270,
+        "like_count": 0,
+        "title": "Navigating the NSF/DOE data management grant requirements!"
+    },
+    {
+        "x": 0.566386,
+        "y": 0.48656,
+        "post_id": "33",
+        "posts_count": 3,
+        "tags": [
+            "job-array",
+            "variable-size",
+            "dependencies",
+            "workflow",
+            "scripting",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-i-manage-a-large-number-of-very-small-independent-jobs-of-varying-length-with-some-order-dependencies/33/",
+        "views": 94,
+        "like_count": 0,
+        "title": "How can I manage a large number of very small independent jobs of varying length with some order dependencies?"
+    },
+    {
+        "x": 1.152552,
+        "y": -0.497635,
+        "post_id": "205",
+        "posts_count": 4,
+        "tags": [
+            "docker",
+            "containers"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/why-is-docker-not-widely-used-in-multi-user-cluster-environments/205/",
+        "views": 267,
+        "like_count": 0,
+        "title": "Why is Docker not widely used in multi-user cluster environments?"
+    },
+    {
+        "x": -4.629347,
+        "y": 6.090194,
+        "post_id": "857",
+        "posts_count": 2,
+        "tags": [
+            "ssh",
+            "git",
+            "github",
+            "key-management"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-is-the-correct-procedure-for-setting-ssh-keys-up-to-interface-with-github-and-servers-outside-of-the-campus-cluster/857/",
+        "views": 97,
+        "like_count": 0,
+        "title": "What is the correct procedure for setting ssh keys up to interface with github and servers outside of the campus cluster?"
+    },
+    {
+        "x": -11.735382,
+        "y": 10.765074,
+        "post_id": "851",
+        "posts_count": 7,
+        "tags": [
+            "blackhole",
+            "infrastructure",
+            "publication"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-hpc-infrastructure-was-used-to-generate-the-picture-of-the-black-hole/851/",
+        "views": 239,
+        "like_count": 0,
+        "title": "What HPC Infrastructure was used to generate the picture of the black hole?"
+    },
+    {
+        "x": -6.046494,
+        "y": 6.536678,
+        "post_id": "1072",
+        "posts_count": 4,
+        "tags": [],
+        "url": "https://ask.cyberinfrastructure.org/t/restrict-server-for-only-file-transfers/1072/",
+        "views": 59,
+        "like_count": 1,
+        "title": "Restrict server for only file transfers"
+    },
+    {
+        "x": 2.875655,
+        "y": -0.372682,
+        "post_id": "209",
+        "posts_count": 4,
+        "tags": [
+            "programming-for-hpc",
+            "sge",
+            "slurm",
+            "scripting",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/i-am-a-sun-grid-engine-user-moving-to-slurm-what-are-a-few-of-the-basic-commands-that-i-can-use-to-get-started/209/",
+        "views": 126,
+        "like_count": 0,
+        "title": "I am a Sun Grid Engine user moving to SLURM. What are a few of the basic commands that I can use to get started?"
+    },
+    {
+        "x": 0.49317,
+        "y": 1.687835,
+        "post_id": "927",
+        "posts_count": 2,
+        "tags": [
+            "xsede"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-get-access-to-high-performance-computing-resources/927/",
+        "views": 127,
+        "like_count": 0,
+        "title": "How do I get access to high performance computing resources?"
+    },
+    {
+        "x": 8.319047,
+        "y": -6.058397,
+        "post_id": "871",
+        "posts_count": 5,
+        "tags": [
+            "python",
+            "getting-started"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-get-started-with-python-on-hpc/871/",
+        "views": 194,
+        "like_count": 1,
+        "title": "How do I get started with Python on HPC?"
+    },
+    {
+        "x": 5.16713,
+        "y": -2.662024,
+        "post_id": "111",
+        "posts_count": 2,
+        "tags": [
+            "memory",
+            "hpc-cluster-architecture"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-speed-up-does-the-latest-intel-compiler-achieve-on-the-stream-benchmark-relative-to-the-latest-gnu-compilers/111/",
+        "views": 84,
+        "like_count": 0,
+        "title": "What speed up does the latest Intel compiler achieve on the Stream benchmark relative to the latest GNU compilers?"
+    },
+    {
+        "x": 9.64841,
+        "y": -8.032606,
+        "post_id": "270",
+        "posts_count": 2,
+        "tags": [
+            "parameter-sweep",
+            "bash",
+            "scheduler",
+            "gridengine",
+            "array-job"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-to-use-a-parameter-sweep-or-task-array-without-numbering-the-files/270/",
+        "views": 136,
+        "like_count": 0,
+        "title": "How to use a parameter-sweep or task array without numbering the files?"
+    },
+    {
+        "x": 10.076706,
+        "y": -9.278296,
+        "post_id": "846",
+        "posts_count": 3,
+        "tags": [
+            "cuda",
+            "gpu",
+            "sge",
+            "singularity",
+            "containers"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-use-singularity-containers-on-an-hpc-cluster/846/",
+        "views": 572,
+        "like_count": 2,
+        "title": "How do I use Singularity containers on an HPC cluster?"
+    },
+    {
+        "x": 4.711616,
+        "y": -2.591662,
+        "post_id": "31",
+        "posts_count": 3,
+        "tags": [
+            "lsf",
+            "slurm",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/i-am-an-lsf-user-moving-to-slurm-what-are-a-few-basic-commands-that-i-can-use-to-get-started/31/",
+        "views": 259,
+        "like_count": 1,
+        "title": "I am an LSF user moving to SLURM. What are a few basic commands that I can use to get started?"
+    },
+    {
+        "x": 12.153962,
+        "y": -10.947695,
+        "post_id": "36",
+        "posts_count": 2,
+        "tags": [
+            "slurm",
+            "cleanup",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/slurm-if-my-job-fails-how-can-i-ensure-that-temporary-data-are-cleaned-up/36/",
+        "views": 76,
+        "like_count": 0,
+        "title": "SLURM: If my job fails, how can I ensure that temporary data are cleaned up?"
+    },
+    {
+        "x": -4.574494,
+        "y": 5.216369,
+        "post_id": "132",
+        "posts_count": 3,
+        "tags": [
+            "slurm",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-to-view-info-about-my-previous-slurm-jobs/132/",
+        "views": 124,
+        "like_count": 1,
+        "title": "How to view info about my previous SLURM jobs?"
+    },
+    {
+        "x": -2.782059,
+        "y": 3.388789,
+        "post_id": "233",
+        "posts_count": 2,
+        "tags": [
+            "computational-chemistry",
+            "quantum-chemistry",
+            "dft",
+            "gaussian",
+            "gaussian09"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-i-run-gaussian09-on-a-server/233/",
+        "views": 153,
+        "like_count": 0,
+        "title": "How can I run Gaussian09 on a server?"
+    },
+    {
+        "x": 3.724978,
+        "y": -1.945146,
+        "post_id": "39",
+        "posts_count": 2,
+        "tags": [
+            "slurm",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-does-one-configure-slurm-groups-to-limit-access-to-partitions/39/",
+        "views": 95,
+        "like_count": 0,
+        "title": "How does one configure SLURM groups to limit access to partitions?"
+    },
+    {
+        "x": 7.278783,
+        "y": -6.204032,
+        "post_id": "220",
+        "posts_count": 3,
+        "tags": [
+            "storage",
+            "quota"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/why-am-i-exceeding-the-quota/220/",
+        "views": 67,
+        "like_count": 0,
+        "title": "Why am I exceeding the quota?"
+    },
+    {
+        "x": -8.640157,
+        "y": 7.029402,
+        "post_id": "37",
+        "posts_count": 4,
+        "tags": [
+            "programming-for-hpc",
+            "hpc-getting-started",
+            "scheduler",
+            "htc"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-get-my-jobs-to-be-scheduled-as-fast-as-possible/37/",
+        "views": 117,
+        "like_count": 1,
+        "title": "How do I get my jobs to be scheduled as fast as possible?"
+    },
+    {
+        "x": -9.550567,
+        "y": 9.337203,
+        "post_id": "107",
+        "posts_count": 3,
+        "tags": [
+            "filesystems",
+            "storage",
+            "lustre"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/when-should-i-use-scratch-and-when-should-i-use-home/107/",
+        "views": 103,
+        "like_count": 1,
+        "title": "When should I use /scratch and when should I use /home?"
+    },
+    {
+        "x": 10.928635,
+        "y": -9.683236,
+        "post_id": "206",
+        "posts_count": 2,
+        "tags": [
+            "programming-for-hpc",
+            "mpi"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/mpi-program-runs-out-of-memory/206/",
+        "views": 99,
+        "like_count": 0,
+        "title": "MPI program runs out of memory"
+    },
+    {
+        "x": 8.00186,
+        "y": -5.581835,
+        "post_id": "159",
+        "posts_count": 2,
+        "tags": [
+            "programming-for-hpc",
+            "scheduler",
+            "parallelization"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-to-achieve-the-best-throughput-of-many-parallel-jobs/159/",
+        "views": 90,
+        "like_count": 0,
+        "title": "How to achieve the best throughput of many parallel jobs?"
+    },
+    {
+        "x": 5.980198,
+        "y": -3.862746,
+        "post_id": "26",
+        "posts_count": 2,
+        "tags": [
+            "scheduler",
+            "cgroups"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-are-cgroups-and-how-are-people-using-them-for-cluster-administration/26/",
+        "views": 87,
+        "like_count": 1,
+        "title": "What are cgroups and how are people using them for cluster administration?"
+    },
+    {
+        "x": -3.998229,
+        "y": 4.323791,
+        "post_id": "934",
+        "posts_count": 4,
+        "tags": [
+            "computational-chemistry",
+            "molecular-dynamics",
+            "gromacs"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/implementing-full-geometry-constraints-in-gromacs-simulations/934/",
+        "views": 212,
+        "like_count": 0,
+        "title": "Implementing full geometry constraints in GROMACS simulations"
+    },
+    {
+        "x": -11.469492,
+        "y": 10.969005,
+        "post_id": "32",
+        "posts_count": 3,
+        "tags": [
+            "zeta:se-ready",
+            "slurm",
+            "scripting",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-convert-my-openmpi-pbs-job-script-to-a-slurm-script/32/",
+        "views": 125,
+        "like_count": 0,
+        "title": "How do I convert my openmpi PBS job script to a SLURM script?"
+    },
+    {
+        "x": 3.68322,
+        "y": -0.806324,
+        "post_id": "112",
+        "posts_count": 2,
+        "tags": [
+            "htc",
+            "parallelization"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/hpc-versus-htc-differences/112/",
+        "views": 2548,
+        "like_count": 0,
+        "title": "HPC versus HTC differences"
+    },
+    {
+        "x": -2.285304,
+        "y": 3.834294,
+        "post_id": "113",
+        "posts_count": 2,
+        "tags": [
+            "environment-modules"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-is-the-best-place-and-or-mechanism-to-load-modules-to-run-a-calculation/113/",
+        "views": 104,
+        "like_count": 0,
+        "title": "What is the best place and/or mechanism to load modules to run a calculation?"
+    },
+    {
+        "x": -7.023553,
+        "y": 7.135927,
+        "post_id": "279",
+        "posts_count": 2,
+        "tags": [
+            "research-software",
+            "molecular-dynamics"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/can-anyone-provide-a-brief-overview-of-lammps-and-its-capabilities/279/",
+        "views": 69,
+        "like_count": 0,
+        "title": "Can anyone provide a brief overview of LAMMPS and its capabilities?"
+    },
+    {
+        "x": 11.303619,
+        "y": -9.178246,
+        "post_id": "283",
+        "posts_count": 2,
+        "tags": [
+            "hpc-getting-started",
+            "gpfs",
+            "spectrum-scale"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-i-find-information-about-the-version-of-gpfs-running-on-a-cluster/283/",
+        "views": 112,
+        "like_count": 0,
+        "title": "How can I find information about the version of GPFS running on a cluster?"
+    },
+    {
+        "x": -5.331872,
+        "y": 5.862491,
+        "post_id": "150",
+        "posts_count": 3,
+        "tags": [
+            "memory",
+            "slurm",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-i-use-slurm-s-sacct-command-to-show-memory-usage-statistics-on-a-cluster-that-i-am-administering/150/",
+        "views": 3020,
+        "like_count": 1,
+        "title": "How can I use SLURM\u2019s sacct command to show memory usage statistics on a cluster that I am administering?"
+    },
+    {
+        "x": 13.139805,
+        "y": -11.279524,
+        "post_id": "82",
+        "posts_count": 2,
+        "tags": [
+            "molecular-dynamics",
+            "gpu",
+            "mpi",
+            "slurm",
+            "amber",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/running-amber-using-gpus-under-slurm-with-the-mvapich-version-of-mpi/82/",
+        "views": 50,
+        "like_count": 0,
+        "title": "Running Amber using GPUs under SLURM with the MVAPICH version of MPI"
+    },
+    {
+        "x": 12.141968,
+        "y": -10.216612,
+        "post_id": "1065",
+        "posts_count": 2,
+        "tags": [
+            "monitoring",
+            "qow"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/power-watts-utilization-data-from-nodes/1065/",
+        "views": 103,
+        "like_count": 0,
+        "title": "Power (watts) utilization data from nodes"
+    },
+    {
+        "x": 9.259976,
+        "y": -7.084376,
+        "post_id": "809",
+        "posts_count": 2,
+        "tags": [
+            "slurm",
+            "qow",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/pre-empting-job-termination-by-the-scheduler/809/",
+        "views": 175,
+        "like_count": 0,
+        "title": "Pre-empting job termination by the scheduler"
+    },
+    {
+        "x": 1.598422,
+        "y": 0.360586,
+        "post_id": "222",
+        "posts_count": 4,
+        "tags": [
+            "programming-for-hpc",
+            "scripting",
+            "parallelization",
+            "python"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-know-if-my-job-is-parallelizing-when-submitted-as-a-batch-script/222/",
+        "views": 82,
+        "like_count": 2,
+        "title": "How do I know if my job is parallelizing when submitted as a batch script?"
+    },
+    {
+        "x": 11.03623,
+        "y": -9.082861,
+        "post_id": "749",
+        "posts_count": 2,
+        "tags": [
+            "pbs",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/cannot-determine-start-time-for-job/749/",
+        "views": 176,
+        "like_count": 0,
+        "title": "Cannot determine start time for job"
+    },
+    {
+        "x": -6.211676,
+        "y": 6.074035,
+        "post_id": "744",
+        "posts_count": 3,
+        "tags": [
+            "bash",
+            "getting-started"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-do-insert-thing-here-in-bash/744/",
+        "views": 323,
+        "like_count": 1,
+        "title": "How do I do <insert thing here> in bash?"
+    },
+    {
+        "x": 8.815495,
+        "y": -6.967948,
+        "post_id": "79",
+        "posts_count": 4,
+        "tags": [
+            "hpc-arch-and-perf"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-are-good-tools-for-determining-where-a-program-is-spending-the-most-wallclock-time/79/",
+        "views": 149,
+        "like_count": 0,
+        "title": "What are good tools for determining where a program is spending the most wallclock time?"
+    },
+    {
+        "x": -10.24539,
+        "y": 7.750527,
+        "post_id": "644",
+        "posts_count": 2,
+        "tags": [
+            "research-software",
+            "open-source",
+            "paraview"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-run-paraview-or-openfoam-on-an-hpc-resource/644/",
+        "views": 789,
+        "like_count": 0,
+        "title": "How do I run paraview or openfoam on an HPC resource?"
+    },
+    {
+        "x": 11.240112,
+        "y": -9.964641,
+        "post_id": "193",
+        "posts_count": 2,
+        "tags": [
+            "scholarly-communication",
+            "publish"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/which-conferences-are-available-for-the-publishing-of-scholarly-work-in-research-computing/193/",
+        "views": 65,
+        "like_count": 0,
+        "title": "Which conferences are available for the publishing of scholarly work in research computing?"
+    },
+    {
+        "x": -9.035688,
+        "y": 7.955341,
+        "post_id": "597",
+        "posts_count": 3,
+        "tags": [
+            "bioinformatics"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/do-you-have-bioinformatic-specific-script-examples-to-share/597/",
+        "views": 375,
+        "like_count": 1,
+        "title": "Do you have bioinformatic specific script examples to share?"
+    },
+    {
+        "x": -4.383178,
+        "y": 4.747875,
+        "post_id": "275",
+        "posts_count": 3,
+        "tags": [
+            "r",
+            "data-lifecycle",
+            "archiving"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-to-prepare-projects-in-r-for-archiving/275/",
+        "views": 182,
+        "like_count": 0,
+        "title": "How to prepare projects in R for archiving?"
+    },
+    {
+        "x": -6.188808,
+        "y": 5.398079,
+        "post_id": "325",
+        "posts_count": 4,
+        "tags": [
+            "pending-jobs",
+            "slurm",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/slurm-how-can-i-get-more-details-about-why-a-job-still-pending-execution/325/",
+        "views": 1345,
+        "like_count": 0,
+        "title": "SLURM: how can I get more details about why a job still pending execution?"
+    },
+    {
+        "x": -9.629625,
+        "y": 8.340156,
+        "post_id": "171",
+        "posts_count": 4,
+        "tags": [
+            "python",
+            "programming-for-hpc",
+            "zeta:for-sc18",
+            "parallelization"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-is-the-most-efficient-python-package-to-run-a-parallel-job-over-multiple-nodes/171/",
+        "views": 1030,
+        "like_count": 0,
+        "title": "What is the most efficient Python package to run a parallel job over multiple nodes?"
+    },
+    {
+        "x": -4.213863,
+        "y": 4.609826,
+        "post_id": "513",
+        "posts_count": 5,
+        "tags": [
+            "slurm",
+            "administering-hpc",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/is-it-possible-and-advisable-to-run-turbomole-without-ssh-enabled/513/",
+        "views": 219,
+        "like_count": 2,
+        "title": "Is it possible (and advisable) to run Turbomole without ssh enabled?"
+    },
+    {
+        "x": -5.065707,
+        "y": 4.342359,
+        "post_id": "90",
+        "posts_count": 3,
+        "tags": [
+            "slurm",
+            "programming-for-hpc",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/obtaining-local-temporary-disk-space-information-using-slurm/90/",
+        "views": 401,
+        "like_count": 1,
+        "title": "Obtaining local (temporary) disk space information using SLURM"
+    },
+    {
+        "x": -9.776365,
+        "y": 9.109959,
+        "post_id": "136",
+        "posts_count": 4,
+        "tags": [
+            "scholarly-communication",
+            "training",
+            "software-carpentry"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-get-involved-in-software-carpentry/136/",
+        "views": 242,
+        "like_count": 0,
+        "title": "How do I get involved in Software Carpentry?"
+    },
+    {
+        "x": 2.529567,
+        "y": 0.471394,
+        "post_id": "116",
+        "posts_count": 2,
+        "tags": [
+            "aws",
+            "s3",
+            "globus",
+            "cloud",
+            "data-transfer"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/transferring-multiple-tb-sized-files-between-my-local-cluster-and-aws-s3-storage/116/",
+        "views": 94,
+        "like_count": 0,
+        "title": "Transferring multiple TB-sized files between my local cluster and AWS S3 storage"
+    },
+    {
+        "x": 0.513854,
+        "y": 1.647929,
+        "post_id": "271",
+        "posts_count": 3,
+        "tags": [
+            "parameter-sweep",
+            "sge",
+            "scripting",
+            "scheduler",
+            "getting-started"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/is-there-a-way-to-do-startup-and-cleanup-tasks-with-an-sge-task-array/271/",
+        "views": 160,
+        "like_count": 0,
+        "title": "Is there a way to do startup and cleanup tasks with an SGE task array?"
+    },
+    {
+        "x": 7.360029,
+        "y": -5.922637,
+        "post_id": "110",
+        "posts_count": 2,
+        "tags": [
+            "easybuild",
+            "netcdf"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-i-use-easybuild-to-manage-building-multiple-versions-of-netcdf-for-different-compiler-and-mpi-versions/110/",
+        "views": 96,
+        "like_count": 0,
+        "title": "How can I use EasyBuild to manage building multiple versions of netCDF for different compiler and MPI versions?"
+    },
+    {
+        "x": 3.605261,
+        "y": -0.221959,
+        "post_id": "101",
+        "posts_count": 2,
+        "tags": [
+            "environment-modules",
+            "managing-sw"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/environment-modules-file-for-my-own-build-of-lampps-netcdf-and-mpi/101/",
+        "views": 101,
+        "like_count": 0,
+        "title": "Environment modules file for my own build of LAMPPS, netCDF and MPI"
+    },
+    {
+        "x": 3.639871,
+        "y": -2.010609,
+        "post_id": "232",
+        "posts_count": 2,
+        "tags": [
+            "gaussian",
+            "computational-chemistry",
+            "quantum-chemistry",
+            "dft"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-many-processors-and-how-much-memory-should-i-request-for-a-gaussian-calculation/232/",
+        "views": 268,
+        "like_count": 0,
+        "title": "How many processors and how much memory should I request for a Gaussian calculation?"
+    },
+    {
+        "x": 1.7007,
+        "y": -0.033791,
+        "post_id": "86",
+        "posts_count": 2,
+        "tags": [
+            "cloud",
+            "docker",
+            "aws",
+            "scheduler",
+            "comparison"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/when-should-i-use-cfncluster-over-batch-for-hpc-workloads-in-aws/86/",
+        "views": 389,
+        "like_count": 0,
+        "title": "When should I use CfnCluster over Batch for HPC workloads in AWS?"
+    },
+    {
+        "x": 6.043744,
+        "y": -4.047963,
+        "post_id": "269",
+        "posts_count": 2,
+        "tags": [
+            "parameter-sweep",
+            "programming-for-hpc",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-do-a-parameter-sweep-with-sge/269/",
+        "views": 95,
+        "like_count": 0,
+        "title": "How do I do a \"parameter-sweep\" with SGE?"
+    },
+    {
+        "x": -5.527185,
+        "y": 6.40234,
+        "post_id": "510",
+        "posts_count": 6,
+        "tags": [
+            "cluster-management"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/managing-make-on-login-j/510/",
+        "views": 253,
+        "like_count": 1,
+        "title": "Managing make on login (-j)"
+    },
+    {
+        "x": 1.954212,
+        "y": -0.440417,
+        "post_id": "991",
+        "posts_count": 2,
+        "tags": [],
+        "url": "https://ask.cyberinfrastructure.org/t/running-different-grub2-configuration-for-multiple-diskless-clients/991/",
+        "views": 92,
+        "like_count": 1,
+        "title": "Running Different GRUB2 Configuration for Multiple Diskless Clients?"
+    },
+    {
+        "x": 12.912607,
+        "y": -11.018942,
+        "post_id": "170",
+        "posts_count": 2,
+        "tags": [
+            "r",
+            "programming-for-hpc"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/r-random-number-generation-in-an-hpc-environment/170/",
+        "views": 206,
+        "like_count": 0,
+        "title": "R Random number generation in an HPC environment"
+    },
+    {
+        "x": -11.87968,
+        "y": 12.410892,
+        "post_id": "1035",
+        "posts_count": 5,
+        "tags": [
+            "mpi",
+            "infiniband",
+            "qow"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/anyone-else-have-failures-with-intel-2019-mpi-with-mellanox-ib-for-of-cores-300/1035/",
+        "views": 335,
+        "like_count": 0,
+        "title": "Anyone else have failures with Intel 2019-mpi with Mellanox IB for # of cores > 300?"
+    },
+    {
+        "x": 11.757904,
+        "y": -9.843491,
+        "post_id": "971",
+        "posts_count": 3,
+        "tags": [
+            "ondemand"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-develop-applications-with-open-on-demand/971/",
+        "views": 129,
+        "like_count": 0,
+        "title": "How do I develop applications with Open On Demand?"
+    },
+    {
+        "x": 2.546357,
+        "y": -0.243503,
+        "post_id": "262",
+        "posts_count": 3,
+        "tags": [
+            "computational-chemistry",
+            "quantum-chemistry",
+            "gamess"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/does-gamess-benefit-from-running-calculations-on-multiple-compute-nodes-if-so-what-methods-scale-the-best-across-many-compute-nodes-on-a-cluster/262/",
+        "views": 129,
+        "like_count": 0,
+        "title": "Does GAMESS benefit from running calculations on multiple compute nodes? If so, what methods scale the best across many compute nodes on a cluster?"
+    },
+    {
+        "x": 9.229158,
+        "y": -7.349936,
+        "post_id": "261",
+        "posts_count": 2,
+        "tags": [
+            "computational-chemistry",
+            "quantum-chemistry",
+            "gamess"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/is-there-a-way-to-reduce-the-amount-of-disk-files-gamess-uses-or-even-run-the-calculations-entirely-in-ram/261/",
+        "views": 108,
+        "like_count": 0,
+        "title": "Is there a way to reduce the amount of disk files GAMESS uses, or even run the calculations entirely in RAM?"
+    },
+    {
+        "x": 7.330439,
+        "y": -6.496476,
+        "post_id": "109",
+        "posts_count": 2,
+        "tags": [
+            "cloud",
+            "aws",
+            "pricing"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-will-the-aws-suspend-capability-affect-price-comparisons-between-in-house-operated-resources-and-cloud-based/109/",
+        "views": 84,
+        "like_count": 0,
+        "title": "How will the AWS suspend capability affect price comparisons between in-house operated resources and cloud based?"
+    },
+    {
+        "x": -5.192691,
+        "y": 5.520017,
+        "post_id": "1063",
+        "posts_count": 3,
+        "tags": [
+            "backup",
+            "data-center"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/ups-battery-backup-for-hpc-systems/1063/",
+        "views": 64,
+        "like_count": 0,
+        "title": "UPS / Battery Backup For HPC Systems"
+    },
+    {
+        "x": 5.214215,
+        "y": -3.117616,
+        "post_id": "80",
+        "posts_count": 3,
+        "tags": [
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-estimate-wall-clock-time/80/",
+        "views": 91,
+        "like_count": 0,
+        "title": "How do I estimate wall clock time?"
+    },
+    {
+        "x": 12.561652,
+        "y": -11.18048,
+        "post_id": "198",
+        "posts_count": 2,
+        "tags": [
+            "network",
+            "interconnect",
+            "infiniband",
+            "opa",
+            "hpc-cluster-architecture"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-are-on-loading-and-off-loading-interconnects/198/",
+        "views": 82,
+        "like_count": 0,
+        "title": "What are on-loading and off-loading interconnects?"
+    },
+    {
+        "x": 6.299712,
+        "y": -4.136198,
+        "post_id": "221",
+        "posts_count": 3,
+        "tags": [
+            "connection",
+            "ssh"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/why-does-my-remote-session-to-the-cluster-get-disconnected/221/",
+        "views": 41,
+        "like_count": 0,
+        "title": "Why does my remote session to the cluster get disconnected?"
+    },
+    {
+        "x": 2.093992,
+        "y": 0.247649,
+        "post_id": "40",
+        "posts_count": 2,
+        "tags": [
+            "slurm",
+            "scripting",
+            "scheduler",
+            "mpi",
+            "openmp"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-write-a-slurm-batch-script-for-jobs-that-use-both-mpi-and-openmp/40/",
+        "views": 119,
+        "like_count": 0,
+        "title": "How do I write a SLURM batch script for jobs that use both MPI and OpenMP?"
+    },
+    {
+        "x": 10.142055,
+        "y": -8.325206,
+        "post_id": "78",
+        "posts_count": 2,
+        "tags": [
+            "slurm",
+            "scripting",
+            "scheduler",
+            "mpi"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-submit-an-mpi-openmp-job-in-a-slurm-cluster/78/",
+        "views": 68,
+        "like_count": 0,
+        "title": "How do I submit an MPI/OpenMP job in a slurm cluster?"
+    },
+    {
+        "x": 2.065704,
+        "y": -0.358451,
+        "post_id": "280",
+        "posts_count": 5,
+        "tags": [
+            "notebooks"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-types-of-electronic-lab-notebooks-eln-are-available-and-what-criteria-do-i-use-to-decide-which-one-to-use/280/",
+        "views": 205,
+        "like_count": 0,
+        "title": "What types of Electronic Lab Notebooks (ELN) are available and what criteria do I use to decide which one to use?"
+    },
+    {
+        "x": -0.491044,
+        "y": 2.616482,
+        "post_id": "277",
+        "posts_count": 2,
+        "tags": [
+            "dft",
+            "research-software"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/build-of-abinit-v8-with-netcdf/277/",
+        "views": 110,
+        "like_count": 0,
+        "title": "Build of Abinit v8 with netCDF"
+    },
+    {
+        "x": 10.256385,
+        "y": -8.931632,
+        "post_id": "248",
+        "posts_count": 3,
+        "tags": [
+            "debugging",
+            "r"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-to-debug-r-code-within-a-package/248/",
+        "views": 117,
+        "like_count": 1,
+        "title": "How to debug R code within a package"
+    },
+    {
+        "x": 12.937634,
+        "y": -11.446754,
+        "post_id": "268",
+        "posts_count": 1,
+        "tags": [
+            "security"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/duo-for-multi-factor-authentication-using-bridges/268/",
+        "views": 83,
+        "like_count": 0,
+        "title": "Duo for Multi-Factor Authentication using Bridges"
+    },
+    {
+        "x": 10.834929,
+        "y": -9.035014,
+        "post_id": "278",
+        "posts_count": 2,
+        "tags": [
+            "storage"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-can-i-mount-a-common-internet-file-system-cifs-on-a-linux-server-with-group-write-permissions/278/",
+        "views": 69,
+        "like_count": 0,
+        "title": "How can I mount a Common Internet File System (CIFS) on a Linux server with group write permissions?"
+    },
+    {
+        "x": 13.060376,
+        "y": -11.425036,
+        "post_id": "210",
+        "posts_count": 1,
+        "tags": [],
+        "url": "https://ask.cyberinfrastructure.org/t/about-the-discussion-zone-category/210/",
+        "views": 105,
+        "like_count": 0,
+        "title": "About the Discussion Zone category"
+    },
+    {
+        "x": 8.192677,
+        "y": -6.258985,
+        "post_id": "1040",
+        "posts_count": 1,
+        "tags": [
+            "performance",
+            "vm",
+            "windows"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/understanding-compute-demand-performance-on-windows-vm/1040/",
+        "views": 55,
+        "like_count": 0,
+        "title": "Understanding compute demand & performance on Windows (VM)"
+    },
+    {
+        "x": 9.901331,
+        "y": -7.74743,
+        "post_id": "797",
+        "posts_count": 1,
+        "tags": [
+            "network",
+            "cloud",
+            "qow"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-is-storage-performance-for-high-i-o-hpc-jobs-affected-by-running-in-the-cloud/797/",
+        "views": 337,
+        "like_count": 0,
+        "title": "How is storage performance for high I/O HPC jobs affected by running in the cloud?"
+    },
+    {
+        "x": -10.06025,
+        "y": 8.386106,
+        "post_id": "1081",
+        "posts_count": 5,
+        "tags": [
+            "optimization"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-could-you-provide-an-optimization-service/1081/",
+        "views": 76,
+        "like_count": 0,
+        "title": "How could you provide an optimization service?"
+    },
+    {
+        "x": -9.898211,
+        "y": 8.095063,
+        "post_id": "1079",
+        "posts_count": 8,
+        "tags": [
+            "support",
+            "help"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/hpc-how-do-you-ask-for-help/1079/",
+        "views": 147,
+        "like_count": 0,
+        "title": "HPC: How do you ask for help?"
+    },
+    {
+        "x": -4.437609,
+        "y": 5.350998,
+        "post_id": "1073",
+        "posts_count": 6,
+        "tags": [
+            "hpc-getting-started",
+            "anatomy",
+            "physiology",
+            "bioinformatics"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/anatomy-physiology-hpc-use-cases/1073/",
+        "views": 71,
+        "like_count": 0,
+        "title": "Anatomy & Physiology HPC Use-Cases"
+    },
+    {
+        "x": -7.613231,
+        "y": 7.242013,
+        "post_id": "1045",
+        "posts_count": 7,
+        "tags": [
+            "qow",
+            "hpc-tools"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/useful-tools-for-hpc-research-and-in-general/1045/",
+        "views": 282,
+        "like_count": 0,
+        "title": "Useful Tools for HPC Research (and in General)"
+    },
+    {
+        "x": -12.410895,
+        "y": 11.11717,
+        "post_id": "1018",
+        "posts_count": 6,
+        "tags": [
+            "research-computing",
+            "networking"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-conferences-might-i-attend-that-focus-on-research-computing-and-facilitation/1018/",
+        "views": 153,
+        "like_count": 1,
+        "title": "What conferences might I attend that focus on Research Computing and Facilitation?"
+    },
+    {
+        "x": 10.67791,
+        "y": -9.653537,
+        "post_id": "1076",
+        "posts_count": 2,
+        "tags": [
+            "cyberinfrastructure"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/ci-needs-survey/1076/",
+        "views": 49,
+        "like_count": 0,
+        "title": "CI Needs Survey"
+    },
+    {
+        "x": -11.228517,
+        "y": 10.078685,
+        "post_id": "1064",
+        "posts_count": 2,
+        "tags": [
+            "qow"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/future-direction-of-question-of-the-week/1064/",
+        "views": 48,
+        "like_count": 0,
+        "title": "Future Direction of Question of the Week"
+    },
+    {
+        "x": 9.228103,
+        "y": -7.50276,
+        "post_id": "953",
+        "posts_count": 1,
+        "tags": [
+            "mpi",
+            "qow"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/getting-started-with-roce/953/",
+        "views": 159,
+        "like_count": 0,
+        "title": "Getting started with RoCE?"
+    },
+    {
+        "x": -10.407792,
+        "y": 8.820866,
+        "post_id": "533",
+        "posts_count": 7,
+        "tags": [
+            "hpc-cluster-architecture"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/using-ram-disk-on-the-queuing-system-to-optimize-file-i-o/533/",
+        "views": 406,
+        "like_count": 2,
+        "title": "Using RAM Disk on the queuing system to optimize file I/O"
+    },
+    {
+        "x": -12.026159,
+        "y": 10.710741,
+        "post_id": "1023",
+        "posts_count": 8,
+        "tags": [
+            "ondemand",
+            "vnc",
+            "qow"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/vnc-fastx-open-ondemand-experience-opinions/1023/",
+        "views": 271,
+        "like_count": 1,
+        "title": "VNC, FastX, Open OnDemand experience, opinions?"
+    },
+    {
+        "x": -9.211801,
+        "y": 8.480371,
+        "post_id": "961",
+        "posts_count": 9,
+        "tags": [
+            "monitoring",
+            "administering-hpc",
+            "qow",
+            "cluster-management",
+            "prometheus"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/automated-hpc-testing-tools-and-techniques/961/",
+        "views": 320,
+        "like_count": 1,
+        "title": "Automated HPC testing tools and techniques?"
+    },
+    {
+        "x": 7.294671,
+        "y": -5.398893,
+        "post_id": "1021",
+        "posts_count": 2,
+        "tags": [],
+        "url": "https://ask.cyberinfrastructure.org/t/what-is-a-checkpoint/1021/",
+        "views": 101,
+        "like_count": 0,
+        "title": "What is a checkpoint?"
+    },
+    {
+        "x": -11.210506,
+        "y": 10.45756,
+        "post_id": "975",
+        "posts_count": 3,
+        "tags": [],
+        "url": "https://ask.cyberinfrastructure.org/t/the-lifecycle-of-a-cluster/975/",
+        "views": 158,
+        "like_count": 0,
+        "title": "The lifecycle of a cluster"
+    },
+    {
+        "x": 8.258324,
+        "y": -7.246645,
+        "post_id": "115",
+        "posts_count": 2,
+        "tags": [
+            "privacy",
+            "data-compliance",
+            "secure-data-architecture"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/best-practices-for-compliance-with-requirements-for-private-and-or-personally-identifiable-data/115/",
+        "views": 118,
+        "like_count": 0,
+        "title": "Best practices for compliance with requirements for private and/or personally identifiable data"
+    },
+    {
+        "x": -11.76682,
+        "y": 10.723187,
+        "post_id": "932",
+        "posts_count": 4,
+        "tags": [
+            "tensorflow",
+            "gpu",
+            "qow",
+            "pytorch"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/monitoring-gpu-usage/932/",
+        "views": 358,
+        "like_count": 1,
+        "title": "Monitoring GPU usage"
+    },
+    {
+        "x": -8.914977,
+        "y": 8.911876,
+        "post_id": "996",
+        "posts_count": 4,
+        "tags": [
+            "cloud",
+            "storage"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/rclone-vs-sftp-for-box-com/996/",
+        "views": 144,
+        "like_count": 0,
+        "title": "Rclone vs sftp for Box.com"
+    },
+    {
+        "x": -12.564542,
+        "y": 12.61305,
+        "post_id": "989",
+        "posts_count": 21,
+        "tags": [],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-create-a-docker-container-for-openfoam-1-6-ext/989/",
+        "views": 259,
+        "like_count": 3,
+        "title": "How do I create a docker container for OpenFOAM-1.6-ext"
+    },
+    {
+        "x": -8.62354,
+        "y": 7.988207,
+        "post_id": "114",
+        "posts_count": 9,
+        "tags": [
+            "file-transfer",
+            "data-transfer",
+            "globus"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-are-fast-ways-to-make-bulk-transfers/114/",
+        "views": 177,
+        "like_count": 0,
+        "title": "What are fast ways to make bulk transfers?"
+    },
+    {
+        "x": -12.157287,
+        "y": 11.058936,
+        "post_id": "792",
+        "posts_count": 12,
+        "tags": [
+            "research-software",
+            "administering-hpc"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/custom-software-stack-environment-for-user-no-sudo-root/792/",
+        "views": 531,
+        "like_count": 2,
+        "title": "Custom software stack environment for user (no sudo/root)"
+    },
+    {
+        "x": 12.664659,
+        "y": -10.684714,
+        "post_id": "254",
+        "posts_count": 1,
+        "tags": [
+            "monitoring",
+            "allocations",
+            "xsede"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/are-there-guidelines-and-or-restrictions-for-monitoring-resource-allocation-session-per-user/254/",
+        "views": 69,
+        "like_count": 0,
+        "title": "Are there guidelines and/or restrictions for monitoring resource allocation session per user?"
+    },
+    {
+        "x": 4.318769,
+        "y": -2.785241,
+        "post_id": "88",
+        "posts_count": 2,
+        "tags": [
+            "slurm",
+            "scheduler",
+            "parallelization"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/under-what-conditions-should-i-use-mpi-to-run-jobs-in-parallel/88/",
+        "views": 123,
+        "like_count": 0,
+        "title": "Under what conditions should I use MPI to run jobs in parallel?"
+    },
+    {
+        "x": -1.286432,
+        "y": 2.846449,
+        "post_id": "920",
+        "posts_count": 2,
+        "tags": [
+            "programming-for-hpc",
+            "qow",
+            "hadoop"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-busy-is-your-hadoop-cluster/920/",
+        "views": 223,
+        "like_count": 1,
+        "title": "How busy is your Hadoop cluster?"
+    },
+    {
+        "x": -0.014151,
+        "y": 1.763876,
+        "post_id": "105",
+        "posts_count": 2,
+        "tags": [
+            "storage",
+            "encryption",
+            "security",
+            "secure-data-architecture"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-sort-of-approaches-work-well-for-providing-encrypted-storage-for-research-computing-environments/105/",
+        "views": 148,
+        "like_count": 0,
+        "title": "What sort of approaches work well for providing encrypted storage for research computing environments?"
+    },
+    {
+        "x": 4.577337,
+        "y": -2.352068,
+        "post_id": "580",
+        "posts_count": 4,
+        "tags": [
+            "api"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/programmatic-access-via-api/580/",
+        "views": 222,
+        "like_count": 0,
+        "title": "Programmatic Access via API"
+    },
+    {
+        "x": -11.834598,
+        "y": 10.144607,
+        "post_id": "856",
+        "posts_count": 4,
+        "tags": [
+            "deployment",
+            "cluster",
+            "qow"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-i-create-my-own-cluster/856/",
+        "views": 372,
+        "like_count": 5,
+        "title": "How do I create my own cluster?"
+    },
+    {
+        "x": -3.827264,
+        "y": 5.411253,
+        "post_id": "821",
+        "posts_count": 3,
+        "tags": [
+            "speculation",
+            "food-for-thought"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-are-the-biggest-misconceptions-about-hpc/821/",
+        "views": 218,
+        "like_count": 4,
+        "title": "What are the biggest misconceptions about HPC?"
+    },
+    {
+        "x": -12.245225,
+        "y": 10.45788,
+        "post_id": "443",
+        "posts_count": 9,
+        "tags": [
+            "containers",
+            "singularity"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-support-does-your-center-provide-for-containers/443/",
+        "views": 457,
+        "like_count": 4,
+        "title": "What support does your center provide for containers?"
+    },
+    {
+        "x": -4.853617,
+        "y": 4.692773,
+        "post_id": "612",
+        "posts_count": 3,
+        "tags": [
+            "research-software",
+            "bioinformatics",
+            "open-source",
+            "comparison"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/easybuild-vs-spack-anyone-have-opinions-of-which-is-better-for-bioinformatics/612/",
+        "views": 851,
+        "like_count": 2,
+        "title": "Easybuild vs Spack: Anyone have opinions of which is better for bioinformatics?"
+    },
+    {
+        "x": -2.073836,
+        "y": 3.449994,
+        "post_id": "676",
+        "posts_count": 2,
+        "tags": [
+            "administering-hpc"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/hpc-access-models-many-nodes-for-short-periods-of-time/676/",
+        "views": 180,
+        "like_count": 0,
+        "title": "HPC access models: many nodes for short periods of time"
+    },
+    {
+        "x": -6.199051,
+        "y": 7.013069,
+        "post_id": "733",
+        "posts_count": 3,
+        "tags": [
+            "job-array"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-are-good-uses-for-job-arrays/733/",
+        "views": 198,
+        "like_count": 3,
+        "title": "What are good uses for job arrays?"
+    },
+    {
+        "x": 3.734113,
+        "y": -1.410138,
+        "post_id": "89",
+        "posts_count": 6,
+        "tags": [
+            "training",
+            "getting-started"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/hello-world-examples-for-hpc-training/89/",
+        "views": 354,
+        "like_count": 1,
+        "title": "Hello world examples for HPC training"
+    },
+    {
+        "x": -5.934863,
+        "y": 6.641279,
+        "post_id": "129",
+        "posts_count": 2,
+        "tags": [
+            "scholarly-communication",
+            "publication",
+            "provenance"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-tools-or-techniques-can-i-use-to-make-it-possible-for-my-software-to-be-cited-in-research-papers/129/",
+        "views": 195,
+        "like_count": 0,
+        "title": "What tools or techniques can I use to make it possible for my software to be cited in research papers?"
+    },
+    {
+        "x": 2.866877,
+        "y": 0.094885,
+        "post_id": "84",
+        "posts_count": 3,
+        "tags": [
+            "hpc-getting-started",
+            "parallelization"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/simple-parallel-program-to-introduce-nuclear-engineering-students-to-using-hpc-resources/84/",
+        "views": 214,
+        "like_count": 0,
+        "title": "Simple parallel program to introduce Nuclear Engineering students to using HPC resources?"
+    },
+    {
+        "x": -11.349408,
+        "y": 10.124338,
+        "post_id": "91",
+        "posts_count": 5,
+        "tags": [
+            "gce",
+            "azure",
+            "aws",
+            "cloud",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/hpc-job-managers-and-migrating-to-the-cloud/91/",
+        "views": 330,
+        "like_count": 0,
+        "title": "HPC job managers and migrating to the cloud"
+    },
+    {
+        "x": 3.073231,
+        "y": -0.269874,
+        "post_id": "441",
+        "posts_count": 2,
+        "tags": [
+            "cost-analysis"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/cost-of-running-hpc-nodes/441/",
+        "views": 227,
+        "like_count": 1,
+        "title": "Cost of running hpc nodes"
+    },
+    {
+        "x": 0.050624,
+        "y": 1.450852,
+        "post_id": "427",
+        "posts_count": 2,
+        "tags": [
+            "tensorflow",
+            "gpu",
+            "ai",
+            "neural-network",
+            "qow"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/optimizing-very-large-neural-network-that-is-greater-than-size-of-gpu-memory/427/",
+        "views": 709,
+        "like_count": 0,
+        "title": "Optimizing very large neural network that is greater than size of GPU memory"
+    },
+    {
+        "x": 3.954741,
+        "y": -1.030618,
+        "post_id": "394",
+        "posts_count": 3,
+        "tags": [],
+        "url": "https://ask.cyberinfrastructure.org/t/what-configurations-best-support-sensitive-data-in-a-shared-cluster-environment/394/",
+        "views": 223,
+        "like_count": 1,
+        "title": "What configurations best support sensitive data in a shared cluster environment?"
+    },
+    {
+        "x": -10.606712,
+        "y": 9.888289,
+        "post_id": "368",
+        "posts_count": 3,
+        "tags": [
+            "jupyter"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/economics-of-jupyterhub-at-scale/368/",
+        "views": 253,
+        "like_count": 0,
+        "title": "Economics of JupyterHub at Scale?"
+    },
+    {
+        "x": 10.585759,
+        "y": -8.420236,
+        "post_id": "197",
+        "posts_count": 2,
+        "tags": [
+            "training",
+            "getting-started"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/hpc-training-resources/197/",
+        "views": 223,
+        "like_count": 0,
+        "title": "HPC Training Resources"
+    },
+    {
+        "x": 6.401676,
+        "y": -4.506307,
+        "post_id": "245",
+        "posts_count": 2,
+        "tags": [
+            "image-processing",
+            "deep-learning"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/what-packages-are-most-efficient-for-image-classification/245/",
+        "views": 63,
+        "like_count": 0,
+        "title": "What packages are most efficient for image classification?"
+    },
+    {
+        "x": 11.79283,
+        "y": -10.358209,
+        "post_id": "154",
+        "posts_count": 2,
+        "tags": [
+            "data-compliance",
+            "data-lifecycle",
+            "getting-started"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/where-can-i-find-introductory-material-on-publishing-research-data/154/",
+        "views": 138,
+        "like_count": 0,
+        "title": "Where can I find introductory material on publishing research data?"
+    },
+    {
+        "x": 11.321221,
+        "y": -10.270763,
+        "post_id": "99",
+        "posts_count": 2,
+        "tags": [
+            "cloud",
+            "aws",
+            "gce",
+            "azure"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-suited-to-hpc-software-are-cloud-resources-including-aws-azure-and-gce/99/",
+        "views": 162,
+        "like_count": 0,
+        "title": "How suited to HPC software are cloud resources, including AWS, Azure and GCE?"
+    },
+    {
+        "x": 1.684375,
+        "y": 1.10972,
+        "post_id": "273",
+        "posts_count": 2,
+        "tags": [
+            "sge",
+            "scheduler"
+        ],
+        "url": "https://ask.cyberinfrastructure.org/t/how-do-you-handle-emergency-resource-requests-with-the-sge-scheduler-while-still-maintaining-fair-access-to-all-users/273/",
+        "views": 98,
+        "like_count": 0,
+        "title": "How do you handle emergency resource requests with the SGE scheduler, while still maintaining fair access to all users?"
+    }
+]

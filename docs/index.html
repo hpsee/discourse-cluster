@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>AskCi Two Dimensional Embedding of Topics</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.min.js" charset="utf-8"></script>
+        <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+
+        <style>
+
+        body {
+          font-family: 'Dosis', sans-serif;
+        }
+	svg {
+	  margin: 0 auto;
+	  display: block;
+          padding-top: 30px;
+	}
+
+	.tick line {
+	  stroke: #ccc;
+	  stroke-dasharray: 10, 5;
+	}
+
+        .content {
+          margin: auto;
+          text-align: center;
+          padding-top:10px;
+        }
+	.tooltip {
+		opacity: 0;
+		/*absolute: where the div shows up based on where we place the mouse*/
+		position: absolute; 
+		/*to avoid flickering when the mouse is over*/
+		pointer-events: none;
+		background-color: lightblue;
+		border: 8px solid #222e54;
+		border-radius: 8px;
+		padding: 15px;
+	}
+
+	/*style p tags inside the html to have less space between them*/
+	.tooltip p {
+		margin: 0;
+	}
+
+
+	/*make the triangle appear*/
+	.tooltip:before {
+		content: ' ';
+		position: absolute;
+		border: 12px solid transparent;
+		border-bottom-color: blue;
+		top: -30px;
+		left: 50%;
+		margin-left: -6px;
+	}
+         </style>
+    </head>
+    <body>
+
+        <div class="content">
+            <svg></svg>
+            <p>Topics are colored by x, and sized based on number of views</p>
+        </div>
+
+        <script type="text/javascript">
+            d3.json('askci-post-tsne-179x2.json', function loadCallback(error, data) {
+                data.forEach(function(d) { // convert strings to numbers, show rest
+                    d.x = +d.x;
+                    d.y = +d.y;
+                    d.post_id = d.post_id;
+                    d.posts_count = +d.posts_count;
+                    d.tags = d.tags;
+                    d.url = d.url;
+                    d.views = +d.views;
+                    d.like_count = +d.like_count;
+                    d.title = d.title;
+                });
+                makeScatter(data);
+            });
+
+          // Open topic in new tab on click
+          var openUrl = function(url){
+              window.location.assign(url, '_blank');
+          }
+
+          var makeScatter = function(data) {
+
+              var width = 800;
+              var height = 500;
+              //padding for svg so circles at the axis don't get caught
+              var padding = 30;
+
+                            // y axis: life expectancy
+              var yScale = d3.scaleLinear()
+                                   .domain(d3.extent(data, d => d.y))
+                                   .range([height - padding, padding]);
+
+              // x axis: births per capita = births/population
+              var xScale = d3.scaleLinear()
+                                   .domain(d3.extent(data, d => d.x))
+                                   .range([padding, width - padding]);
+
+              var xAxis = d3.axisBottom(xScale)
+                                  .tickSize(-height + 2 * padding)
+                                  .tickSizeOuter(0);
+
+              var yAxis = d3.axisLeft(yScale)
+                                  .tickSize(-width + 2 * padding)
+                                  .tickSizeOuter(0);
+
+
+              // fill the cirles based on x position
+              // scaleLinear can also map numbers to colors!
+              var colorScale = d3.scaleLinear()
+                                       .domain(d3.extent(data, d => d.x))
+                                       .range(['lightgreen', "#0088cc"]);
+
+
+              // size based on number of views
+              var radiusScale = d3.scaleLinear()
+                                        .domain(d3.extent(data, d => d.views))
+                                        .range([2, 40]);
+
+              //select tooltip
+              var tooltip = d3.select("body")
+                                    .append("div")
+                                      .classed("tooltip", true);
+
+
+              //axis values
+              d3.select("svg")
+                .append("g")
+                  .attr("transform", "translate(0," + (height - padding) + ")")
+                  .call(xAxis);
+
+              d3.select("svg")
+                .append("g")
+                  .attr("transform", "translate(" + padding + ",0)")
+                  .call(yAxis);
+
+
+              d3.select("svg")
+                  .attr("width", width)
+                  .attr("height", height)
+                .selectAll("circle")
+                .data(data)
+                .enter()
+
+                //for each data point
+                .append("circle")
+                  .attr("cx", d => xScale(d.x))
+                  .attr("cy", d => yScale(d.y))
+                  .attr("fill", d => colorScale(d.x))
+                  .attr("r", d => radiusScale(d.views))
+                  .style('cursor', 'pointer')
+                  //update the tooltip when they mouse is over a datapoint
+                  //touchstart-end for mobile response
+                  .on("mousemove", showTooltip)
+                  .on("touchstart", showTooltip)
+                  //also when I mouse out of the circle
+                  .on("mouseout", hideTooltip)
+                  .on("touchend", hideTooltip)
+                  .on("click", d => openUrl(d.url));
+
+              // axis labels and Title
+              d3.select("svg")
+                .append("text")
+                  .attr("x", width / 2)
+                  .attr("y", height - padding)
+                  .attr("dy", "1.5em")
+                  .style("text-anchor", "middle")
+                  .text("Dimension 1");
+
+              d3.select("svg")
+                .append("text")
+                  .attr("x", width / 2)
+                  .attr("y", padding)
+                  .style("text-anchor", "middle")
+                  .style("font-size", "1.5em")
+                  .text("AskCi Two Dimensional Embedding of Topics");
+
+              d3.select("svg")
+                .append("text")
+                  .attr("transform", "rotate(-90)")
+                  .attr("x", - height / 2)
+                  .attr("y", padding)
+                  .attr("dy", "-1.1em")
+                  .style("text-anchor", "middle")
+                  .text("Dimension 2");
+
+              function showTooltip(d){
+                  //pass data, d to display them in the div
+                  tooltip
+                    .style("opacity",1)
+                    //event.x and y gives the coordinates of the mouse position
+                    //center the div based on width of the div: node()
+                    .style("left", d3.event.x - (tooltip.node().offsetWidth /2) + "px")
+                    .style("top", d3.event.y + 25 + "px")
+                    //display all the data, better use for HTML
+                    //toLocaleString: more readable numbers
+                    .html(`
+                              <p>Topic: ${d.title}</p>
+                              <p>Views: ${d.views.toLocaleString()}</p>
+                              <p>Posts: ${d.posts_count.toLocaleString()}</p>
+                              <p>Likes: ${d.like_count.toLocaleString()}</p>
+                              <p>Tags: ${d.tags}</p>
+                    `);
+                }
+
+
+              function hideTooltip(){
+                  tooltip
+                    .style("opacity", 0);
+                }
+            }
+             </script>
+             
+     </body>
+</html>
