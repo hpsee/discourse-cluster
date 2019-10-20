@@ -1,7 +1,11 @@
 # Discouse Cluster
 
 This is a small example of using Python to extract posts from a discourse board,
-and then using the data to do a simple clustering.
+and then using the data to do a simple clustering. You can [view the plots](https://hpsee.github.io/discourse-cluster/)
+to see d3 final output, or browse the notebooks to look at specific analyses:
+
+ - [cluster-analysis-gensim-tsne.ipynb](cluster-analysis-gensim-tsne.ipynb) was the first unsupervised effort to find some natural clustering in the data. We only see that posts vary along a single dimension, and it's not clear what that is. What do you think?
+ - [cluster-analysis-gensim-tags.ipynb](cluster-analysis-gensim-tags.ipynb) was a simple effort to cluster posts based on their tags. How are we doing in terms of doing the tagging? Do the groups make sense?
 
 ## Setup
 
@@ -123,6 +127,13 @@ What I wound up doing is copying the notebook and data files that I needed out
 of the container, after saving:
 
 ```bash
-$ docker cp relaxed_boyd:/home/jovyan/cluster-analysis-gensim.ipynb cluster-analysis-gensim.ipynb 
-$ docker cp relaxed_boyd:/home/jovyan/askci-post-tsne-179x2.json docs/askci-post-tsne-179x2.json
+# Notebooks
+$ docker cp amazing_ganguly:/home/jovyan/cluster-analysis-gensim-tsne.ipynb cluster-analysis-gensim-tsne.ipynb 
+$ docker cp amazing_ganguly:/home/jovyan/cluster-analysis-tags.ipynb cluster-analysis-tags.ipynb 
+
+# Data Output
+$ docker cp amazing_ganguly:/home/jovyan/askci-post-tsne-179x2.json docs/askci-post-tsne-179x2.json
+for num in {1..7}; do
+    docker cp amazing_ganguly:/home/jovyan/askci-tags-ica-embeddings-ncomps-${num}.json docs/askci-tags-ica-embeddings-ncomps-${num}.json
+done
 ```

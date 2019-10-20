@@ -17,17 +17,6 @@
           padding-top: 30px;
 	}
 
-	.button {
-	  background-color:#008CBA;; /* Blue */
-	  border: none;
-	  color: white;
-	  padding: 10px 22px;
-	  text-align: center;
-	  text-decoration: none;
-	  display: inline-block;
-	  font-size: 16px;
-	}
-
 	.tick line {
 	  stroke: #ccc;
 	  stroke-dasharray: 10, 5;
@@ -37,7 +26,6 @@
           margin: auto;
           text-align: center;
           padding-top:10px;
-          width: 800px;
         }
 	.tooltip {
 		opacity: 0;
@@ -72,51 +60,32 @@
     <body>
 
         <div class="content">
-            <svg id='plot'></svg>
-            <p>This is a clustering of topics based on tags. The matrix of N=179 topics and unique tags (with each entry a count) was reduced with ICA, and then the reduced matrix was visualized with TSNE on two dimensions to show natural groupings in the data. Topics are colored by likes, and sized based on number of views. See the <a href="tsne.html">TSNE of the topicst content here</a></p>
-             <br><p>
-              <button class="btn button" onclick="loadData(1)">ICA 1 Dimension</button>
-              <button class="btn button" onclick="loadData(2)">2</button>
-              <button class="btn button" onclick="loadData(3)">3</button>
-              <button class="btn button" onclick="loadData(4)">4</button>
-              <button class="btn button" onclick="loadData(5)">5</button>
-              <button class="btn button" onclick="loadData(6)">6</button>
-              <button class="btn button" onclick="loadData(7)">7</button>
-           </p>
+            <svg></svg>
+            <p>Topics are colored by likes, and sized based on number of views. Go back to the <a href="index.html">ICA of tags here.</a></p>
         </div>
 
         <script type="text/javascript">
-
-          loadData = function(ncomps) {
-
-              ncomps = String(ncomps)
-              options = ["1", "2", "3", "4", "5", "6", "7"]
-              if (options.includes(ncomps)) {
-
-                  document.getElementById("plot").innerHTML = "";
-                  d3.json('askci-tags-ica-embeddings-ncomps-' + ncomps + '.json', function loadCallback(error, data) {
-                      data.forEach(function(d) { // convert strings to numbers, show rest
-                          d.x = +d.x;
-                          d.y = +d.y;
-                          d.post_id = d.post_id;
-                          d.posts_count = +d.posts_count;
-                          d.tags = d.tags;
-                          d.url = d.url;
-                          d.views = +d.views;
-                          d.like_count = +d.like_count;
-                          d.title = d.title;
-                      });
-                      makeScatter(data, ncomps);
-                  });
-              }
-          }
+            d3.json('askci-post-tsne-179x2.json', function loadCallback(error, data) {
+                data.forEach(function(d) { // convert strings to numbers, show rest
+                    d.x = +d.x;
+                    d.y = +d.y;
+                    d.post_id = d.post_id;
+                    d.posts_count = +d.posts_count;
+                    d.tags = d.tags;
+                    d.url = d.url;
+                    d.views = +d.views;
+                    d.like_count = +d.like_count;
+                    d.title = d.title;
+                });
+                makeScatter(data);
+            });
 
           // Open topic in new tab on click
           var openUrl = function(url){
               window.location.assign(url, '_blank');
           }
 
-          var makeScatter = function(data, ncomps) {
+          var makeScatter = function(data) {
 
               var width = 800;
               var height = 500;
@@ -142,7 +111,7 @@
                                   .tickSizeOuter(0);
 
 
-              // fill the cirles based on x position
+              // fill the cirles based on likes
               // scaleLinear can also map numbers to colors!
               var colorScale = d3.scaleLinear()
                                        .domain(d3.extent(data, d => d.like_count))
@@ -210,7 +179,7 @@
                   .attr("y", padding)
                   .style("text-anchor", "middle")
                   .style("font-size", "1.5em")
-                  .text("AskCi Two Dimensional Embedding of Topics Reduced to " + ncomps + " Dimensions with ICA");
+                  .text("AskCi Two Dimensional Embedding of Topics");
 
               d3.select("svg")
                 .append("text")
@@ -246,9 +215,7 @@
                     .style("opacity", 0);
                 }
             }
-
-           loadData(1)
-           </script>
+             </script>
              
      </body>
 </html>

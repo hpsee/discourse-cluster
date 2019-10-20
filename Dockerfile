@@ -41,7 +41,8 @@ WORKDIR ${NOTEBOOKS_DIR}
 # From jupyter/docker-stacks/master/base-notebook/fix-permissions
 ADD fix-permissions /usr/local/bin/fix-permissions
 
-COPY cluster-analysis-gensim.ipynb /home/jovyan
+COPY cluster-analysis-gensim-tsne.ipynb /home/jovyan
+COPY cluster-analysis-tags.ipynb /home/jovyan
 COPY data/ /home/jovyan/
 
 RUN pip3 install gensim && \
